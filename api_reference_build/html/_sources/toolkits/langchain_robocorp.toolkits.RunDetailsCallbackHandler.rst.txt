@@ -1,0 +1,76 @@
+﻿:mod:`langchain_robocorp.toolkits`.RunDetailsCallbackHandler
+===================================================================
+
+.. currentmodule:: langchain_robocorp.toolkits
+
+.. autoclass:: RunDetailsCallbackHandler
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~RunDetailsCallbackHandler.ignore_agent
+      ~RunDetailsCallbackHandler.ignore_chain
+      ~RunDetailsCallbackHandler.ignore_chat_model
+      ~RunDetailsCallbackHandler.ignore_llm
+      ~RunDetailsCallbackHandler.ignore_retriever
+      ~RunDetailsCallbackHandler.ignore_retry
+      ~RunDetailsCallbackHandler.raise_error
+      ~RunDetailsCallbackHandler.run_inline
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~RunDetailsCallbackHandler.__init__
+      ~RunDetailsCallbackHandler.on_agent_action
+      ~RunDetailsCallbackHandler.on_agent_finish
+      ~RunDetailsCallbackHandler.on_chain_end
+      ~RunDetailsCallbackHandler.on_chain_error
+      ~RunDetailsCallbackHandler.on_chain_start
+      ~RunDetailsCallbackHandler.on_chat_model_start
+      ~RunDetailsCallbackHandler.on_llm_end
+      ~RunDetailsCallbackHandler.on_llm_error
+      ~RunDetailsCallbackHandler.on_llm_new_token
+      ~RunDetailsCallbackHandler.on_llm_start
+      ~RunDetailsCallbackHandler.on_retriever_end
+      ~RunDetailsCallbackHandler.on_retriever_error
+      ~RunDetailsCallbackHandler.on_retriever_start
+      ~RunDetailsCallbackHandler.on_retry
+      ~RunDetailsCallbackHandler.on_text
+      ~RunDetailsCallbackHandler.on_tool_end
+      ~RunDetailsCallbackHandler.on_tool_error
+      ~RunDetailsCallbackHandler.on_tool_start
+
+   
+   .. automethod:: RunDetailsCallbackHandler.__init__
+   .. automethod:: RunDetailsCallbackHandler.on_agent_action
+   .. automethod:: RunDetailsCallbackHandler.on_agent_finish
+   .. automethod:: RunDetailsCallbackHandler.on_chain_end
+   .. automethod:: RunDetailsCallbackHandler.on_chain_error
+   .. automethod:: RunDetailsCallbackHandler.on_chain_start
+   .. automethod:: RunDetailsCallbackHandler.on_chat_model_start
+   .. automethod:: RunDetailsCallbackHandler.on_llm_end
+   .. automethod:: RunDetailsCallbackHandler.on_llm_error
+   .. automethod:: RunDetailsCallbackHandler.on_llm_new_token
+   .. automethod:: RunDetailsCallbackHandler.on_llm_start
+   .. automethod:: RunDetailsCallbackHandler.on_retriever_end
+   .. automethod:: RunDetailsCallbackHandler.on_retriever_error
+   .. automethod:: RunDetailsCallbackHandler.on_retriever_start
+   .. automethod:: RunDetailsCallbackHandler.on_retry
+   .. automethod:: RunDetailsCallbackHandler.on_text
+   .. automethod:: RunDetailsCallbackHandler.on_tool_end
+   .. automethod:: RunDetailsCallbackHandler.on_tool_error
+   .. automethod:: RunDetailsCallbackHandler.on_tool_start
+
+   
+   
+
+
+.. example_links:: RunDetailsCallbackHandler

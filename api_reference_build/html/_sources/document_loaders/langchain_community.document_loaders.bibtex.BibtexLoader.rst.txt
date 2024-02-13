@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.bibtex`.BibtexLoader
+======================================================================
+
+.. currentmodule:: langchain_community.document_loaders.bibtex
+
+.. autoclass:: BibtexLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BibtexLoader.__init__
+      ~BibtexLoader.alazy_load
+      ~BibtexLoader.lazy_load
+      ~BibtexLoader.load
+      ~BibtexLoader.load_and_split
+
+   
+   .. automethod:: BibtexLoader.__init__
+   .. automethod:: BibtexLoader.alazy_load
+   .. automethod:: BibtexLoader.lazy_load
+   .. automethod:: BibtexLoader.load
+   .. automethod:: BibtexLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: BibtexLoader

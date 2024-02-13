@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.obs_directory`.OBSDirectoryLoader
+===================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.obs_directory
+
+.. autoclass:: OBSDirectoryLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~OBSDirectoryLoader.__init__
+      ~OBSDirectoryLoader.alazy_load
+      ~OBSDirectoryLoader.lazy_load
+      ~OBSDirectoryLoader.load
+      ~OBSDirectoryLoader.load_and_split
+
+   
+   .. automethod:: OBSDirectoryLoader.__init__
+   .. automethod:: OBSDirectoryLoader.alazy_load
+   .. automethod:: OBSDirectoryLoader.lazy_load
+   .. automethod:: OBSDirectoryLoader.load
+   .. automethod:: OBSDirectoryLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: OBSDirectoryLoader

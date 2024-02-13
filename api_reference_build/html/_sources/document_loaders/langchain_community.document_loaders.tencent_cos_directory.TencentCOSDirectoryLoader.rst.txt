@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.tencent_cos_directory`.TencentCOSDirectoryLoader
+==================================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.tencent_cos_directory
+
+.. autoclass:: TencentCOSDirectoryLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TencentCOSDirectoryLoader.__init__
+      ~TencentCOSDirectoryLoader.alazy_load
+      ~TencentCOSDirectoryLoader.lazy_load
+      ~TencentCOSDirectoryLoader.load
+      ~TencentCOSDirectoryLoader.load_and_split
+
+   
+   .. automethod:: TencentCOSDirectoryLoader.__init__
+   .. automethod:: TencentCOSDirectoryLoader.alazy_load
+   .. automethod:: TencentCOSDirectoryLoader.lazy_load
+   .. automethod:: TencentCOSDirectoryLoader.load
+   .. automethod:: TencentCOSDirectoryLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: TencentCOSDirectoryLoader

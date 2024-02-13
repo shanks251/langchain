@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.pdf`.PyPDFDirectoryLoader
+===========================================================================
+
+.. currentmodule:: langchain_community.document_loaders.pdf
+
+.. autoclass:: PyPDFDirectoryLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~PyPDFDirectoryLoader.__init__
+      ~PyPDFDirectoryLoader.alazy_load
+      ~PyPDFDirectoryLoader.lazy_load
+      ~PyPDFDirectoryLoader.load
+      ~PyPDFDirectoryLoader.load_and_split
+
+   
+   .. automethod:: PyPDFDirectoryLoader.__init__
+   .. automethod:: PyPDFDirectoryLoader.alazy_load
+   .. automethod:: PyPDFDirectoryLoader.lazy_load
+   .. automethod:: PyPDFDirectoryLoader.load
+   .. automethod:: PyPDFDirectoryLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: PyPDFDirectoryLoader

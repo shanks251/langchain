@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.typescript`.TypeScriptSegmenter
+==================================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.typescript
+
+.. autoclass:: TypeScriptSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TypeScriptSegmenter.__init__
+      ~TypeScriptSegmenter.extract_functions_classes
+      ~TypeScriptSegmenter.get_chunk_query
+      ~TypeScriptSegmenter.get_language
+      ~TypeScriptSegmenter.get_parser
+      ~TypeScriptSegmenter.is_valid
+      ~TypeScriptSegmenter.make_line_comment
+      ~TypeScriptSegmenter.simplify_code
+
+   
+   .. automethod:: TypeScriptSegmenter.__init__
+   .. automethod:: TypeScriptSegmenter.extract_functions_classes
+   .. automethod:: TypeScriptSegmenter.get_chunk_query
+   .. automethod:: TypeScriptSegmenter.get_language
+   .. automethod:: TypeScriptSegmenter.get_parser
+   .. automethod:: TypeScriptSegmenter.is_valid
+   .. automethod:: TypeScriptSegmenter.make_line_comment
+   .. automethod:: TypeScriptSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: TypeScriptSegmenter

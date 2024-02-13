@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.tomarkdown`.ToMarkdownLoader
+==============================================================================
+
+.. currentmodule:: langchain_community.document_loaders.tomarkdown
+
+.. autoclass:: ToMarkdownLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ToMarkdownLoader.__init__
+      ~ToMarkdownLoader.alazy_load
+      ~ToMarkdownLoader.lazy_load
+      ~ToMarkdownLoader.load
+      ~ToMarkdownLoader.load_and_split
+
+   
+   .. automethod:: ToMarkdownLoader.__init__
+   .. automethod:: ToMarkdownLoader.alazy_load
+   .. automethod:: ToMarkdownLoader.lazy_load
+   .. automethod:: ToMarkdownLoader.load
+   .. automethod:: ToMarkdownLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: ToMarkdownLoader

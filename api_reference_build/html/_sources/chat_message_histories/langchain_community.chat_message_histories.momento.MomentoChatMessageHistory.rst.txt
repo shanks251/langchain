@@ -1,0 +1,51 @@
+﻿:mod:`langchain_community.chat_message_histories.momento`.MomentoChatMessageHistory
+==========================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.momento
+
+.. autoclass:: MomentoChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~MomentoChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~MomentoChatMessageHistory.__init__
+      ~MomentoChatMessageHistory.aadd_messages
+      ~MomentoChatMessageHistory.aclear
+      ~MomentoChatMessageHistory.add_ai_message
+      ~MomentoChatMessageHistory.add_message
+      ~MomentoChatMessageHistory.add_messages
+      ~MomentoChatMessageHistory.add_user_message
+      ~MomentoChatMessageHistory.aget_messages
+      ~MomentoChatMessageHistory.clear
+      ~MomentoChatMessageHistory.from_client_params
+
+   
+   .. automethod:: MomentoChatMessageHistory.__init__
+   .. automethod:: MomentoChatMessageHistory.aadd_messages
+   .. automethod:: MomentoChatMessageHistory.aclear
+   .. automethod:: MomentoChatMessageHistory.add_ai_message
+   .. automethod:: MomentoChatMessageHistory.add_message
+   .. automethod:: MomentoChatMessageHistory.add_messages
+   .. automethod:: MomentoChatMessageHistory.add_user_message
+   .. automethod:: MomentoChatMessageHistory.aget_messages
+   .. automethod:: MomentoChatMessageHistory.clear
+   .. automethod:: MomentoChatMessageHistory.from_client_params
+
+   
+   
+
+
+.. example_links:: MomentoChatMessageHistory

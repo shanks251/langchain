@@ -1,0 +1,23 @@
+.. nomic_api_reference:
+
+=======================
+``langchain_nomic`` 0.0.1
+=======================
+
+:mod:`langchain_nomic.embeddings`
+==================================
+
+.. automodule:: langchain_nomic.embeddings
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_nomic
+
+.. autosummary::
+    :toctree: embeddings
+    :template: class.rst
+    
+    embeddings.NomicEmbeddings
+    

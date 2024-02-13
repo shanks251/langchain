@@ -1,0 +1,104 @@
+﻿:mod:`langchain_community.vectorstores.thirdai_neuraldb`.NeuralDBVectorStore
+===================================================================================
+
+.. currentmodule:: langchain_community.vectorstores.thirdai_neuraldb
+
+.. autoclass:: NeuralDBVectorStore
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~NeuralDBVectorStore.db
+      ~NeuralDBVectorStore.embeddings
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~NeuralDBVectorStore.__init__
+      ~NeuralDBVectorStore.aadd_documents
+      ~NeuralDBVectorStore.aadd_texts
+      ~NeuralDBVectorStore.add_documents
+      ~NeuralDBVectorStore.add_texts
+      ~NeuralDBVectorStore.adelete
+      ~NeuralDBVectorStore.afrom_documents
+      ~NeuralDBVectorStore.afrom_texts
+      ~NeuralDBVectorStore.amax_marginal_relevance_search
+      ~NeuralDBVectorStore.amax_marginal_relevance_search_by_vector
+      ~NeuralDBVectorStore.as_retriever
+      ~NeuralDBVectorStore.asearch
+      ~NeuralDBVectorStore.asimilarity_search
+      ~NeuralDBVectorStore.asimilarity_search_by_vector
+      ~NeuralDBVectorStore.asimilarity_search_with_relevance_scores
+      ~NeuralDBVectorStore.asimilarity_search_with_score
+      ~NeuralDBVectorStore.associate
+      ~NeuralDBVectorStore.associate_batch
+      ~NeuralDBVectorStore.delete
+      ~NeuralDBVectorStore.from_bazaar
+      ~NeuralDBVectorStore.from_checkpoint
+      ~NeuralDBVectorStore.from_documents
+      ~NeuralDBVectorStore.from_scratch
+      ~NeuralDBVectorStore.from_texts
+      ~NeuralDBVectorStore.insert
+      ~NeuralDBVectorStore.max_marginal_relevance_search
+      ~NeuralDBVectorStore.max_marginal_relevance_search_by_vector
+      ~NeuralDBVectorStore.save
+      ~NeuralDBVectorStore.search
+      ~NeuralDBVectorStore.similarity_search
+      ~NeuralDBVectorStore.similarity_search_by_vector
+      ~NeuralDBVectorStore.similarity_search_with_relevance_scores
+      ~NeuralDBVectorStore.similarity_search_with_score
+      ~NeuralDBVectorStore.upvote
+      ~NeuralDBVectorStore.upvote_batch
+      ~NeuralDBVectorStore.validate_environments
+
+   
+   .. automethod:: NeuralDBVectorStore.__init__
+   .. automethod:: NeuralDBVectorStore.aadd_documents
+   .. automethod:: NeuralDBVectorStore.aadd_texts
+   .. automethod:: NeuralDBVectorStore.add_documents
+   .. automethod:: NeuralDBVectorStore.add_texts
+   .. automethod:: NeuralDBVectorStore.adelete
+   .. automethod:: NeuralDBVectorStore.afrom_documents
+   .. automethod:: NeuralDBVectorStore.afrom_texts
+   .. automethod:: NeuralDBVectorStore.amax_marginal_relevance_search
+   .. automethod:: NeuralDBVectorStore.amax_marginal_relevance_search_by_vector
+   .. automethod:: NeuralDBVectorStore.as_retriever
+   .. automethod:: NeuralDBVectorStore.asearch
+   .. automethod:: NeuralDBVectorStore.asimilarity_search
+   .. automethod:: NeuralDBVectorStore.asimilarity_search_by_vector
+   .. automethod:: NeuralDBVectorStore.asimilarity_search_with_relevance_scores
+   .. automethod:: NeuralDBVectorStore.asimilarity_search_with_score
+   .. automethod:: NeuralDBVectorStore.associate
+   .. automethod:: NeuralDBVectorStore.associate_batch
+   .. automethod:: NeuralDBVectorStore.delete
+   .. automethod:: NeuralDBVectorStore.from_bazaar
+   .. automethod:: NeuralDBVectorStore.from_checkpoint
+   .. automethod:: NeuralDBVectorStore.from_documents
+   .. automethod:: NeuralDBVectorStore.from_scratch
+   .. automethod:: NeuralDBVectorStore.from_texts
+   .. automethod:: NeuralDBVectorStore.insert
+   .. automethod:: NeuralDBVectorStore.max_marginal_relevance_search
+   .. automethod:: NeuralDBVectorStore.max_marginal_relevance_search_by_vector
+   .. automethod:: NeuralDBVectorStore.save
+   .. automethod:: NeuralDBVectorStore.search
+   .. automethod:: NeuralDBVectorStore.similarity_search
+   .. automethod:: NeuralDBVectorStore.similarity_search_by_vector
+   .. automethod:: NeuralDBVectorStore.similarity_search_with_relevance_scores
+   .. automethod:: NeuralDBVectorStore.similarity_search_with_score
+   .. automethod:: NeuralDBVectorStore.upvote
+   .. automethod:: NeuralDBVectorStore.upvote_batch
+   .. automethod:: NeuralDBVectorStore.validate_environments
+
+   
+   
+
+
+.. example_links:: NeuralDBVectorStore

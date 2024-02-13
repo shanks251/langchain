@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.tree_sitter_segmenter`.TreeSitterSegmenter
+=============================================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.tree_sitter_segmenter
+
+.. autoclass:: TreeSitterSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TreeSitterSegmenter.__init__
+      ~TreeSitterSegmenter.extract_functions_classes
+      ~TreeSitterSegmenter.get_chunk_query
+      ~TreeSitterSegmenter.get_language
+      ~TreeSitterSegmenter.get_parser
+      ~TreeSitterSegmenter.is_valid
+      ~TreeSitterSegmenter.make_line_comment
+      ~TreeSitterSegmenter.simplify_code
+
+   
+   .. automethod:: TreeSitterSegmenter.__init__
+   .. automethod:: TreeSitterSegmenter.extract_functions_classes
+   .. automethod:: TreeSitterSegmenter.get_chunk_query
+   .. automethod:: TreeSitterSegmenter.get_language
+   .. automethod:: TreeSitterSegmenter.get_parser
+   .. automethod:: TreeSitterSegmenter.is_valid
+   .. automethod:: TreeSitterSegmenter.make_line_comment
+   .. automethod:: TreeSitterSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: TreeSitterSegmenter

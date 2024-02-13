@@ -1,0 +1,26 @@
+﻿:mod:`langchain_community.utilities.nvidia_riva`.RivaAudioEncoding
+=========================================================================
+
+.. currentmodule:: langchain_community.utilities.nvidia_riva
+
+.. autoclass:: RivaAudioEncoding
+
+    
+    
+    .. autoattribute:: ALAW
+    
+    .. autoattribute:: ENCODING_UNSPECIFIED
+    
+    .. autoattribute:: FLAC
+    
+    .. autoattribute:: LINEAR_PCM
+    
+    .. autoattribute:: MULAW
+    
+    .. autoattribute:: OGGOPUS
+    
+    .. autoattribute:: riva_pb2
+    
+    
+
+.. example_links:: RivaAudioEncoding

@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.csharp`.CSharpSegmenter
+==========================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.csharp
+
+.. autoclass:: CSharpSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CSharpSegmenter.__init__
+      ~CSharpSegmenter.extract_functions_classes
+      ~CSharpSegmenter.get_chunk_query
+      ~CSharpSegmenter.get_language
+      ~CSharpSegmenter.get_parser
+      ~CSharpSegmenter.is_valid
+      ~CSharpSegmenter.make_line_comment
+      ~CSharpSegmenter.simplify_code
+
+   
+   .. automethod:: CSharpSegmenter.__init__
+   .. automethod:: CSharpSegmenter.extract_functions_classes
+   .. automethod:: CSharpSegmenter.get_chunk_query
+   .. automethod:: CSharpSegmenter.get_language
+   .. automethod:: CSharpSegmenter.get_parser
+   .. automethod:: CSharpSegmenter.is_valid
+   .. automethod:: CSharpSegmenter.make_line_comment
+   .. automethod:: CSharpSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: CSharpSegmenter

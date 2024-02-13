@@ -1,0 +1,8 @@
+﻿:mod:`langchain_core.utils.image`.encode_image
+=====================================================
+
+.. currentmodule:: langchain_core.utils.image
+
+.. autofunction:: encode_image
+
+.. example_links:: encode_image

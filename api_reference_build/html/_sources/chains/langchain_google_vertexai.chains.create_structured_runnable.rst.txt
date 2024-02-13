@@ -1,0 +1,8 @@
+﻿:mod:`langchain_google_vertexai.chains`.create_structured_runnable
+=========================================================================
+
+.. currentmodule:: langchain_google_vertexai.chains
+
+.. autofunction:: create_structured_runnable
+
+.. example_links:: create_structured_runnable

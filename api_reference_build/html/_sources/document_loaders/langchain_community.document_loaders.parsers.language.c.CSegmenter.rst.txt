@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.c`.CSegmenter
+================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.c
+
+.. autoclass:: CSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CSegmenter.__init__
+      ~CSegmenter.extract_functions_classes
+      ~CSegmenter.get_chunk_query
+      ~CSegmenter.get_language
+      ~CSegmenter.get_parser
+      ~CSegmenter.is_valid
+      ~CSegmenter.make_line_comment
+      ~CSegmenter.simplify_code
+
+   
+   .. automethod:: CSegmenter.__init__
+   .. automethod:: CSegmenter.extract_functions_classes
+   .. automethod:: CSegmenter.get_chunk_query
+   .. automethod:: CSegmenter.get_language
+   .. automethod:: CSegmenter.get_parser
+   .. automethod:: CSegmenter.is_valid
+   .. automethod:: CSegmenter.make_line_comment
+   .. automethod:: CSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: CSegmenter

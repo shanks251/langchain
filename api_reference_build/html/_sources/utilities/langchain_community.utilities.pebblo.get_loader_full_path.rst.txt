@@ -1,0 +1,8 @@
+﻿:mod:`langchain_community.utilities.pebblo`.get_loader_full_path
+=======================================================================
+
+.. currentmodule:: langchain_community.utilities.pebblo
+
+.. autofunction:: get_loader_full_path
+
+.. example_links:: get_loader_full_path

@@ -1,0 +1,23 @@
+.. pinecone_api_reference:
+
+=======================
+``langchain_pinecone`` 0.0.2
+=======================
+
+:mod:`langchain_pinecone.vectorstores`
+=======================================
+
+.. automodule:: langchain_pinecone.vectorstores
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_pinecone
+
+.. autosummary::
+    :toctree: vectorstores
+    :template: class.rst
+    
+    vectorstores.Pinecone
+    

@@ -1,0 +1,8 @@
+﻿:mod:`langchain_core.language_models.llms`.aget_prompts
+==============================================================
+
+.. currentmodule:: langchain_core.language_models.llms
+
+.. autofunction:: aget_prompts
+
+.. example_links:: aget_prompts

@@ -1,0 +1,818 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>lark.visitors &mdash; 🦜🔗 LangChain 0.1.7</title>
+  
+  <link rel="canonical" href="https://api.python.langchain.com/en/latest/_modules/lark/visitors.html" />
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/vendor/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/autodoc_pydantic.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+<script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+<script src="../../_static/jquery.js"></script> 
+</head>
+<body>
+
+
+<nav id="navbar" class="sk-docs-navbar navbar navbar-expand-md navbar-light bg-light py-0">
+  <div class="container-fluid sk-docs-container px-0">
+    <button
+      id="sk-navbar-toggler"
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="sk-navbar-collapse collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../langchain_api_reference.html">LangChain</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../core_api_reference.html">Core</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../community_api_reference.html">Community</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="../../experimental_api_reference.html">Experimental</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../anthropic_api_reference.html">anthropic</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../exa_api_reference.html">exa</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../google_genai_api_reference.html">google-genai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../google_vertexai_api_reference.html">google-vertexai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../mistralai_api_reference.html">mistralai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../nomic_api_reference.html">nomic</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../nvidia_trt_api_reference.html">nvidia-trt</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../openai_api_reference.html">openai</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../pinecone_api_reference.html">pinecone</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../robocorp_api_reference.html">robocorp</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../together_api_reference.html">together</a>
+        </li>
+        <li class="nav-item dropdown nav-more-item-dropdown">
+          <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../exa_api_reference.html">exa</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../google_genai_api_reference.html">google-genai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../mistralai_api_reference.html">mistralai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../nomic_api_reference.html">nomic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../nvidia_trt_api_reference.html">nvidia-trt</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../openai_api_reference.html">openai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../pinecone_api_reference.html">pinecone</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../robocorp_api_reference.html">robocorp</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../together_api_reference.html">together</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" target="_blank" rel="noopener noreferrer" href="https://python.langchain.com/">Docs</a>
+        </li>
+      </ul>
+      <div id="searchbox" role="search">
+          <div class="searchformwrapper">
+          <form class="search" action="../../search.html" method="get">
+            <input class="sk-search-text-input" type="text" name="q" aria-labelledby="searchlabel" />
+            <input class="sk-search-text-btn" type="submit" value="Go" />
+          </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="d-flex" id="sk-doc-wrapper">
+    <input type="checkbox" name="sk-toggle-checkbox" id="sk-toggle-checkbox">
+    <label id="sk-sidemenu-toggle" class="sk-btn-toggle-toc btn sk-btn-primary" for="sk-toggle-checkbox">Toggle Menu</label>
+    <div id="sk-sidebar-wrapper" class="border-right">
+      <div class="sk-sidebar-toc-wrapper">
+        <div class="btn-group w-100 mb-2" role="group" aria-label="rellinks">
+            <a href="#" role="button" class="btn sk-btn-rellink py-1 disabled"">Prev</a><a href="../index.html" role="button" class="btn sk-btn-rellink py-1" sk-rellink-tooltip="Module code">Up</a>
+            <a href="#" role="button" class="btn sk-btn-rellink py-1 disabled"">Next</a>
+        </div>
+            <div class="sk-sidebar-toc">
+              
+            </div>
+      </div>
+    </div>
+    <div id="sk-page-content-wrapper">
+      <div class="sk-page-content container-fluid body px-md-3" role="main">
+        
+  <h1>Source code for lark.visitors</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">TypeVar</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Generic</span><span class="p">,</span> <span class="n">Type</span><span class="p">,</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Any</span><span class="p">,</span> <span class="n">cast</span>
+<span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span>
+
+<span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="n">combine_alternatives</span>
+<span class="kn">from</span> <span class="nn">.tree</span> <span class="kn">import</span> <span class="n">Tree</span><span class="p">,</span> <span class="n">Branch</span>
+<span class="kn">from</span> <span class="nn">.exceptions</span> <span class="kn">import</span> <span class="n">VisitError</span><span class="p">,</span> <span class="n">GrammarError</span>
+<span class="kn">from</span> <span class="nn">.lexer</span> <span class="kn">import</span> <span class="n">Token</span>
+
+<span class="c1">###{standalone</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span><span class="p">,</span> <span class="n">update_wrapper</span>
+<span class="kn">from</span> <span class="nn">inspect</span> <span class="kn">import</span> <span class="n">getmembers</span><span class="p">,</span> <span class="n">getmro</span>
+
+<span class="n">_Return_T</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s1">&#39;_Return_T&#39;</span><span class="p">)</span>
+<span class="n">_Return_V</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s1">&#39;_Return_V&#39;</span><span class="p">)</span>
+<span class="n">_Leaf_T</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s1">&#39;_Leaf_T&#39;</span><span class="p">)</span>
+<span class="n">_Leaf_U</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s1">&#39;_Leaf_U&#39;</span><span class="p">)</span>
+<span class="n">_R</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s1">&#39;_R&#39;</span><span class="p">)</span>
+<span class="n">_FUNC</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">_Return_T</span><span class="p">]</span>
+<span class="n">_DECORATED</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">_FUNC</span><span class="p">,</span> <span class="nb">type</span><span class="p">]</span>
+
+<span class="k">class</span> <span class="nc">_DiscardType</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;When the Discard value is returned from a transformer callback,</span>
+<span class="sd">    that node is discarded and won&#39;t appear in the parent.</span>
+
+<span class="sd">    Note:</span>
+<span class="sd">        This feature is disabled when the transformer is provided to Lark</span>
+<span class="sd">        using the ``transformer`` keyword (aka Tree-less LALR mode).</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        ::</span>
+
+<span class="sd">            class T(Transformer):</span>
+<span class="sd">                def ignore_tree(self, children):</span>
+<span class="sd">                    return Discard</span>
+
+<span class="sd">                def IGNORE_TOKEN(self, token):</span>
+<span class="sd">                    return Discard</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;lark.visitors.Discard&quot;</span>
+
+<span class="n">Discard</span> <span class="o">=</span> <span class="n">_DiscardType</span><span class="p">()</span>
+
+<span class="c1"># Transformers</span>
+
+<span class="k">class</span> <span class="nc">_Decoratable</span><span class="p">:</span>
+    <span class="s2">&quot;Provides support for decorating methods with @v_args&quot;</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">_apply_v_args</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">visit_wrapper</span><span class="p">):</span>
+        <span class="n">mro</span> <span class="o">=</span> <span class="n">getmro</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">mro</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="bp">cls</span>
+        <span class="n">libmembers</span> <span class="o">=</span> <span class="p">{</span><span class="n">name</span> <span class="k">for</span> <span class="n">_cls</span> <span class="ow">in</span> <span class="n">mro</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">getmembers</span><span class="p">(</span><span class="n">_cls</span><span class="p">)}</span>
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">getmembers</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+
+            <span class="c1"># Make sure the function isn&#39;t inherited (unless it&#39;s overwritten)</span>
+            <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">name</span> <span class="ow">in</span> <span class="n">libmembers</span> <span class="ow">and</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">cls</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">callable</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+                <span class="k">continue</span>
+
+            <span class="c1"># Skip if v_args already applied (at the function level)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="n">_VArgsWrapper</span><span class="p">):</span>
+                <span class="k">continue</span>
+
+            <span class="nb">setattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">_VArgsWrapper</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="n">visit_wrapper</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">cls</span>
+
+    <span class="k">def</span> <span class="nf">__class_getitem__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">_</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">cls</span>
+
+
+<span class="k">class</span> <span class="nc">Transformer</span><span class="p">(</span><span class="n">_Decoratable</span><span class="p">,</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">Generic</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">,</span> <span class="n">_Return_T</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Transformers work bottom-up (or depth-first), starting with visiting the leaves and working</span>
+<span class="sd">    their way up until ending at the root of the tree.</span>
+
+<span class="sd">    For each node visited, the transformer will call the appropriate method (callbacks), according to the</span>
+<span class="sd">    node&#39;s ``data``, and use the returned value to replace the node, thereby creating a new tree structure.</span>
+
+<span class="sd">    Transformers can be used to implement map &amp; reduce patterns. Because nodes are reduced from leaf to root,</span>
+<span class="sd">    at any point the callbacks may assume the children have already been transformed (if applicable).</span>
+
+<span class="sd">    If the transformer cannot find a method with the right name, it will instead call ``__default__``, which by</span>
+<span class="sd">    default creates a copy of the node.</span>
+
+<span class="sd">    To discard a node, return Discard (``lark.visitors.Discard``).</span>
+
+<span class="sd">    ``Transformer`` can do anything ``Visitor`` can do, but because it reconstructs the tree,</span>
+<span class="sd">    it is slightly less efficient.</span>
+
+<span class="sd">    A transformer without methods essentially performs a non-memoized partial deepcopy.</span>
+
+<span class="sd">    All these classes implement the transformer interface:</span>
+
+<span class="sd">    - ``Transformer`` - Recursively transforms the tree. This is the one you probably want.</span>
+<span class="sd">    - ``Transformer_InPlace`` - Non-recursive. Changes the tree in-place instead of returning new instances</span>
+<span class="sd">    - ``Transformer_InPlaceRecursive`` - Recursive. Changes the tree in-place instead of returning new instances</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        visit_tokens (bool, optional): Should the transformer visit tokens in addition to rules.</span>
+<span class="sd">                                       Setting this to ``False`` is slightly faster. Defaults to ``True``.</span>
+<span class="sd">                                       (For processing ignored tokens, use the ``lexer_callbacks`` options)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">__visit_tokens__</span> <span class="o">=</span> <span class="kc">True</span>   <span class="c1"># For backwards compatibility</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>  <span class="n">visit_tokens</span><span class="p">:</span> <span class="nb">bool</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__visit_tokens__</span> <span class="o">=</span> <span class="n">visit_tokens</span>
+
+    <span class="k">def</span> <span class="nf">_call_userfunc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">new_children</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="c1"># Assumes tree is already transformed</span>
+        <span class="n">children</span> <span class="o">=</span> <span class="n">new_children</span> <span class="k">if</span> <span class="n">new_children</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">tree</span><span class="o">.</span><span class="n">children</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__default__</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">wrapper</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="s1">&#39;visit_wrapper&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">wrapper</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="n">f</span><span class="o">.</span><span class="n">visit_wrapper</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">children</span><span class="p">)</span>
+            <span class="k">except</span> <span class="n">GrammarError</span><span class="p">:</span>
+                <span class="k">raise</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">VisitError</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_call_userfunc_token</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">token</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">token</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__default_token__</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+            <span class="k">except</span> <span class="n">GrammarError</span><span class="p">:</span>
+                <span class="k">raise</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">VisitError</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">type</span><span class="p">,</span> <span class="n">token</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_transform_children</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">children</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">children</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">Tree</span><span class="p">):</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_transform_tree</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">__visit_tokens__</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">Token</span><span class="p">):</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc_token</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="n">c</span>
+
+            <span class="k">if</span> <span class="n">res</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">Discard</span><span class="p">:</span>
+                <span class="k">yield</span> <span class="n">res</span>
+
+    <span class="k">def</span> <span class="nf">_transform_tree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
+        <span class="n">children</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_transform_children</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">children</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span> <span class="n">children</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">_Return_T</span><span class="p">:</span>
+        <span class="s2">&quot;Transform the given tree, and return the final result&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_transform_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__mul__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">:</span> <span class="s1">&#39;Transformer[_Leaf_T, Tree[_Leaf_U]]&#39;</span><span class="p">,</span>
+            <span class="n">other</span><span class="p">:</span> <span class="s1">&#39;Union[Transformer[_Leaf_U, _Return_V], TransformerChain[_Leaf_U, _Return_V,]]&#39;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;TransformerChain[_Leaf_T, _Return_V]&#39;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Chain two transformers together, returning a new transformer.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">TransformerChain</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__default__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">meta</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Default function that is called if there is no attribute matching ``data``</span>
+
+<span class="sd">        Can be overridden. Defaults to creating a new copy of the tree node (i.e. ``return Tree(data, children, meta)``)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Tree</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">meta</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__default_token__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">token</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Default function that is called if there is no attribute matching ``token.type``</span>
+
+<span class="sd">        Can be overridden. Defaults to returning the token as-is.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">token</span>
+
+
+<span class="k">def</span> <span class="nf">merge_transformers</span><span class="p">(</span><span class="n">base_transformer</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">transformers_to_merge</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Merge a collection of transformers into the base_transformer, each into its own &#39;namespace&#39;.</span>
+
+<span class="sd">    When called, it will collect the methods from each transformer, and assign them to base_transformer,</span>
+<span class="sd">    with their name prefixed with the given keyword, as ``prefix__methodname``.</span>
+
+<span class="sd">    This function is especially useful for processing grammars that import other grammars,</span>
+<span class="sd">    thereby creating some of their rules in a &#39;namespace&#39;. (i.e with a consistent name prefix).</span>
+<span class="sd">    In this case, the key for the transformer should match the name of the imported grammar.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        base_transformer (Transformer, optional): The transformer that all other transformers will be added to.</span>
+<span class="sd">        **transformers_to_merge: Keyword arguments, in the form of ``name_prefix = transformer``.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        AttributeError: In case of a name collision in the merged methods</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        ::</span>
+
+<span class="sd">            class TBase(Transformer):</span>
+<span class="sd">                def start(self, children):</span>
+<span class="sd">                    return children[0] + &#39;bar&#39;</span>
+
+<span class="sd">            class TImportedGrammar(Transformer):</span>
+<span class="sd">                def foo(self, children):</span>
+<span class="sd">                    return &quot;foo&quot;</span>
+
+<span class="sd">            composed_transformer = merge_transformers(TBase(), imported=TImportedGrammar())</span>
+
+<span class="sd">            t = Tree(&#39;start&#39;, [ Tree(&#39;imported__foo&#39;, []) ])</span>
+
+<span class="sd">            assert composed_transformer.transform(t) == &#39;foobar&#39;</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">base_transformer</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">base_transformer</span> <span class="o">=</span> <span class="n">Transformer</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">prefix</span><span class="p">,</span> <span class="n">transformer</span> <span class="ow">in</span> <span class="n">transformers_to_merge</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">method_name</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">transformer</span><span class="p">):</span>
+            <span class="n">method</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">transformer</span><span class="p">,</span> <span class="n">method_name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">callable</span><span class="p">(</span><span class="n">method</span><span class="p">):</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">method_name</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">method_name</span> <span class="o">==</span> <span class="s2">&quot;transform&quot;</span><span class="p">:</span>
+                <span class="k">continue</span>
+            <span class="n">prefixed_method</span> <span class="o">=</span> <span class="n">prefix</span> <span class="o">+</span> <span class="s2">&quot;__&quot;</span> <span class="o">+</span> <span class="n">method_name</span>
+            <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">base_transformer</span><span class="p">,</span> <span class="n">prefixed_method</span><span class="p">):</span>
+                <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s2">&quot;Cannot merge: method &#39;</span><span class="si">%s</span><span class="s2">&#39; appears more than once&quot;</span> <span class="o">%</span> <span class="n">prefixed_method</span><span class="p">)</span>
+
+            <span class="nb">setattr</span><span class="p">(</span><span class="n">base_transformer</span><span class="p">,</span> <span class="n">prefixed_method</span><span class="p">,</span> <span class="n">method</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">base_transformer</span>
+
+
+<span class="k">class</span> <span class="nc">InlineTransformer</span><span class="p">(</span><span class="n">Transformer</span><span class="p">):</span>   <span class="c1"># XXX Deprecated</span>
+    <span class="k">def</span> <span class="nf">_call_userfunc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">,</span> <span class="n">new_children</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="c1"># Assumes tree is already transformed</span>
+        <span class="n">children</span> <span class="o">=</span> <span class="n">new_children</span> <span class="k">if</span> <span class="n">new_children</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">tree</span><span class="o">.</span><span class="n">children</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__default__</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">children</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">TransformerChain</span><span class="p">(</span><span class="n">Generic</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">,</span> <span class="n">_Return_T</span><span class="p">]):</span>
+
+    <span class="n">transformers</span><span class="p">:</span> <span class="s1">&#39;Tuple[Union[Transformer, TransformerChain], ...]&#39;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">transformers</span><span class="p">:</span> <span class="s1">&#39;Union[Transformer, TransformerChain]&#39;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">transformers</span> <span class="o">=</span> <span class="n">transformers</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">_Return_T</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">transformers</span><span class="p">:</span>
+            <span class="n">tree</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">cast</span><span class="p">(</span><span class="n">_Return_T</span><span class="p">,</span> <span class="n">tree</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__mul__</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">:</span> <span class="s1">&#39;TransformerChain[_Leaf_T, Tree[_Leaf_U]]&#39;</span><span class="p">,</span>
+            <span class="n">other</span><span class="p">:</span> <span class="s1">&#39;Union[Transformer[_Leaf_U, _Return_V], TransformerChain[_Leaf_U, _Return_V]]&#39;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;TransformerChain[_Leaf_T, _Return_V]&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">TransformerChain</span><span class="p">(</span><span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">transformers</span> <span class="o">+</span> <span class="p">(</span><span class="n">other</span><span class="p">,))</span>
+
+
+<span class="k">class</span> <span class="nc">Transformer_InPlace</span><span class="p">(</span><span class="n">Transformer</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">,</span> <span class="n">_Return_T</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Same as Transformer, but non-recursive, and changes the tree in-place instead of returning new instances</span>
+
+<span class="sd">    Useful for huge trees. Conservative in memory.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">_transform_tree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>           <span class="c1"># Cancel recursion</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">_Return_T</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">subtree</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">iter_subtrees</span><span class="p">():</span>
+            <span class="n">subtree</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_transform_children</span><span class="p">(</span><span class="n">subtree</span><span class="o">.</span><span class="n">children</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_transform_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Transformer_NonRecursive</span><span class="p">(</span><span class="n">Transformer</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">,</span> <span class="n">_Return_T</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Same as Transformer but non-recursive.</span>
+
+<span class="sd">    Like Transformer, it doesn&#39;t change the original tree.</span>
+
+<span class="sd">    Useful for huge trees.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">_Return_T</span><span class="p">:</span>
+        <span class="c1"># Tree to postfix</span>
+        <span class="n">rev_postfix</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">q</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Branch</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">]]</span> <span class="o">=</span> <span class="p">[</span><span class="n">tree</span><span class="p">]</span>
+        <span class="k">while</span> <span class="n">q</span><span class="p">:</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+            <span class="n">rev_postfix</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">Tree</span><span class="p">):</span>
+                <span class="n">q</span> <span class="o">+=</span> <span class="n">t</span><span class="o">.</span><span class="n">children</span>
+
+        <span class="c1"># Postfix to tree</span>
+        <span class="n">stack</span><span class="p">:</span> <span class="n">List</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">rev_postfix</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">Tree</span><span class="p">):</span>
+                <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">children</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">size</span><span class="p">:</span>
+                    <span class="n">args</span> <span class="o">=</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="n">size</span><span class="p">:]</span>
+                    <span class="k">del</span> <span class="n">stack</span><span class="p">[</span><span class="o">-</span><span class="n">size</span><span class="p">:]</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="n">args</span> <span class="o">=</span> <span class="p">[]</span>
+
+                <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">res</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">Discard</span><span class="p">:</span>
+                    <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+
+            <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">__visit_tokens__</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">Token</span><span class="p">):</span>
+                <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc_token</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">res</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">Discard</span><span class="p">:</span>
+                    <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+        <span class="n">result</span><span class="p">,</span> <span class="o">=</span> <span class="n">stack</span>  <span class="c1"># We should have only one tree remaining</span>
+        <span class="c1"># There are no guarantees on the type of the value produced by calling a user func for a</span>
+        <span class="c1"># child will produce. This means type system can&#39;t statically know that the final result is</span>
+        <span class="c1"># _Return_T. As a result a cast is required.</span>
+        <span class="k">return</span> <span class="n">cast</span><span class="p">(</span><span class="n">_Return_T</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">Transformer_InPlaceRecursive</span><span class="p">(</span><span class="n">Transformer</span><span class="p">):</span>
+    <span class="s2">&quot;Same as Transformer, recursive, but changes the tree in-place instead of returning new instances&quot;</span>
+    <span class="k">def</span> <span class="nf">_transform_tree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
+        <span class="n">tree</span><span class="o">.</span><span class="n">children</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_transform_children</span><span class="p">(</span><span class="n">tree</span><span class="o">.</span><span class="n">children</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+
+<span class="c1"># Visitors</span>
+
+<span class="k">class</span> <span class="nc">VisitorBase</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">_call_userfunc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__default__</span><span class="p">)(</span><span class="n">tree</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__default__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Default function that is called if there is no attribute matching ``tree.data``</span>
+
+<span class="sd">        Can be overridden. Defaults to doing nothing.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">tree</span>
+
+    <span class="k">def</span> <span class="nf">__class_getitem__</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">_</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">cls</span>
+
+
+<span class="k">class</span> <span class="nc">Visitor</span><span class="p">(</span><span class="n">VisitorBase</span><span class="p">,</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">Generic</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Tree visitor, non-recursive (can handle huge trees).</span>
+
+<span class="sd">    Visiting a node calls its methods (provided by the user via inheritance) according to ``tree.data``</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">]:</span>
+        <span class="s2">&quot;Visits the tree, starting with the leaves and finally the root (bottom-up)&quot;</span>
+        <span class="k">for</span> <span class="n">subtree</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">iter_subtrees</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc</span><span class="p">(</span><span class="n">subtree</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">tree</span>
+
+    <span class="k">def</span> <span class="nf">visit_topdown</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">]:</span>
+        <span class="s2">&quot;Visit the tree, starting at the root, and ending at the leaves (top-down)&quot;</span>
+        <span class="k">for</span> <span class="n">subtree</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">iter_subtrees_topdown</span><span class="p">():</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc</span><span class="p">(</span><span class="n">subtree</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">tree</span>
+
+
+<span class="k">class</span> <span class="nc">Visitor_Recursive</span><span class="p">(</span><span class="n">VisitorBase</span><span class="p">,</span> <span class="n">Generic</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Bottom-up visitor, recursive.</span>
+
+<span class="sd">    Visiting a node calls its methods (provided by the user via inheritance) according to ``tree.data``</span>
+
+<span class="sd">    Slightly faster than the non-recursive version.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">]:</span>
+        <span class="s2">&quot;Visits the tree, starting with the leaves and finally the root (bottom-up)&quot;</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">children</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Tree</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">visit</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">tree</span>
+
+    <span class="k">def</span> <span class="nf">visit_topdown</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">]:</span>
+        <span class="s2">&quot;Visit the tree, starting at the root, and ending at the leaves (top-down)&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_call_userfunc</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">children</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Tree</span><span class="p">):</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">visit_topdown</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">tree</span>
+
+
+<span class="k">class</span> <span class="nc">Interpreter</span><span class="p">(</span><span class="n">_Decoratable</span><span class="p">,</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">Generic</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">,</span> <span class="n">_Return_T</span><span class="p">]):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Interpreter walks the tree starting at the root.</span>
+
+<span class="sd">    Visits the tree, starting with the root and finally the leaves (top-down)</span>
+
+<span class="sd">    For each tree node, it calls its methods (provided by user via inheritance) according to ``tree.data``.</span>
+
+<span class="sd">    Unlike ``Transformer`` and ``Visitor``, the Interpreter doesn&#39;t automatically visit its sub-branches.</span>
+<span class="sd">    The user has to explicitly call ``visit``, ``visit_children``, or use the ``@visit_children_decor``.</span>
+<span class="sd">    This allows the user to implement branching and loops.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">_Return_T</span><span class="p">:</span>
+        <span class="c1"># There are no guarantees on the type of the value produced by calling a user func for a</span>
+        <span class="c1"># child will produce. So only annotate the public method and use an internal method when</span>
+        <span class="c1"># visiting child trees.</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_visit_tree</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">_visit_tree</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">]):</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="n">wrapper</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="s1">&#39;visit_wrapper&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">wrapper</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">f</span><span class="o">.</span><span class="n">visit_wrapper</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">children</span><span class="p">,</span> <span class="n">tree</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">visit_children</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="n">Tree</span><span class="p">[</span><span class="n">_Leaf_T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_visit_tree</span><span class="p">(</span><span class="n">child</span><span class="p">)</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">child</span><span class="p">,</span> <span class="n">Tree</span><span class="p">)</span> <span class="k">else</span> <span class="n">child</span>
+                <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">tree</span><span class="o">.</span><span class="n">children</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__getattr__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__default__</span>
+
+    <span class="k">def</span> <span class="nf">__default__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">visit_children</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+
+
+<span class="n">_InterMethod</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">Type</span><span class="p">[</span><span class="n">Interpreter</span><span class="p">],</span> <span class="n">_Return_T</span><span class="p">],</span> <span class="n">_R</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">visit_children_decor</span><span class="p">(</span><span class="n">func</span><span class="p">:</span> <span class="n">_InterMethod</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">_InterMethod</span><span class="p">:</span>
+    <span class="s2">&quot;See Interpreter&quot;</span>
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">tree</span><span class="p">):</span>
+        <span class="n">values</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">visit_children</span><span class="p">(</span><span class="n">tree</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">inner</span>
+
+<span class="c1"># Decorators</span>
+
+<span class="k">def</span> <span class="nf">_apply_v_args</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">visit_wrapper</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">_apply</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">_apply_v_args</span>
+    <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">_VArgsWrapper</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">visit_wrapper</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">_apply</span><span class="p">(</span><span class="n">visit_wrapper</span><span class="p">)</span>
+
+
+<span class="k">class</span> <span class="nc">_VArgsWrapper</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A wrapper around a Callable. It delegates `__call__` to the Callable.</span>
+<span class="sd">    If the Callable has a `__get__`, that is also delegate and the resulting function is wrapped.</span>
+<span class="sd">    Otherwise, we use the original function mirroring the behaviour without a __get__.</span>
+<span class="sd">    We also have the visit_wrapper attribute to be used by Transformers.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">base_func</span><span class="p">:</span> <span class="n">Callable</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">func</span><span class="p">:</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">visit_wrapper</span><span class="p">:</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">Callable</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">Any</span><span class="p">]):</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">_VArgsWrapper</span><span class="p">):</span>
+            <span class="n">func</span> <span class="o">=</span> <span class="n">func</span><span class="o">.</span><span class="n">base_func</span>
+        <span class="c1"># https://github.com/python/mypy/issues/708</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_func</span> <span class="o">=</span> <span class="n">func</span>  <span class="c1"># type: ignore[assignment]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">visit_wrapper</span> <span class="o">=</span> <span class="n">visit_wrapper</span>
+        <span class="n">update_wrapper</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">func</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">owner</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Use the __get__ attribute of the type instead of the instance</span>
+            <span class="c1"># to fully mirror the behavior of getattr</span>
+            <span class="n">g</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_func</span><span class="p">)</span><span class="o">.</span><span class="fm">__get__</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">_VArgsWrapper</span><span class="p">(</span><span class="n">g</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_func</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">owner</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">visit_wrapper</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__set_name__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">owner</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_func</span><span class="p">)</span><span class="o">.</span><span class="n">__set_name__</span>
+        <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">f</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_func</span><span class="p">,</span> <span class="n">owner</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_vargs_inline</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">_data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">_meta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="o">*</span><span class="n">children</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">_vargs_meta_inline</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">_data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">meta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">meta</span><span class="p">,</span> <span class="o">*</span><span class="n">children</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">_vargs_meta</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">_data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">meta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">meta</span><span class="p">,</span> <span class="n">children</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">_vargs_tree</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">meta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">Tree</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">meta</span><span class="p">))</span>
+
+
+<span class="k">def</span> <span class="nf">v_args</span><span class="p">(</span><span class="n">inline</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">meta</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">tree</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">wrapper</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">_DECORATED</span><span class="p">],</span> <span class="n">_DECORATED</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;A convenience decorator factory for modifying the behavior of user-supplied visitor methods.</span>
+
+<span class="sd">    By default, callback methods of transformers/visitors accept one argument - a list of the node&#39;s children.</span>
+
+<span class="sd">    ``v_args`` can modify this behavior. When used on a transformer/visitor class definition,</span>
+<span class="sd">    it applies to all the callback methods inside it.</span>
+
+<span class="sd">    ``v_args`` can be applied to a single method, or to an entire class. When applied to both,</span>
+<span class="sd">    the options given to the method take precedence.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">        inline (bool, optional): Children are provided as ``*args`` instead of a list argument (not recommended for very long lists).</span>
+<span class="sd">        meta (bool, optional): Provides two arguments: ``meta`` and ``children`` (instead of just the latter)</span>
+<span class="sd">        tree (bool, optional): Provides the entire tree as the argument, instead of the children.</span>
+<span class="sd">        wrapper (function, optional): Provide a function to decorate all methods.</span>
+
+<span class="sd">    Example:</span>
+<span class="sd">        ::</span>
+
+<span class="sd">            @v_args(inline=True)</span>
+<span class="sd">            class SolveArith(Transformer):</span>
+<span class="sd">                def add(self, left, right):</span>
+<span class="sd">                    return left + right</span>
+
+<span class="sd">                @v_args(meta=True)</span>
+<span class="sd">                def mul(self, meta, children):</span>
+<span class="sd">                    logger.info(f&#39;mul at line {meta.line}&#39;)</span>
+<span class="sd">                    left, right = children</span>
+<span class="sd">                    return left * right</span>
+
+
+<span class="sd">            class ReverseNotation(Transformer_InPlace):</span>
+<span class="sd">                @v_args(tree=True)</span>
+<span class="sd">                def tree_node(self, tree):</span>
+<span class="sd">                    tree.children = tree.children[::-1]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">tree</span> <span class="ow">and</span> <span class="p">(</span><span class="n">meta</span> <span class="ow">or</span> <span class="n">inline</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Visitor functions cannot combine &#39;tree&#39; with &#39;meta&#39; or &#39;inline&#39;.&quot;</span><span class="p">)</span>
+
+    <span class="n">func</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">if</span> <span class="n">meta</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">inline</span><span class="p">:</span>
+            <span class="n">func</span> <span class="o">=</span> <span class="n">_vargs_meta_inline</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">func</span> <span class="o">=</span> <span class="n">_vargs_meta</span>
+    <span class="k">elif</span> <span class="n">inline</span><span class="p">:</span>
+        <span class="n">func</span> <span class="o">=</span> <span class="n">_vargs_inline</span>
+    <span class="k">elif</span> <span class="n">tree</span><span class="p">:</span>
+        <span class="n">func</span> <span class="o">=</span> <span class="n">_vargs_tree</span>
+
+    <span class="k">if</span> <span class="n">wrapper</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">func</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Cannot use &#39;wrapper&#39; along with &#39;tree&#39;, &#39;meta&#39; or &#39;inline&#39;.&quot;</span><span class="p">)</span>
+        <span class="n">func</span> <span class="o">=</span> <span class="n">wrapper</span>
+
+    <span class="k">def</span> <span class="nf">_visitor_args_dec</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">_apply_v_args</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">func</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">_visitor_args_dec</span>
+
+
+<span class="c1">###}</span>
+
+
+<span class="c1"># --- Visitor Utilities ---</span>
+
+<span class="k">class</span> <span class="nc">CollapseAmbiguities</span><span class="p">(</span><span class="n">Transformer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Transforms a tree that contains any number of _ambig nodes into a list of trees,</span>
+<span class="sd">    each one containing an unambiguous tree.</span>
+
+<span class="sd">    The length of the resulting list is the product of the length of all _ambig nodes.</span>
+
+<span class="sd">    Warning: This may quickly explode for highly ambiguous trees.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">_ambig</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="p">[])</span>
+
+    <span class="k">def</span> <span class="nf">__default__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">children_lists</span><span class="p">,</span> <span class="n">meta</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">Tree</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">children</span><span class="p">,</span> <span class="n">meta</span><span class="p">)</span> <span class="k">for</span> <span class="n">children</span> <span class="ow">in</span> <span class="n">combine_alternatives</span><span class="p">(</span><span class="n">children_lists</span><span class="p">)]</span>
+
+    <span class="k">def</span> <span class="nf">__default_token__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">t</span><span class="p">]</span>
+</pre></div>
+
+      </div>
+    <div class="container">
+      <footer class="sk-content-footer">
+            &copy; 2023, LangChain, Inc..
+          Last updated on Feb 13, 2024.
+      </footer>
+    </div>
+  </div>
+</div>
+<script src="../../_static/js/vendor/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+    /* Add a [>>>] button on the top-right corner of code samples to hide
+     * the >>> and ... prompts and the output and thus make the code
+     * copyable. */
+    var div = $('.highlight-python .highlight,' +
+                '.highlight-python3 .highlight,' +
+                '.highlight-pycon .highlight,' +
+		'.highlight-default .highlight')
+    var pre = div.find('pre');
+
+    // get the styles from the current theme
+    pre.parent().parent().css('position', 'relative');
+    var hide_text = 'Hide prompts and outputs';
+    var show_text = 'Show prompts and outputs';
+
+    // create and add the button to all the code blocks that contain >>>
+    div.each(function(index) {
+        var jthis = $(this);
+        if (jthis.find('.gp').length > 0) {
+            var button = $('<span class="copybutton">&gt;&gt;&gt;</span>');
+            button.attr('title', hide_text);
+            button.data('hidden', 'false');
+            jthis.prepend(button);
+        }
+        // tracebacks (.gt) contain bare text elements that need to be
+        // wrapped in a span to work with .nextUntil() (see later)
+        jthis.find('pre:has(.gt)').contents().filter(function() {
+            return ((this.nodeType == 3) && (this.data.trim().length > 0));
+        }).wrap('<span>');
+    });
+
+    // define the behavior of the button when it's clicked
+    $('.copybutton').click(function(e){
+        e.preventDefault();
+        var button = $(this);
+        if (button.data('hidden') === 'false') {
+            // hide the code output
+            button.parent().find('.go, .gp, .gt').hide();
+            button.next('pre').find('.gt').nextUntil('.gp, .go').css('visibility', 'hidden');
+            button.css('text-decoration', 'line-through');
+            button.attr('title', show_text);
+            button.data('hidden', 'true');
+        } else {
+            // show the code output
+            button.parent().find('.go, .gp, .gt').show();
+            button.next('pre').find('.gt').nextUntil('.gp, .go').css('visibility', 'visible');
+            button.css('text-decoration', 'none');
+            button.attr('title', hide_text);
+            button.data('hidden', 'false');
+        }
+    });
+
+	/*** Add permalink buttons next to glossary terms ***/
+	$('dl.glossary > dt[id]').append(function() {
+		return ('<a class="headerlink" href="#' +
+			    this.getAttribute('id') +
+			    '" title="Permalink to this term">¶</a>');
+	});
+});
+
+</script>
+    
+</body>
+</html>

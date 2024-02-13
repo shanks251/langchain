@@ -1,0 +1,16 @@
+﻿:mod:`langchain_google_genai.llms`.GoogleModelFamily
+===========================================================
+
+.. currentmodule:: langchain_google_genai.llms
+
+.. autoclass:: GoogleModelFamily
+
+    
+    
+    .. autoattribute:: GEMINI
+    
+    .. autoattribute:: PALM
+    
+    
+
+.. example_links:: GoogleModelFamily

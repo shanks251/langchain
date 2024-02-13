@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.merge`.MergedDataLoader
+=========================================================================
+
+.. currentmodule:: langchain_community.document_loaders.merge
+
+.. autoclass:: MergedDataLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~MergedDataLoader.__init__
+      ~MergedDataLoader.alazy_load
+      ~MergedDataLoader.lazy_load
+      ~MergedDataLoader.load
+      ~MergedDataLoader.load_and_split
+
+   
+   .. automethod:: MergedDataLoader.__init__
+   .. automethod:: MergedDataLoader.alazy_load
+   .. automethod:: MergedDataLoader.lazy_load
+   .. automethod:: MergedDataLoader.load
+   .. automethod:: MergedDataLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: MergedDataLoader

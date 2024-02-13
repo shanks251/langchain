@@ -1,0 +1,33 @@
+.. anthropic_api_reference:
+
+=======================
+``langchain_anthropic`` 0.0.1.post2
+=======================
+
+:mod:`langchain_anthropic.chat_models`
+=======================================
+
+.. automodule:: langchain_anthropic.chat_models
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_anthropic
+
+.. autosummary::
+    :toctree: chat_models
+    :template: pydantic.rst
+    
+    chat_models.ChatAnthropicMessages
+    
+Functions
+--------------
+.. currentmodule:: langchain_anthropic
+
+.. autosummary::
+    :toctree: chat_models
+    :template: function.rst
+
+    
+

@@ -1,0 +1,40 @@
+.. together_api_reference:
+
+=======================
+``langchain_together`` 0.0.2.post2
+=======================
+
+:mod:`langchain_together.embeddings`
+=====================================
+
+.. automodule:: langchain_together.embeddings
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_together
+
+.. autosummary::
+    :toctree: embeddings
+    :template: pydantic.rst
+    
+    embeddings.TogetherEmbeddings
+    
+:mod:`langchain_together.llms`
+===============================
+
+.. automodule:: langchain_together.llms
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_together
+
+.. autosummary::
+    :toctree: llms
+    :template: pydantic.rst
+    
+    llms.Together
+    

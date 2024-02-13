@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.scala`.ScalaSegmenter
+========================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.scala
+
+.. autoclass:: ScalaSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ScalaSegmenter.__init__
+      ~ScalaSegmenter.extract_functions_classes
+      ~ScalaSegmenter.get_chunk_query
+      ~ScalaSegmenter.get_language
+      ~ScalaSegmenter.get_parser
+      ~ScalaSegmenter.is_valid
+      ~ScalaSegmenter.make_line_comment
+      ~ScalaSegmenter.simplify_code
+
+   
+   .. automethod:: ScalaSegmenter.__init__
+   .. automethod:: ScalaSegmenter.extract_functions_classes
+   .. automethod:: ScalaSegmenter.get_chunk_query
+   .. automethod:: ScalaSegmenter.get_language
+   .. automethod:: ScalaSegmenter.get_parser
+   .. automethod:: ScalaSegmenter.is_valid
+   .. automethod:: ScalaSegmenter.make_line_comment
+   .. automethod:: ScalaSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: ScalaSegmenter

@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.java`.JavaSegmenter
+======================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.java
+
+.. autoclass:: JavaSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~JavaSegmenter.__init__
+      ~JavaSegmenter.extract_functions_classes
+      ~JavaSegmenter.get_chunk_query
+      ~JavaSegmenter.get_language
+      ~JavaSegmenter.get_parser
+      ~JavaSegmenter.is_valid
+      ~JavaSegmenter.make_line_comment
+      ~JavaSegmenter.simplify_code
+
+   
+   .. automethod:: JavaSegmenter.__init__
+   .. automethod:: JavaSegmenter.extract_functions_classes
+   .. automethod:: JavaSegmenter.get_chunk_query
+   .. automethod:: JavaSegmenter.get_language
+   .. automethod:: JavaSegmenter.get_parser
+   .. automethod:: JavaSegmenter.is_valid
+   .. automethod:: JavaSegmenter.make_line_comment
+   .. automethod:: JavaSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: JavaSegmenter

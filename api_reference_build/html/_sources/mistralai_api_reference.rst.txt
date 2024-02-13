@@ -1,0 +1,50 @@
+.. mistralai_api_reference:
+
+=======================
+``langchain_mistralai`` 0.0.4
+=======================
+
+:mod:`langchain_mistralai.chat_models`
+=======================================
+
+.. automodule:: langchain_mistralai.chat_models
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_mistralai
+
+.. autosummary::
+    :toctree: chat_models
+    :template: pydantic.rst
+    
+    chat_models.ChatMistralAI
+    
+Functions
+--------------
+.. currentmodule:: langchain_mistralai
+
+.. autosummary::
+    :toctree: chat_models
+    :template: function.rst
+
+    chat_models.acompletion_with_retry
+
+:mod:`langchain_mistralai.embeddings`
+======================================
+
+.. automodule:: langchain_mistralai.embeddings
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_mistralai
+
+.. autosummary::
+    :toctree: embeddings
+    :template: pydantic.rst
+    
+    embeddings.MistralAIEmbeddings
+    

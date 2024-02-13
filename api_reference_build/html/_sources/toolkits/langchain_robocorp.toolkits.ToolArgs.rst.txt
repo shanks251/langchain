@@ -1,0 +1,18 @@
+﻿:mod:`langchain_robocorp.toolkits`.ToolArgs
+==================================================
+
+.. currentmodule:: langchain_robocorp.toolkits
+
+.. autoclass:: ToolArgs
+
+    
+   
+  .. autoattribute:: name
+   
+  .. autoattribute:: description
+   
+  .. autoattribute:: callback_manager
+   
+   
+
+.. example_links:: ToolArgs

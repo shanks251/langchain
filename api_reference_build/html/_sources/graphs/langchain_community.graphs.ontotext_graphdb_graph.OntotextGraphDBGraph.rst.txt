@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.graphs.ontotext_graphdb_graph`.OntotextGraphDBGraph
+====================================================================================
+
+.. currentmodule:: langchain_community.graphs.ontotext_graphdb_graph
+
+.. autoclass:: OntotextGraphDBGraph
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~OntotextGraphDBGraph.get_schema
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~OntotextGraphDBGraph.__init__
+      ~OntotextGraphDBGraph.query
+
+   
+   .. automethod:: OntotextGraphDBGraph.__init__
+   .. automethod:: OntotextGraphDBGraph.query
+
+   
+   
+
+
+.. example_links:: OntotextGraphDBGraph

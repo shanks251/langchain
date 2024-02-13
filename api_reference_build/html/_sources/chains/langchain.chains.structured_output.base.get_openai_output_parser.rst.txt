@@ -1,0 +1,8 @@
+﻿:mod:`langchain.chains.structured_output.base`.get_openai_output_parser
+==============================================================================
+
+.. currentmodule:: langchain.chains.structured_output.base
+
+.. autofunction:: get_openai_output_parser
+
+.. example_links:: get_openai_output_parser

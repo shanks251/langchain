@@ -1,0 +1,56 @@
+﻿:mod:`langchain_core.prompt_values`.ImageURL
+===================================================
+
+.. currentmodule:: langchain_core.prompt_values
+
+.. autoclass:: ImageURL
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ImageURL.detail
+      ~ImageURL.url
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ImageURL.__init__
+      ~ImageURL.clear
+      ~ImageURL.copy
+      ~ImageURL.fromkeys
+      ~ImageURL.get
+      ~ImageURL.items
+      ~ImageURL.keys
+      ~ImageURL.pop
+      ~ImageURL.popitem
+      ~ImageURL.setdefault
+      ~ImageURL.update
+      ~ImageURL.values
+
+   
+   .. automethod:: ImageURL.__init__
+   .. automethod:: ImageURL.clear
+   .. automethod:: ImageURL.copy
+   .. automethod:: ImageURL.fromkeys
+   .. automethod:: ImageURL.get
+   .. automethod:: ImageURL.items
+   .. automethod:: ImageURL.keys
+   .. automethod:: ImageURL.pop
+   .. automethod:: ImageURL.popitem
+   .. automethod:: ImageURL.setdefault
+   .. automethod:: ImageURL.update
+   .. automethod:: ImageURL.values
+
+   
+   
+
+
+.. example_links:: ImageURL

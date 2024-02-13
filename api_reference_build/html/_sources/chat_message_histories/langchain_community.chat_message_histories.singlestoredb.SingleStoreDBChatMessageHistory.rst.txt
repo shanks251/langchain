@@ -1,0 +1,49 @@
+﻿:mod:`langchain_community.chat_message_histories.singlestoredb`.SingleStoreDBChatMessageHistory
+======================================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.singlestoredb
+
+.. autoclass:: SingleStoreDBChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~SingleStoreDBChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SingleStoreDBChatMessageHistory.__init__
+      ~SingleStoreDBChatMessageHistory.aadd_messages
+      ~SingleStoreDBChatMessageHistory.aclear
+      ~SingleStoreDBChatMessageHistory.add_ai_message
+      ~SingleStoreDBChatMessageHistory.add_message
+      ~SingleStoreDBChatMessageHistory.add_messages
+      ~SingleStoreDBChatMessageHistory.add_user_message
+      ~SingleStoreDBChatMessageHistory.aget_messages
+      ~SingleStoreDBChatMessageHistory.clear
+
+   
+   .. automethod:: SingleStoreDBChatMessageHistory.__init__
+   .. automethod:: SingleStoreDBChatMessageHistory.aadd_messages
+   .. automethod:: SingleStoreDBChatMessageHistory.aclear
+   .. automethod:: SingleStoreDBChatMessageHistory.add_ai_message
+   .. automethod:: SingleStoreDBChatMessageHistory.add_message
+   .. automethod:: SingleStoreDBChatMessageHistory.add_messages
+   .. automethod:: SingleStoreDBChatMessageHistory.add_user_message
+   .. automethod:: SingleStoreDBChatMessageHistory.aget_messages
+   .. automethod:: SingleStoreDBChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: SingleStoreDBChatMessageHistory

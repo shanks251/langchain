@@ -1,0 +1,49 @@
+﻿:mod:`langchain_community.chat_message_histories.cassandra`.CassandraChatMessageHistory
+==============================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.cassandra
+
+.. autoclass:: CassandraChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~CassandraChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CassandraChatMessageHistory.__init__
+      ~CassandraChatMessageHistory.aadd_messages
+      ~CassandraChatMessageHistory.aclear
+      ~CassandraChatMessageHistory.add_ai_message
+      ~CassandraChatMessageHistory.add_message
+      ~CassandraChatMessageHistory.add_messages
+      ~CassandraChatMessageHistory.add_user_message
+      ~CassandraChatMessageHistory.aget_messages
+      ~CassandraChatMessageHistory.clear
+
+   
+   .. automethod:: CassandraChatMessageHistory.__init__
+   .. automethod:: CassandraChatMessageHistory.aadd_messages
+   .. automethod:: CassandraChatMessageHistory.aclear
+   .. automethod:: CassandraChatMessageHistory.add_ai_message
+   .. automethod:: CassandraChatMessageHistory.add_message
+   .. automethod:: CassandraChatMessageHistory.add_messages
+   .. automethod:: CassandraChatMessageHistory.add_user_message
+   .. automethod:: CassandraChatMessageHistory.aget_messages
+   .. automethod:: CassandraChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: CassandraChatMessageHistory

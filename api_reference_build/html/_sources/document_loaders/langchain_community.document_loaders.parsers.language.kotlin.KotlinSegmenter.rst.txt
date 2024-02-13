@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.kotlin`.KotlinSegmenter
+==========================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.kotlin
+
+.. autoclass:: KotlinSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~KotlinSegmenter.__init__
+      ~KotlinSegmenter.extract_functions_classes
+      ~KotlinSegmenter.get_chunk_query
+      ~KotlinSegmenter.get_language
+      ~KotlinSegmenter.get_parser
+      ~KotlinSegmenter.is_valid
+      ~KotlinSegmenter.make_line_comment
+      ~KotlinSegmenter.simplify_code
+
+   
+   .. automethod:: KotlinSegmenter.__init__
+   .. automethod:: KotlinSegmenter.extract_functions_classes
+   .. automethod:: KotlinSegmenter.get_chunk_query
+   .. automethod:: KotlinSegmenter.get_language
+   .. automethod:: KotlinSegmenter.get_parser
+   .. automethod:: KotlinSegmenter.is_valid
+   .. automethod:: KotlinSegmenter.make_line_comment
+   .. automethod:: KotlinSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: KotlinSegmenter

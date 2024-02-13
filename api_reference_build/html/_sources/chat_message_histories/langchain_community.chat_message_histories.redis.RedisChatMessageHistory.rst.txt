@@ -1,0 +1,50 @@
+﻿:mod:`langchain_community.chat_message_histories.redis`.RedisChatMessageHistory
+======================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.redis
+
+.. autoclass:: RedisChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~RedisChatMessageHistory.key
+      ~RedisChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~RedisChatMessageHistory.__init__
+      ~RedisChatMessageHistory.aadd_messages
+      ~RedisChatMessageHistory.aclear
+      ~RedisChatMessageHistory.add_ai_message
+      ~RedisChatMessageHistory.add_message
+      ~RedisChatMessageHistory.add_messages
+      ~RedisChatMessageHistory.add_user_message
+      ~RedisChatMessageHistory.aget_messages
+      ~RedisChatMessageHistory.clear
+
+   
+   .. automethod:: RedisChatMessageHistory.__init__
+   .. automethod:: RedisChatMessageHistory.aadd_messages
+   .. automethod:: RedisChatMessageHistory.aclear
+   .. automethod:: RedisChatMessageHistory.add_ai_message
+   .. automethod:: RedisChatMessageHistory.add_message
+   .. automethod:: RedisChatMessageHistory.add_messages
+   .. automethod:: RedisChatMessageHistory.add_user_message
+   .. automethod:: RedisChatMessageHistory.aget_messages
+   .. automethod:: RedisChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: RedisChatMessageHistory

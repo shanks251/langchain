@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.rust`.RustSegmenter
+======================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.rust
+
+.. autoclass:: RustSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~RustSegmenter.__init__
+      ~RustSegmenter.extract_functions_classes
+      ~RustSegmenter.get_chunk_query
+      ~RustSegmenter.get_language
+      ~RustSegmenter.get_parser
+      ~RustSegmenter.is_valid
+      ~RustSegmenter.make_line_comment
+      ~RustSegmenter.simplify_code
+
+   
+   .. automethod:: RustSegmenter.__init__
+   .. automethod:: RustSegmenter.extract_functions_classes
+   .. automethod:: RustSegmenter.get_chunk_query
+   .. automethod:: RustSegmenter.get_language
+   .. automethod:: RustSegmenter.get_parser
+   .. automethod:: RustSegmenter.is_valid
+   .. automethod:: RustSegmenter.make_line_comment
+   .. automethod:: RustSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: RustSegmenter

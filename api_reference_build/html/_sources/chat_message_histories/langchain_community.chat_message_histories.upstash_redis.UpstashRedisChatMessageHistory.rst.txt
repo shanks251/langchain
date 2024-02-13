@@ -1,0 +1,50 @@
+﻿:mod:`langchain_community.chat_message_histories.upstash_redis`.UpstashRedisChatMessageHistory
+=====================================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.upstash_redis
+
+.. autoclass:: UpstashRedisChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~UpstashRedisChatMessageHistory.key
+      ~UpstashRedisChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~UpstashRedisChatMessageHistory.__init__
+      ~UpstashRedisChatMessageHistory.aadd_messages
+      ~UpstashRedisChatMessageHistory.aclear
+      ~UpstashRedisChatMessageHistory.add_ai_message
+      ~UpstashRedisChatMessageHistory.add_message
+      ~UpstashRedisChatMessageHistory.add_messages
+      ~UpstashRedisChatMessageHistory.add_user_message
+      ~UpstashRedisChatMessageHistory.aget_messages
+      ~UpstashRedisChatMessageHistory.clear
+
+   
+   .. automethod:: UpstashRedisChatMessageHistory.__init__
+   .. automethod:: UpstashRedisChatMessageHistory.aadd_messages
+   .. automethod:: UpstashRedisChatMessageHistory.aclear
+   .. automethod:: UpstashRedisChatMessageHistory.add_ai_message
+   .. automethod:: UpstashRedisChatMessageHistory.add_message
+   .. automethod:: UpstashRedisChatMessageHistory.add_messages
+   .. automethod:: UpstashRedisChatMessageHistory.add_user_message
+   .. automethod:: UpstashRedisChatMessageHistory.aget_messages
+   .. automethod:: UpstashRedisChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: UpstashRedisChatMessageHistory

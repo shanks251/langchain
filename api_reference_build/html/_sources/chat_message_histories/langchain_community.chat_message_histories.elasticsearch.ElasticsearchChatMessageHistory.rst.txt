@@ -1,0 +1,53 @@
+﻿:mod:`langchain_community.chat_message_histories.elasticsearch`.ElasticsearchChatMessageHistory
+======================================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.elasticsearch
+
+.. autoclass:: ElasticsearchChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ElasticsearchChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ElasticsearchChatMessageHistory.__init__
+      ~ElasticsearchChatMessageHistory.aadd_messages
+      ~ElasticsearchChatMessageHistory.aclear
+      ~ElasticsearchChatMessageHistory.add_ai_message
+      ~ElasticsearchChatMessageHistory.add_message
+      ~ElasticsearchChatMessageHistory.add_messages
+      ~ElasticsearchChatMessageHistory.add_user_message
+      ~ElasticsearchChatMessageHistory.aget_messages
+      ~ElasticsearchChatMessageHistory.clear
+      ~ElasticsearchChatMessageHistory.connect_to_elasticsearch
+      ~ElasticsearchChatMessageHistory.get_user_agent
+
+   
+   .. automethod:: ElasticsearchChatMessageHistory.__init__
+   .. automethod:: ElasticsearchChatMessageHistory.aadd_messages
+   .. automethod:: ElasticsearchChatMessageHistory.aclear
+   .. automethod:: ElasticsearchChatMessageHistory.add_ai_message
+   .. automethod:: ElasticsearchChatMessageHistory.add_message
+   .. automethod:: ElasticsearchChatMessageHistory.add_messages
+   .. automethod:: ElasticsearchChatMessageHistory.add_user_message
+   .. automethod:: ElasticsearchChatMessageHistory.aget_messages
+   .. automethod:: ElasticsearchChatMessageHistory.clear
+   .. automethod:: ElasticsearchChatMessageHistory.connect_to_elasticsearch
+   .. automethod:: ElasticsearchChatMessageHistory.get_user_agent
+
+   
+   
+
+
+.. example_links:: ElasticsearchChatMessageHistory

@@ -1,0 +1,39 @@
+﻿:mod:`langchain_community.cache`.UpstashRedisCache
+=========================================================
+
+.. currentmodule:: langchain_community.cache
+
+.. autoclass:: UpstashRedisCache
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~UpstashRedisCache.__init__
+      ~UpstashRedisCache.aclear
+      ~UpstashRedisCache.alookup
+      ~UpstashRedisCache.aupdate
+      ~UpstashRedisCache.clear
+      ~UpstashRedisCache.lookup
+      ~UpstashRedisCache.update
+
+   
+   .. automethod:: UpstashRedisCache.__init__
+   .. automethod:: UpstashRedisCache.aclear
+   .. automethod:: UpstashRedisCache.alookup
+   .. automethod:: UpstashRedisCache.aupdate
+   .. automethod:: UpstashRedisCache.clear
+   .. automethod:: UpstashRedisCache.lookup
+   .. automethod:: UpstashRedisCache.update
+
+   
+   
+
+
+.. example_links:: UpstashRedisCache

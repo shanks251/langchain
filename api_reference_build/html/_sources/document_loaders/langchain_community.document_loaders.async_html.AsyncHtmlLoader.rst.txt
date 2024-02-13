@@ -1,0 +1,37 @@
+﻿:mod:`langchain_community.document_loaders.async_html`.AsyncHtmlLoader
+=============================================================================
+
+.. currentmodule:: langchain_community.document_loaders.async_html
+
+.. autoclass:: AsyncHtmlLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AsyncHtmlLoader.__init__
+      ~AsyncHtmlLoader.alazy_load
+      ~AsyncHtmlLoader.fetch_all
+      ~AsyncHtmlLoader.lazy_load
+      ~AsyncHtmlLoader.load
+      ~AsyncHtmlLoader.load_and_split
+
+   
+   .. automethod:: AsyncHtmlLoader.__init__
+   .. automethod:: AsyncHtmlLoader.alazy_load
+   .. automethod:: AsyncHtmlLoader.fetch_all
+   .. automethod:: AsyncHtmlLoader.lazy_load
+   .. automethod:: AsyncHtmlLoader.load
+   .. automethod:: AsyncHtmlLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: AsyncHtmlLoader

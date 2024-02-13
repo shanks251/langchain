@@ -1,0 +1,8 @@
+﻿:mod:`langchain_experimental.text_splitter`.calculate_cosine_distances
+=============================================================================
+
+.. currentmodule:: langchain_experimental.text_splitter
+
+.. autofunction:: calculate_cosine_distances
+
+.. example_links:: calculate_cosine_distances

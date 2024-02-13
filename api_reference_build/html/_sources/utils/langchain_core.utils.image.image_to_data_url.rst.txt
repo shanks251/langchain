@@ -1,0 +1,8 @@
+﻿:mod:`langchain_core.utils.image`.image_to_data_url
+==========================================================
+
+.. currentmodule:: langchain_core.utils.image
+
+.. autofunction:: image_to_data_url
+
+.. example_links:: image_to_data_url

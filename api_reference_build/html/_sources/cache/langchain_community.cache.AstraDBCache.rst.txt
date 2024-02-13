@@ -1,0 +1,43 @@
+﻿:mod:`langchain_community.cache`.AstraDBCache
+====================================================
+
+.. currentmodule:: langchain_community.cache
+
+.. autoclass:: AstraDBCache
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AstraDBCache.__init__
+      ~AstraDBCache.aclear
+      ~AstraDBCache.alookup
+      ~AstraDBCache.aupdate
+      ~AstraDBCache.clear
+      ~AstraDBCache.delete
+      ~AstraDBCache.delete_through_llm
+      ~AstraDBCache.lookup
+      ~AstraDBCache.update
+
+   
+   .. automethod:: AstraDBCache.__init__
+   .. automethod:: AstraDBCache.aclear
+   .. automethod:: AstraDBCache.alookup
+   .. automethod:: AstraDBCache.aupdate
+   .. automethod:: AstraDBCache.clear
+   .. automethod:: AstraDBCache.delete
+   .. automethod:: AstraDBCache.delete_through_llm
+   .. automethod:: AstraDBCache.lookup
+   .. automethod:: AstraDBCache.update
+
+   
+   
+
+
+.. example_links:: AstraDBCache

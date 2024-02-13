@@ -1,0 +1,37 @@
+﻿:mod:`langchain_nomic.embeddings`.NomicEmbeddings
+========================================================
+
+.. currentmodule:: langchain_nomic.embeddings
+
+.. autoclass:: NomicEmbeddings
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~NomicEmbeddings.__init__
+      ~NomicEmbeddings.aembed_documents
+      ~NomicEmbeddings.aembed_query
+      ~NomicEmbeddings.embed
+      ~NomicEmbeddings.embed_documents
+      ~NomicEmbeddings.embed_query
+
+   
+   .. automethod:: NomicEmbeddings.__init__
+   .. automethod:: NomicEmbeddings.aembed_documents
+   .. automethod:: NomicEmbeddings.aembed_query
+   .. automethod:: NomicEmbeddings.embed
+   .. automethod:: NomicEmbeddings.embed_documents
+   .. automethod:: NomicEmbeddings.embed_query
+
+   
+   
+
+
+.. example_links:: NomicEmbeddings

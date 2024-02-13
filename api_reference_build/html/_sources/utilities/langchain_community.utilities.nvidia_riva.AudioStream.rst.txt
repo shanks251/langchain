@@ -1,0 +1,50 @@
+﻿:mod:`langchain_community.utilities.nvidia_riva`.AudioStream
+===================================================================
+
+.. currentmodule:: langchain_community.utilities.nvidia_riva
+
+.. autoclass:: AudioStream
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AudioStream.complete
+      ~AudioStream.empty
+      ~AudioStream.hungup
+      ~AudioStream.running
+      ~AudioStream.output
+      ~AudioStream.hangup
+      ~AudioStream.user_talking
+      ~AudioStream.user_quiet
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AudioStream.__init__
+      ~AudioStream.aclose
+      ~AudioStream.aput
+      ~AudioStream.close
+      ~AudioStream.put
+      ~AudioStream.register
+
+   
+   .. automethod:: AudioStream.__init__
+   .. automethod:: AudioStream.aclose
+   .. automethod:: AudioStream.aput
+   .. automethod:: AudioStream.close
+   .. automethod:: AudioStream.put
+   .. automethod:: AudioStream.register
+
+   
+   
+
+
+.. example_links:: AudioStream

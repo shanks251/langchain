@@ -1,0 +1,49 @@
+﻿:mod:`langchain_community.chat_message_histories.sql`.SQLChatMessageHistory
+==================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.sql
+
+.. autoclass:: SQLChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~SQLChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SQLChatMessageHistory.__init__
+      ~SQLChatMessageHistory.aadd_messages
+      ~SQLChatMessageHistory.aclear
+      ~SQLChatMessageHistory.add_ai_message
+      ~SQLChatMessageHistory.add_message
+      ~SQLChatMessageHistory.add_messages
+      ~SQLChatMessageHistory.add_user_message
+      ~SQLChatMessageHistory.aget_messages
+      ~SQLChatMessageHistory.clear
+
+   
+   .. automethod:: SQLChatMessageHistory.__init__
+   .. automethod:: SQLChatMessageHistory.aadd_messages
+   .. automethod:: SQLChatMessageHistory.aclear
+   .. automethod:: SQLChatMessageHistory.add_ai_message
+   .. automethod:: SQLChatMessageHistory.add_message
+   .. automethod:: SQLChatMessageHistory.add_messages
+   .. automethod:: SQLChatMessageHistory.add_user_message
+   .. automethod:: SQLChatMessageHistory.aget_messages
+   .. automethod:: SQLChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: SQLChatMessageHistory

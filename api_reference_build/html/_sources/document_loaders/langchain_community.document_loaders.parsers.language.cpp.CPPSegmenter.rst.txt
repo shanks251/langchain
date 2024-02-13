@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.cpp`.CPPSegmenter
+====================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.cpp
+
+.. autoclass:: CPPSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~CPPSegmenter.__init__
+      ~CPPSegmenter.extract_functions_classes
+      ~CPPSegmenter.get_chunk_query
+      ~CPPSegmenter.get_language
+      ~CPPSegmenter.get_parser
+      ~CPPSegmenter.is_valid
+      ~CPPSegmenter.make_line_comment
+      ~CPPSegmenter.simplify_code
+
+   
+   .. automethod:: CPPSegmenter.__init__
+   .. automethod:: CPPSegmenter.extract_functions_classes
+   .. automethod:: CPPSegmenter.get_chunk_query
+   .. automethod:: CPPSegmenter.get_language
+   .. automethod:: CPPSegmenter.get_parser
+   .. automethod:: CPPSegmenter.is_valid
+   .. automethod:: CPPSegmenter.make_line_comment
+   .. automethod:: CPPSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: CPPSegmenter

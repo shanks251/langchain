@@ -1,0 +1,8 @@
+﻿:mod:`langchain_core.language_models.llms`.aupdate_cache
+===============================================================
+
+.. currentmodule:: langchain_core.language_models.llms
+
+.. autofunction:: aupdate_cache
+
+.. example_links:: aupdate_cache

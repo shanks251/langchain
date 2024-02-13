@@ -1,0 +1,38 @@
+﻿:mod:`langchain_community.graphs.neptune_rdf_graph`.NeptuneRdfGraph
+==========================================================================
+
+.. currentmodule:: langchain_community.graphs.neptune_rdf_graph
+
+.. autoclass:: NeptuneRdfGraph
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~NeptuneRdfGraph.get_schema
+      ~NeptuneRdfGraph.get_schema_elements
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~NeptuneRdfGraph.__init__
+      ~NeptuneRdfGraph.load_schema
+      ~NeptuneRdfGraph.query
+
+   
+   .. automethod:: NeptuneRdfGraph.__init__
+   .. automethod:: NeptuneRdfGraph.load_schema
+   .. automethod:: NeptuneRdfGraph.query
+
+   
+   
+
+
+.. example_links:: NeptuneRdfGraph

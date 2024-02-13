@@ -1,0 +1,8 @@
+﻿:mod:`langchain_core.callbacks.manager`.shielded
+=======================================================
+
+.. currentmodule:: langchain_core.callbacks.manager
+
+.. autofunction:: shielded
+
+.. example_links:: shielded

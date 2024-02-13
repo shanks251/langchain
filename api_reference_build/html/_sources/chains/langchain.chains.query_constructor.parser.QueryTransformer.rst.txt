@@ -1,0 +1,49 @@
+﻿:mod:`langchain.chains.query_constructor.parser`.QueryTransformer
+========================================================================
+
+.. currentmodule:: langchain.chains.query_constructor.parser
+
+.. autoclass:: QueryTransformer
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~QueryTransformer.__init__
+      ~QueryTransformer.args
+      ~QueryTransformer.date
+      ~QueryTransformer.false
+      ~QueryTransformer.float
+      ~QueryTransformer.func_call
+      ~QueryTransformer.int
+      ~QueryTransformer.list
+      ~QueryTransformer.program
+      ~QueryTransformer.string
+      ~QueryTransformer.transform
+      ~QueryTransformer.true
+
+   
+   .. automethod:: QueryTransformer.__init__
+   .. automethod:: QueryTransformer.args
+   .. automethod:: QueryTransformer.date
+   .. automethod:: QueryTransformer.false
+   .. automethod:: QueryTransformer.float
+   .. automethod:: QueryTransformer.func_call
+   .. automethod:: QueryTransformer.int
+   .. automethod:: QueryTransformer.list
+   .. automethod:: QueryTransformer.program
+   .. automethod:: QueryTransformer.string
+   .. automethod:: QueryTransformer.transform
+   .. automethod:: QueryTransformer.true
+
+   
+   
+
+
+.. example_links:: QueryTransformer

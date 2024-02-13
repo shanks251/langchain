@@ -1,0 +1,50 @@
+﻿:mod:`langchain_community.utilities.nvidia_riva`.ASRInputType
+====================================================================
+
+.. currentmodule:: langchain_community.utilities.nvidia_riva
+
+.. autoclass:: ASRInputType
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ASRInputType.complete
+      ~ASRInputType.empty
+      ~ASRInputType.hungup
+      ~ASRInputType.running
+      ~ASRInputType.output
+      ~ASRInputType.hangup
+      ~ASRInputType.user_talking
+      ~ASRInputType.user_quiet
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ASRInputType.__init__
+      ~ASRInputType.aclose
+      ~ASRInputType.aput
+      ~ASRInputType.close
+      ~ASRInputType.put
+      ~ASRInputType.register
+
+   
+   .. automethod:: ASRInputType.__init__
+   .. automethod:: ASRInputType.aclose
+   .. automethod:: ASRInputType.aput
+   .. automethod:: ASRInputType.close
+   .. automethod:: ASRInputType.put
+   .. automethod:: ASRInputType.register
+
+   
+   
+
+
+.. example_links:: ASRInputType

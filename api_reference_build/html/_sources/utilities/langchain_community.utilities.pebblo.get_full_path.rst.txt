@@ -1,0 +1,8 @@
+﻿:mod:`langchain_community.utilities.pebblo`.get_full_path
+================================================================
+
+.. currentmodule:: langchain_community.utilities.pebblo
+
+.. autofunction:: get_full_path
+
+.. example_links:: get_full_path

@@ -1,0 +1,16 @@
+﻿:mod:`langchain_community.document_loaders.youtube`.TranscriptFormat
+===========================================================================
+
+.. currentmodule:: langchain_community.document_loaders.youtube
+
+.. autoclass:: TranscriptFormat
+
+    
+    
+    .. autoattribute:: TEXT
+    
+    .. autoattribute:: LINES
+    
+    
+
+.. example_links:: TranscriptFormat

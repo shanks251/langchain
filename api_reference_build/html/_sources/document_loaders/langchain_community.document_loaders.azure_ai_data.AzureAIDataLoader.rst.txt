@@ -1,0 +1,42 @@
+﻿:mod:`langchain_community.document_loaders.azure_ai_data`.AzureAIDataLoader
+==================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.azure_ai_data
+
+.. autoclass:: AzureAIDataLoader
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AzureAIDataLoader.url
+      ~AzureAIDataLoader.glob_pattern
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AzureAIDataLoader.__init__
+      ~AzureAIDataLoader.alazy_load
+      ~AzureAIDataLoader.lazy_load
+      ~AzureAIDataLoader.load
+      ~AzureAIDataLoader.load_and_split
+
+   
+   .. automethod:: AzureAIDataLoader.__init__
+   .. automethod:: AzureAIDataLoader.alazy_load
+   .. automethod:: AzureAIDataLoader.lazy_load
+   .. automethod:: AzureAIDataLoader.load
+   .. automethod:: AzureAIDataLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: AzureAIDataLoader

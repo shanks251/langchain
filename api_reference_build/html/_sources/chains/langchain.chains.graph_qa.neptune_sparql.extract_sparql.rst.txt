@@ -1,0 +1,8 @@
+﻿:mod:`langchain.chains.graph_qa.neptune_sparql`.extract_sparql
+=====================================================================
+
+.. currentmodule:: langchain.chains.graph_qa.neptune_sparql
+
+.. autofunction:: extract_sparql
+
+.. example_links:: extract_sparql

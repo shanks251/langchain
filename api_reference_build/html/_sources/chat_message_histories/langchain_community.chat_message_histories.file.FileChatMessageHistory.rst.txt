@@ -1,0 +1,49 @@
+﻿:mod:`langchain_community.chat_message_histories.file`.FileChatMessageHistory
+====================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.file
+
+.. autoclass:: FileChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~FileChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~FileChatMessageHistory.__init__
+      ~FileChatMessageHistory.aadd_messages
+      ~FileChatMessageHistory.aclear
+      ~FileChatMessageHistory.add_ai_message
+      ~FileChatMessageHistory.add_message
+      ~FileChatMessageHistory.add_messages
+      ~FileChatMessageHistory.add_user_message
+      ~FileChatMessageHistory.aget_messages
+      ~FileChatMessageHistory.clear
+
+   
+   .. automethod:: FileChatMessageHistory.__init__
+   .. automethod:: FileChatMessageHistory.aadd_messages
+   .. automethod:: FileChatMessageHistory.aclear
+   .. automethod:: FileChatMessageHistory.add_ai_message
+   .. automethod:: FileChatMessageHistory.add_message
+   .. automethod:: FileChatMessageHistory.add_messages
+   .. automethod:: FileChatMessageHistory.add_user_message
+   .. automethod:: FileChatMessageHistory.aget_messages
+   .. automethod:: FileChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: FileChatMessageHistory

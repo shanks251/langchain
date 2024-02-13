@@ -1,0 +1,49 @@
+﻿:mod:`langchain_community.chat_message_histories.astradb`.AstraDBChatMessageHistory
+==========================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.astradb
+
+.. autoclass:: AstraDBChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AstraDBChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AstraDBChatMessageHistory.__init__
+      ~AstraDBChatMessageHistory.aadd_messages
+      ~AstraDBChatMessageHistory.aclear
+      ~AstraDBChatMessageHistory.add_ai_message
+      ~AstraDBChatMessageHistory.add_message
+      ~AstraDBChatMessageHistory.add_messages
+      ~AstraDBChatMessageHistory.add_user_message
+      ~AstraDBChatMessageHistory.aget_messages
+      ~AstraDBChatMessageHistory.clear
+
+   
+   .. automethod:: AstraDBChatMessageHistory.__init__
+   .. automethod:: AstraDBChatMessageHistory.aadd_messages
+   .. automethod:: AstraDBChatMessageHistory.aclear
+   .. automethod:: AstraDBChatMessageHistory.add_ai_message
+   .. automethod:: AstraDBChatMessageHistory.add_message
+   .. automethod:: AstraDBChatMessageHistory.add_messages
+   .. automethod:: AstraDBChatMessageHistory.add_user_message
+   .. automethod:: AstraDBChatMessageHistory.aget_messages
+   .. automethod:: AstraDBChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: AstraDBChatMessageHistory

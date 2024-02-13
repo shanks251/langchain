@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.lua`.LuaSegmenter
+====================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.lua
+
+.. autoclass:: LuaSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~LuaSegmenter.__init__
+      ~LuaSegmenter.extract_functions_classes
+      ~LuaSegmenter.get_chunk_query
+      ~LuaSegmenter.get_language
+      ~LuaSegmenter.get_parser
+      ~LuaSegmenter.is_valid
+      ~LuaSegmenter.make_line_comment
+      ~LuaSegmenter.simplify_code
+
+   
+   .. automethod:: LuaSegmenter.__init__
+   .. automethod:: LuaSegmenter.extract_functions_classes
+   .. automethod:: LuaSegmenter.get_chunk_query
+   .. automethod:: LuaSegmenter.get_language
+   .. automethod:: LuaSegmenter.get_parser
+   .. automethod:: LuaSegmenter.is_valid
+   .. automethod:: LuaSegmenter.make_line_comment
+   .. automethod:: LuaSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: LuaSegmenter

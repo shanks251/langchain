@@ -1,0 +1,39 @@
+.. robocorp_api_reference:
+
+=======================
+``langchain_robocorp`` 0.0.3
+=======================
+
+:mod:`langchain_robocorp.toolkits`
+===================================
+
+.. automodule:: langchain_robocorp.toolkits
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_robocorp
+
+.. autosummary::
+    :toctree: toolkits
+    :template: pydantic.rst
+    
+    toolkits.ActionServerRequestTool
+    
+    :template: pydantic.rst
+    
+    toolkits.ActionServerToolkit
+    
+    :template: class.rst
+    
+    toolkits.RunDetailsCallbackHandler
+    
+    :template: typeddict.rst
+    
+    toolkits.ToolArgs
+    
+    :template: pydantic.rst
+    
+    toolkits.ToolInputSchema
+    

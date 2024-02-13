@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.srt`.SRTLoader
+================================================================
+
+.. currentmodule:: langchain_community.document_loaders.srt
+
+.. autoclass:: SRTLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SRTLoader.__init__
+      ~SRTLoader.alazy_load
+      ~SRTLoader.lazy_load
+      ~SRTLoader.load
+      ~SRTLoader.load_and_split
+
+   
+   .. automethod:: SRTLoader.__init__
+   .. automethod:: SRTLoader.alazy_load
+   .. automethod:: SRTLoader.lazy_load
+   .. automethod:: SRTLoader.load
+   .. automethod:: SRTLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: SRTLoader

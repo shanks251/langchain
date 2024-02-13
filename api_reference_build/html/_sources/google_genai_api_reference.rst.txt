@@ -1,0 +1,85 @@
+.. google_genai_api_reference:
+
+=======================
+``langchain_google_genai`` 0.0.9
+=======================
+
+:mod:`langchain_google_genai.chat_models`
+==========================================
+
+.. automodule:: langchain_google_genai.chat_models
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_google_genai
+
+.. autosummary::
+    :toctree: chat_models
+    :template: pydantic.rst
+    
+    chat_models.ChatGoogleGenerativeAI
+    
+    :template: class.rst
+    
+    chat_models.ChatGoogleGenerativeAIError
+    
+Functions
+--------------
+.. currentmodule:: langchain_google_genai
+
+.. autosummary::
+    :toctree: chat_models
+    :template: function.rst
+
+    
+
+:mod:`langchain_google_genai.embeddings`
+=========================================
+
+.. automodule:: langchain_google_genai.embeddings
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_google_genai
+
+.. autosummary::
+    :toctree: embeddings
+    :template: pydantic.rst
+    
+    embeddings.GoogleGenerativeAIEmbeddings
+    
+:mod:`langchain_google_genai.llms`
+===================================
+
+.. automodule:: langchain_google_genai.llms
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_google_genai
+
+.. autosummary::
+    :toctree: llms
+    :template: pydantic.rst
+    
+    llms.GoogleGenerativeAI
+    
+    :template: enum.rst
+    
+    llms.GoogleModelFamily
+    
+Functions
+--------------
+.. currentmodule:: langchain_google_genai
+
+.. autosummary::
+    :toctree: llms
+    :template: function.rst
+
+    
+

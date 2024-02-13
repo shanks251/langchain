@@ -1,0 +1,49 @@
+﻿:mod:`langchain_community.chat_message_histories.mongodb`.MongoDBChatMessageHistory
+==========================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.mongodb
+
+.. autoclass:: MongoDBChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~MongoDBChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~MongoDBChatMessageHistory.__init__
+      ~MongoDBChatMessageHistory.aadd_messages
+      ~MongoDBChatMessageHistory.aclear
+      ~MongoDBChatMessageHistory.add_ai_message
+      ~MongoDBChatMessageHistory.add_message
+      ~MongoDBChatMessageHistory.add_messages
+      ~MongoDBChatMessageHistory.add_user_message
+      ~MongoDBChatMessageHistory.aget_messages
+      ~MongoDBChatMessageHistory.clear
+
+   
+   .. automethod:: MongoDBChatMessageHistory.__init__
+   .. automethod:: MongoDBChatMessageHistory.aadd_messages
+   .. automethod:: MongoDBChatMessageHistory.aclear
+   .. automethod:: MongoDBChatMessageHistory.add_ai_message
+   .. automethod:: MongoDBChatMessageHistory.add_message
+   .. automethod:: MongoDBChatMessageHistory.add_messages
+   .. automethod:: MongoDBChatMessageHistory.add_user_message
+   .. automethod:: MongoDBChatMessageHistory.aget_messages
+   .. automethod:: MongoDBChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: MongoDBChatMessageHistory

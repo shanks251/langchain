@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.go`.GoSegmenter
+==================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.go
+
+.. autoclass:: GoSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~GoSegmenter.__init__
+      ~GoSegmenter.extract_functions_classes
+      ~GoSegmenter.get_chunk_query
+      ~GoSegmenter.get_language
+      ~GoSegmenter.get_parser
+      ~GoSegmenter.is_valid
+      ~GoSegmenter.make_line_comment
+      ~GoSegmenter.simplify_code
+
+   
+   .. automethod:: GoSegmenter.__init__
+   .. automethod:: GoSegmenter.extract_functions_classes
+   .. automethod:: GoSegmenter.get_chunk_query
+   .. automethod:: GoSegmenter.get_language
+   .. automethod:: GoSegmenter.get_parser
+   .. automethod:: GoSegmenter.is_valid
+   .. automethod:: GoSegmenter.make_line_comment
+   .. automethod:: GoSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: GoSegmenter

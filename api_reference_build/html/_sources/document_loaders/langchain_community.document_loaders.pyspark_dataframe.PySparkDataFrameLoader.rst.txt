@@ -1,0 +1,37 @@
+﻿:mod:`langchain_community.document_loaders.pyspark_dataframe`.PySparkDataFrameLoader
+===========================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.pyspark_dataframe
+
+.. autoclass:: PySparkDataFrameLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~PySparkDataFrameLoader.__init__
+      ~PySparkDataFrameLoader.alazy_load
+      ~PySparkDataFrameLoader.get_num_rows
+      ~PySparkDataFrameLoader.lazy_load
+      ~PySparkDataFrameLoader.load
+      ~PySparkDataFrameLoader.load_and_split
+
+   
+   .. automethod:: PySparkDataFrameLoader.__init__
+   .. automethod:: PySparkDataFrameLoader.alazy_load
+   .. automethod:: PySparkDataFrameLoader.get_num_rows
+   .. automethod:: PySparkDataFrameLoader.lazy_load
+   .. automethod:: PySparkDataFrameLoader.load
+   .. automethod:: PySparkDataFrameLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: PySparkDataFrameLoader

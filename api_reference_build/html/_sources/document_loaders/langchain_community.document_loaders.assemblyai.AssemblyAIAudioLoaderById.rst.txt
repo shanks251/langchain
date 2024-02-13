@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.assemblyai`.AssemblyAIAudioLoaderById
+=======================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.assemblyai
+
+.. autoclass:: AssemblyAIAudioLoaderById
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AssemblyAIAudioLoaderById.__init__
+      ~AssemblyAIAudioLoaderById.alazy_load
+      ~AssemblyAIAudioLoaderById.lazy_load
+      ~AssemblyAIAudioLoaderById.load
+      ~AssemblyAIAudioLoaderById.load_and_split
+
+   
+   .. automethod:: AssemblyAIAudioLoaderById.__init__
+   .. automethod:: AssemblyAIAudioLoaderById.alazy_load
+   .. automethod:: AssemblyAIAudioLoaderById.lazy_load
+   .. automethod:: AssemblyAIAudioLoaderById.load
+   .. automethod:: AssemblyAIAudioLoaderById.load_and_split
+
+   
+   
+
+
+.. example_links:: AssemblyAIAudioLoaderById

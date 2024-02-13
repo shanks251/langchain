@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.ruby`.RubySegmenter
+======================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.ruby
+
+.. autoclass:: RubySegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~RubySegmenter.__init__
+      ~RubySegmenter.extract_functions_classes
+      ~RubySegmenter.get_chunk_query
+      ~RubySegmenter.get_language
+      ~RubySegmenter.get_parser
+      ~RubySegmenter.is_valid
+      ~RubySegmenter.make_line_comment
+      ~RubySegmenter.simplify_code
+
+   
+   .. automethod:: RubySegmenter.__init__
+   .. automethod:: RubySegmenter.extract_functions_classes
+   .. automethod:: RubySegmenter.get_chunk_query
+   .. automethod:: RubySegmenter.get_language
+   .. automethod:: RubySegmenter.get_parser
+   .. automethod:: RubySegmenter.is_valid
+   .. automethod:: RubySegmenter.make_line_comment
+   .. automethod:: RubySegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: RubySegmenter

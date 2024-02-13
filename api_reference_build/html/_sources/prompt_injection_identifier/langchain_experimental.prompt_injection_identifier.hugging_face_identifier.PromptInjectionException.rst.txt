@@ -1,0 +1,17 @@
+﻿:mod:`langchain_experimental.prompt_injection_identifier.hugging_face_identifier`.PromptInjectionException
+=================================================================================================================
+
+.. currentmodule:: langchain_experimental.prompt_injection_identifier.hugging_face_identifier
+
+.. autoclass:: PromptInjectionException
+
+   
+   
+   
+
+   
+   
+   
+
+
+.. example_links:: PromptInjectionException

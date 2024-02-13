@@ -1,0 +1,126 @@
+.. google_vertexai_api_reference:
+
+=======================
+``langchain_google_vertexai`` 0.0.5
+=======================
+
+:mod:`langchain_google_vertexai.chains`
+========================================
+
+.. automodule:: langchain_google_vertexai.chains
+    :no-members:
+    :no-inherited-members:
+
+Functions
+--------------
+.. currentmodule:: langchain_google_vertexai
+
+.. autosummary::
+    :toctree: chains
+    :template: function.rst
+
+    chains.create_structured_runnable
+    chains.get_output_parser
+
+:mod:`langchain_google_vertexai.chat_models`
+=============================================
+
+.. automodule:: langchain_google_vertexai.chat_models
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_google_vertexai
+
+.. autosummary::
+    :toctree: chat_models
+    :template: pydantic.rst
+    
+    chat_models.ChatVertexAI
+    
+Functions
+--------------
+.. currentmodule:: langchain_google_vertexai
+
+.. autosummary::
+    :toctree: chat_models
+    :template: function.rst
+
+    
+
+:mod:`langchain_google_vertexai.embeddings`
+============================================
+
+.. automodule:: langchain_google_vertexai.embeddings
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_google_vertexai
+
+.. autosummary::
+    :toctree: embeddings
+    :template: pydantic.rst
+    
+    embeddings.VertexAIEmbeddings
+    
+:mod:`langchain_google_vertexai.functions_utils`
+=================================================
+
+.. automodule:: langchain_google_vertexai.functions_utils
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_google_vertexai
+
+.. autosummary::
+    :toctree: functions_utils
+    :template: pydantic.rst
+    
+    functions_utils.PydanticFunctionsOutputParser
+    
+Functions
+--------------
+.. currentmodule:: langchain_google_vertexai
+
+.. autosummary::
+    :toctree: functions_utils
+    :template: function.rst
+
+    
+
+:mod:`langchain_google_vertexai.llms`
+======================================
+
+.. automodule:: langchain_google_vertexai.llms
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_google_vertexai
+
+.. autosummary::
+    :toctree: llms
+    :template: pydantic.rst
+    
+    llms.VertexAI
+    
+    :template: pydantic.rst
+    
+    llms.VertexAIModelGarden
+    
+Functions
+--------------
+.. currentmodule:: langchain_google_vertexai
+
+.. autosummary::
+    :toctree: llms
+    :template: function.rst
+
+    
+

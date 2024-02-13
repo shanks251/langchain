@@ -1,0 +1,35 @@
+.. nvidia_trt_api_reference:
+
+=======================
+``langchain_nvidia_trt`` 0.0.1
+=======================
+
+:mod:`langchain_nvidia_trt.llms`
+=================================
+
+.. automodule:: langchain_nvidia_trt.llms
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_nvidia_trt
+
+.. autosummary::
+    :toctree: llms
+    :template: class.rst
+    
+    llms.StreamingResponseGenerator
+    
+    :template: class.rst
+    
+    llms.TritonTensorRTError
+    
+    :template: pydantic.rst
+    
+    llms.TritonTensorRTLLM
+    
+    :template: class.rst
+    
+    llms.TritonTensorRTRuntimeError
+    

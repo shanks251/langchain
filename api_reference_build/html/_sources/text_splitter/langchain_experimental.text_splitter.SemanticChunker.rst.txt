@@ -1,0 +1,37 @@
+﻿:mod:`langchain_experimental.text_splitter`.SemanticChunker
+==================================================================
+
+.. currentmodule:: langchain_experimental.text_splitter
+
+.. autoclass:: SemanticChunker
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SemanticChunker.__init__
+      ~SemanticChunker.atransform_documents
+      ~SemanticChunker.create_documents
+      ~SemanticChunker.split_documents
+      ~SemanticChunker.split_text
+      ~SemanticChunker.transform_documents
+
+   
+   .. automethod:: SemanticChunker.__init__
+   .. automethod:: SemanticChunker.atransform_documents
+   .. automethod:: SemanticChunker.create_documents
+   .. automethod:: SemanticChunker.split_documents
+   .. automethod:: SemanticChunker.split_text
+   .. automethod:: SemanticChunker.transform_documents
+
+   
+   
+
+
+.. example_links:: SemanticChunker

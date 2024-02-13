@@ -1,0 +1,43 @@
+﻿:mod:`langchain.storage.file_system`.LocalFileStore
+==========================================================
+
+.. currentmodule:: langchain.storage.file_system
+
+.. autoclass:: LocalFileStore
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~LocalFileStore.__init__
+      ~LocalFileStore.amdelete
+      ~LocalFileStore.amget
+      ~LocalFileStore.amset
+      ~LocalFileStore.ayield_keys
+      ~LocalFileStore.mdelete
+      ~LocalFileStore.mget
+      ~LocalFileStore.mset
+      ~LocalFileStore.yield_keys
+
+   
+   .. automethod:: LocalFileStore.__init__
+   .. automethod:: LocalFileStore.amdelete
+   .. automethod:: LocalFileStore.amget
+   .. automethod:: LocalFileStore.amset
+   .. automethod:: LocalFileStore.ayield_keys
+   .. automethod:: LocalFileStore.mdelete
+   .. automethod:: LocalFileStore.mget
+   .. automethod:: LocalFileStore.mset
+   .. automethod:: LocalFileStore.yield_keys
+
+   
+   
+
+
+.. example_links:: LocalFileStore

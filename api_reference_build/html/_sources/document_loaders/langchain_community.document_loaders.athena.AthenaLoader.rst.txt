@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.athena`.AthenaLoader
+======================================================================
+
+.. currentmodule:: langchain_community.document_loaders.athena
+
+.. autoclass:: AthenaLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AthenaLoader.__init__
+      ~AthenaLoader.alazy_load
+      ~AthenaLoader.lazy_load
+      ~AthenaLoader.load
+      ~AthenaLoader.load_and_split
+
+   
+   .. automethod:: AthenaLoader.__init__
+   .. automethod:: AthenaLoader.alazy_load
+   .. automethod:: AthenaLoader.lazy_load
+   .. automethod:: AthenaLoader.load
+   .. automethod:: AthenaLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: AthenaLoader

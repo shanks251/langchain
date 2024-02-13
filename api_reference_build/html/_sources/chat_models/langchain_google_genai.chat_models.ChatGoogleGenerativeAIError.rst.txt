@@ -1,0 +1,17 @@
+﻿:mod:`langchain_google_genai.chat_models`.ChatGoogleGenerativeAIError
+============================================================================
+
+.. currentmodule:: langchain_google_genai.chat_models
+
+.. autoclass:: ChatGoogleGenerativeAIError
+
+   
+   
+   
+
+   
+   
+   
+
+
+.. example_links:: ChatGoogleGenerativeAIError

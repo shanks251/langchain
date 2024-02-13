@@ -1,0 +1,35 @@
+﻿:mod:`langchain_community.document_loaders.figma`.FigmaFileLoader
+========================================================================
+
+.. currentmodule:: langchain_community.document_loaders.figma
+
+.. autoclass:: FigmaFileLoader
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~FigmaFileLoader.__init__
+      ~FigmaFileLoader.alazy_load
+      ~FigmaFileLoader.lazy_load
+      ~FigmaFileLoader.load
+      ~FigmaFileLoader.load_and_split
+
+   
+   .. automethod:: FigmaFileLoader.__init__
+   .. automethod:: FigmaFileLoader.alazy_load
+   .. automethod:: FigmaFileLoader.lazy_load
+   .. automethod:: FigmaFileLoader.load
+   .. automethod:: FigmaFileLoader.load_and_split
+
+   
+   
+
+
+.. example_links:: FigmaFileLoader

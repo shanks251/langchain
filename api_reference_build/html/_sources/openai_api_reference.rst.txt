@@ -1,0 +1,93 @@
+.. openai_api_reference:
+
+=======================
+``langchain_openai`` 0.0.6
+=======================
+
+:mod:`langchain_openai.chat_models`
+====================================
+
+.. automodule:: langchain_openai.chat_models
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_openai
+
+.. autosummary::
+    :toctree: chat_models
+    :template: pydantic.rst
+    
+    chat_models.azure.AzureChatOpenAI
+    
+    :template: pydantic.rst
+    
+    chat_models.base.ChatOpenAI
+    
+Functions
+--------------
+.. currentmodule:: langchain_openai
+
+.. autosummary::
+    :toctree: chat_models
+    :template: function.rst
+
+    
+
+:mod:`langchain_openai.embeddings`
+===================================
+
+.. automodule:: langchain_openai.embeddings
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_openai
+
+.. autosummary::
+    :toctree: embeddings
+    :template: pydantic.rst
+    
+    embeddings.azure.AzureOpenAIEmbeddings
+    
+    :template: pydantic.rst
+    
+    embeddings.base.OpenAIEmbeddings
+    
+:mod:`langchain_openai.llms`
+=============================
+
+.. automodule:: langchain_openai.llms
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_openai
+
+.. autosummary::
+    :toctree: llms
+    :template: pydantic.rst
+    
+    llms.azure.AzureOpenAI
+    
+    :template: pydantic.rst
+    
+    llms.base.BaseOpenAI
+    
+    :template: pydantic.rst
+    
+    llms.base.OpenAI
+    
+Functions
+--------------
+.. currentmodule:: langchain_openai
+
+.. autosummary::
+    :toctree: llms
+    :template: function.rst
+
+    
+

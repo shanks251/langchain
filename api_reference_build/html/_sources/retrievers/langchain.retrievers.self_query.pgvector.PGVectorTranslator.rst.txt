@@ -1,0 +1,40 @@
+﻿:mod:`langchain.retrievers.self_query.pgvector`.PGVectorTranslator
+=========================================================================
+
+.. currentmodule:: langchain.retrievers.self_query.pgvector
+
+.. autoclass:: PGVectorTranslator
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~PGVectorTranslator.allowed_comparators
+      ~PGVectorTranslator.allowed_operators
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~PGVectorTranslator.__init__
+      ~PGVectorTranslator.visit_comparison
+      ~PGVectorTranslator.visit_operation
+      ~PGVectorTranslator.visit_structured_query
+
+   
+   .. automethod:: PGVectorTranslator.__init__
+   .. automethod:: PGVectorTranslator.visit_comparison
+   .. automethod:: PGVectorTranslator.visit_operation
+   .. automethod:: PGVectorTranslator.visit_structured_query
+
+   
+   
+
+
+.. example_links:: PGVectorTranslator

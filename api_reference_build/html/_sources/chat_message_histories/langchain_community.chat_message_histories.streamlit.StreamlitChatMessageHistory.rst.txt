@@ -1,0 +1,49 @@
+﻿:mod:`langchain_community.chat_message_histories.streamlit`.StreamlitChatMessageHistory
+==============================================================================================
+
+.. currentmodule:: langchain_community.chat_message_histories.streamlit
+
+.. autoclass:: StreamlitChatMessageHistory
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~StreamlitChatMessageHistory.messages
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~StreamlitChatMessageHistory.__init__
+      ~StreamlitChatMessageHistory.aadd_messages
+      ~StreamlitChatMessageHistory.aclear
+      ~StreamlitChatMessageHistory.add_ai_message
+      ~StreamlitChatMessageHistory.add_message
+      ~StreamlitChatMessageHistory.add_messages
+      ~StreamlitChatMessageHistory.add_user_message
+      ~StreamlitChatMessageHistory.aget_messages
+      ~StreamlitChatMessageHistory.clear
+
+   
+   .. automethod:: StreamlitChatMessageHistory.__init__
+   .. automethod:: StreamlitChatMessageHistory.aadd_messages
+   .. automethod:: StreamlitChatMessageHistory.aclear
+   .. automethod:: StreamlitChatMessageHistory.add_ai_message
+   .. automethod:: StreamlitChatMessageHistory.add_message
+   .. automethod:: StreamlitChatMessageHistory.add_messages
+   .. automethod:: StreamlitChatMessageHistory.add_user_message
+   .. automethod:: StreamlitChatMessageHistory.aget_messages
+   .. automethod:: StreamlitChatMessageHistory.clear
+
+   
+   
+
+
+.. example_links:: StreamlitChatMessageHistory

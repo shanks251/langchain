@@ -1,0 +1,41 @@
+﻿:mod:`langchain_community.document_loaders.parsers.language.perl`.PerlSegmenter
+======================================================================================
+
+.. currentmodule:: langchain_community.document_loaders.parsers.language.perl
+
+.. autoclass:: PerlSegmenter
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~PerlSegmenter.__init__
+      ~PerlSegmenter.extract_functions_classes
+      ~PerlSegmenter.get_chunk_query
+      ~PerlSegmenter.get_language
+      ~PerlSegmenter.get_parser
+      ~PerlSegmenter.is_valid
+      ~PerlSegmenter.make_line_comment
+      ~PerlSegmenter.simplify_code
+
+   
+   .. automethod:: PerlSegmenter.__init__
+   .. automethod:: PerlSegmenter.extract_functions_classes
+   .. automethod:: PerlSegmenter.get_chunk_query
+   .. automethod:: PerlSegmenter.get_language
+   .. automethod:: PerlSegmenter.get_parser
+   .. automethod:: PerlSegmenter.is_valid
+   .. automethod:: PerlSegmenter.make_line_comment
+   .. automethod:: PerlSegmenter.simplify_code
+
+   
+   
+
+
+.. example_links:: PerlSegmenter
