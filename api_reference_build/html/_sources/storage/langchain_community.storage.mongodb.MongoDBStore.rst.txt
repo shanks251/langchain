@@ -1,0 +1,43 @@
+﻿:mod:`langchain_community.storage.mongodb`.MongoDBStore
+==============================================================
+
+.. currentmodule:: langchain_community.storage.mongodb
+
+.. autoclass:: MongoDBStore
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~MongoDBStore.__init__
+      ~MongoDBStore.amdelete
+      ~MongoDBStore.amget
+      ~MongoDBStore.amset
+      ~MongoDBStore.ayield_keys
+      ~MongoDBStore.mdelete
+      ~MongoDBStore.mget
+      ~MongoDBStore.mset
+      ~MongoDBStore.yield_keys
+
+   
+   .. automethod:: MongoDBStore.__init__
+   .. automethod:: MongoDBStore.amdelete
+   .. automethod:: MongoDBStore.amget
+   .. automethod:: MongoDBStore.amset
+   .. automethod:: MongoDBStore.ayield_keys
+   .. automethod:: MongoDBStore.mdelete
+   .. automethod:: MongoDBStore.mget
+   .. automethod:: MongoDBStore.mset
+   .. automethod:: MongoDBStore.yield_keys
+
+   
+   
+
+
+.. example_links:: MongoDBStore

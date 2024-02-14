@@ -3413,6 +3413,10 @@ Classes
     
     :template: class.rst
     
+    storage.mongodb.MongoDBStore
+    
+    :template: class.rst
+    
     storage.redis.RedisStore
     
     :template: class.rst

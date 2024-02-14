@@ -192,10 +192,10 @@ of the value serializer and deserializer, as well as the key encoder.</p>
 <td><p>Initialize the embedder.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#langchain.embeddings.cache.CacheBackedEmbeddings.aembed_documents" title="langchain.embeddings.cache.CacheBackedEmbeddings.aembed_documents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aembed_documents</span></code></a>(texts)</p></td>
-<td><p>Asynchronous Embed search docs.</p></td>
+<td><p>Embed a list of texts.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#langchain.embeddings.cache.CacheBackedEmbeddings.aembed_query" title="langchain.embeddings.cache.CacheBackedEmbeddings.aembed_query"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aembed_query</span></code></a>(text)</p></td>
-<td><p>Asynchronous Embed query text.</p></td>
+<td><p>Embed query text.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#langchain.embeddings.cache.CacheBackedEmbeddings.embed_documents" title="langchain.embeddings.cache.CacheBackedEmbeddings.embed_documents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">embed_documents</span></code></a>(texts)</p></td>
 <td><p>Embed a list of texts.</p></td>
@@ -224,14 +224,39 @@ of the value serializer and deserializer, as well as the key encoder.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain.embeddings.cache.CacheBackedEmbeddings.aembed_documents">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aembed_documents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">texts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#langchain.embeddings.cache.CacheBackedEmbeddings.aembed_documents" title="Permalink to this definition">¶</a></dt>
-<dd><p>Asynchronous Embed search docs.</p>
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aembed_documents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">texts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/langchain/embeddings/cache.html#CacheBackedEmbeddings.aembed_documents"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.embeddings.cache.CacheBackedEmbeddings.aembed_documents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Embed a list of texts.</p>
+<p>The method first checks the cache for the embeddings.
+If the embeddings are not found, the method uses the underlying embedder
+to embed the documents and stores the results in the cache.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>texts</strong> – A list of texts to embed.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of embeddings for the given texts.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain.embeddings.cache.CacheBackedEmbeddings.aembed_query">
-<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aembed_query</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#langchain.embeddings.cache.CacheBackedEmbeddings.aembed_query" title="Permalink to this definition">¶</a></dt>
-<dd><p>Asynchronous Embed query text.</p>
+<em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aembed_query</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/langchain/embeddings/cache.html#CacheBackedEmbeddings.aembed_query"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.embeddings.cache.CacheBackedEmbeddings.aembed_query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Embed query text.</p>
+<p>This method does not support caching at the moment.</p>
+<p>Support for caching queries is easily to implement, but might make
+sense to hold off to see the most common patterns.</p>
+<p>If the cache has an eviction policy, we may need to be a bit more careful
+about sharing the cache between documents and queries. Generally,
+one is OK evicting query caches, but document caches should be kept.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – The text to embed.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The embedding for the given text.</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
