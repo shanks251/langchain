@@ -169,7 +169,7 @@
 <div class="viewcode-block" id="create_openai_fn_runnable"><a class="viewcode-back" href="../../../../chains/langchain.chains.structured_output.base.create_openai_fn_runnable.html#langchain.chains.structured_output.base.create_openai_fn_runnable">[docs]</a><span class="k">def</span> <span class="nf">create_openai_fn_runnable</span><span class="p">(</span>
     <span class="n">functions</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">],</span> <span class="n">Callable</span><span class="p">]],</span>
     <span class="n">llm</span><span class="p">:</span> <span class="n">Runnable</span><span class="p">,</span>
-    <span class="n">prompt</span><span class="p">:</span> <span class="n">BasePromptTemplate</span><span class="p">,</span>
+    <span class="n">prompt</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BasePromptTemplate</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="o">*</span><span class="p">,</span>
     <span class="n">enforce_single_function_usage</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
     <span class="n">output_parser</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">BaseOutputParser</span><span class="p">,</span> <span class="n">BaseGenerationOutputParser</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -211,7 +211,6 @@
 
 <span class="sd">                from langchain.chains.structured_output import create_openai_fn_runnable</span>
 <span class="sd">                from langchain_openai import ChatOpenAI</span>
-<span class="sd">                from langchain_core.prompts import ChatPromptTemplate</span>
 <span class="sd">                from langchain_core.pydantic_v1 import BaseModel, Field</span>
 
 
@@ -232,15 +231,8 @@
 
 
 <span class="sd">                llm = ChatOpenAI(model=&quot;gpt-4&quot;, temperature=0)</span>
-<span class="sd">                prompt = ChatPromptTemplate.from_messages(</span>
-<span class="sd">                    [</span>
-<span class="sd">                        (&quot;system&quot;, &quot;You are a world class algorithm for recording entities.&quot;),</span>
-<span class="sd">                        (&quot;human&quot;, &quot;Make calls to the relevant function to record the entities in the following input: {input}&quot;),</span>
-<span class="sd">                        (&quot;human&quot;, &quot;Tip: Make sure to answer in the correct format&quot;),</span>
-<span class="sd">                    ]</span>
-<span class="sd">                )</span>
-<span class="sd">                chain = create_openai_fn_runnable([RecordPerson, RecordDog], llm, prompt)</span>
-<span class="sd">                chain.invoke({&quot;input&quot;: &quot;Harry was a chubby brown beagle who loved chicken&quot;})</span>
+<span class="sd">                structured_llm = create_openai_fn_runnable([RecordPerson, RecordDog], llm)</span>
+<span class="sd">                structured_llm.invoke(&quot;Harry was a chubby brown beagle who loved chicken)</span>
 <span class="sd">                # -&gt; RecordDog(name=&quot;Harry&quot;, color=&quot;brown&quot;, fav_food=&quot;chicken&quot;)</span>
 <span class="sd">    &quot;&quot;&quot;</span>  <span class="c1"># noqa: E501</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">functions</span><span class="p">:</span>
@@ -250,14 +242,17 @@
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">openai_functions</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">enforce_single_function_usage</span><span class="p">:</span>
         <span class="n">llm_kwargs</span><span class="p">[</span><span class="s2">&quot;function_call&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">openai_functions</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;name&quot;</span><span class="p">]}</span>
     <span class="n">output_parser</span> <span class="o">=</span> <span class="n">output_parser</span> <span class="ow">or</span> <span class="n">get_openai_output_parser</span><span class="p">(</span><span class="n">functions</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">llm</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="o">**</span><span class="n">llm_kwargs</span><span class="p">)</span> <span class="o">|</span> <span class="n">output_parser</span></div>
+    <span class="k">if</span> <span class="n">prompt</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">llm</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="o">**</span><span class="n">llm_kwargs</span><span class="p">)</span> <span class="o">|</span> <span class="n">output_parser</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">llm</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="o">**</span><span class="n">llm_kwargs</span><span class="p">)</span> <span class="o">|</span> <span class="n">output_parser</span></div>
 
 
 <span class="c1"># TODO: implement mode=&#39;openai-tools&#39;.</span>
 <div class="viewcode-block" id="create_structured_output_runnable"><a class="viewcode-back" href="../../../../chains/langchain.chains.structured_output.base.create_structured_output_runnable.html#langchain.chains.structured_output.base.create_structured_output_runnable">[docs]</a><span class="k">def</span> <span class="nf">create_structured_output_runnable</span><span class="p">(</span>
     <span class="n">output_schema</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]],</span>
     <span class="n">llm</span><span class="p">:</span> <span class="n">Runnable</span><span class="p">,</span>
-    <span class="n">prompt</span><span class="p">:</span> <span class="n">BasePromptTemplate</span><span class="p">,</span>
+    <span class="n">prompt</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BasePromptTemplate</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="o">*</span><span class="p">,</span>
     <span class="n">output_parser</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">BaseOutputParser</span><span class="p">,</span> <span class="n">BaseGenerationOutputParser</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="n">mode</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;openai-functions&quot;</span><span class="p">,</span> <span class="s2">&quot;openai-json&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;openai-functions&quot;</span><span class="p">,</span>
@@ -299,7 +294,28 @@
 
 <span class="sd">                from typing import Optional</span>
 
-<span class="sd">                from langchain.chains.structured_output import create_structured_output_runnable</span>
+<span class="sd">                from langchain.chains import create_structured_output_runnable</span>
+<span class="sd">                from langchain_openai import ChatOpenAI</span>
+<span class="sd">                from langchain_core.pydantic_v1 import BaseModel, Field</span>
+
+<span class="sd">                class Dog(BaseModel):</span>
+<span class="sd">                    &#39;&#39;&#39;Identifying information about a dog.&#39;&#39;&#39;</span>
+
+<span class="sd">                    name: str = Field(..., description=&quot;The dog&#39;s name&quot;)</span>
+<span class="sd">                    color: str = Field(..., description=&quot;The dog&#39;s color&quot;)</span>
+<span class="sd">                    fav_food: Optional[str] = Field(None, description=&quot;The dog&#39;s favorite food&quot;)</span>
+
+<span class="sd">                llm = ChatOpenAI(model=&quot;gpt-3.5-turbo-0125&quot;, temperature=0)</span>
+<span class="sd">                structured_llm = create_structured_output_runnable(Dog, llm, mode=&quot;openai-functions&quot;)</span>
+<span class="sd">                structured_llm.invoke(&quot;Harry was a chubby brown beagle who loved chicken&quot;)</span>
+<span class="sd">                # -&gt; Dog(name=&quot;Harry&quot;, color=&quot;brown&quot;, fav_food=&quot;chicken&quot;)</span>
+<span class="sd">                </span>
+<span class="sd">    OpenAI functions with prompt example:</span>
+<span class="sd">        .. code-block:: python</span>
+
+<span class="sd">                from typing import Optional</span>
+
+<span class="sd">                from langchain.chains import create_structured_output_runnable</span>
 <span class="sd">                from langchain_openai import ChatOpenAI</span>
 <span class="sd">                from langchain_core.prompts import ChatPromptTemplate</span>
 <span class="sd">                from langchain_core.pydantic_v1 import BaseModel, Field</span>
@@ -312,23 +328,20 @@
 <span class="sd">                    fav_food: Optional[str] = Field(None, description=&quot;The dog&#39;s favorite food&quot;)</span>
 
 <span class="sd">                llm = ChatOpenAI(model=&quot;gpt-3.5-turbo-0125&quot;, temperature=0)</span>
+<span class="sd">                structured_llm = create_structured_output_runnable(Dog, llm, mode=&quot;openai-functions&quot;)</span>
+<span class="sd">                system = &#39;&#39;&#39;Extract information about any dogs mentioned in the user input.&#39;&#39;&#39;</span>
 <span class="sd">                prompt = ChatPromptTemplate.from_messages(</span>
-<span class="sd">                    [</span>
-<span class="sd">                        (&quot;system&quot;, &quot;You are a world class algorithm for extracting information in structured formats.&quot;),</span>
-<span class="sd">                        (&quot;human&quot;, &quot;Use the given format to extract information from the following input: {input}&quot;),</span>
-<span class="sd">                        (&quot;human&quot;, &quot;Tip: Make sure to answer in the correct format&quot;),</span>
-<span class="sd">                    ]</span>
+<span class="sd">                    [(&quot;system&quot;, system), (&quot;human&quot;, &quot;{input}&quot;),]</span>
 <span class="sd">                )</span>
-<span class="sd">                chain = create_structured_output_runnable(Dog, llm, prompt, mode=&quot;openai-functions&quot;)</span>
+<span class="sd">                chain = prompt | structured_llm</span>
 <span class="sd">                chain.invoke({&quot;input&quot;: &quot;Harry was a chubby brown beagle who loved chicken&quot;})</span>
 <span class="sd">                # -&gt; Dog(name=&quot;Harry&quot;, color=&quot;brown&quot;, fav_food=&quot;chicken&quot;)</span>
-<span class="sd">                </span>
 <span class="sd">    OpenAI json response format example:</span>
 <span class="sd">        .. code-block:: python</span>
 <span class="sd">        </span>
 <span class="sd">                from typing import Optional</span>
 
-<span class="sd">                from langchain.chains.structured_output import create_structured_output_runnable</span>
+<span class="sd">                from langchain.chains import create_structured_output_runnable</span>
 <span class="sd">                from langchain_openai import ChatOpenAI</span>
 <span class="sd">                from langchain_core.prompts import ChatPromptTemplate</span>
 <span class="sd">                from langchain_core.pydantic_v1 import BaseModel, Field</span>
@@ -341,32 +354,30 @@
 <span class="sd">                    fav_food: Optional[str] = Field(None, description=&quot;The dog&#39;s favorite food&quot;)</span>
 
 <span class="sd">                llm = ChatOpenAI(model=&quot;gpt-3.5-turbo-0125&quot;, temperature=0)</span>
+<span class="sd">                structured_llm = create_structured_output_runnable(Dog, llm, mode=&quot;openai-json&quot;)</span>
 <span class="sd">                system = &#39;&#39;&#39;You are a world class assistant for extracting information in structured JSON formats. \</span>
 <span class="sd">                </span>
 <span class="sd">                Extract a valid JSON blob from the user input that matches the following JSON Schema:</span>
 <span class="sd">                </span>
 <span class="sd">                {output_schema}&#39;&#39;&#39;</span>
 <span class="sd">                prompt = ChatPromptTemplate.from_messages(</span>
-<span class="sd">                    [</span>
-<span class="sd">                        (&quot;system&quot;, system),</span>
-<span class="sd">                        (&quot;human&quot;, &quot;{input}&quot;),</span>
-<span class="sd">                    ]</span>
+<span class="sd">                    [(&quot;system&quot;, system), (&quot;human&quot;, &quot;{input}&quot;),]</span>
 <span class="sd">                )</span>
-<span class="sd">                chain = create_structured_output_runnable(Dog, llm, prompt, mode=&quot;openai-json&quot;)</span>
+<span class="sd">                chain = prompt | structured_llm</span>
 <span class="sd">                chain.invoke({&quot;input&quot;: &quot;Harry was a chubby brown beagle who loved chicken&quot;})</span>
 <span class="sd">    &quot;&quot;&quot;</span>  <span class="c1"># noqa: E501</span>
     <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;openai-functions&quot;</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">_create_openai_functions_structured_output_runnable</span><span class="p">(</span>
             <span class="n">output_schema</span><span class="p">,</span>
             <span class="n">llm</span><span class="p">,</span>
-            <span class="n">prompt</span><span class="p">,</span>
+            <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span>
             <span class="n">output_parser</span><span class="o">=</span><span class="n">output_parser</span><span class="p">,</span>
             <span class="n">enforce_single_function_usage</span><span class="o">=</span><span class="n">enforce_single_function_usage</span><span class="p">,</span>
             <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
         <span class="p">)</span>
     <span class="k">elif</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;openai-json&quot;</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">_create_openai_json_runnable</span><span class="p">(</span>
-            <span class="n">output_schema</span><span class="p">,</span> <span class="n">llm</span><span class="p">,</span> <span class="n">prompt</span><span class="p">,</span> <span class="n">output_parser</span><span class="o">=</span><span class="n">output_parser</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
+            <span class="n">output_schema</span><span class="p">,</span> <span class="n">llm</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span> <span class="n">output_parser</span><span class="o">=</span><span class="n">output_parser</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
         <span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
@@ -410,7 +421,7 @@
 <span class="k">def</span> <span class="nf">_create_openai_json_runnable</span><span class="p">(</span>
     <span class="n">output_schema</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]],</span>
     <span class="n">llm</span><span class="p">:</span> <span class="n">Runnable</span><span class="p">,</span>
-    <span class="n">prompt</span><span class="p">:</span> <span class="n">BasePromptTemplate</span><span class="p">,</span>
+    <span class="n">prompt</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BasePromptTemplate</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="o">*</span><span class="p">,</span>
     <span class="n">output_parser</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">BaseOutputParser</span><span class="p">,</span> <span class="n">BaseGenerationOutputParser</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Runnable</span><span class="p">:</span>
@@ -424,17 +435,20 @@
         <span class="n">output_parser</span> <span class="o">=</span> <span class="n">output_parser</span> <span class="ow">or</span> <span class="n">JsonOutputParser</span><span class="p">()</span>
         <span class="n">schema_as_dict</span> <span class="o">=</span> <span class="n">output_schema</span>
 
-    <span class="k">if</span> <span class="s2">&quot;output_schema&quot;</span> <span class="ow">in</span> <span class="n">prompt</span><span class="o">.</span><span class="n">input_variables</span><span class="p">:</span>
-        <span class="n">prompt</span> <span class="o">=</span> <span class="n">prompt</span><span class="o">.</span><span class="n">partial</span><span class="p">(</span><span class="n">output_schema</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">schema_as_dict</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
-
     <span class="n">llm</span> <span class="o">=</span> <span class="n">llm</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">response_format</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;json_object&quot;</span><span class="p">})</span>
-    <span class="k">return</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">llm</span> <span class="o">|</span> <span class="n">output_parser</span>
+    <span class="k">if</span> <span class="n">prompt</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s2">&quot;output_schema&quot;</span> <span class="ow">in</span> <span class="n">prompt</span><span class="o">.</span><span class="n">input_variables</span><span class="p">:</span>
+            <span class="n">prompt</span> <span class="o">=</span> <span class="n">prompt</span><span class="o">.</span><span class="n">partial</span><span class="p">(</span><span class="n">output_schema</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">schema_as_dict</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+
+        <span class="k">return</span> <span class="n">prompt</span> <span class="o">|</span> <span class="n">llm</span> <span class="o">|</span> <span class="n">output_parser</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">llm</span> <span class="o">|</span> <span class="n">output_parser</span>
 
 
 <span class="k">def</span> <span class="nf">_create_openai_functions_structured_output_runnable</span><span class="p">(</span>
     <span class="n">output_schema</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]],</span>
     <span class="n">llm</span><span class="p">:</span> <span class="n">Runnable</span><span class="p">,</span>
-    <span class="n">prompt</span><span class="p">:</span> <span class="n">BasePromptTemplate</span><span class="p">,</span>
+    <span class="n">prompt</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">BasePromptTemplate</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="o">*</span><span class="p">,</span>
     <span class="n">output_parser</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">BaseOutputParser</span><span class="p">,</span> <span class="n">BaseGenerationOutputParser</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span>
@@ -462,7 +476,7 @@
     <span class="k">return</span> <span class="n">create_openai_fn_runnable</span><span class="p">(</span>
         <span class="p">[</span><span class="n">function</span><span class="p">],</span>
         <span class="n">llm</span><span class="p">,</span>
-        <span class="n">prompt</span><span class="p">,</span>
+        <span class="n">prompt</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span>
         <span class="n">output_parser</span><span class="o">=</span><span class="n">output_parser</span><span class="p">,</span>
         <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
     <span class="p">)</span>

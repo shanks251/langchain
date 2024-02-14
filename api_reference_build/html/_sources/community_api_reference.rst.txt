@@ -4789,6 +4789,7 @@ Functions
 
     utils.ernie_functions.convert_pydantic_to_ernie_function
     utils.ernie_functions.convert_pydantic_to_ernie_tool
+    utils.google.get_client_info
     utils.math.cosine_similarity
     utils.math.cosine_similarity_top_k
     utils.openai.is_openai_v1
