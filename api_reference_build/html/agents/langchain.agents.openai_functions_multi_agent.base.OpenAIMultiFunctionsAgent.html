@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,38 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_multi_agent.base</span></code>.OpenAIMultiFunctionsAgent</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_multi_agent.base</span></code>.OpenAIMultiFunctionsAgent</a><ul>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.llm"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.llm</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.prompt"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.prompt</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.tools"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.tools</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.aplan"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.aplan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.construct"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.copy"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.create_prompt"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.create_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.dict"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.from_llm_and_tools"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.from_llm_and_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.from_orm"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.get_allowed_tools"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.get_allowed_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.json"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.parse_file"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.parse_obj"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.parse_raw"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.plan"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.plan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.return_stopped_response"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.return_stopped_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.save"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.save()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.schema"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.schema_json"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.tool_run_logging_kwargs"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.tool_run_logging_kwargs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.validate"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.functions"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.functions</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.input_keys"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.input_keys</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.return_values"><code class="docutils literal notranslate"><span class="pre">OpenAIMultiFunctionsAgent.return_values</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +181,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-openai-functions-multi-agent-base-openaimultifunctionsagent">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_multi_agent.base</span></code>.OpenAIMultiFunctionsAgent<a class="headerlink" href="#langchain-agents-openai-functions-multi-agent-base-openaimultifunctionsagent" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_multi_agent.base</span></code>.OpenAIMultiFunctionsAgent<a class="headerlink" href="#langchain-agents-openai-functions-multi-agent-base-openaimultifunctionsagent" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.openai_functions_multi_agent.base.</span></span><span class="sig-name descname"><span class="pre">OpenAIMultiFunctionsAgent</span></span><a class="reference internal" href="../_modules/langchain/agents/openai_functions_multi_agent/base.html#OpenAIMultiFunctionsAgent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent" title="Permalink to this definition">¶</a></dt>
@@ -183,17 +213,17 @@ of the variables. For an easy way to construct this prompt, use
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.llm">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">langchain_core.language_models.base.BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.llm" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.llm" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.prompt">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../prompts/langchain_core.prompts.base.BasePromptTemplate.html#langchain_core.prompts.base.BasePromptTemplate" title="langchain_core.prompts.base.BasePromptTemplate"><span class="pre">langchain_core.prompts.base.BasePromptTemplate</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.prompt" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../prompts/langchain_core.prompts.base.BasePromptTemplate.html#langchain_core.prompts.base.BasePromptTemplate" title="langchain_core.prompts.base.BasePromptTemplate"><span class="pre">BasePromptTemplate</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.prompt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.tools">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../tools/langchain_core.tools.BaseTool.html#langchain_core.tools.BaseTool" title="langchain_core.tools.BaseTool"><span class="pre">langchain_core.tools.BaseTool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.tools" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../tools/langchain_core.tools.BaseTool.html#langchain_core.tools.BaseTool" title="langchain_core.tools.BaseTool"><span class="pre">BaseTool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.tools" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -400,7 +430,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.openai_functions_multi_agent.base.OpenAIMultiFunctionsAgent.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

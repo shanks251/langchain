@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.graphs.graph_document</span></code>.Relationship</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.graphs.graph_document</span></code>.Relationship</a><ul>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship"><code class="docutils literal notranslate"><span class="pre">Relationship</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.source"><code class="docutils literal notranslate"><span class="pre">Relationship.source</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.target"><code class="docutils literal notranslate"><span class="pre">Relationship.target</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.type"><code class="docutils literal notranslate"><span class="pre">Relationship.type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.properties"><code class="docutils literal notranslate"><span class="pre">Relationship.properties</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">Relationship.properties</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">Relationship.source</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">Relationship.target</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">Relationship.type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.construct"><code class="docutils literal notranslate"><span class="pre">Relationship.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.copy"><code class="docutils literal notranslate"><span class="pre">Relationship.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.dict"><code class="docutils literal notranslate"><span class="pre">Relationship.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.from_orm"><code class="docutils literal notranslate"><span class="pre">Relationship.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">Relationship.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">Relationship.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.json"><code class="docutils literal notranslate"><span class="pre">Relationship.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.lc_id"><code class="docutils literal notranslate"><span class="pre">Relationship.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.parse_file"><code class="docutils literal notranslate"><span class="pre">Relationship.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.parse_obj"><code class="docutils literal notranslate"><span class="pre">Relationship.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.parse_raw"><code class="docutils literal notranslate"><span class="pre">Relationship.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.schema"><code class="docutils literal notranslate"><span class="pre">Relationship.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.schema_json"><code class="docutils literal notranslate"><span class="pre">Relationship.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.to_json"><code class="docutils literal notranslate"><span class="pre">Relationship.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">Relationship.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">Relationship.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.validate"><code class="docutils literal notranslate"><span class="pre">Relationship.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.lc_attributes"><code class="docutils literal notranslate"><span class="pre">Relationship.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.graphs.graph_document.Relationship.lc_secrets"><code class="docutils literal notranslate"><span class="pre">Relationship.lc_secrets</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-graphs-graph-document-relationship">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.graphs.graph_document</span></code>.Relationship<a class="headerlink" href="#langchain-community-graphs-graph-document-relationship" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.graphs.graph_document</span></code>.Relationship<a class="headerlink" href="#langchain-community-graphs-graph-document-relationship" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.graphs.graph_document.Relationship">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.graphs.graph_document.</span></span><span class="sig-name descname"><span class="pre">Relationship</span></span><a class="reference internal" href="../_modules/langchain_community/graphs/graph_document.html#Relationship"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.graphs.graph_document.Relationship" title="Permalink to this definition">¶</a></dt>
@@ -210,12 +241,12 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="id1">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.graphs.graph_document.Node.html#langchain_community.graphs.graph_document.Node" title="langchain_community.graphs.graph_document.Node"><span class="pre">langchain_community.graphs.graph_document.Node</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">source</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.graphs.graph_document.Node.html#langchain_community.graphs.graph_document.Node" title="langchain_community.graphs.graph_document.Node"><span class="pre">Node</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="id2">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">target</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.graphs.graph_document.Node.html#langchain_community.graphs.graph_document.Node" title="langchain_community.graphs.graph_document.Node"><span class="pre">langchain_community.graphs.graph_document.Node</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">target</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.graphs.graph_document.Node.html#langchain_community.graphs.graph_document.Node" title="langchain_community.graphs.graph_document.Node"><span class="pre">Node</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -365,7 +396,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/graphs/langchain_community.graphs.graph_document.Relationship.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

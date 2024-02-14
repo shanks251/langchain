@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,30 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.redis.schema</span></code>.RedisVectorField</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.redis.schema</span></code>.RedisVectorField</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField"><code class="docutils literal notranslate"><span class="pre">RedisVectorField</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.algorithm"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.algorithm</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.datatype"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.datatype</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.dims"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.dims</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.distance_metric"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.distance_metric</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.initial_cap"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.initial_cap</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.name"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.construct"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.copy"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.dict"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.from_orm"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.json"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.parse_file"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.parse_obj"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.parse_raw"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.schema"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.schema_json"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.validate"><code class="docutils literal notranslate"><span class="pre">RedisVectorField.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +173,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-redis-schema-redisvectorfield">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.redis.schema</span></code>.RedisVectorField<a class="headerlink" href="#langchain-community-vectorstores-redis-schema-redisvectorfield" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.redis.schema</span></code>.RedisVectorField<a class="headerlink" href="#langchain-community-vectorstores-redis-schema-redisvectorfield" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.redis.schema.RedisVectorField">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.redis.schema.</span></span><span class="sig-name descname"><span class="pre">RedisVectorField</span></span><a class="reference internal" href="../_modules/langchain_community/vectorstores/redis/schema.html#RedisVectorField"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.redis.schema.RedisVectorField" title="Permalink to this definition">¶</a></dt>
@@ -176,7 +198,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.redis.schema.RedisVectorField.distance_metric">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">distance_metric</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.vectorstores.redis.schema.RedisDistanceMetric.html#langchain_community.vectorstores.redis.schema.RedisDistanceMetric" title="langchain_community.vectorstores.redis.schema.RedisDistanceMetric"><span class="pre">langchain_community.vectorstores.redis.schema.RedisDistanceMetric</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'COSINE'</span></em><a class="headerlink" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.distance_metric" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">distance_metric</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.vectorstores.redis.schema.RedisDistanceMetric.html#langchain_community.vectorstores.redis.schema.RedisDistanceMetric" title="langchain_community.vectorstores.redis.schema.RedisDistanceMetric"><span class="pre">RedisDistanceMetric</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'COSINE'</span></em><a class="headerlink" href="#langchain_community.vectorstores.redis.schema.RedisVectorField.distance_metric" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -282,7 +304,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.redis.schema.RedisVectorField.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

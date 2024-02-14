@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,38 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.singlestoredb</span></code>.SingleStoreDB</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.singlestoredb</span></code>.SingleStoreDB</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.__init__"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.aadd_documents"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.aadd_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.aadd_texts"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.aadd_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.add_documents"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.add_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.add_texts"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.add_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.adelete"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.adelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.afrom_documents"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.afrom_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.afrom_texts"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.afrom_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.amax_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.amax_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.amax_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.amax_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.as_retriever"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.as_retriever()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.asearch"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.asearch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.asimilarity_search"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.asimilarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.asimilarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.asimilarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.asimilarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.asimilarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.asimilarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.asimilarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.delete"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.from_documents"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.from_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.from_texts"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.from_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.max_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.max_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.max_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.max_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.search"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.similarity_search"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.similarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.similarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.similarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.similarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.similarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB.similarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">SingleStoreDB.similarity_search_with_score()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +181,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-singlestoredb-singlestoredb">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.singlestoredb</span></code>.SingleStoreDB<a class="headerlink" href="#langchain-community-vectorstores-singlestoredb-singlestoredb" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.singlestoredb</span></code>.SingleStoreDB<a class="headerlink" href="#langchain-community-vectorstores-singlestoredb-singlestoredb" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.singlestoredb.SingleStoreDB">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.singlestoredb.</span></span><span class="sig-name descname"><span class="pre">SingleStoreDB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embedding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_strategy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="langchain_community.vectorstores.utils.DistanceStrategy.html#langchain_community.vectorstores.utils.DistanceStrategy" title="langchain_community.vectorstores.utils.DistanceStrategy"><span class="pre">DistanceStrategy</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">DistanceStrategy.DOT_PRODUCT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'embeddings'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">content_field</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'content'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata_field</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'metadata'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector_field</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'vector'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_overflow</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/vectorstores/singlestoredb.html#SingleStoreDB"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.singlestoredb.SingleStoreDB" title="Permalink to this definition">¶</a></dt>
@@ -896,7 +926,7 @@ Defaults to None.</p></li>
 
 </dd></dl>
 
-<h1>Examples using SingleStoreDB<a class="headerlink" href="#langchain-community-vectorstores-singlestoredb-singlestoredb" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using SingleStoreDB<a class="headerlink" href="#langchain-community-vectorstores-singlestoredb-singlestoredb" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/vectorstores/singlestoredb">SingleStoreDB</a></p></li>
 </ul>
@@ -907,7 +937,7 @@ Defaults to None.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.singlestoredb.SingleStoreDB.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

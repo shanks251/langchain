@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,72 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.output_parsers.react_json_single_input</span></code>.ReActJsonSingleInputOutputParser</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.output_parsers.react_json_single_input</span></code>.ReActJsonSingleInputOutputParser</a><ul>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.pattern"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.pattern</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.abatch"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.abatch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.ainvoke"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.ainvoke()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.aparse"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.aparse()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.aparse_result"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.aparse_result()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.assign"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.assign()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.astream"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.astream()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.astream_events"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.astream_events()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.astream_log"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.astream_log()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.atransform"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.atransform()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.batch"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.batch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.bind"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.bind()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.config_schema"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.config_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.configurable_alternatives"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.configurable_alternatives()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.configurable_fields"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.configurable_fields()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.construct"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.copy"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.dict"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.from_orm"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.get_format_instructions"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.get_format_instructions()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.get_graph"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.get_graph()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.get_input_schema"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.get_input_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.get_name"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.get_name()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.get_output_schema"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.get_output_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.get_prompts"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.get_prompts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.invoke"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.invoke()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.json"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.lc_id"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.map"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.map()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.parse"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.parse()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.parse_file"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.parse_obj"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.parse_raw"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.parse_result"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.parse_result()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.parse_with_prompt"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.parse_with_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.pick"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.pick()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.pipe"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.pipe()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.schema"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.schema_json"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.stream"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.stream()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.to_json"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.transform"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.transform()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.validate"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.with_config"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.with_config()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.with_fallbacks"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.with_fallbacks()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.with_listeners"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.with_listeners()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.with_retry"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.with_retry()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.with_types"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.with_types()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.InputType"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.InputType</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.OutputType"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.OutputType</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.config_specs"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.config_specs</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.input_schema"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.input_schema</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.lc_attributes"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.lc_secrets"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.lc_secrets</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.name"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.output_schema"><code class="docutils literal notranslate"><span class="pre">ReActJsonSingleInputOutputParser.output_schema</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +215,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-output-parsers-react-json-single-input-reactjsonsingleinputoutputparser">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.output_parsers.react_json_single_input</span></code>.ReActJsonSingleInputOutputParser<a class="headerlink" href="#langchain-agents-output-parsers-react-json-single-input-reactjsonsingleinputoutputparser" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.output_parsers.react_json_single_input</span></code>.ReActJsonSingleInputOutputParser<a class="headerlink" href="#langchain-agents-output-parsers-react-json-single-input-reactjsonsingleinputoutputparser" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.output_parsers.react_json_single_input.</span></span><span class="sig-name descname"><span class="pre">ReActJsonSingleInputOutputParser</span></span><a class="reference internal" href="../_modules/langchain/agents/output_parsers/react_json_single_input.html#ReActJsonSingleInputOutputParser"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser" title="Permalink to this definition">¶</a></dt>
@@ -170,7 +234,9 @@ being returned.</p>
 <div><p>“action”: “search”,
 “action_input”: “what is the temperature in SF”</p>
 </div></blockquote>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a></p>
+<section id="id1">
+<h2>}<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h2>
+<p><a href="#id2"><span class="problematic" id="id3">``</span></a><a href="#id4"><span class="problematic" id="id5">`</span></a></p>
 <p>If the output signals that a final answer should be given,
 should be in the below format. This will result in an AgentFinish
 being returned.</p>
@@ -251,7 +317,7 @@ Subclasses should override this method if they support streaming output.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.astream_events">
-<span class="sig-name descname"><span class="pre">astream_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../runnables/langchain_core.runnables.config.RunnableConfig.html#langchain_core.runnables.config.RunnableConfig" title="langchain_core.runnables.config.RunnableConfig"><span class="pre">RunnableConfig</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">typing_extensions.Literal</span><span class="p"><span class="pre">[</span></span><span class="pre">v1</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">AsyncIterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../runnables/langchain_core.runnables.schema.StreamEvent.html#langchain_core.runnables.schema.StreamEvent" title="langchain_core.runnables.schema.StreamEvent"><span class="pre">StreamEvent</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.astream_events" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">astream_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../runnables/langchain_core.runnables.config.RunnableConfig.html#langchain_core.runnables.config.RunnableConfig" title="langchain_core.runnables.config.RunnableConfig"><span class="pre">RunnableConfig</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'v1'</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">AsyncIterator</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../runnables/langchain_core.runnables.schema.StreamEvent.html#langchain_core.runnables.schema.StreamEvent" title="langchain_core.runnables.schema.StreamEvent"><span class="pre">StreamEvent</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.astream_events" title="Permalink to this definition">¶</a></dt>
 <dd><p>[<em>Beta</em>]  Generate a stream of events.</p>
 <p>Use to create an iterator ove StreamEvents that provide real-time information
 about the progress of the runnable, including StreamEvents from intermediate
@@ -289,7 +355,7 @@ Chain definitions have been included after the table.</p>
 <div class="line-block">
 <div class="line">event                | name             | chunk                           | input                                         | output                                          |</div>
 </div>
-<p><a href="#id53"><span class="problematic" id="id54">|----------------------|</span></a>——————<a href="#id55"><span class="problematic" id="id56">|---------------------------------|</span></a>———————————————–<a href="#id57"><span class="problematic" id="id58">|-------------------------------------------------|</span></a>
+<p><a href="#id54"><span class="problematic" id="id55">|----------------------|</span></a>——————<a href="#id56"><span class="problematic" id="id57">|---------------------------------|</span></a>———————————————–<a href="#id58"><span class="problematic" id="id59">|-------------------------------------------------|</span></a>
 | on_chat_model_start  | [model name]     |                                 | {“messages”: [[SystemMessage, HumanMessage]]} |                                                 |
 | on_chat_model_stream | [model name]     | AIMessageChunk(content=”hello”) |                                               |                                                 |
 | on_chat_model_end    | [model name]     |                                 | {“messages”: [[SystemMessage, HumanMessage]]} | {“generations”: […], “llm_output”: None, …} |
@@ -309,31 +375,31 @@ Chain definitions have been included after the table.</p>
 | on_prompt_end        | [template_name]  |                                 | {“question”: “hello”}                         | ChatPromptValue(messages: [SystemMessage, …]) |</p>
 <p>Here are declarations associated with the events shown above:</p>
 <p><cite>format_docs</cite>:</p>
-<p><a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a>python
+<p><a href="#id6"><span class="problematic" id="id7">``</span></a><a href="#id8"><span class="problematic" id="id9">`</span></a>python
 def format_docs(docs: List[Document]) -&gt; str:</p>
 <blockquote>
 <div><p>‘’’Format the docs.’’’
 return “, “.join([doc.page_content for doc in docs])</p>
 </div></blockquote>
 <p>format_docs = RunnableLambda(format_docs)
-<a href="#id9"><span class="problematic" id="id10">``</span></a><a href="#id11"><span class="problematic" id="id12">`</span></a></p>
+<a href="#id10"><span class="problematic" id="id11">``</span></a><a href="#id12"><span class="problematic" id="id13">`</span></a></p>
 <p><cite>some_tool</cite>:</p>
-<p><a href="#id13"><span class="problematic" id="id14">``</span></a><a href="#id15"><span class="problematic" id="id16">`</span></a>python
+<p><a href="#id14"><span class="problematic" id="id15">``</span></a><a href="#id16"><span class="problematic" id="id17">`</span></a>python
 &#64;tool
 def some_tool(x: int, y: str) -&gt; dict:</p>
 <blockquote>
 <div><p>‘’’Some_tool.’’’
 return {“x”: x, “y”: y}</p>
 </div></blockquote>
-<p><a href="#id17"><span class="problematic" id="id18">``</span></a><a href="#id19"><span class="problematic" id="id20">`</span></a></p>
+<p><a href="#id18"><span class="problematic" id="id19">``</span></a><a href="#id20"><span class="problematic" id="id21">`</span></a></p>
 <p><cite>prompt</cite>:</p>
-<p><a href="#id21"><span class="problematic" id="id22">``</span></a><a href="#id23"><span class="problematic" id="id24">`</span></a>python
+<p><a href="#id22"><span class="problematic" id="id23">``</span></a><a href="#id24"><span class="problematic" id="id25">`</span></a>python
 template = ChatPromptTemplate.from_messages(</p>
 <blockquote>
 <div><p>[(“system”, “You are Cat Agent 007”), (“human”, “{question}”)]</p>
 </div></blockquote>
 <p>).with_config({“run_name”: “my_template”, “tags”: [“my_template”]})
-<a href="#id25"><span class="problematic" id="id26">``</span></a><a href="#id27"><span class="problematic" id="id28">`</span></a></p>
+<a href="#id26"><span class="problematic" id="id27">``</span></a><a href="#id28"><span class="problematic" id="id29">`</span></a></p>
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">langchain_core.runnables</span> <span class="kn">import</span> <span class="n">RunnableLambda</span>
 
@@ -431,7 +497,7 @@ Chain definitions have been included after the table.</p>
 <div class="line-block">
 <div class="line">event                | name             | chunk                           | input                                         | output                                          |</div>
 </div>
-<p><a href="#id59"><span class="problematic" id="id60">|----------------------|</span></a>——————<a href="#id61"><span class="problematic" id="id62">|---------------------------------|</span></a>———————————————–<a href="#id63"><span class="problematic" id="id64">|-------------------------------------------------|</span></a>
+<p><a href="#id60"><span class="problematic" id="id61">|----------------------|</span></a>——————<a href="#id62"><span class="problematic" id="id63">|---------------------------------|</span></a>———————————————–<a href="#id64"><span class="problematic" id="id65">|-------------------------------------------------|</span></a>
 | on_chat_model_start  | [model name]     |                                 | {“messages”: [[SystemMessage, HumanMessage]]} |                                                 |
 | on_chat_model_stream | [model name]     | AIMessageChunk(content=”hello”) |                                               |                                                 |
 | on_chat_model_end    | [model name]     |                                 | {“messages”: [[SystemMessage, HumanMessage]]} | {“generations”: […], “llm_output”: None, …} |
@@ -451,31 +517,31 @@ Chain definitions have been included after the table.</p>
 | on_prompt_end        | [template_name]  |                                 | {“question”: “hello”}                         | ChatPromptValue(messages: [SystemMessage, …]) |</p>
 <p>Here are declarations associated with the events shown above:</p>
 <p><cite>format_docs</cite>:</p>
-<p><a href="#id29"><span class="problematic" id="id30">``</span></a><a href="#id31"><span class="problematic" id="id32">`</span></a>python
+<p><a href="#id30"><span class="problematic" id="id31">``</span></a><a href="#id32"><span class="problematic" id="id33">`</span></a>python
 def format_docs(docs: List[Document]) -&gt; str:</p>
 <blockquote>
 <div><p>‘’’Format the docs.’’’
 return “, “.join([doc.page_content for doc in docs])</p>
 </div></blockquote>
 <p>format_docs = RunnableLambda(format_docs)
-<a href="#id33"><span class="problematic" id="id34">``</span></a><a href="#id35"><span class="problematic" id="id36">`</span></a></p>
+<a href="#id34"><span class="problematic" id="id35">``</span></a><a href="#id36"><span class="problematic" id="id37">`</span></a></p>
 <p><cite>some_tool</cite>:</p>
-<p><a href="#id37"><span class="problematic" id="id38">``</span></a><a href="#id39"><span class="problematic" id="id40">`</span></a>python
+<p><a href="#id38"><span class="problematic" id="id39">``</span></a><a href="#id40"><span class="problematic" id="id41">`</span></a>python
 &#64;tool
 def some_tool(x: int, y: str) -&gt; dict:</p>
 <blockquote>
 <div><p>‘’’Some_tool.’’’
 return {“x”: x, “y”: y}</p>
 </div></blockquote>
-<p><a href="#id41"><span class="problematic" id="id42">``</span></a><a href="#id43"><span class="problematic" id="id44">`</span></a></p>
+<p><a href="#id42"><span class="problematic" id="id43">``</span></a><a href="#id44"><span class="problematic" id="id45">`</span></a></p>
 <p><cite>prompt</cite>:</p>
-<p><a href="#id45"><span class="problematic" id="id46">``</span></a><a href="#id47"><span class="problematic" id="id48">`</span></a>python
+<p><a href="#id46"><span class="problematic" id="id47">``</span></a><a href="#id48"><span class="problematic" id="id49">`</span></a>python
 template = ChatPromptTemplate.from_messages(</p>
 <blockquote>
 <div><p>[(“system”, “You are Cat Agent 007”), (“human”, “{question}”)]</p>
 </div></blockquote>
 <p>).with_config({“run_name”: “my_template”, “tags”: [“my_template”]})
-<a href="#id49"><span class="problematic" id="id50">``</span></a><a href="#id51"><span class="problematic" id="id52">`</span></a></p>
+<a href="#id50"><span class="problematic" id="id51">``</span></a><a href="#id52"><span class="problematic" id="id53">`</span></a></p>
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">langchain_core.runnables</span> <span class="kn">import</span> <span class="n">RunnableLambda</span>
 
@@ -963,19 +1029,19 @@ between retries</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.OutputType">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">langchain_core.output_parsers.base.T</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.OutputType" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">T</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.OutputType" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of output this runnable produces specified as a type annotation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.config_specs">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_specs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../runnables/langchain_core.runnables.utils.ConfigurableFieldSpec.html#langchain_core.runnables.utils.ConfigurableFieldSpec" title="langchain_core.runnables.utils.ConfigurableFieldSpec"><span class="pre">langchain_core.runnables.utils.ConfigurableFieldSpec</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.config_specs" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_specs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../runnables/langchain_core.runnables.utils.ConfigurableFieldSpec.html#langchain_core.runnables.utils.ConfigurableFieldSpec" title="langchain_core.runnables.utils.ConfigurableFieldSpec"><span class="pre">ConfigurableFieldSpec</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.config_specs" title="Permalink to this definition">¶</a></dt>
 <dd><p>List configurable fields for this runnable.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.input_schema">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.main.BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.input_schema" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.input_schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of input this runnable accepts specified as a pydantic model.</p>
 </dd></dl>
 
@@ -1004,10 +1070,11 @@ between retries</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.output_schema">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.main.BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.output_schema" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.output_schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of output this runnable produces specified as a pydantic model.</p>
 </dd></dl>
 
+</section>
 </dd></dl>
 
 <ul class="simple">
@@ -1019,7 +1086,7 @@ between retries</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.output_parsers.react_json_single_input.ReActJsonSingleInputOutputParser.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,27 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent_toolkits.vectorstore.toolkit</span></code>.VectorStoreToolkit</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent_toolkits.vectorstore.toolkit</span></code>.VectorStoreToolkit</a><ul>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.llm"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.llm</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.vectorstore_info"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.vectorstore_info</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.construct"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.copy"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.dict"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.from_orm"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.get_tools"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.get_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.json"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.parse_file"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.parse_obj"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.parse_raw"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.schema"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.schema_json"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.validate"><code class="docutils literal notranslate"><span class="pre">VectorStoreToolkit.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +170,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-agent-toolkits-vectorstore-toolkit-vectorstoretoolkit">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent_toolkits.vectorstore.toolkit</span></code>.VectorStoreToolkit<a class="headerlink" href="#langchain-agents-agent-toolkits-vectorstore-toolkit-vectorstoretoolkit" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent_toolkits.vectorstore.toolkit</span></code>.VectorStoreToolkit<a class="headerlink" href="#langchain-agents-agent-toolkits-vectorstore-toolkit-vectorstoretoolkit" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.agent_toolkits.vectorstore.toolkit.</span></span><span class="sig-name descname"><span class="pre">VectorStoreToolkit</span></span><a class="reference internal" href="../_modules/langchain/agents/agent_toolkits/vectorstore/toolkit.html#VectorStoreToolkit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit" title="Permalink to this definition">¶</a></dt>
@@ -161,12 +180,12 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.llm">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">langchain_core.language_models.base.BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.llm" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.llm" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.vectorstore_info">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vectorstore_info</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreInfo.html#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreInfo" title="langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreInfo"><span class="pre">langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreInfo</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.vectorstore_info" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vectorstore_info</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreInfo.html#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreInfo" title="langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreInfo"><span class="pre">VectorStoreInfo</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.vectorstore_info" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -259,7 +278,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using VectorStoreToolkit<a class="headerlink" href="#langchain-agents-agent-toolkits-vectorstore-toolkit-vectorstoretoolkit" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using VectorStoreToolkit<a class="headerlink" href="#langchain-agents-agent-toolkits-vectorstore-toolkit-vectorstoretoolkit" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/toolkits/vectorstore">Vectorstore</a></p></li>
 </ul>
@@ -270,7 +289,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.agent_toolkits.vectorstore.toolkit.VectorStoreToolkit.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

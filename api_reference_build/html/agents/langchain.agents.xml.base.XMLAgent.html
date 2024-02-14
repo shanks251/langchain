@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,36 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.xml.base</span></code>.XMLAgent</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.xml.base</span></code>.XMLAgent</a><ul>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent"><code class="docutils literal notranslate"><span class="pre">XMLAgent</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.llm_chain"><code class="docutils literal notranslate"><span class="pre">XMLAgent.llm_chain</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.tools"><code class="docutils literal notranslate"><span class="pre">XMLAgent.tools</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.aplan"><code class="docutils literal notranslate"><span class="pre">XMLAgent.aplan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.construct"><code class="docutils literal notranslate"><span class="pre">XMLAgent.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.copy"><code class="docutils literal notranslate"><span class="pre">XMLAgent.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.dict"><code class="docutils literal notranslate"><span class="pre">XMLAgent.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.from_llm_and_tools"><code class="docutils literal notranslate"><span class="pre">XMLAgent.from_llm_and_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.from_orm"><code class="docutils literal notranslate"><span class="pre">XMLAgent.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.get_allowed_tools"><code class="docutils literal notranslate"><span class="pre">XMLAgent.get_allowed_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.get_default_output_parser"><code class="docutils literal notranslate"><span class="pre">XMLAgent.get_default_output_parser()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.get_default_prompt"><code class="docutils literal notranslate"><span class="pre">XMLAgent.get_default_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.json"><code class="docutils literal notranslate"><span class="pre">XMLAgent.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.parse_file"><code class="docutils literal notranslate"><span class="pre">XMLAgent.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.parse_obj"><code class="docutils literal notranslate"><span class="pre">XMLAgent.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.parse_raw"><code class="docutils literal notranslate"><span class="pre">XMLAgent.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.plan"><code class="docutils literal notranslate"><span class="pre">XMLAgent.plan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.return_stopped_response"><code class="docutils literal notranslate"><span class="pre">XMLAgent.return_stopped_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.save"><code class="docutils literal notranslate"><span class="pre">XMLAgent.save()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.schema"><code class="docutils literal notranslate"><span class="pre">XMLAgent.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.schema_json"><code class="docutils literal notranslate"><span class="pre">XMLAgent.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.tool_run_logging_kwargs"><code class="docutils literal notranslate"><span class="pre">XMLAgent.tool_run_logging_kwargs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">XMLAgent.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.validate"><code class="docutils literal notranslate"><span class="pre">XMLAgent.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.xml.base.XMLAgent.return_values"><code class="docutils literal notranslate"><span class="pre">XMLAgent.return_values</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +179,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-xml-base-xmlagent">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.xml.base</span></code>.XMLAgent<a class="headerlink" href="#langchain-agents-xml-base-xmlagent" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.xml.base</span></code>.XMLAgent<a class="headerlink" href="#langchain-agents-xml-base-xmlagent" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.xml.base.XMLAgent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.xml.base.</span></span><span class="sig-name descname"><span class="pre">XMLAgent</span></span><a class="reference internal" href="../_modules/langchain/agents/xml/base.html#XMLAgent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.xml.base.XMLAgent" title="Permalink to this definition">¶</a></dt>
@@ -197,13 +225,13 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.xml.base.XMLAgent.llm_chain">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm_chain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chains/langchain.chains.llm.LLMChain.html#langchain.chains.llm.LLMChain" title="langchain.chains.llm.LLMChain"><span class="pre">langchain.chains.llm.LLMChain</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.xml.base.XMLAgent.llm_chain" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm_chain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chains/langchain.chains.llm.LLMChain.html#langchain.chains.llm.LLMChain" title="langchain.chains.llm.LLMChain"><span class="pre">LLMChain</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.xml.base.XMLAgent.llm_chain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Chain to use to predict action.</p>
 </dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.xml.base.XMLAgent.tools">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../tools/langchain_core.tools.BaseTool.html#langchain_core.tools.BaseTool" title="langchain_core.tools.BaseTool"><span class="pre">langchain_core.tools.BaseTool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.xml.base.XMLAgent.tools" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../tools/langchain_core.tools.BaseTool.html#langchain_core.tools.BaseTool" title="langchain_core.tools.BaseTool"><span class="pre">BaseTool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.xml.base.XMLAgent.tools" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of tools this agent has access to.</p>
 </dd></dl>
 
@@ -383,7 +411,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
 
 </dd></dl>
 
-<h1>Examples using XMLAgent<a class="headerlink" href="#langchain-agents-xml-base-xmlagent" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using XMLAgent<a class="headerlink" href="#langchain-agents-xml-base-xmlagent" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/agents/agent_types/xml_agent">XML Agent</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/expression_language/cookbook/agent">Agents</a></p></li>
@@ -395,7 +423,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.xml.base.XMLAgent.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

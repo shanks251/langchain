@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,47 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.ollama</span></code>.OllamaEmbeddings</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.ollama</span></code>.OllamaEmbeddings</a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.base_url"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.base_url</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.embed_instruction"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.embed_instruction</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.mirostat"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.mirostat</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.mirostat_eta"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.mirostat_eta</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.mirostat_tau"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.mirostat_tau</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.model"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.model</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.model_kwargs"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.model_kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.num_ctx"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.num_ctx</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.num_gpu"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.num_gpu</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.num_thread"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.num_thread</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.query_instruction"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.query_instruction</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.repeat_last_n"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.repeat_last_n</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.repeat_penalty"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.repeat_penalty</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.show_progress"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.show_progress</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.stop"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.stop</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.temperature"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.temperature</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.tfs_z"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.tfs_z</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.top_k"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.top_k</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.top_p"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.top_p</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.aembed_documents"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.aembed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.aembed_query"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.aembed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.construct"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.copy"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.dict"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.embed_documents"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.embed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.embed_query"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.embed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.from_orm"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.json"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.parse_file"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.parse_obj"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.parse_raw"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.schema"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.schema_json"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.ollama.OllamaEmbeddings.validate"><code class="docutils literal notranslate"><span class="pre">OllamaEmbeddings.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +190,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-embeddings-ollama-ollamaembeddings">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.ollama</span></code>.OllamaEmbeddings<a class="headerlink" href="#langchain-community-embeddings-ollama-ollamaembeddings" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.ollama</span></code>.OllamaEmbeddings<a class="headerlink" href="#langchain-community-embeddings-ollama-ollamaembeddings" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.embeddings.ollama.OllamaEmbeddings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.embeddings.ollama.</span></span><span class="sig-name descname"><span class="pre">OllamaEmbeddings</span></span><a class="reference internal" href="../_modules/langchain_community/embeddings/ollama.html#OllamaEmbeddings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.embeddings.ollama.OllamaEmbeddings" title="Permalink to this definition">¶</a></dt>
@@ -444,7 +483,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/embeddings/langchain_community.embeddings.ollama.OllamaEmbeddings.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

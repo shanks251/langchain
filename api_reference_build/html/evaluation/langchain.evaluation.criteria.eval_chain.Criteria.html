@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,26 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation.criteria.eval_chain</span></code>.Criteria</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation.criteria.eval_chain</span></code>.Criteria</a><ul>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria"><code class="docutils literal notranslate"><span class="pre">Criteria</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.CONCISENESS"><code class="docutils literal notranslate"><span class="pre">Criteria.CONCISENESS</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.RELEVANCE"><code class="docutils literal notranslate"><span class="pre">Criteria.RELEVANCE</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.CORRECTNESS"><code class="docutils literal notranslate"><span class="pre">Criteria.CORRECTNESS</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.COHERENCE"><code class="docutils literal notranslate"><span class="pre">Criteria.COHERENCE</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.HARMFULNESS"><code class="docutils literal notranslate"><span class="pre">Criteria.HARMFULNESS</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.MALICIOUSNESS"><code class="docutils literal notranslate"><span class="pre">Criteria.MALICIOUSNESS</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.HELPFULNESS"><code class="docutils literal notranslate"><span class="pre">Criteria.HELPFULNESS</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.CONTROVERSIALITY"><code class="docutils literal notranslate"><span class="pre">Criteria.CONTROVERSIALITY</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.MISOGYNY"><code class="docutils literal notranslate"><span class="pre">Criteria.MISOGYNY</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.CRIMINALITY"><code class="docutils literal notranslate"><span class="pre">Criteria.CRIMINALITY</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.INSENSITIVITY"><code class="docutils literal notranslate"><span class="pre">Criteria.INSENSITIVITY</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.DEPTH"><code class="docutils literal notranslate"><span class="pre">Criteria.DEPTH</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.CREATIVITY"><code class="docutils literal notranslate"><span class="pre">Criteria.CREATIVITY</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.criteria.eval_chain.Criteria.DETAIL"><code class="docutils literal notranslate"><span class="pre">Criteria.DETAIL</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +169,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-evaluation-criteria-eval-chain-criteria">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation.criteria.eval_chain</span></code>.Criteria<a class="headerlink" href="#langchain-evaluation-criteria-eval-chain-criteria" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation.criteria.eval_chain</span></code>.Criteria<a class="headerlink" href="#langchain-evaluation-criteria-eval-chain-criteria" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain.evaluation.criteria.eval_chain.Criteria">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.evaluation.criteria.eval_chain.</span></span><span class="sig-name descname"><span class="pre">Criteria</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain/evaluation/criteria/eval_chain.html#Criteria"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.evaluation.criteria.eval_chain.Criteria" title="Permalink to this definition">¶</a></dt>
@@ -228,7 +246,7 @@
 
 </dd></dl>
 
-<h1>Examples using Criteria<a class="headerlink" href="#langchain-evaluation-criteria-eval-chain-criteria" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using Criteria<a class="headerlink" href="#langchain-evaluation-criteria-eval-chain-criteria" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/guides/evaluation/string/criteria_eval_chain">Criteria Evaluation</a></p></li>
 </ul>
@@ -239,7 +257,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/evaluation/langchain.evaluation.criteria.eval_chain.Criteria.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

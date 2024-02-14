@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,28 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.callbacks.manager</span></code>.CallbackManager</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.callbacks.manager</span></code>.CallbackManager</a><ul>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager"><code class="docutils literal notranslate"><span class="pre">CallbackManager</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.__init__"><code class="docutils literal notranslate"><span class="pre">CallbackManager.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.add_handler"><code class="docutils literal notranslate"><span class="pre">CallbackManager.add_handler()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.add_metadata"><code class="docutils literal notranslate"><span class="pre">CallbackManager.add_metadata()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.add_tags"><code class="docutils literal notranslate"><span class="pre">CallbackManager.add_tags()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.configure"><code class="docutils literal notranslate"><span class="pre">CallbackManager.configure()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.copy"><code class="docutils literal notranslate"><span class="pre">CallbackManager.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.on_chain_start"><code class="docutils literal notranslate"><span class="pre">CallbackManager.on_chain_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.on_chat_model_start"><code class="docutils literal notranslate"><span class="pre">CallbackManager.on_chat_model_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.on_llm_start"><code class="docutils literal notranslate"><span class="pre">CallbackManager.on_llm_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.on_retriever_start"><code class="docutils literal notranslate"><span class="pre">CallbackManager.on_retriever_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.on_tool_start"><code class="docutils literal notranslate"><span class="pre">CallbackManager.on_tool_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.remove_handler"><code class="docutils literal notranslate"><span class="pre">CallbackManager.remove_handler()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.remove_metadata"><code class="docutils literal notranslate"><span class="pre">CallbackManager.remove_metadata()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.remove_tags"><code class="docutils literal notranslate"><span class="pre">CallbackManager.remove_tags()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.set_handler"><code class="docutils literal notranslate"><span class="pre">CallbackManager.set_handler()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.callbacks.manager.CallbackManager.set_handlers"><code class="docutils literal notranslate"><span class="pre">CallbackManager.set_handlers()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +171,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-callbacks-manager-callbackmanager">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.callbacks.manager</span></code>.CallbackManager<a class="headerlink" href="#langchain-core-callbacks-manager-callbackmanager" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.callbacks.manager</span></code>.CallbackManager<a class="headerlink" href="#langchain-core-callbacks-manager-callbackmanager" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_core.callbacks.manager.CallbackManager">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.callbacks.manager.</span></span><span class="sig-name descname"><span class="pre">CallbackManager</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">handlers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.callbacks.base.BaseCallbackHandler.html#langchain_core.callbacks.base.BaseCallbackHandler" title="langchain_core.callbacks.base.BaseCallbackHandler"><span class="pre">BaseCallbackHandler</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inheritable_handlers</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.callbacks.base.BaseCallbackHandler.html#langchain_core.callbacks.base.BaseCallbackHandler" title="langchain_core.callbacks.base.BaseCallbackHandler"><span class="pre">BaseCallbackHandler</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent_run_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">UUID</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inheritable_tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inheritable_metadata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_core/callbacks/manager.html#CallbackManager"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.callbacks.manager.CallbackManager" title="Permalink to this definition">¶</a></dt>
@@ -420,7 +440,7 @@ The keys will correspond to the named-arguments in the tool.</p></li>
 
 </dd></dl>
 
-<h1>Examples using CallbackManager<a class="headerlink" href="#langchain-core-callbacks-manager-callbackmanager" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using CallbackManager<a class="headerlink" href="#langchain-core-callbacks-manager-callbackmanager" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/chat/anthropic">Anthropic</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/chat/litellm">🚅 LiteLLM</a></p></li>
@@ -439,7 +459,7 @@ The keys will correspond to the named-arguments in the tool.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/callbacks/langchain_core.callbacks.manager.CallbackManager.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

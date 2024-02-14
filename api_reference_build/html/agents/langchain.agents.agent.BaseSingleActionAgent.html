@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,32 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.BaseSingleActionAgent</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.BaseSingleActionAgent</a><ul>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.aplan"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.aplan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.construct"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.copy"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.dict"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.from_llm_and_tools"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.from_llm_and_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.from_orm"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.get_allowed_tools"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.get_allowed_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.json"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.parse_file"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.parse_obj"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.parse_raw"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.plan"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.plan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.return_stopped_response"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.return_stopped_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.save"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.save()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.schema"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.schema_json"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.tool_run_logging_kwargs"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.tool_run_logging_kwargs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.validate"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseSingleActionAgent.return_values"><code class="docutils literal notranslate"><span class="pre">BaseSingleActionAgent.return_values</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +175,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-agent-basesingleactionagent">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.BaseSingleActionAgent<a class="headerlink" href="#langchain-agents-agent-basesingleactionagent" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.BaseSingleActionAgent<a class="headerlink" href="#langchain-agents-agent-basesingleactionagent" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.agent.BaseSingleActionAgent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.agent.</span></span><span class="sig-name descname"><span class="pre">BaseSingleActionAgent</span></span><a class="reference internal" href="../_modules/langchain/agents/agent.html#BaseSingleActionAgent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.agent.BaseSingleActionAgent" title="Permalink to this definition">¶</a></dt>
@@ -325,7 +349,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
 
 </dd></dl>
 
-<h1>Examples using BaseSingleActionAgent<a class="headerlink" href="#langchain-agents-agent-basesingleactionagent" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using BaseSingleActionAgent<a class="headerlink" href="#langchain-agents-agent-basesingleactionagent" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/use_cases/more/agents/agents">Agents</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/agents/how_to/custom_agent">Custom agent</a></p></li>
@@ -337,7 +361,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.agent.BaseSingleActionAgent.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

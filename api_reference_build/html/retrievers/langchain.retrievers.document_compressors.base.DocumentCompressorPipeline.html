@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,27 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.retrievers.document_compressors.base</span></code>.DocumentCompressorPipeline</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.retrievers.document_compressors.base</span></code>.DocumentCompressorPipeline</a><ul>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.transformers"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.transformers</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.acompress_documents"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.acompress_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.compress_documents"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.compress_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.construct"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.copy"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.dict"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.from_orm"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.json"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.parse_file"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.parse_obj"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.parse_raw"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.schema"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.schema_json"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.validate"><code class="docutils literal notranslate"><span class="pre">DocumentCompressorPipeline.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +170,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-retrievers-document-compressors-base-documentcompressorpipeline">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.retrievers.document_compressors.base</span></code>.DocumentCompressorPipeline<a class="headerlink" href="#langchain-retrievers-document-compressors-base-documentcompressorpipeline" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.retrievers.document_compressors.base</span></code>.DocumentCompressorPipeline<a class="headerlink" href="#langchain-retrievers-document-compressors-base-documentcompressorpipeline" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.retrievers.document_compressors.base.DocumentCompressorPipeline">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.retrievers.document_compressors.base.</span></span><span class="sig-name descname"><span class="pre">DocumentCompressorPipeline</span></span><a class="reference internal" href="../_modules/langchain/retrievers/document_compressors/base.html#DocumentCompressorPipeline"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline" title="Permalink to this definition">¶</a></dt>
@@ -161,7 +180,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.transformers">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transformers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../documents/langchain_core.documents.transformers.BaseDocumentTransformer.html#langchain_core.documents.transformers.BaseDocumentTransformer" title="langchain_core.documents.transformers.BaseDocumentTransformer"><span class="pre">langchain_core.documents.transformers.BaseDocumentTransformer</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="langchain.retrievers.document_compressors.base.BaseDocumentCompressor.html#langchain.retrievers.document_compressors.base.BaseDocumentCompressor" title="langchain.retrievers.document_compressors.base.BaseDocumentCompressor"><span class="pre">langchain.retrievers.document_compressors.base.BaseDocumentCompressor</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.transformers" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transformers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../documents/langchain_core.documents.transformers.BaseDocumentTransformer.html#langchain_core.documents.transformers.BaseDocumentTransformer" title="langchain_core.documents.transformers.BaseDocumentTransformer"><span class="pre">BaseDocumentTransformer</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="langchain.retrievers.document_compressors.base.BaseDocumentCompressor.html#langchain.retrievers.document_compressors.base.BaseDocumentCompressor" title="langchain.retrievers.document_compressors.base.BaseDocumentCompressor"><span class="pre">BaseDocumentCompressor</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.transformers" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of document filters that are chained together and run in sequence.</p>
 </dd></dl>
 
@@ -261,7 +280,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using DocumentCompressorPipeline<a class="headerlink" href="#langchain-retrievers-document-compressors-base-documentcompressorpipeline" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using DocumentCompressorPipeline<a class="headerlink" href="#langchain-retrievers-document-compressors-base-documentcompressorpipeline" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/retrievers/merger_retriever">LOTR (Merger Retriever)</a></p></li>
 </ul>
@@ -272,7 +291,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/retrievers/langchain.retrievers.document_compressors.base.DocumentCompressorPipeline.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

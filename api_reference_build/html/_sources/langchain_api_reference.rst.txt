@@ -596,10 +596,6 @@ Classes
     
     chains.query_constructor.parser.ISO8601Date
     
-    :template: class.rst
-    
-    chains.query_constructor.parser.QueryTransformer
-    
     :template: pydantic.rst
     
     chains.query_constructor.schema.AttributeInfo
@@ -720,6 +716,7 @@ Functions
     chains.query_constructor.base.load_query_constructor_chain
     chains.query_constructor.base.load_query_constructor_runnable
     chains.query_constructor.parser.get_parser
+    chains.query_constructor.parser.v_args
     chains.retrieval.create_retrieval_chain
     chains.sql_database.query.create_sql_query_chain
     chains.structured_output.base.create_openai_fn_runnable

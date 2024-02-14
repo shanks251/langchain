@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.googledrive</span></code>.GoogleDriveLoader</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.googledrive</span></code>.GoogleDriveLoader</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.credentials_path"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.credentials_path</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.document_ids"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.document_ids</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.file_ids"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.file_ids</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.file_loader_cls"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.file_loader_cls</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.file_loader_kwargs"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.file_loader_kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.file_types"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.file_types</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.folder_id"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.folder_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.load_trashed_files"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.load_trashed_files</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.recursive"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.recursive</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.service_account_key"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.service_account_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.token_path"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.token_path</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.alazy_load"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.alazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.construct"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.copy"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.dict"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.from_orm"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.json"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.lazy_load"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.lazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.load"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.load_and_split"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.load_and_split()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.parse_file"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.parse_obj"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.parse_raw"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.schema"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.schema_json"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.validate"><code class="docutils literal notranslate"><span class="pre">GoogleDriveLoader.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-googledrive-googledriveloader">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.googledrive</span></code>.GoogleDriveLoader<a class="headerlink" href="#langchain-community-document-loaders-googledrive-googledriveloader" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.googledrive</span></code>.GoogleDriveLoader<a class="headerlink" href="#langchain-community-document-loaders-googledrive-googledriveloader" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.googledrive.GoogleDriveLoader">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.googledrive.</span></span><span class="sig-name descname"><span class="pre">GoogleDriveLoader</span></span><a class="reference internal" href="../_modules/langchain_community/document_loaders/googledrive.html#GoogleDriveLoader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader" title="Permalink to this definition">¶</a></dt>
@@ -161,7 +192,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.googledrive.GoogleDriveLoader.credentials_path">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">credentials_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/Users/bagatur/.credentials/credentials.json')</span></em><a class="headerlink" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.credentials_path" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">credentials_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/.credentials/credentials.json')</span></em><a class="headerlink" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.credentials_path" title="Permalink to this definition">¶</a></dt>
 <dd><p>Path to the credentials file.</p>
 </dd></dl>
 
@@ -215,13 +246,13 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.googledrive.GoogleDriveLoader.service_account_key">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">service_account_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/Users/bagatur/.credentials/keys.json')</span></em><a class="headerlink" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.service_account_key" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">service_account_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/.credentials/keys.json')</span></em><a class="headerlink" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.service_account_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Path to the service account key file.</p>
 </dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.googledrive.GoogleDriveLoader.token_path">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">token_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pathlib.Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/Users/bagatur/.credentials/token.json')</span></em><a class="headerlink" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.token_path" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">token_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Path</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PosixPath('/home/runner/.credentials/token.json')</span></em><a class="headerlink" href="#langchain_community.document_loaders.googledrive.GoogleDriveLoader.token_path" title="Permalink to this definition">¶</a></dt>
 <dd><p>Path to the token file.</p>
 </dd></dl>
 
@@ -342,7 +373,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
 
 </dd></dl>
 
-<h1>Examples using GoogleDriveLoader<a class="headerlink" href="#langchain-community-document-loaders-googledrive-googledriveloader" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using GoogleDriveLoader<a class="headerlink" href="#langchain-community-document-loaders-googledrive-googledriveloader" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_loaders/google_drive">Google Drive</a></p></li>
 </ul>
@@ -353,7 +384,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.googledrive.GoogleDriveLoader.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

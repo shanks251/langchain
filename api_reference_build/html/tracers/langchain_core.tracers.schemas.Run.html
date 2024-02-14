@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,43 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.schemas</span></code>.Run</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.schemas</span></code>.Run</a><ul>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run"><code class="docutils literal notranslate"><span class="pre">Run</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.child_execution_order"><code class="docutils literal notranslate"><span class="pre">Run.child_execution_order</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.child_runs"><code class="docutils literal notranslate"><span class="pre">Run.child_runs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.dotted_order"><code class="docutils literal notranslate"><span class="pre">Run.dotted_order</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.end_time"><code class="docutils literal notranslate"><span class="pre">Run.end_time</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.error"><code class="docutils literal notranslate"><span class="pre">Run.error</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.events"><code class="docutils literal notranslate"><span class="pre">Run.events</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.execution_order"><code class="docutils literal notranslate"><span class="pre">Run.execution_order</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.extra"><code class="docutils literal notranslate"><span class="pre">Run.extra</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.id"><code class="docutils literal notranslate"><span class="pre">Run.id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.inputs"><code class="docutils literal notranslate"><span class="pre">Run.inputs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.name"><code class="docutils literal notranslate"><span class="pre">Run.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.outputs"><code class="docutils literal notranslate"><span class="pre">Run.outputs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.parent_run_id"><code class="docutils literal notranslate"><span class="pre">Run.parent_run_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.reference_example_id"><code class="docutils literal notranslate"><span class="pre">Run.reference_example_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.run_type"><code class="docutils literal notranslate"><span class="pre">Run.run_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.serialized"><code class="docutils literal notranslate"><span class="pre">Run.serialized</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.start_time"><code class="docutils literal notranslate"><span class="pre">Run.start_time</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.tags"><code class="docutils literal notranslate"><span class="pre">Run.tags</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.trace_id"><code class="docutils literal notranslate"><span class="pre">Run.trace_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.construct"><code class="docutils literal notranslate"><span class="pre">Run.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.copy"><code class="docutils literal notranslate"><span class="pre">Run.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.dict"><code class="docutils literal notranslate"><span class="pre">Run.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.from_orm"><code class="docutils literal notranslate"><span class="pre">Run.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.json"><code class="docutils literal notranslate"><span class="pre">Run.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.parse_file"><code class="docutils literal notranslate"><span class="pre">Run.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.parse_obj"><code class="docutils literal notranslate"><span class="pre">Run.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.parse_raw"><code class="docutils literal notranslate"><span class="pre">Run.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.schema"><code class="docutils literal notranslate"><span class="pre">Run.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.schema_json"><code class="docutils literal notranslate"><span class="pre">Run.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">Run.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.Run.validate"><code class="docutils literal notranslate"><span class="pre">Run.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +186,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-tracers-schemas-run">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.schemas</span></code>.Run<a class="headerlink" href="#langchain-core-tracers-schemas-run" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.schemas</span></code>.Run<a class="headerlink" href="#langchain-core-tracers-schemas-run" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_core.tracers.schemas.Run">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.tracers.schemas.</span></span><span class="sig-name descname"><span class="pre">Run</span></span><a class="reference internal" href="../_modules/langchain_core/tracers/schemas.html#Run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.tracers.schemas.Run" title="Permalink to this definition">¶</a></dt>
@@ -363,7 +398,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/tracers/langchain_core.tracers.schemas.Run.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,32 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.bookend</span></code>.BookendEmbeddings</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.bookend</span></code>.BookendEmbeddings</a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.api_token"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.api_token</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.auth_header"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.auth_header</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.domain"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.domain</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.model_id"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.model_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.aembed_documents"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.aembed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.aembed_query"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.aembed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.construct"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.copy"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.dict"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.embed_documents"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.embed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.embed_query"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.embed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.from_orm"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.json"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.parse_file"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.parse_obj"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.parse_raw"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.schema"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.schema_json"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.bookend.BookendEmbeddings.validate"><code class="docutils literal notranslate"><span class="pre">BookendEmbeddings.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +175,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-embeddings-bookend-bookendembeddings">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.bookend</span></code>.BookendEmbeddings<a class="headerlink" href="#langchain-community-embeddings-bookend-bookendembeddings" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.bookend</span></code>.BookendEmbeddings<a class="headerlink" href="#langchain-community-embeddings-bookend-bookendembeddings" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.embeddings.bookend.BookendEmbeddings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.embeddings.bookend.</span></span><span class="sig-name descname"><span class="pre">BookendEmbeddings</span></span><a class="reference internal" href="../_modules/langchain_community/embeddings/bookend.html#BookendEmbeddings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.embeddings.bookend.BookendEmbeddings" title="Permalink to this definition">¶</a></dt>
@@ -332,7 +356,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/embeddings/langchain_community.embeddings.bookend.BookendEmbeddings.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

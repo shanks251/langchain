@@ -25,7 +25,6 @@
       ~TagParser.check_for_whole_start_tag
       ~TagParser.clear_cdata_mode
       ~TagParser.close
-      ~TagParser.error
       ~TagParser.feed
       ~TagParser.get_starttag_text
       ~TagParser.getpos
@@ -57,7 +56,6 @@
    .. automethod:: TagParser.check_for_whole_start_tag
    .. automethod:: TagParser.clear_cdata_mode
    .. automethod:: TagParser.close
-   .. automethod:: TagParser.error
    .. automethod:: TagParser.feed
    .. automethod:: TagParser.get_starttag_text
    .. automethod:: TagParser.getpos

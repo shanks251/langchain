@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,33 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_google_genai.embeddings</span></code>.GoogleGenerativeAIEmbeddings</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_google_genai.embeddings</span></code>.GoogleGenerativeAIEmbeddings</a><ul>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.client_options"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.client_options</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.google_api_key"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.google_api_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.model"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.model</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.task_type"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.task_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.transport"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.transport</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.aembed_documents"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.aembed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.aembed_query"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.aembed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.construct"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.copy"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.dict"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.embed_documents"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.embed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.embed_query"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.embed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.from_orm"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.json"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.parse_file"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.parse_obj"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.parse_raw"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.schema"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.schema_json"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.validate"><code class="docutils literal notranslate"><span class="pre">GoogleGenerativeAIEmbeddings.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +176,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-google-genai-embeddings-googlegenerativeaiembeddings">
-<h1><a class="reference internal" href="../google_genai_api_reference.html#module-langchain_google_genai.embeddings" title="langchain_google_genai.embeddings"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_google_genai.embeddings</span></code></a>.GoogleGenerativeAIEmbeddings<a class="headerlink" href="#langchain-google-genai-embeddings-googlegenerativeaiembeddings" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../google_genai_api_reference.html#module-langchain_google_genai.embeddings" title="langchain_google_genai.embeddings"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_google_genai.embeddings</span></code></a>.GoogleGenerativeAIEmbeddings<a class="headerlink" href="#langchain-google-genai-embeddings-googlegenerativeaiembeddings" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_google_genai.embeddings.</span></span><span class="sig-name descname"><span class="pre">GoogleGenerativeAIEmbeddings</span></span><a class="reference internal" href="../_modules/langchain_google_genai/embeddings.html#GoogleGenerativeAIEmbeddings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings" title="Permalink to this definition">¶</a></dt>
@@ -182,7 +207,7 @@ constructor.</p></li>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.google_api_key">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">google_api_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.types.SecretStr</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.google_api_key" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">google_api_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SecretStr</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.google_api_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>The Google API key to use. If not provided, the GOOGLE_API_KEY environment variable will be used.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Constraints</dt>
@@ -350,7 +375,7 @@ sets a max batch size of 5 strings.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/embeddings/langchain_google_genai.embeddings.GoogleGenerativeAIEmbeddings.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

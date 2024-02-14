@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,25 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.adapters.openai</span></code>.ChatCompletions</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.adapters.openai</span></code>.ChatCompletions</a><ul>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions"><code class="docutils literal notranslate"><span class="pre">ChatCompletions</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.choices"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.choices</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.construct"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.copy"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.dict"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.from_orm"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.json"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.parse_file"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.parse_obj"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.parse_raw"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.schema"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.schema_json"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.adapters.openai.ChatCompletions.validate"><code class="docutils literal notranslate"><span class="pre">ChatCompletions.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +168,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-adapters-openai-chatcompletions">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.adapters.openai</span></code>.ChatCompletions<a class="headerlink" href="#langchain-community-adapters-openai-chatcompletions" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.adapters.openai</span></code>.ChatCompletions<a class="headerlink" href="#langchain-community-adapters-openai-chatcompletions" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.adapters.openai.ChatCompletions">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.adapters.openai.</span></span><span class="sig-name descname"><span class="pre">ChatCompletions</span></span><a class="reference internal" href="../_modules/langchain_community/adapters/openai.html#ChatCompletions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.adapters.openai.ChatCompletions" title="Permalink to this definition">¶</a></dt>
@@ -161,7 +178,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.adapters.openai.ChatCompletions.choices">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">choices</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_community.adapters.openai.Choice.html#langchain_community.adapters.openai.Choice" title="langchain_community.adapters.openai.Choice"><span class="pre">langchain_community.adapters.openai.Choice</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.adapters.openai.ChatCompletions.choices" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">choices</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_community.adapters.openai.Choice.html#langchain_community.adapters.openai.Choice" title="langchain_community.adapters.openai.Choice"><span class="pre">Choice</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.adapters.openai.ChatCompletions.choices" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -257,7 +274,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/adapters/langchain_community.adapters.openai.ChatCompletions.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

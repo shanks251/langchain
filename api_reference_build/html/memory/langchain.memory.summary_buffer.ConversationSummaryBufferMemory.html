@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,52 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.summary_buffer</span></code>.ConversationSummaryBufferMemory</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.summary_buffer</span></code>.ConversationSummaryBufferMemory</a><ul>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.ai_prefix"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.ai_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.chat_memory"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.chat_memory</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.human_prefix"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.human_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.input_key"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.input_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.llm"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.llm</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.max_token_limit"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.max_token_limit</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.memory_key"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.memory_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.moving_summary_buffer"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.moving_summary_buffer</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.output_key"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.output_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.prompt"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.prompt</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.return_messages"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.return_messages</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.summary_message_cls"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.summary_message_cls</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.aclear"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.aclear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.aload_memory_variables"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.aload_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.asave_context"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.asave_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.clear"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.construct"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.copy"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.dict"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.from_orm"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.json"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.lc_id"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.load_memory_variables"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.load_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.parse_file"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.parse_obj"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.parse_raw"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.predict_new_summary"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.predict_new_summary()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.prune"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.prune()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.save_context"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.save_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.schema"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.schema_json"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.to_json"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.validate"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.buffer"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.buffer</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.lc_attributes"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.lc_secrets"><code class="docutils literal notranslate"><span class="pre">ConversationSummaryBufferMemory.lc_secrets</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +195,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-memory-summary-buffer-conversationsummarybuffermemory">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.summary_buffer</span></code>.ConversationSummaryBufferMemory<a class="headerlink" href="#langchain-memory-summary-buffer-conversationsummarybuffermemory" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.summary_buffer</span></code>.ConversationSummaryBufferMemory<a class="headerlink" href="#langchain-memory-summary-buffer-conversationsummarybuffermemory" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.memory.summary_buffer.ConversationSummaryBufferMemory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.memory.summary_buffer.</span></span><span class="sig-name descname"><span class="pre">ConversationSummaryBufferMemory</span></span><a class="reference internal" href="../_modules/langchain/memory/summary_buffer.html#ConversationSummaryBufferMemory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory" title="Permalink to this definition">¶</a></dt>
@@ -382,7 +426,7 @@ to the object.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.memory.summary_buffer.ConversationSummaryBufferMemory.buffer">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">buffer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../messages/langchain_core.messages.base.BaseMessage.html#langchain_core.messages.base.BaseMessage" title="langchain_core.messages.base.BaseMessage"><span class="pre">langchain_core.messages.base.BaseMessage</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.buffer" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">buffer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../messages/langchain_core.messages.base.BaseMessage.html#langchain_core.messages.base.BaseMessage" title="langchain_core.messages.base.BaseMessage"><span class="pre">BaseMessage</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.memory.summary_buffer.ConversationSummaryBufferMemory.buffer" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py property">
@@ -404,7 +448,7 @@ to the object.</p>
 
 </dd></dl>
 
-<h1>Examples using ConversationSummaryBufferMemory<a class="headerlink" href="#langchain-memory-summary-buffer-conversationsummarybuffermemory" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using ConversationSummaryBufferMemory<a class="headerlink" href="#langchain-memory-summary-buffer-conversationsummarybuffermemory" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/use_cases/chatbots">Set env var OPENAI_API_KEY or load from a .env file:</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/memory/types/summary_buffer">Conversation Summary Buffer</a></p></li>
@@ -416,7 +460,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/memory/langchain.memory.summary_buffer.ConversationSummaryBufferMemory.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

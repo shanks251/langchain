@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,31 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.huggingface</span></code>.HuggingFaceInferenceAPIEmbeddings</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.huggingface</span></code>.HuggingFaceInferenceAPIEmbeddings</a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.api_key"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.api_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.api_url"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.api_url</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.model_name"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.model_name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.aembed_documents"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.aembed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.aembed_query"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.aembed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.construct"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.copy"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.dict"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.embed_documents"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.embed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.embed_query"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.embed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.from_orm"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.json"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.parse_file"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.parse_obj"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.parse_raw"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.schema"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.schema_json"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.validate"><code class="docutils literal notranslate"><span class="pre">HuggingFaceInferenceAPIEmbeddings.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +174,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-embeddings-huggingface-huggingfaceinferenceapiembeddings">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.huggingface</span></code>.HuggingFaceInferenceAPIEmbeddings<a class="headerlink" href="#langchain-community-embeddings-huggingface-huggingfaceinferenceapiembeddings" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.huggingface</span></code>.HuggingFaceInferenceAPIEmbeddings<a class="headerlink" href="#langchain-community-embeddings-huggingface-huggingfaceinferenceapiembeddings" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.embeddings.huggingface.</span></span><span class="sig-name descname"><span class="pre">HuggingFaceInferenceAPIEmbeddings</span></span><a class="reference internal" href="../_modules/langchain_community/embeddings/huggingface.html#HuggingFaceInferenceAPIEmbeddings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings" title="Permalink to this definition">¶</a></dt>
@@ -162,7 +185,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.api_key">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">api_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">pydantic.types.SecretStr</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.api_key" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">api_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">SecretStr</span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.api_key" title="Permalink to this definition">¶</a></dt>
 <dd><p>Your API key for the HuggingFace Inference API.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Constraints</dt>
@@ -326,7 +349,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using HuggingFaceInferenceAPIEmbeddings<a class="headerlink" href="#langchain-community-embeddings-huggingface-huggingfaceinferenceapiembeddings" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using HuggingFaceInferenceAPIEmbeddings<a class="headerlink" href="#langchain-community-embeddings-huggingface-huggingfaceinferenceapiembeddings" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/text_embedding/huggingfacehub">Hugging Face</a></p></li>
 </ul>
@@ -337,7 +360,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/embeddings/langchain_community.embeddings.huggingface.HuggingFaceInferenceAPIEmbeddings.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

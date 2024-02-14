@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.Agent</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.Agent</a><ul>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent"><code class="docutils literal notranslate"><span class="pre">Agent</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.allowed_tools"><code class="docutils literal notranslate"><span class="pre">Agent.allowed_tools</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.llm_chain"><code class="docutils literal notranslate"><span class="pre">Agent.llm_chain</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.output_parser"><code class="docutils literal notranslate"><span class="pre">Agent.output_parser</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.aplan"><code class="docutils literal notranslate"><span class="pre">Agent.aplan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.construct"><code class="docutils literal notranslate"><span class="pre">Agent.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.copy"><code class="docutils literal notranslate"><span class="pre">Agent.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.create_prompt"><code class="docutils literal notranslate"><span class="pre">Agent.create_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.dict"><code class="docutils literal notranslate"><span class="pre">Agent.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.from_llm_and_tools"><code class="docutils literal notranslate"><span class="pre">Agent.from_llm_and_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.from_orm"><code class="docutils literal notranslate"><span class="pre">Agent.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.get_allowed_tools"><code class="docutils literal notranslate"><span class="pre">Agent.get_allowed_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.get_full_inputs"><code class="docutils literal notranslate"><span class="pre">Agent.get_full_inputs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.json"><code class="docutils literal notranslate"><span class="pre">Agent.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.parse_file"><code class="docutils literal notranslate"><span class="pre">Agent.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.parse_obj"><code class="docutils literal notranslate"><span class="pre">Agent.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.parse_raw"><code class="docutils literal notranslate"><span class="pre">Agent.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.plan"><code class="docutils literal notranslate"><span class="pre">Agent.plan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.return_stopped_response"><code class="docutils literal notranslate"><span class="pre">Agent.return_stopped_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.save"><code class="docutils literal notranslate"><span class="pre">Agent.save()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.schema"><code class="docutils literal notranslate"><span class="pre">Agent.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.schema_json"><code class="docutils literal notranslate"><span class="pre">Agent.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.tool_run_logging_kwargs"><code class="docutils literal notranslate"><span class="pre">Agent.tool_run_logging_kwargs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">Agent.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.validate"><code class="docutils literal notranslate"><span class="pre">Agent.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.llm_prefix"><code class="docutils literal notranslate"><span class="pre">Agent.llm_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.observation_prefix"><code class="docutils literal notranslate"><span class="pre">Agent.observation_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.Agent.return_values"><code class="docutils literal notranslate"><span class="pre">Agent.return_values</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-agent-agent">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.Agent<a class="headerlink" href="#langchain-agents-agent-agent" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.Agent<a class="headerlink" href="#langchain-agents-agent-agent" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.agent.Agent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.agent.</span></span><span class="sig-name descname"><span class="pre">Agent</span></span><a class="reference internal" href="../_modules/langchain/agents/agent.html#Agent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.agent.Agent" title="Permalink to this definition">¶</a></dt>
@@ -176,12 +207,12 @@ intermediary work.</p>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.agent.Agent.llm_chain">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm_chain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chains/langchain.chains.llm.LLMChain.html#langchain.chains.llm.LLMChain" title="langchain.chains.llm.LLMChain"><span class="pre">langchain.chains.llm.LLMChain</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.agent.Agent.llm_chain" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm_chain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chains/langchain.chains.llm.LLMChain.html#langchain.chains.llm.LLMChain" title="langchain.chains.llm.LLMChain"><span class="pre">LLMChain</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.agent.Agent.llm_chain" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.agent.Agent.output_parser">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_parser</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain.agents.agent.AgentOutputParser.html#langchain.agents.agent.AgentOutputParser" title="langchain.agents.agent.AgentOutputParser"><span class="pre">langchain.agents.agent.AgentOutputParser</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.agent.Agent.output_parser" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_parser</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain.agents.agent.AgentOutputParser.html#langchain.agents.agent.AgentOutputParser" title="langchain.agents.agent.AgentOutputParser"><span class="pre">AgentOutputParser</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.agent.Agent.output_parser" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -384,7 +415,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.agent.Agent.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

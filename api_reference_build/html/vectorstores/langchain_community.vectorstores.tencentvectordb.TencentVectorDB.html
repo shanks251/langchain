@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.tencentvectordb</span></code>.TencentVectorDB</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.tencentvectordb</span></code>.TencentVectorDB</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.__init__"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.aadd_documents"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.aadd_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.aadd_texts"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.aadd_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.add_documents"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.add_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.add_texts"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.add_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.adelete"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.adelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.afrom_documents"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.afrom_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.afrom_texts"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.afrom_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.amax_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.amax_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.amax_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.amax_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.as_retriever"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.as_retriever()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.asearch"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.asearch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.asimilarity_search"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.asimilarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.asimilarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.asimilarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.asimilarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.asimilarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.asimilarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.asimilarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.delete"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.from_documents"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.from_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.from_texts"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.from_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.max_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.max_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.max_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.max_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.search"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.similarity_search"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.similarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.similarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.similarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.similarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.similarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.similarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.similarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB.similarity_search_with_score_by_vector"><code class="docutils literal notranslate"><span class="pre">TencentVectorDB.similarity_search_with_score_by_vector()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-tencentvectordb-tencentvectordb">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.tencentvectordb</span></code>.TencentVectorDB<a class="headerlink" href="#langchain-community-vectorstores-tencentvectordb-tencentvectordb" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.tencentvectordb</span></code>.TencentVectorDB<a class="headerlink" href="#langchain-community-vectorstores-tencentvectordb-tencentvectordb" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.tencentvectordb.TencentVectorDB">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.tencentvectordb.</span></span><span class="sig-name descname"><span class="pre">TencentVectorDB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embedding:</span> <span class="pre">~langchain_core.embeddings.Embeddings</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_params:</span> <span class="pre">~langchain_community.vectorstores.tencentvectordb.ConnectionParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_params:</span> <span class="pre">~langchain_community.vectorstores.tencentvectordb.IndexParams</span> <span class="pre">=</span> <span class="pre">&lt;langchain_community.vectorstores.tencentvectordb.IndexParams</span> <span class="pre">object&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database_name:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'LangChainDatabase'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_name:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'LangChainCollection'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_old:</span> <span class="pre">~typing.Optional[bool]</span> <span class="pre">=</span> <span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/vectorstores/tencentvectordb.html#TencentVectorDB"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.tencentvectordb.TencentVectorDB" title="Permalink to this definition">¶</a></dt>
@@ -587,7 +618,7 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
 
 </dd></dl>
 
-<h1>Examples using TencentVectorDB<a class="headerlink" href="#langchain-community-vectorstores-tencentvectordb-tencentvectordb" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using TencentVectorDB<a class="headerlink" href="#langchain-community-vectorstores-tencentvectordb-tencentvectordb" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/providers/tencentvectordb">TencentVectorDB</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/vectorstores/tencentvectordb">Tencent Cloud VectorDB</a></p></li>
@@ -599,7 +630,7 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.tencentvectordb.TencentVectorDB.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

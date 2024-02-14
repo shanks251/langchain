@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,26 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.gmail.toolkit</span></code>.GmailToolkit</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.gmail.toolkit</span></code>.GmailToolkit</a><ul>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit"><code class="docutils literal notranslate"><span class="pre">GmailToolkit</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.api_resource"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.api_resource</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.construct"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.copy"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.dict"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.from_orm"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.get_tools"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.get_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.json"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.parse_file"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.parse_obj"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.parse_raw"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.schema"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.schema_json"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.validate"><code class="docutils literal notranslate"><span class="pre">GmailToolkit.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +169,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-agent-toolkits-gmail-toolkit-gmailtoolkit">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.gmail.toolkit</span></code>.GmailToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-gmail-toolkit-gmailtoolkit" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.gmail.toolkit</span></code>.GmailToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-gmail-toolkit-gmailtoolkit" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.agent_toolkits.gmail.toolkit.</span></span><span class="sig-name descname"><span class="pre">GmailToolkit</span></span><a class="reference internal" href="../_modules/langchain_community/agent_toolkits/gmail/toolkit.html#GmailToolkit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit" title="Permalink to this definition">¶</a></dt>
@@ -262,7 +280,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using GmailToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-gmail-toolkit-gmailtoolkit" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using GmailToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-gmail-toolkit-gmailtoolkit" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/toolkits/gmail">Gmail</a></p></li>
 </ul>
@@ -273,7 +291,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agent_toolkits/langchain_community.agent_toolkits.gmail.toolkit.GmailToolkit.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

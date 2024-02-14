@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,71 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.runnables.base</span></code>.RunnableBinding</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.runnables.base</span></code>.RunnableBinding</a><ul>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding"><code class="docutils literal notranslate"><span class="pre">RunnableBinding</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.bound"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.bound</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.config"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.config</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.config_factories"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.config_factories</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.custom_input_type"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.custom_input_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.custom_output_type"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.custom_output_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.kwargs"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.abatch"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.abatch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.ainvoke"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.ainvoke()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.assign"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.assign()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.astream"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.astream()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.astream_events"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.astream_events()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.astream_log"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.astream_log()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.atransform"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.atransform()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.batch"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.batch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.bind"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.bind()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.config_schema"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.config_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.configurable_alternatives"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.configurable_alternatives()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.configurable_fields"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.configurable_fields()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.construct"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.copy"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.dict"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.from_orm"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.get_graph"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.get_graph()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.get_input_schema"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.get_input_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.get_name"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.get_name()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.get_output_schema"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.get_output_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.get_prompts"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.get_prompts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.invoke"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.invoke()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.json"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.lc_id"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.map"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.map()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.parse_file"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.parse_obj"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.parse_raw"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.pick"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.pick()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.pipe"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.pipe()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.schema"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.schema_json"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.stream"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.stream()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.to_json"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.transform"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.transform()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.validate"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.with_config"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.with_config()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.with_fallbacks"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.with_fallbacks()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.with_listeners"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.with_listeners()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.with_retry"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.with_retry()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.with_types"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.with_types()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.InputType"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.InputType</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.OutputType"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.OutputType</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.config_specs"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.config_specs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.input_schema"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.input_schema</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.lc_attributes"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.lc_secrets"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.lc_secrets</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.name"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.base.RunnableBinding.output_schema"><code class="docutils literal notranslate"><span class="pre">RunnableBinding.output_schema</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +214,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-runnables-base-runnablebinding">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.runnables.base</span></code>.RunnableBinding<a class="headerlink" href="#langchain-core-runnables-base-runnablebinding" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.runnables.base</span></code>.RunnableBinding<a class="headerlink" href="#langchain-core-runnables-base-runnablebinding" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.runnables.base.</span></span><span class="sig-name descname"><span class="pre">RunnableBinding</span></span><a class="reference internal" href="../_modules/langchain_core/runnables/base.html#RunnableBinding"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding" title="Permalink to this definition">¶</a></dt>
@@ -215,19 +278,19 @@ runnable with a custom type.</p></li>
 </dl>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding.bound">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bound</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_core.runnables.base.Runnable.html#langchain_core.runnables.base.Runnable" title="langchain_core.runnables.base.Runnable"><span class="pre">langchain_core.runnables.base.Runnable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">langchain_core.runnables.utils.Input</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">langchain_core.runnables.utils.Output</span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.bound" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bound</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_core.runnables.base.Runnable.html#langchain_core.runnables.base.Runnable" title="langchain_core.runnables.base.Runnable"><span class="pre">Runnable</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Input</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Output</span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.bound" title="Permalink to this definition">¶</a></dt>
 <dd><p>The underlying runnable that this runnable delegates to.</p>
 </dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding.config">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_core.runnables.config.RunnableConfig.html#langchain_core.runnables.config.RunnableConfig" title="langchain_core.runnables.config.RunnableConfig"><span class="pre">langchain_core.runnables.config.RunnableConfig</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.config" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_core.runnables.config.RunnableConfig.html#langchain_core.runnables.config.RunnableConfig" title="langchain_core.runnables.config.RunnableConfig"><span class="pre">RunnableConfig</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.config" title="Permalink to this definition">¶</a></dt>
 <dd><p>The config to bind to the underlying runnable.</p>
 </dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding.config_factories">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_factories</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.runnables.config.RunnableConfig.html#langchain_core.runnables.config.RunnableConfig" title="langchain_core.runnables.config.RunnableConfig"><span class="pre">langchain_core.runnables.config.RunnableConfig</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="langchain_core.runnables.config.RunnableConfig.html#langchain_core.runnables.config.RunnableConfig" title="langchain_core.runnables.config.RunnableConfig"><span class="pre">langchain_core.runnables.config.RunnableConfig</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.config_factories" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_factories</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.runnables.config.RunnableConfig.html#langchain_core.runnables.config.RunnableConfig" title="langchain_core.runnables.config.RunnableConfig"><span class="pre">RunnableConfig</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="langchain_core.runnables.config.RunnableConfig.html#langchain_core.runnables.config.RunnableConfig" title="langchain_core.runnables.config.RunnableConfig"><span class="pre">RunnableConfig</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.config_factories" title="Permalink to this definition">¶</a></dt>
 <dd><p>The config factories to bind to the underlying runnable.</p>
 </dd></dl>
 
@@ -958,25 +1021,25 @@ between retries</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding.InputType">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">langchain_core.runnables.utils.Input</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.InputType" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">Input</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.InputType" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of input this runnable accepts specified as a type annotation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding.OutputType">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">langchain_core.runnables.utils.Output</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.OutputType" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">Output</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.OutputType" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of output this runnable produces specified as a type annotation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding.config_specs">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_specs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.runnables.utils.ConfigurableFieldSpec.html#langchain_core.runnables.utils.ConfigurableFieldSpec" title="langchain_core.runnables.utils.ConfigurableFieldSpec"><span class="pre">langchain_core.runnables.utils.ConfigurableFieldSpec</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.config_specs" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_specs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.runnables.utils.ConfigurableFieldSpec.html#langchain_core.runnables.utils.ConfigurableFieldSpec" title="langchain_core.runnables.utils.ConfigurableFieldSpec"><span class="pre">ConfigurableFieldSpec</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.config_specs" title="Permalink to this definition">¶</a></dt>
 <dd><p>List configurable fields for this runnable.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding.input_schema">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.main.BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.input_schema" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.input_schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of input this runnable accepts specified as a pydantic model.</p>
 </dd></dl>
 
@@ -1005,7 +1068,7 @@ between retries</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.base.RunnableBinding.output_schema">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.main.BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.output_schema" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.base.RunnableBinding.output_schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of output this runnable produces specified as a pydantic model.</p>
 </dd></dl>
 
@@ -1020,7 +1083,7 @@ between retries</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/runnables/langchain_core.runnables.base.RunnableBinding.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

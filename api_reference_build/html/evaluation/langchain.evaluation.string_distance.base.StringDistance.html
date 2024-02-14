@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,24 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation.string_distance.base</span></code>.StringDistance</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation.string_distance.base</span></code>.StringDistance</a><ul>
+<li><a class="reference internal" href="#langchain.evaluation.string_distance.base.StringDistance"><code class="docutils literal notranslate"><span class="pre">StringDistance</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.evaluation.string_distance.base.StringDistance.DAMERAU_LEVENSHTEIN"><code class="docutils literal notranslate"><span class="pre">StringDistance.DAMERAU_LEVENSHTEIN</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.string_distance.base.StringDistance.LEVENSHTEIN"><code class="docutils literal notranslate"><span class="pre">StringDistance.LEVENSHTEIN</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.string_distance.base.StringDistance.JARO"><code class="docutils literal notranslate"><span class="pre">StringDistance.JARO</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.string_distance.base.StringDistance.JARO_WINKLER"><code class="docutils literal notranslate"><span class="pre">StringDistance.JARO_WINKLER</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.string_distance.base.StringDistance.HAMMING"><code class="docutils literal notranslate"><span class="pre">StringDistance.HAMMING</span></code></a></li>
+<li><a class="reference internal" href="#langchain.evaluation.string_distance.base.StringDistance.INDEL"><code class="docutils literal notranslate"><span class="pre">StringDistance.INDEL</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">StringDistance.DAMERAU_LEVENSHTEIN</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">StringDistance.LEVENSHTEIN</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">StringDistance.JARO</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">StringDistance.JARO_WINKLER</span></code></a></li>
+<li><a class="reference internal" href="#id4"><code class="docutils literal notranslate"><span class="pre">StringDistance.HAMMING</span></code></a></li>
+<li><a class="reference internal" href="#id5"><code class="docutils literal notranslate"><span class="pre">StringDistance.INDEL</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +167,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-evaluation-string-distance-base-stringdistance">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation.string_distance.base</span></code>.StringDistance<a class="headerlink" href="#langchain-evaluation-string-distance-base-stringdistance" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.evaluation.string_distance.base</span></code>.StringDistance<a class="headerlink" href="#langchain-evaluation-string-distance-base-stringdistance" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain.evaluation.string_distance.base.StringDistance">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.evaluation.string_distance.base.</span></span><span class="sig-name descname"><span class="pre">StringDistance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain/evaluation/string_distance/base.html#StringDistance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.evaluation.string_distance.base.StringDistance" title="Permalink to this definition">¶</a></dt>
@@ -224,7 +240,7 @@
 
 </dd></dl>
 
-<h1>Examples using StringDistance<a class="headerlink" href="#langchain-evaluation-string-distance-base-stringdistance" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using StringDistance<a class="headerlink" href="#langchain-evaluation-string-distance-base-stringdistance" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/guides/evaluation/string/string_distance">String Distance</a></p></li>
 </ul>
@@ -235,7 +251,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/evaluation/langchain.evaluation.string_distance.base.StringDistance.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

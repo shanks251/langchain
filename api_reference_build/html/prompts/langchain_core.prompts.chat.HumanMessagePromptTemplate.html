@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,40 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.prompts.chat</span></code>.HumanMessagePromptTemplate</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.prompts.chat</span></code>.HumanMessagePromptTemplate</a><ul>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.additional_kwargs"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.additional_kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.prompt"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.prompt</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.construct"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.copy"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.dict"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.format"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.format()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.format_messages"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.format_messages()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.from_orm"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.from_template"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.from_template()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.from_template_file"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.from_template_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.json"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.lc_id"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.parse_file"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.parse_obj"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.parse_raw"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.pretty_print"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.pretty_print()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.pretty_repr"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.pretty_repr()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.schema"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.schema_json"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.to_json"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.validate"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.input_variables"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.input_variables</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.lc_attributes"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.lc_secrets"><code class="docutils literal notranslate"><span class="pre">HumanMessagePromptTemplate.lc_secrets</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +183,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-prompts-chat-humanmessageprompttemplate">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.prompts.chat</span></code>.HumanMessagePromptTemplate<a class="headerlink" href="#langchain-core-prompts-chat-humanmessageprompttemplate" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.prompts.chat</span></code>.HumanMessagePromptTemplate<a class="headerlink" href="#langchain-core-prompts-chat-humanmessageprompttemplate" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_core.prompts.chat.HumanMessagePromptTemplate">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.prompts.chat.</span></span><span class="sig-name descname"><span class="pre">HumanMessagePromptTemplate</span></span><a class="reference internal" href="../_modules/langchain_core/prompts/chat.html#HumanMessagePromptTemplate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate" title="Permalink to this definition">¶</a></dt>
@@ -167,7 +199,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_core.prompts.chat.HumanMessagePromptTemplate.prompt">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.prompts.string.StringPromptTemplate.html#langchain_core.prompts.string.StringPromptTemplate" title="langchain_core.prompts.string.StringPromptTemplate"><span class="pre">langchain_core.prompts.string.StringPromptTemplate</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.prompts.string.StringPromptTemplate.html#langchain_core.prompts.string.StringPromptTemplate" title="langchain_core.prompts.string.StringPromptTemplate"><span class="pre">langchain_core.prompts.string.StringPromptTemplate</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="langchain_core.prompts.image.ImagePromptTemplate.html#langchain_core.prompts.image.ImagePromptTemplate" title="langchain_core.prompts.image.ImagePromptTemplate"><span class="pre">langchain_core.prompts.image.ImagePromptTemplate</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.prompt" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.prompts.string.StringPromptTemplate.html#langchain_core.prompts.string.StringPromptTemplate" title="langchain_core.prompts.string.StringPromptTemplate"><span class="pre">StringPromptTemplate</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.prompts.string.StringPromptTemplate.html#langchain_core.prompts.string.StringPromptTemplate" title="langchain_core.prompts.string.StringPromptTemplate"><span class="pre">StringPromptTemplate</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="langchain_core.prompts.image.ImagePromptTemplate.html#langchain_core.prompts.image.ImagePromptTemplate" title="langchain_core.prompts.image.ImagePromptTemplate"><span class="pre">ImagePromptTemplate</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_core.prompts.chat.HumanMessagePromptTemplate.prompt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prompt template.</p>
 </dd></dl>
 
@@ -388,7 +420,7 @@ to the object.</p>
 
 </dd></dl>
 
-<h1>Examples using HumanMessagePromptTemplate<a class="headerlink" href="#langchain-core-prompts-chat-humanmessageprompttemplate" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using HumanMessagePromptTemplate<a class="headerlink" href="#langchain-core-prompts-chat-humanmessageprompttemplate" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/chat/anthropic">Anthropic</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/chat/litellm">🚅 LiteLLM</a></p></li>
@@ -417,7 +449,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/prompts/langchain_core.prompts.chat.HumanMessagePromptTemplate.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

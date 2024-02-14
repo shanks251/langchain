@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,32 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.example_selectors.semantic_similarity</span></code>.SemanticSimilarityExampleSelector</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.example_selectors.semantic_similarity</span></code>.SemanticSimilarityExampleSelector</a><ul>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.example_keys"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.example_keys</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.input_keys"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.input_keys</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.k"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.k</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.vectorstore"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.vectorstore</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.vectorstore_kwargs"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.vectorstore_kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.add_example"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.add_example()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.construct"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.copy"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.dict"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.from_examples"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.from_examples()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.from_orm"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.json"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.parse_file"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.parse_obj"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.parse_raw"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.schema"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.schema_json"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.select_examples"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.select_examples()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.validate"><code class="docutils literal notranslate"><span class="pre">SemanticSimilarityExampleSelector.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +175,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-example-selectors-semantic-similarity-semanticsimilarityexampleselector">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.example_selectors.semantic_similarity</span></code>.SemanticSimilarityExampleSelector<a class="headerlink" href="#langchain-core-example-selectors-semantic-similarity-semanticsimilarityexampleselector" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.example_selectors.semantic_similarity</span></code>.SemanticSimilarityExampleSelector<a class="headerlink" href="#langchain-core-example-selectors-semantic-similarity-semanticsimilarityexampleselector" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.example_selectors.semantic_similarity.</span></span><span class="sig-name descname"><span class="pre">SemanticSimilarityExampleSelector</span></span><a class="reference internal" href="../_modules/langchain_core/example_selectors/semantic_similarity.html#SemanticSimilarityExampleSelector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector" title="Permalink to this definition">¶</a></dt>
@@ -180,7 +204,7 @@ the input variables instead of all variables.</p>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.vectorstore">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vectorstore</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../vectorstores/langchain_core.vectorstores.VectorStore.html#langchain_core.vectorstores.VectorStore" title="langchain_core.vectorstores.VectorStore"><span class="pre">langchain_core.vectorstores.VectorStore</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.vectorstore" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">vectorstore</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../vectorstores/langchain_core.vectorstores.VectorStore.html#langchain_core.vectorstores.VectorStore" title="langchain_core.vectorstores.VectorStore"><span class="pre">VectorStore</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.vectorstore" title="Permalink to this definition">¶</a></dt>
 <dd><p>VectorStore than contains information about examples.</p>
 </dd></dl>
 
@@ -309,7 +333,7 @@ instead of all variables.</p></li>
 
 </dd></dl>
 
-<h1>Examples using SemanticSimilarityExampleSelector<a class="headerlink" href="#langchain-core-example-selectors-semantic-similarity-semanticsimilarityexampleselector" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using SemanticSimilarityExampleSelector<a class="headerlink" href="#langchain-core-example-selectors-semantic-similarity-semanticsimilarityexampleselector" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/model_io/prompts/example_selectors/mmr">Select by maximal marginal relevance (MMR)</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/model_io/prompts/prompt_templates/few_shot_examples_chat">Few-shot examples for chat models</a></p></li>
@@ -321,7 +345,7 @@ instead of all variables.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/example_selectors/langchain_core.example_selectors.semantic_similarity.SemanticSimilarityExampleSelector.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

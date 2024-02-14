@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,21 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.cache</span></code>.CassandraCache</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.cache</span></code>.CassandraCache</a><ul>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache"><code class="docutils literal notranslate"><span class="pre">CassandraCache</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.__init__"><code class="docutils literal notranslate"><span class="pre">CassandraCache.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.aclear"><code class="docutils literal notranslate"><span class="pre">CassandraCache.aclear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.alookup"><code class="docutils literal notranslate"><span class="pre">CassandraCache.alookup()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.aupdate"><code class="docutils literal notranslate"><span class="pre">CassandraCache.aupdate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.clear"><code class="docutils literal notranslate"><span class="pre">CassandraCache.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.delete"><code class="docutils literal notranslate"><span class="pre">CassandraCache.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.delete_through_llm"><code class="docutils literal notranslate"><span class="pre">CassandraCache.delete_through_llm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.lookup"><code class="docutils literal notranslate"><span class="pre">CassandraCache.lookup()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.cache.CassandraCache.update"><code class="docutils literal notranslate"><span class="pre">CassandraCache.update()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +164,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-cache-cassandracache">
-<h1><a class="reference internal" href="../community_api_reference.html#module-langchain_community.cache" title="langchain_community.cache"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.cache</span></code></a>.CassandraCache<a class="headerlink" href="#langchain-community-cache-cassandracache" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../community_api_reference.html#module-langchain_community.cache" title="langchain_community.cache"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.cache</span></code></a>.CassandraCache<a class="headerlink" href="#langchain-community-cache-cassandracache" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.cache.CassandraCache">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.cache.</span></span><span class="sig-name descname"><span class="pre">CassandraCache</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">CassandraSession</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keyspace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'langchain_llm_cache'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ttl_seconds</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_provisioning</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/cache.html#CassandraCache"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.cache.CassandraCache" title="Permalink to this definition">¶</a></dt>
@@ -292,7 +305,7 @@ In case the llm(prompt) calls have a <cite>stop</cite> param, you should pass it
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/cache/langchain_community.cache.CassandraCache.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

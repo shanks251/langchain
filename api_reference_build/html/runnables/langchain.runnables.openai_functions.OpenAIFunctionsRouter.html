@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,72 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.runnables.openai_functions</span></code>.OpenAIFunctionsRouter</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.runnables.openai_functions</span></code>.OpenAIFunctionsRouter</a><ul>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.bound"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.bound</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.config"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.config</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.config_factories"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.config_factories</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.custom_input_type"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.custom_input_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.custom_output_type"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.custom_output_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.functions"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.functions</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.kwargs"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.abatch"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.abatch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.ainvoke"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.ainvoke()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.assign"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.assign()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.astream"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.astream()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.astream_events"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.astream_events()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.astream_log"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.astream_log()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.atransform"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.atransform()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.batch"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.batch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.bind"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.bind()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.config_schema"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.config_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.configurable_alternatives"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.configurable_alternatives()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.configurable_fields"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.configurable_fields()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.construct"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.copy"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.dict"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.from_orm"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.get_graph"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.get_graph()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.get_input_schema"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.get_input_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.get_name"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.get_name()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.get_output_schema"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.get_output_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.get_prompts"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.get_prompts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.invoke"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.invoke()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.json"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.lc_id"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.map"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.map()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.parse_file"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.parse_obj"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.parse_raw"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.pick"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.pick()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.pipe"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.pipe()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.schema"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.schema_json"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.stream"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.stream()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.to_json"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.transform"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.transform()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.validate"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.with_config"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.with_config()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.with_fallbacks"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.with_fallbacks()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.with_listeners"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.with_listeners()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.with_retry"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.with_retry()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.with_types"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.with_types()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.InputType"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.InputType</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.OutputType"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.OutputType</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.config_specs"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.config_specs</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.input_schema"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.input_schema</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.lc_attributes"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.lc_secrets"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.lc_secrets</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.name"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.output_schema"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsRouter.output_schema</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +215,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-runnables-openai-functions-openaifunctionsrouter">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.runnables.openai_functions</span></code>.OpenAIFunctionsRouter<a class="headerlink" href="#langchain-runnables-openai-functions-openaifunctionsrouter" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.runnables.openai_functions</span></code>.OpenAIFunctionsRouter<a class="headerlink" href="#langchain-runnables-openai-functions-openaifunctionsrouter" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.runnables.openai_functions.OpenAIFunctionsRouter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.runnables.openai_functions.</span></span><span class="sig-name descname"><span class="pre">OpenAIFunctionsRouter</span></span><a class="reference internal" href="../_modules/langchain/runnables/openai_functions.html#OpenAIFunctionsRouter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter" title="Permalink to this definition">¶</a></dt>
@@ -209,7 +273,7 @@ runnable with a custom type.</p></li>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.runnables.openai_functions.OpenAIFunctionsRouter.functions">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">functions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain.runnables.openai_functions.OpenAIFunction.html#langchain.runnables.openai_functions.OpenAIFunction" title="langchain.runnables.openai_functions.OpenAIFunction"><span class="pre">langchain.runnables.openai_functions.OpenAIFunction</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.functions" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">functions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain.runnables.openai_functions.OpenAIFunction.html#langchain.runnables.openai_functions.OpenAIFunction" title="langchain.runnables.openai_functions.OpenAIFunction"><span class="pre">OpenAIFunction</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.functions" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -908,25 +972,25 @@ between retries</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.runnables.openai_functions.OpenAIFunctionsRouter.InputType">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">langchain_core.runnables.utils.Input</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.InputType" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">Input</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.InputType" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of input this runnable accepts specified as a type annotation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.runnables.openai_functions.OpenAIFunctionsRouter.OutputType">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">langchain_core.runnables.utils.Output</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.OutputType" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">Output</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.OutputType" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of output this runnable produces specified as a type annotation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.runnables.openai_functions.OpenAIFunctionsRouter.config_specs">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_specs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.runnables.utils.ConfigurableFieldSpec.html#langchain_core.runnables.utils.ConfigurableFieldSpec" title="langchain_core.runnables.utils.ConfigurableFieldSpec"><span class="pre">langchain_core.runnables.utils.ConfigurableFieldSpec</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.config_specs" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_specs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.runnables.utils.ConfigurableFieldSpec.html#langchain_core.runnables.utils.ConfigurableFieldSpec" title="langchain_core.runnables.utils.ConfigurableFieldSpec"><span class="pre">ConfigurableFieldSpec</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.config_specs" title="Permalink to this definition">¶</a></dt>
 <dd><p>List configurable fields for this runnable.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.runnables.openai_functions.OpenAIFunctionsRouter.input_schema">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.main.BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.input_schema" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.input_schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of input this runnable accepts specified as a pydantic model.</p>
 </dd></dl>
 
@@ -955,7 +1019,7 @@ between retries</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.runnables.openai_functions.OpenAIFunctionsRouter.output_schema">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.main.BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.output_schema" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.runnables.openai_functions.OpenAIFunctionsRouter.output_schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of output this runnable produces specified as a pydantic model.</p>
 </dd></dl>
 
@@ -970,7 +1034,7 @@ between retries</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/runnables/langchain.runnables.openai_functions.OpenAIFunctionsRouter.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

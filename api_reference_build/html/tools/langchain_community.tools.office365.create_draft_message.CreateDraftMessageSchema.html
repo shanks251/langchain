@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,29 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.office365.create_draft_message</span></code>.CreateDraftMessageSchema</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.office365.create_draft_message</span></code>.CreateDraftMessageSchema</a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.bcc"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.bcc</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.body"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.body</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.cc"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.cc</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.subject"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.subject</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.to"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.to</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.construct"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.copy"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.dict"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.from_orm"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.json"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.parse_file"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.parse_obj"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.parse_raw"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.schema"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.schema_json"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.validate"><code class="docutils literal notranslate"><span class="pre">CreateDraftMessageSchema.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +172,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-tools-office365-create-draft-message-createdraftmessageschema">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.office365.create_draft_message</span></code>.CreateDraftMessageSchema<a class="headerlink" href="#langchain-community-tools-office365-create-draft-message-createdraftmessageschema" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.office365.create_draft_message</span></code>.CreateDraftMessageSchema<a class="headerlink" href="#langchain-community-tools-office365-create-draft-message-createdraftmessageschema" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.tools.office365.create_draft_message.</span></span><span class="sig-name descname"><span class="pre">CreateDraftMessageSchema</span></span><a class="reference internal" href="../_modules/langchain_community/tools/office365/create_draft_message.html#CreateDraftMessageSchema"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema" title="Permalink to this definition">¶</a></dt>
@@ -282,7 +303,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/tools/langchain_community.tools.office365.create_draft_message.CreateDraftMessageSchema.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

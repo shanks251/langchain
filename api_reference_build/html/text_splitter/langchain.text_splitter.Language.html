@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,32 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.text_splitter</span></code>.Language</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.text_splitter</span></code>.Language</a><ul>
+<li><a class="reference internal" href="#langchain.text_splitter.Language"><code class="docutils literal notranslate"><span class="pre">Language</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.CPP"><code class="docutils literal notranslate"><span class="pre">Language.CPP</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.GO"><code class="docutils literal notranslate"><span class="pre">Language.GO</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.JAVA"><code class="docutils literal notranslate"><span class="pre">Language.JAVA</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.KOTLIN"><code class="docutils literal notranslate"><span class="pre">Language.KOTLIN</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.JS"><code class="docutils literal notranslate"><span class="pre">Language.JS</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.TS"><code class="docutils literal notranslate"><span class="pre">Language.TS</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.PHP"><code class="docutils literal notranslate"><span class="pre">Language.PHP</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.PROTO"><code class="docutils literal notranslate"><span class="pre">Language.PROTO</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.PYTHON"><code class="docutils literal notranslate"><span class="pre">Language.PYTHON</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.RST"><code class="docutils literal notranslate"><span class="pre">Language.RST</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.RUBY"><code class="docutils literal notranslate"><span class="pre">Language.RUBY</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.RUST"><code class="docutils literal notranslate"><span class="pre">Language.RUST</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.SCALA"><code class="docutils literal notranslate"><span class="pre">Language.SCALA</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.SWIFT"><code class="docutils literal notranslate"><span class="pre">Language.SWIFT</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.MARKDOWN"><code class="docutils literal notranslate"><span class="pre">Language.MARKDOWN</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.LATEX"><code class="docutils literal notranslate"><span class="pre">Language.LATEX</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.HTML"><code class="docutils literal notranslate"><span class="pre">Language.HTML</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.SOL"><code class="docutils literal notranslate"><span class="pre">Language.SOL</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.CSHARP"><code class="docutils literal notranslate"><span class="pre">Language.CSHARP</span></code></a></li>
+<li><a class="reference internal" href="#langchain.text_splitter.Language.COBOL"><code class="docutils literal notranslate"><span class="pre">Language.COBOL</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +175,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-text-splitter-language">
-<h1><a class="reference internal" href="../langchain_api_reference.html#module-langchain.text_splitter" title="langchain.text_splitter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.text_splitter</span></code></a>.Language<a class="headerlink" href="#langchain-text-splitter-language" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../langchain_api_reference.html#module-langchain.text_splitter" title="langchain.text_splitter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.text_splitter</span></code></a>.Language<a class="headerlink" href="#langchain-text-splitter-language" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain.text_splitter.Language">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.text_splitter.</span></span><span class="sig-name descname"><span class="pre">Language</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain/text_splitter.html#Language"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.text_splitter.Language" title="Permalink to this definition">¶</a></dt>
@@ -258,7 +282,7 @@
 
 </dd></dl>
 
-<h1>Examples using Language<a class="headerlink" href="#langchain-text-splitter-language" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using Language<a class="headerlink" href="#langchain-text-splitter-language" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_loaders/source_code">Source Code</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/use_cases/code_understanding">Set env var OPENAI_API_KEY or load from a .env file</a></p></li>
@@ -270,7 +294,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/text_splitter/langchain.text_splitter.Language.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

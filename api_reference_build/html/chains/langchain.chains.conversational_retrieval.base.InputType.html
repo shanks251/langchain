@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,26 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.conversational_retrieval.base</span></code>.InputType</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.conversational_retrieval.base</span></code>.InputType</a><ul>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType"><code class="docutils literal notranslate"><span class="pre">InputType</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.chat_history"><code class="docutils literal notranslate"><span class="pre">InputType.chat_history</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.question"><code class="docutils literal notranslate"><span class="pre">InputType.question</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.construct"><code class="docutils literal notranslate"><span class="pre">InputType.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.copy"><code class="docutils literal notranslate"><span class="pre">InputType.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.dict"><code class="docutils literal notranslate"><span class="pre">InputType.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.from_orm"><code class="docutils literal notranslate"><span class="pre">InputType.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.json"><code class="docutils literal notranslate"><span class="pre">InputType.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.parse_file"><code class="docutils literal notranslate"><span class="pre">InputType.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.parse_obj"><code class="docutils literal notranslate"><span class="pre">InputType.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.parse_raw"><code class="docutils literal notranslate"><span class="pre">InputType.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.schema"><code class="docutils literal notranslate"><span class="pre">InputType.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.schema_json"><code class="docutils literal notranslate"><span class="pre">InputType.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">InputType.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.conversational_retrieval.base.InputType.validate"><code class="docutils literal notranslate"><span class="pre">InputType.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +169,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-chains-conversational-retrieval-base-inputtype">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.conversational_retrieval.base</span></code>.InputType<a class="headerlink" href="#langchain-chains-conversational-retrieval-base-inputtype" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.conversational_retrieval.base</span></code>.InputType<a class="headerlink" href="#langchain-chains-conversational-retrieval-base-inputtype" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.chains.conversational_retrieval.base.InputType">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.chains.conversational_retrieval.base.</span></span><span class="sig-name descname"><span class="pre">InputType</span></span><a class="reference internal" href="../_modules/langchain/chains/conversational_retrieval/base.html#InputType"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.chains.conversational_retrieval.base.InputType" title="Permalink to this definition">¶</a></dt>
@@ -161,7 +179,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.chains.conversational_retrieval.base.InputType.chat_history">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chat_history</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../messages/langchain_core.messages.base.BaseMessage.html#langchain_core.messages.base.BaseMessage" title="langchain_core.messages.base.BaseMessage"><span class="pre">langchain_core.messages.base.BaseMessage</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.chains.conversational_retrieval.base.InputType.chat_history" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chat_history</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../messages/langchain_core.messages.base.BaseMessage.html#langchain_core.messages.base.BaseMessage" title="langchain_core.messages.base.BaseMessage"><span class="pre">BaseMessage</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.chains.conversational_retrieval.base.InputType.chat_history" title="Permalink to this definition">¶</a></dt>
 <dd><p>The chat history to use for retrieval.</p>
 </dd></dl>
 
@@ -264,7 +282,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/chains/langchain.chains.conversational_retrieval.base.InputType.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

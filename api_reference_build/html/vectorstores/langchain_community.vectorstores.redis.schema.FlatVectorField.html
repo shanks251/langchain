@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,32 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.redis.schema</span></code>.FlatVectorField</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.redis.schema</span></code>.FlatVectorField</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField"><code class="docutils literal notranslate"><span class="pre">FlatVectorField</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.algorithm"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.algorithm</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.block_size"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.block_size</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.datatype"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.datatype</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.dims"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.dims</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.distance_metric"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.distance_metric</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.initial_cap"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.initial_cap</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.name"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.as_field"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.as_field()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.construct"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.copy"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.dict"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.from_orm"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.json"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.parse_file"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.parse_obj"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.parse_raw"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.schema"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.schema_json"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.validate"><code class="docutils literal notranslate"><span class="pre">FlatVectorField.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +175,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-redis-schema-flatvectorfield">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.redis.schema</span></code>.FlatVectorField<a class="headerlink" href="#langchain-community-vectorstores-redis-schema-flatvectorfield" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.redis.schema</span></code>.FlatVectorField<a class="headerlink" href="#langchain-community-vectorstores-redis-schema-flatvectorfield" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.redis.schema.FlatVectorField">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.redis.schema.</span></span><span class="sig-name descname"><span class="pre">FlatVectorField</span></span><a class="reference internal" href="../_modules/langchain_community/vectorstores/redis/schema.html#FlatVectorField"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.redis.schema.FlatVectorField" title="Permalink to this definition">¶</a></dt>
@@ -161,7 +185,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.redis.schema.FlatVectorField.algorithm">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">algorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">typing_extensions.Literal</span><span class="p"><span class="pre">[</span></span><span class="pre">FLAT</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FLAT'</span></em><a class="headerlink" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.algorithm" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">algorithm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'FLAT'</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'FLAT'</span></em><a class="headerlink" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.algorithm" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -181,7 +205,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.redis.schema.FlatVectorField.distance_metric">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">distance_metric</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.vectorstores.redis.schema.RedisDistanceMetric.html#langchain_community.vectorstores.redis.schema.RedisDistanceMetric" title="langchain_community.vectorstores.redis.schema.RedisDistanceMetric"><span class="pre">langchain_community.vectorstores.redis.schema.RedisDistanceMetric</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'COSINE'</span></em><a class="headerlink" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.distance_metric" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">distance_metric</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.vectorstores.redis.schema.RedisDistanceMetric.html#langchain_community.vectorstores.redis.schema.RedisDistanceMetric" title="langchain_community.vectorstores.redis.schema.RedisDistanceMetric"><span class="pre">RedisDistanceMetric</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'COSINE'</span></em><a class="headerlink" href="#langchain_community.vectorstores.redis.schema.FlatVectorField.distance_metric" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -292,7 +316,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.redis.schema.FlatVectorField.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

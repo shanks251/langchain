@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,51 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.motorhead_memory</span></code>.MotorheadMemory</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.motorhead_memory</span></code>.MotorheadMemory</a><ul>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.api_key"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.api_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.chat_memory"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.chat_memory</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.client_id"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.client_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.context"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.context</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.input_key"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.input_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.memory_key"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.memory_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.output_key"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.output_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.return_messages"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.return_messages</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.session_id"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.session_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.timeout"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.timeout</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.url"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.url</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.aclear"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.aclear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.aload_memory_variables"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.aload_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.asave_context"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.asave_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.clear"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.construct"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.copy"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.delete_session"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.delete_session()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.dict"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.from_orm"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.init"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.init()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.json"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.lc_id"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.load_memory_variables"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.load_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.parse_file"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.parse_obj"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.parse_raw"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.save_context"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.save_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.schema"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.schema_json"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.to_json"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.validate"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.lc_attributes"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.lc_secrets"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.lc_secrets</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.motorhead_memory.MotorheadMemory.memory_variables"><code class="docutils literal notranslate"><span class="pre">MotorheadMemory.memory_variables</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +194,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-memory-motorhead-memory-motorheadmemory">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.motorhead_memory</span></code>.MotorheadMemory<a class="headerlink" href="#langchain-memory-motorhead-memory-motorheadmemory" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.motorhead_memory</span></code>.MotorheadMemory<a class="headerlink" href="#langchain-memory-motorhead-memory-motorheadmemory" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.memory.motorhead_memory.MotorheadMemory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.memory.motorhead_memory.</span></span><span class="sig-name descname"><span class="pre">MotorheadMemory</span></span><a class="reference internal" href="../_modules/langchain/memory/motorhead_memory.html#MotorheadMemory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.memory.motorhead_memory.MotorheadMemory" title="Permalink to this definition">¶</a></dt>
@@ -400,7 +443,7 @@ to the object.</p>
 
 </dd></dl>
 
-<h1>Examples using MotorheadMemory<a class="headerlink" href="#langchain-memory-motorhead-memory-motorheadmemory" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using MotorheadMemory<a class="headerlink" href="#langchain-memory-motorhead-memory-motorheadmemory" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/memory/motorhead_memory">Motörhead Memory</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/memory/motorhead_memory_managed">Motörhead Memory (Managed)</a></p></li>
@@ -412,7 +455,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/memory/langchain.memory.motorhead_memory.MotorheadMemory.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

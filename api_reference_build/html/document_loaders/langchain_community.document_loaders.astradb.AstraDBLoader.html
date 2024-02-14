@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,20 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.astradb</span></code>.AstraDBLoader</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.astradb</span></code>.AstraDBLoader</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader.__init__"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader.alazy_load"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader.alazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader.aload"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader.aload()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader.fetch_page_result"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader.fetch_page_result()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader.fetch_results"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader.fetch_results()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader.lazy_load"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader.lazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader.load"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader.load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.astradb.AstraDBLoader.load_and_split"><code class="docutils literal notranslate"><span class="pre">AstraDBLoader.load_and_split()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +163,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-astradb-astradbloader">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.astradb</span></code>.AstraDBLoader<a class="headerlink" href="#langchain-community-document-loaders-astradb-astradbloader" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.astradb</span></code>.AstraDBLoader<a class="headerlink" href="#langchain-community-document-loaders-astradb-astradbloader" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.astradb.AstraDBLoader">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.astradb.</span></span><span class="sig-name descname"><span class="pre">AstraDBLoader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">collection_name:</span> <span class="pre">str,</span> <span class="pre">token:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">api_endpoint:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">astra_db_client:</span> <span class="pre">Optional[AstraDB]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">async_astra_db_client:</span> <span class="pre">Optional[AsyncAstraDB]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">namespace:</span> <span class="pre">Optional[str]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">filter_criteria:</span> <span class="pre">Optional[Dict[str,</span> <span class="pre">Any]]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">projection:</span> <span class="pre">Optional[Dict[str,</span> <span class="pre">Any]]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">find_options:</span> <span class="pre">Optional[Dict[str,</span> <span class="pre">Any]]</span> <span class="pre">=</span> <span class="pre">None,</span> <span class="pre">nb_prefetched:</span> <span class="pre">int</span> <span class="pre">=</span> <span class="pre">1000,</span> <span class="pre">extraction_function:</span> <span class="pre">Callable[[Dict],</span> <span class="pre">str]</span> <span class="pre">=</span> <span class="pre">&lt;function</span> <span class="pre">dumps&gt;</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/document_loaders/astradb.html#AstraDBLoader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.astradb.AstraDBLoader" title="Permalink to this definition">¶</a></dt>
@@ -254,7 +266,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.astradb.AstraDBLoader.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

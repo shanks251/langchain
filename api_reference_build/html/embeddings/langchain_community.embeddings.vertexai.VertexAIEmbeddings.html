@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,45 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.vertexai</span></code>.VertexAIEmbeddings</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.vertexai</span></code>.VertexAIEmbeddings</a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.credentials"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.credentials</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.location"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.location</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.max_output_tokens"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.max_output_tokens</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.max_retries"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.max_retries</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.model_name"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.model_name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.n"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.n</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.project"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.project</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.request_parallelism"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.request_parallelism</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.show_progress_bar"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.show_progress_bar</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.stop"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.stop</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.streaming"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.streaming</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.temperature"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.temperature</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.top_k"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.top_k</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.top_p"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.top_p</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.aembed_documents"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.aembed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.aembed_query"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.aembed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.construct"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.copy"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.dict"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.embed"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.embed()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.embed_documents"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.embed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.embed_query"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.embed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.from_orm"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.json"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.parse_file"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.parse_obj"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.parse_raw"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.schema"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.schema_json"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.validate"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.is_codey_model"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.is_codey_model</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings.task_executor"><code class="docutils literal notranslate"><span class="pre">VertexAIEmbeddings.task_executor</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +188,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-embeddings-vertexai-vertexaiembeddings">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.vertexai</span></code>.VertexAIEmbeddings<a class="headerlink" href="#langchain-community-embeddings-vertexai-vertexaiembeddings" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.vertexai</span></code>.VertexAIEmbeddings<a class="headerlink" href="#langchain-community-embeddings-vertexai-vertexaiembeddings" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.embeddings.vertexai.VertexAIEmbeddings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.embeddings.vertexai.</span></span><span class="sig-name descname"><span class="pre">VertexAIEmbeddings</span></span><a class="reference internal" href="../_modules/langchain_community/embeddings/vertexai.html#VertexAIEmbeddings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.embeddings.vertexai.VertexAIEmbeddings" title="Permalink to this definition">¶</a></dt>
@@ -419,7 +456,7 @@ at the first request, starting from 250, down to 5.</p></li>
 
 </dd></dl>
 
-<h1>Examples using VertexAIEmbeddings<a class="headerlink" href="#langchain-community-embeddings-vertexai-vertexaiembeddings" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using VertexAIEmbeddings<a class="headerlink" href="#langchain-community-embeddings-vertexai-vertexaiembeddings" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/text_embedding/google_vertex_ai_palm">Google Vertex AI PaLM </a></p></li>
 </ul>
@@ -430,7 +467,7 @@ at the first request, starting from 250, down to 5.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/embeddings/langchain_community.embeddings.vertexai.VertexAIEmbeddings.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

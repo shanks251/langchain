@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,26 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.file_management.utils</span></code>.BaseFileToolMixin</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.file_management.utils</span></code>.BaseFileToolMixin</a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.root_dir"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.root_dir</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.construct"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.copy"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.dict"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.from_orm"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.get_relative_path"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.get_relative_path()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.json"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.parse_file"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.parse_obj"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.parse_raw"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.schema"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.schema_json"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin.validate"><code class="docutils literal notranslate"><span class="pre">BaseFileToolMixin.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +169,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-tools-file-management-utils-basefiletoolmixin">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.file_management.utils</span></code>.BaseFileToolMixin<a class="headerlink" href="#langchain-community-tools-file-management-utils-basefiletoolmixin" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.file_management.utils</span></code>.BaseFileToolMixin<a class="headerlink" href="#langchain-community-tools-file-management-utils-basefiletoolmixin" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.tools.file_management.utils.BaseFileToolMixin">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.tools.file_management.utils.</span></span><span class="sig-name descname"><span class="pre">BaseFileToolMixin</span></span><a class="reference internal" href="../_modules/langchain_community/tools/file_management/utils.html#BaseFileToolMixin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.tools.file_management.utils.BaseFileToolMixin" title="Permalink to this definition">¶</a></dt>
@@ -264,7 +282,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/tools/langchain_community.tools.file_management.utils.BaseFileToolMixin.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

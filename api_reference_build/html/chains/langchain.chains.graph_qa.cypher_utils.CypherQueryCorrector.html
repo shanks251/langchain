@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,22 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.graph_qa.cypher_utils</span></code>.CypherQueryCorrector</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.graph_qa.cypher_utils</span></code>.CypherQueryCorrector</a><ul>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.__init__"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.clean_node"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.clean_node()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.correct_query"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.correct_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.detect_labels"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.detect_labels()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.detect_node_variables"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.detect_node_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.detect_relation_types"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.detect_relation_types()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.extract_node_variable"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.extract_node_variable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.extract_paths"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.extract_paths()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.judge_direction"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.judge_direction()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.verify_schema"><code class="docutils literal notranslate"><span class="pre">CypherQueryCorrector.verify_schema()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +165,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-chains-graph-qa-cypher-utils-cypherquerycorrector">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.graph_qa.cypher_utils</span></code>.CypherQueryCorrector<a class="headerlink" href="#langchain-chains-graph-qa-cypher-utils-cypherquerycorrector" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.graph_qa.cypher_utils</span></code>.CypherQueryCorrector<a class="headerlink" href="#langchain-chains-graph-qa-cypher-utils-cypherquerycorrector" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.chains.graph_qa.cypher_utils.</span></span><span class="sig-name descname"><span class="pre">CypherQueryCorrector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">schemas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain.chains.graph_qa.cypher_utils.Schema.html#langchain.chains.graph_qa.cypher_utils.Schema" title="langchain.chains.graph_qa.cypher_utils.Schema"><span class="pre">Schema</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain/chains/graph_qa/cypher_utils.html#CypherQueryCorrector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector" title="Permalink to this definition">¶</a></dt>
@@ -394,7 +408,7 @@ This code is copied from the winner’s submission to the Cypher competition:
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/chains/langchain.chains.graph_qa.cypher_utils.CypherQueryCorrector.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

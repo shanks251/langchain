@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,27 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.bearly.tool</span></code>.FileInfo</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.bearly.tool</span></code>.FileInfo</a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo"><code class="docutils literal notranslate"><span class="pre">FileInfo</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.description"><code class="docutils literal notranslate"><span class="pre">FileInfo.description</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.source_path"><code class="docutils literal notranslate"><span class="pre">FileInfo.source_path</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.target_path"><code class="docutils literal notranslate"><span class="pre">FileInfo.target_path</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.construct"><code class="docutils literal notranslate"><span class="pre">FileInfo.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.copy"><code class="docutils literal notranslate"><span class="pre">FileInfo.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.dict"><code class="docutils literal notranslate"><span class="pre">FileInfo.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.from_orm"><code class="docutils literal notranslate"><span class="pre">FileInfo.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.json"><code class="docutils literal notranslate"><span class="pre">FileInfo.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.parse_file"><code class="docutils literal notranslate"><span class="pre">FileInfo.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.parse_obj"><code class="docutils literal notranslate"><span class="pre">FileInfo.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.parse_raw"><code class="docutils literal notranslate"><span class="pre">FileInfo.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.schema"><code class="docutils literal notranslate"><span class="pre">FileInfo.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.schema_json"><code class="docutils literal notranslate"><span class="pre">FileInfo.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">FileInfo.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.bearly.tool.FileInfo.validate"><code class="docutils literal notranslate"><span class="pre">FileInfo.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +170,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-tools-bearly-tool-fileinfo">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.bearly.tool</span></code>.FileInfo<a class="headerlink" href="#langchain-community-tools-bearly-tool-fileinfo" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.bearly.tool</span></code>.FileInfo<a class="headerlink" href="#langchain-community-tools-bearly-tool-fileinfo" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.tools.bearly.tool.FileInfo">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.tools.bearly.tool.</span></span><span class="sig-name descname"><span class="pre">FileInfo</span></span><a class="reference internal" href="../_modules/langchain_community/tools/bearly/tool.html#FileInfo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.tools.bearly.tool.FileInfo" title="Permalink to this definition">¶</a></dt>
@@ -267,7 +286,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/tools/langchain_community.tools.bearly.tool.FileInfo.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

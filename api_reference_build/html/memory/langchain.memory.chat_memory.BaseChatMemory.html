@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,42 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.chat_memory</span></code>.BaseChatMemory</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.chat_memory</span></code>.BaseChatMemory</a><ul>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.chat_memory"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.chat_memory</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.input_key"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.input_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.output_key"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.output_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.return_messages"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.return_messages</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.aclear"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.aclear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.aload_memory_variables"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.aload_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.asave_context"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.asave_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.clear"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.construct"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.copy"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.dict"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.from_orm"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.json"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.lc_id"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.load_memory_variables"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.load_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.parse_file"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.parse_obj"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.parse_raw"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.save_context"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.save_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.schema"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.schema_json"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.to_json"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.validate"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.lc_attributes"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.lc_secrets"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.lc_secrets</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.chat_memory.BaseChatMemory.memory_variables"><code class="docutils literal notranslate"><span class="pre">BaseChatMemory.memory_variables</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +185,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-memory-chat-memory-basechatmemory">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.chat_memory</span></code>.BaseChatMemory<a class="headerlink" href="#langchain-memory-chat-memory-basechatmemory" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.chat_memory</span></code>.BaseChatMemory<a class="headerlink" href="#langchain-memory-chat-memory-basechatmemory" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.memory.chat_memory.BaseChatMemory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.memory.chat_memory.</span></span><span class="sig-name descname"><span class="pre">BaseChatMemory</span></span><a class="reference internal" href="../_modules/langchain/memory/chat_memory.html#BaseChatMemory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.memory.chat_memory.BaseChatMemory" title="Permalink to this definition">¶</a></dt>
@@ -161,7 +195,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.memory.chat_memory.BaseChatMemory.chat_memory">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chat_memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory" title="langchain_core.chat_history.BaseChatMessageHistory"><span class="pre">langchain_core.chat_history.BaseChatMessageHistory</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.memory.chat_memory.BaseChatMemory.chat_memory" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chat_memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory" title="langchain_core.chat_history.BaseChatMessageHistory"><span class="pre">BaseChatMessageHistory</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.memory.chat_memory.BaseChatMemory.chat_memory" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -363,7 +397,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/memory/langchain.memory.chat_memory.BaseChatMemory.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

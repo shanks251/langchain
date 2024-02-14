@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,35 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.entity</span></code>.RedisEntityStore</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.entity</span></code>.RedisEntityStore</a><ul>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.key_prefix"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.key_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.recall_ttl"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.recall_ttl</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.redis_client"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.redis_client</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.session_id"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.session_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.ttl"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.ttl</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.clear"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.construct"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.copy"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.delete"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.dict"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.exists"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.exists()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.from_orm"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.get"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.get()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.json"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.parse_file"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.parse_obj"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.parse_raw"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.schema"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.schema_json"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.set"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.set()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.validate"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.RedisEntityStore.full_key_prefix"><code class="docutils literal notranslate"><span class="pre">RedisEntityStore.full_key_prefix</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +178,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-memory-entity-redisentitystore">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.entity</span></code>.RedisEntityStore<a class="headerlink" href="#langchain-memory-entity-redisentitystore" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.entity</span></code>.RedisEntityStore<a class="headerlink" href="#langchain-memory-entity-redisentitystore" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.memory.entity.RedisEntityStore">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.memory.entity.</span></span><span class="sig-name descname"><span class="pre">RedisEntityStore</span></span><a class="reference internal" href="../_modules/langchain/memory/entity.html#RedisEntityStore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.memory.entity.RedisEntityStore" title="Permalink to this definition">¶</a></dt>
@@ -314,7 +341,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/memory/langchain.memory.entity.RedisEntityStore.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

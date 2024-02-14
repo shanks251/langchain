@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.surrealdb</span></code>.SurrealDBStore</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.surrealdb</span></code>.SurrealDBStore</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.__init__"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.aadd_documents"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.aadd_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.aadd_texts"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.aadd_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.add_documents"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.add_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.add_texts"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.add_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.adelete"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.adelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.afrom_documents"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.afrom_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.afrom_texts"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.afrom_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.amax_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.amax_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.amax_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.amax_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.as_retriever"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.as_retriever()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.asearch"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.asearch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.asimilarity_search"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.asimilarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.asimilarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.asimilarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.asimilarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.asimilarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.asimilarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.asimilarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.delete"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.from_documents"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.from_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.from_texts"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.from_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.initialize"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.initialize()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.max_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.max_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.max_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.max_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.search"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.similarity_search"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.similarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.similarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.similarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.similarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.similarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore.similarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">SurrealDBStore.similarity_search_with_score()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-surrealdb-surrealdbstore">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.surrealdb</span></code>.SurrealDBStore<a class="headerlink" href="#langchain-community-vectorstores-surrealdb-surrealdbstore" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.surrealdb</span></code>.SurrealDBStore<a class="headerlink" href="#langchain-community-vectorstores-surrealdb-surrealdbstore" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.surrealdb.SurrealDBStore">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.surrealdb.</span></span><span class="sig-name descname"><span class="pre">SurrealDBStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embedding_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/vectorstores/surrealdb.html#SurrealDBStore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.surrealdb.SurrealDBStore" title="Permalink to this definition">¶</a></dt>
@@ -759,7 +790,7 @@ Defaults to 0.5.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.surrealdb.SurrealDBStore.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

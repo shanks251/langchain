@@ -1,8 +1,8 @@
-﻿:mod:`langchain_experimental.rl_chain.base`.embed
+﻿:mod:`langchain_experimental.rl_chain.base`.Embed
 ========================================================
 
 .. currentmodule:: langchain_experimental.rl_chain.base
 
-.. autofunction:: embed
+.. autofunction:: Embed
 
-.. example_links:: embed
+.. example_links:: Embed

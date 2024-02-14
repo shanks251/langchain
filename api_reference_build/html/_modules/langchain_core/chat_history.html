@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -160,7 +159,7 @@
 <span class="kn">from</span> <span class="nn">langchain_core.runnables</span> <span class="kn">import</span> <span class="n">run_in_executor</span>
 
 
-<div class="viewcode-block" id="BaseChatMessageHistory"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory">[docs]</a><span class="k">class</span> <span class="nc">BaseChatMessageHistory</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<div class="viewcode-block" id="BaseChatMessageHistory"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory">[docs]</a><span class="k">class</span> <span class="nc">BaseChatMessageHistory</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Abstract base class for storing chat message history.</span>
 
 <span class="sd">    Implementations guidelines:</span>
@@ -225,7 +224,7 @@
 <span class="sd">    latency.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="BaseChatMessageHistory.aget_messages"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory.aget_messages">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">aget_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">]:</span>
+<div class="viewcode-block" id="BaseChatMessageHistory.aget_messages"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory.aget_messages">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">aget_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Async version of getting messages.</span>
 
 <span class="sd">        Can over-ride this method to provide an efficient async implementation.</span>
@@ -235,7 +234,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="k">await</span> <span class="n">run_in_executor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">messages</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseChatMessageHistory.add_user_message"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory.add_user_message">[docs]</a>    <span class="k">def</span> <span class="nf">add_user_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">HumanMessage</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseChatMessageHistory.add_user_message"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory.add_user_message">[docs]</a>    <span class="k">def</span> <span class="nf">add_user_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">HumanMessage</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Convenience method for adding a human message string to the store.</span>
 
 <span class="sd">        Please note that this is a convenience method. Code should favor the</span>
@@ -252,7 +251,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">add_message</span><span class="p">(</span><span class="n">HumanMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">message</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="BaseChatMessageHistory.add_ai_message"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory.add_ai_message">[docs]</a>    <span class="k">def</span> <span class="nf">add_ai_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">AIMessage</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseChatMessageHistory.add_ai_message"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory.add_ai_message">[docs]</a>    <span class="k">def</span> <span class="nf">add_ai_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">AIMessage</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Convenience method for adding an AI message string to the store.</span>
 
 <span class="sd">        Please note that this is a convenience method. Code should favor the bulk</span>
@@ -269,7 +268,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">add_message</span><span class="p">(</span><span class="n">AIMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">message</span><span class="p">))</span></div>
 
-<div class="viewcode-block" id="BaseChatMessageHistory.add_message"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory.add_message">[docs]</a>    <span class="k">def</span> <span class="nf">add_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">BaseMessage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseChatMessageHistory.add_message"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory.add_message">[docs]</a>    <span class="k">def</span> <span class="nf">add_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">BaseMessage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Add a Message object to the store.</span>
 
 <span class="sd">        Args:</span>
@@ -285,7 +284,7 @@
                 <span class="s2">&quot;Please implement add_message or add_messages.&quot;</span>
             <span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseChatMessageHistory.add_messages"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory.add_messages">[docs]</a>    <span class="k">def</span> <span class="nf">add_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseChatMessageHistory.add_messages"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory.add_messages">[docs]</a>    <span class="k">def</span> <span class="nf">add_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Add a list of messages.</span>
 
 <span class="sd">        Implementations should over-ride this method to handle bulk addition of messages</span>
@@ -297,7 +296,7 @@
         <span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">messages</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">add_message</span><span class="p">(</span><span class="n">message</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseChatMessageHistory.aadd_messages"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory.aadd_messages">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">aadd_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseChatMessageHistory.aadd_messages"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory.aadd_messages">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">aadd_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Add a list of messages.</span>
 
 <span class="sd">        Args:</span>
@@ -305,11 +304,11 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">await</span> <span class="n">run_in_executor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">add_messages</span><span class="p">,</span> <span class="n">messages</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseChatMessageHistory.clear"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory.clear">[docs]</a>    <span class="nd">@abstractmethod</span>
+<div class="viewcode-block" id="BaseChatMessageHistory.clear"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory.clear">[docs]</a>    <span class="nd">@abstractmethod</span>
     <span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Remove all messages from the store&quot;&quot;&quot;</span></div>
 
-<div class="viewcode-block" id="BaseChatMessageHistory.aclear"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_core.chat_history.BaseChatMessageHistory.aclear">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">aclear</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseChatMessageHistory.aclear"><a class="viewcode-back" href="../../chat_history/langchain_core.chat_history.BaseChatMessageHistory.html#langchain_community.chat_message_histories.astradb.BaseChatMessageHistory.aclear">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">aclear</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Remove all messages from the store&quot;&quot;&quot;</span>
         <span class="k">await</span> <span class="n">run_in_executor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">clear</span><span class="p">)</span></div>
 
@@ -322,7 +321,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
       </footer>
     </div>
   </div>

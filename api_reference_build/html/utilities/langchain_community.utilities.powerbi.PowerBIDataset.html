@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,42 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.powerbi</span></code>.PowerBIDataset</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.powerbi</span></code>.PowerBIDataset</a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.aiosession"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.aiosession</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.credential"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.credential</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.dataset_id"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.dataset_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.group_id"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.group_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.impersonated_user_name"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.impersonated_user_name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.sample_rows_in_table_info"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.sample_rows_in_table_info</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.schemas"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.schemas</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.table_names"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.table_names</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.token"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.token</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.aget_table_info"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.aget_table_info()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.arun"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.arun()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.construct"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.copy"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.dict"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.from_orm"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.get_schemas"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.get_schemas()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.get_table_info"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.get_table_info()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.get_table_names"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.get_table_names()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.json"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.parse_file"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.parse_obj"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.parse_raw"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.run"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.run()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.schema"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.schema_json"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.validate"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.headers"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.headers</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.request_url"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.request_url</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.powerbi.PowerBIDataset.table_info"><code class="docutils literal notranslate"><span class="pre">PowerBIDataset.table_info</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +185,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-utilities-powerbi-powerbidataset">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.powerbi</span></code>.PowerBIDataset<a class="headerlink" href="#langchain-community-utilities-powerbi-powerbidataset" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.powerbi</span></code>.PowerBIDataset<a class="headerlink" href="#langchain-community-utilities-powerbi-powerbidataset" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.utilities.powerbi.PowerBIDataset">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.utilities.powerbi.</span></span><span class="sig-name descname"><span class="pre">PowerBIDataset</span></span><a class="reference internal" href="../_modules/langchain_community/utilities/powerbi.html#PowerBIDataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.utilities.powerbi.PowerBIDataset" title="Permalink to this definition">¶</a></dt>
@@ -354,7 +388,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using PowerBIDataset<a class="headerlink" href="#langchain-community-utilities-powerbi-powerbidataset" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using PowerBIDataset<a class="headerlink" href="#langchain-community-utilities-powerbi-powerbidataset" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/toolkits/powerbi">PowerBI Dataset</a></p></li>
 </ul>
@@ -365,7 +399,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/utilities/langchain_community.utilities.powerbi.PowerBIDataset.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

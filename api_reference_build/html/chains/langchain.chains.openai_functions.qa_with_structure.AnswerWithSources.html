@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,26 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.openai_functions.qa_with_structure</span></code>.AnswerWithSources</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.openai_functions.qa_with_structure</span></code>.AnswerWithSources</a><ul>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.answer"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.answer</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.sources"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.sources</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.construct"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.copy"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.dict"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.from_orm"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.json"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.parse_file"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.parse_obj"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.parse_raw"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.schema"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.schema_json"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.validate"><code class="docutils literal notranslate"><span class="pre">AnswerWithSources.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +169,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-chains-openai-functions-qa-with-structure-answerwithsources">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.openai_functions.qa_with_structure</span></code>.AnswerWithSources<a class="headerlink" href="#langchain-chains-openai-functions-qa-with-structure-answerwithsources" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.chains.openai_functions.qa_with_structure</span></code>.AnswerWithSources<a class="headerlink" href="#langchain-chains-openai-functions-qa-with-structure-answerwithsources" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.chains.openai_functions.qa_with_structure.AnswerWithSources">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.chains.openai_functions.qa_with_structure.</span></span><span class="sig-name descname"><span class="pre">AnswerWithSources</span></span><a class="reference internal" href="../_modules/langchain/chains/openai_functions/qa_with_structure.html#AnswerWithSources"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.chains.openai_functions.qa_with_structure.AnswerWithSources" title="Permalink to this definition">¶</a></dt>
@@ -264,7 +282,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/chains/langchain.chains.openai_functions.qa_with_structure.AnswerWithSources.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

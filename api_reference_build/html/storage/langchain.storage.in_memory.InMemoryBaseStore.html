@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,22 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.storage.in_memory</span></code>.InMemoryBaseStore</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.storage.in_memory</span></code>.InMemoryBaseStore</a><ul>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.store"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.store</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.__init__"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.amdelete"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.amdelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.amget"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.amget()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.amset"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.amset()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.ayield_keys"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.ayield_keys()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.mdelete"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.mdelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.mget"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.mget()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.mset"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.mset()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.storage.in_memory.InMemoryBaseStore.yield_keys"><code class="docutils literal notranslate"><span class="pre">InMemoryBaseStore.yield_keys()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +165,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-storage-in-memory-inmemorybasestore">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.storage.in_memory</span></code>.InMemoryBaseStore<a class="headerlink" href="#langchain-storage-in-memory-inmemorybasestore" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.storage.in_memory</span></code>.InMemoryBaseStore<a class="headerlink" href="#langchain-storage-in-memory-inmemorybasestore" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain.storage.in_memory.InMemoryBaseStore">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.storage.in_memory.</span></span><span class="sig-name descname"><span class="pre">InMemoryBaseStore</span></span><a class="reference internal" href="../_modules/langchain/storage/in_memory.html#InMemoryBaseStore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.storage.in_memory.InMemoryBaseStore" title="Permalink to this definition">¶</a></dt>
@@ -350,7 +364,7 @@ If a key is not found, the corresponding value will be None.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/storage/langchain.storage.in_memory.InMemoryBaseStore.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.hippo</span></code>.Hippo</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.hippo</span></code>.Hippo</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo"><code class="docutils literal notranslate"><span class="pre">Hippo</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.__init__"><code class="docutils literal notranslate"><span class="pre">Hippo.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.aadd_documents"><code class="docutils literal notranslate"><span class="pre">Hippo.aadd_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.aadd_texts"><code class="docutils literal notranslate"><span class="pre">Hippo.aadd_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.add_documents"><code class="docutils literal notranslate"><span class="pre">Hippo.add_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.add_texts"><code class="docutils literal notranslate"><span class="pre">Hippo.add_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.adelete"><code class="docutils literal notranslate"><span class="pre">Hippo.adelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.afrom_documents"><code class="docutils literal notranslate"><span class="pre">Hippo.afrom_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.afrom_texts"><code class="docutils literal notranslate"><span class="pre">Hippo.afrom_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.amax_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">Hippo.amax_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.amax_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">Hippo.amax_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.as_retriever"><code class="docutils literal notranslate"><span class="pre">Hippo.as_retriever()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.asearch"><code class="docutils literal notranslate"><span class="pre">Hippo.asearch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.asimilarity_search"><code class="docutils literal notranslate"><span class="pre">Hippo.asimilarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.asimilarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">Hippo.asimilarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.asimilarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">Hippo.asimilarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.asimilarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">Hippo.asimilarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.delete"><code class="docutils literal notranslate"><span class="pre">Hippo.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.from_documents"><code class="docutils literal notranslate"><span class="pre">Hippo.from_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.from_texts"><code class="docutils literal notranslate"><span class="pre">Hippo.from_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.max_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">Hippo.max_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.max_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">Hippo.max_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.search"><code class="docutils literal notranslate"><span class="pre">Hippo.search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.similarity_search"><code class="docutils literal notranslate"><span class="pre">Hippo.similarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.similarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">Hippo.similarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.similarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">Hippo.similarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.similarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">Hippo.similarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.hippo.Hippo.similarity_search_with_score_by_vector"><code class="docutils literal notranslate"><span class="pre">Hippo.similarity_search_with_score_by_vector()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-hippo-hippo">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.hippo</span></code>.Hippo<a class="headerlink" href="#langchain-community-vectorstores-hippo-hippo" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.hippo</span></code>.Hippo<a class="headerlink" href="#langchain-community-vectorstores-hippo-hippo" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.hippo.Hippo">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.hippo.</span></span><span class="sig-name descname"><span class="pre">Hippo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embedding_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'test'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_shards</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number_of_replicas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drop_old</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/vectorstores/hippo.html#Hippo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.hippo.Hippo" title="Permalink to this definition">¶</a></dt>
@@ -590,7 +621,7 @@ False otherwise, None if not implemented.</p>
 <li><p><strong>texts</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – List of texts to be added.</p></li>
 <li><p><strong>embedding</strong> (<a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><em>Embeddings</em></a>) – Embedding model for the texts.</p></li>
 <li><p><strong>metadatas</strong> (<em>List</em><em>[</em><em>dict</em><em>]</em><em>, </em><em>optional</em>) – </p></li>
-<li><p><strong>None.</strong> (<em>List of metadata dictionaries for each text.Defaults to</em>) – </p></li>
+<li><p><strong>None.</strong> (<em>List</em><em> of </em><em>metadata dictionaries for each text.Defaults to</em>) – </p></li>
 <li><p><strong>table_name</strong> (<em>str</em>) – Name of the table. Defaults to “test”.</p></li>
 <li><p><strong>database_name</strong> (<em>str</em>) – Name of the database. Defaults to “default”.</p></li>
 <li><p><strong>connection_args</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Connection parameters.</p></li>
@@ -793,7 +824,7 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.hippo.Hippo.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

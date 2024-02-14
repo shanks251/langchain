@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -147,52 +146,22 @@
         
   <h1>Source code for langchain_nvidia_ai_endpoints.embeddings</h1><div class="highlight"><pre>
 <span></span><span class="sd">&quot;&quot;&quot;Embeddings Components Derived from NVEModel/Embeddings&quot;&quot;&quot;</span>
-<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Literal</span><span class="p">,</span> <span class="n">Optional</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">List</span><span class="p">,</span> <span class="n">Literal</span><span class="p">,</span> <span class="n">Optional</span>
 
 <span class="kn">from</span> <span class="nn">langchain_core.embeddings</span> <span class="kn">import</span> <span class="n">Embeddings</span>
-<span class="kn">from</span> <span class="nn">langchain_core.pydantic_v1</span> <span class="kn">import</span> <span class="n">BaseModel</span><span class="p">,</span> <span class="n">Field</span><span class="p">,</span> <span class="n">root_validator</span>
+<span class="kn">from</span> <span class="nn">langchain_core.pydantic_v1</span> <span class="kn">import</span> <span class="n">Field</span>
 
-<span class="kn">from</span> <span class="nn">langchain_nvidia_ai_endpoints._common</span> <span class="kn">import</span> <span class="n">NVEModel</span>
+<span class="kn">from</span> <span class="nn">langchain_nvidia_ai_endpoints._common</span> <span class="kn">import</span> <span class="n">_NVIDIAClient</span>
 
 
-<div class="viewcode-block" id="NVIDIAEmbeddings"><a class="viewcode-back" href="../../embeddings/langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings.html#langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings">[docs]</a><span class="k">class</span> <span class="nc">NVIDIAEmbeddings</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">Embeddings</span><span class="p">):</span>
+<div class="viewcode-block" id="NVIDIAEmbeddings"><a class="viewcode-back" href="../../embeddings/langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings.html#langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings">[docs]</a><span class="k">class</span> <span class="nc">NVIDIAEmbeddings</span><span class="p">(</span><span class="n">_NVIDIAClient</span><span class="p">,</span> <span class="n">Embeddings</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;NVIDIA&#39;s AI Foundation Retriever Question-Answering Asymmetric Model.&quot;&quot;&quot;</span>
 
-    <span class="n">client</span><span class="p">:</span> <span class="n">NVEModel</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">NVEModel</span><span class="p">)</span>
-    <span class="n">model</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
-        <span class="o">...</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The embedding model to use. Example: nvolveqa_40k&quot;</span>
-    <span class="p">)</span>
     <span class="n">max_length</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="mi">2048</span><span class="p">,</span> <span class="n">ge</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">le</span><span class="o">=</span><span class="mi">2048</span><span class="p">)</span>
     <span class="n">max_batch_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
     <span class="n">model_type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;passage&quot;</span><span class="p">,</span> <span class="s2">&quot;query&quot;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span>
         <span class="s2">&quot;passage&quot;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;The type of text to be embedded.&quot;</span>
     <span class="p">)</span>
-
-    <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">_validate_client</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Any</span><span class="p">:</span>
-        <span class="k">if</span> <span class="s2">&quot;client&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span><span class="p">:</span>
-            <span class="n">values</span><span class="p">[</span><span class="s2">&quot;client&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">NVEModel</span><span class="p">(</span><span class="o">**</span><span class="n">values</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">values</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">available_functions</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">dict</span><span class="p">]:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Map the available functions that can be invoked.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">available_functions</span>
-
-    <span class="nd">@property</span>
-    <span class="k">def</span> <span class="nf">available_models</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Map the available models that can be invoked.&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">available_models</span>
-
-<div class="viewcode-block" id="NVIDIAEmbeddings.get_available_functions"><a class="viewcode-back" href="../../embeddings/langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings.html#langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings.get_available_functions">[docs]</a>    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">get_available_functions</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">dict</span><span class="p">]:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Map the available functions that can be invoked. Callable from class&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="n">NVEModel</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">available_functions</span></div>
-
-<div class="viewcode-block" id="NVIDIAEmbeddings.get_available_models"><a class="viewcode-back" href="../../embeddings/langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings.html#langchain_nvidia_ai_endpoints.embeddings.NVIDIAEmbeddings.get_available_models">[docs]</a>    <span class="nd">@staticmethod</span>
-    <span class="k">def</span> <span class="nf">get_available_models</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Map the available models that can be invoked. Callable from class&quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="n">NVEModel</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">available_models</span></div>
 
     <span class="k">def</span> <span class="nf">_embed</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">texts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">model_type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;passage&quot;</span><span class="p">,</span> <span class="s2">&quot;query&quot;</span><span class="p">]</span>
@@ -241,7 +210,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
       </footer>
     </div>
   </div>

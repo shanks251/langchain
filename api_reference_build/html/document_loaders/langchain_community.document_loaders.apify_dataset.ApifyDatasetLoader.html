@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,31 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.apify_dataset</span></code>.ApifyDatasetLoader</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.apify_dataset</span></code>.ApifyDatasetLoader</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.apify_client"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.apify_client</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.dataset_id"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.dataset_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.dataset_mapping_function"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.dataset_mapping_function</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.alazy_load"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.alazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.construct"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.copy"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.dict"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.from_orm"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.json"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.lazy_load"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.lazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.load"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.load_and_split"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.load_and_split()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.parse_file"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.parse_obj"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.parse_raw"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.schema"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.schema_json"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.validate"><code class="docutils literal notranslate"><span class="pre">ApifyDatasetLoader.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +174,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-apify-dataset-apifydatasetloader">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.apify_dataset</span></code>.ApifyDatasetLoader<a class="headerlink" href="#langchain-community-document-loaders-apify-dataset-apifydatasetloader" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.apify_dataset</span></code>.ApifyDatasetLoader<a class="headerlink" href="#langchain-community-document-loaders-apify-dataset-apifydatasetloader" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.apify_dataset.</span></span><span class="sig-name descname"><span class="pre">ApifyDatasetLoader</span></span><a class="reference internal" href="../_modules/langchain_community/document_loaders/apify_dataset.html#ApifyDatasetLoader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader" title="Permalink to this definition">¶</a></dt>
@@ -196,7 +219,7 @@ of the Document class.</p></li>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.dataset_mapping_function">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dataset_mapping_function</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><span class="pre">langchain_core.documents.base.Document</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.dataset_mapping_function" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dataset_mapping_function</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><span class="pre">Document</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.dataset_mapping_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>A custom function that takes a single dictionary (an Apify dataset item)
 and converts it to an instance of the Document class.</p>
 </dd></dl>
@@ -318,7 +341,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
 
 </dd></dl>
 
-<h1>Examples using ApifyDatasetLoader<a class="headerlink" href="#langchain-community-document-loaders-apify-dataset-apifydatasetloader" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using ApifyDatasetLoader<a class="headerlink" href="#langchain-community-document-loaders-apify-dataset-apifydatasetloader" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/providers/apify">Apify</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_loaders/apify_dataset">Apify Dataset</a></p></li>
@@ -330,7 +353,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.apify_dataset.ApifyDatasetLoader.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

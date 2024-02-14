@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -223,7 +222,7 @@
     <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="create_base_retry_decorator"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.create_base_retry_decorator.html#langchain_core.language_models.llms.create_base_retry_decorator">[docs]</a><span class="k">def</span> <span class="nf">create_base_retry_decorator</span><span class="p">(</span>
+<div class="viewcode-block" id="create_base_retry_decorator"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.create_base_retry_decorator.html#langchain_community.llms.textgen.create_base_retry_decorator">[docs]</a><span class="k">def</span> <span class="nf">create_base_retry_decorator</span><span class="p">(</span>
     <span class="n">error_types</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="ne">BaseException</span><span class="p">]],</span>
     <span class="n">max_retries</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
     <span class="n">run_manager</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span>
@@ -267,7 +266,7 @@
     <span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="get_prompts"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.get_prompts.html#langchain_core.language_models.llms.get_prompts">[docs]</a><span class="k">def</span> <span class="nf">get_prompts</span><span class="p">(</span>
+<div class="viewcode-block" id="get_prompts"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.get_prompts.html#langchain_community.llms.textgen.get_prompts">[docs]</a><span class="k">def</span> <span class="nf">get_prompts</span><span class="p">(</span>
     <span class="n">params</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">prompts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">],</span> <span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Get prompts that are already cached.&quot;&quot;&quot;</span>
@@ -287,7 +286,7 @@
     <span class="k">return</span> <span class="n">existing_prompts</span><span class="p">,</span> <span class="n">llm_string</span><span class="p">,</span> <span class="n">missing_prompt_idxs</span><span class="p">,</span> <span class="n">missing_prompts</span></div>
 
 
-<div class="viewcode-block" id="aget_prompts"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.aget_prompts.html#langchain_core.language_models.llms.aget_prompts">[docs]</a><span class="k">async</span> <span class="k">def</span> <span class="nf">aget_prompts</span><span class="p">(</span>
+<div class="viewcode-block" id="aget_prompts"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.aget_prompts.html#langchain_community.llms.textgen.aget_prompts">[docs]</a><span class="k">async</span> <span class="k">def</span> <span class="nf">aget_prompts</span><span class="p">(</span>
     <span class="n">params</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">prompts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">],</span> <span class="nb">str</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Get prompts that are already cached. Async version.&quot;&quot;&quot;</span>
@@ -307,7 +306,7 @@
     <span class="k">return</span> <span class="n">existing_prompts</span><span class="p">,</span> <span class="n">llm_string</span><span class="p">,</span> <span class="n">missing_prompt_idxs</span><span class="p">,</span> <span class="n">missing_prompts</span></div>
 
 
-<div class="viewcode-block" id="update_cache"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.update_cache.html#langchain_core.language_models.llms.update_cache">[docs]</a><span class="k">def</span> <span class="nf">update_cache</span><span class="p">(</span>
+<div class="viewcode-block" id="update_cache"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.update_cache.html#langchain_community.llms.textgen.update_cache">[docs]</a><span class="k">def</span> <span class="nf">update_cache</span><span class="p">(</span>
     <span class="n">existing_prompts</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">],</span>
     <span class="n">llm_string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">missing_prompt_idxs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
@@ -325,7 +324,7 @@
     <span class="k">return</span> <span class="n">llm_output</span></div>
 
 
-<div class="viewcode-block" id="aupdate_cache"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.aupdate_cache.html#langchain_core.language_models.llms.aupdate_cache">[docs]</a><span class="k">async</span> <span class="k">def</span> <span class="nf">aupdate_cache</span><span class="p">(</span>
+<div class="viewcode-block" id="aupdate_cache"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.aupdate_cache.html#langchain_community.llms.textgen.aupdate_cache">[docs]</a><span class="k">async</span> <span class="k">def</span> <span class="nf">aupdate_cache</span><span class="p">(</span>
     <span class="n">existing_prompts</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="n">List</span><span class="p">],</span>
     <span class="n">llm_string</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="n">missing_prompt_idxs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span>
@@ -343,7 +342,7 @@
     <span class="k">return</span> <span class="n">llm_output</span></div>
 
 
-<div class="viewcode-block" id="BaseLLM"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM">[docs]</a><span class="k">class</span> <span class="nc">BaseLLM</span><span class="p">(</span><span class="n">BaseLanguageModel</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">ABC</span><span class="p">):</span>
+<div class="viewcode-block" id="BaseLLM"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM">[docs]</a><span class="k">class</span> <span class="nc">BaseLLM</span><span class="p">(</span><span class="n">BaseLanguageModel</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">ABC</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Base LLM abstract interface.</span>
 
 <span class="sd">    It should take in a prompt and return a string.&quot;&quot;&quot;</span>
@@ -408,7 +407,7 @@
                 <span class="s2">&quot;Must be a PromptValue, str, or list of BaseMessages.&quot;</span>
             <span class="p">)</span>
 
-<div class="viewcode-block" id="BaseLLM.invoke"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.invoke">[docs]</a>    <span class="k">def</span> <span class="nf">invoke</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.invoke"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.invoke">[docs]</a>    <span class="k">def</span> <span class="nf">invoke</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="nb">input</span><span class="p">:</span> <span class="n">LanguageModelInput</span><span class="p">,</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -431,7 +430,7 @@
             <span class="o">.</span><span class="n">text</span>
         <span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseLLM.ainvoke"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.ainvoke">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">ainvoke</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.ainvoke"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.ainvoke">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">ainvoke</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="nb">input</span><span class="p">:</span> <span class="n">LanguageModelInput</span><span class="p">,</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -451,7 +450,7 @@
         <span class="p">)</span>
         <span class="k">return</span> <span class="n">llm_result</span><span class="o">.</span><span class="n">generations</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span></div>
 
-<div class="viewcode-block" id="BaseLLM.batch"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.batch">[docs]</a>    <span class="k">def</span> <span class="nf">batch</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.batch"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.batch">[docs]</a>    <span class="k">def</span> <span class="nf">batch</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">inputs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LanguageModelInput</span><span class="p">],</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -498,7 +497,7 @@
                 <span class="p">)</span>
             <span class="p">]</span></div>
 
-<div class="viewcode-block" id="BaseLLM.abatch"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.abatch">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">abatch</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.abatch"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.abatch">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">abatch</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">inputs</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">LanguageModelInput</span><span class="p">],</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -544,7 +543,7 @@
                 <span class="p">)</span>
             <span class="p">]</span></div>
 
-<div class="viewcode-block" id="BaseLLM.stream"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.stream">[docs]</a>    <span class="k">def</span> <span class="nf">stream</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.stream"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.stream">[docs]</a>    <span class="k">def</span> <span class="nf">stream</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="nb">input</span><span class="p">:</span> <span class="n">LanguageModelInput</span><span class="p">,</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -601,7 +600,7 @@
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">run_manager</span><span class="o">.</span><span class="n">on_llm_end</span><span class="p">(</span><span class="n">LLMResult</span><span class="p">(</span><span class="n">generations</span><span class="o">=</span><span class="p">[[</span><span class="n">generation</span><span class="p">]]))</span></div>
 
-<div class="viewcode-block" id="BaseLLM.astream"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.astream">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">astream</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.astream"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.astream">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">astream</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="nb">input</span><span class="p">:</span> <span class="n">LanguageModelInput</span><span class="p">,</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -705,7 +704,7 @@
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">AsyncIterator</span><span class="p">[</span><span class="n">GenerationChunk</span><span class="p">]:</span>
         <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">()</span>
 
-<div class="viewcode-block" id="BaseLLM.generate_prompt"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.generate_prompt">[docs]</a>    <span class="k">def</span> <span class="nf">generate_prompt</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.generate_prompt"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.generate_prompt">[docs]</a>    <span class="k">def</span> <span class="nf">generate_prompt</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">prompts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">PromptValue</span><span class="p">],</span>
         <span class="n">stop</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -715,7 +714,7 @@
         <span class="n">prompt_strings</span> <span class="o">=</span> <span class="p">[</span><span class="n">p</span><span class="o">.</span><span class="n">to_string</span><span class="p">()</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">prompts</span><span class="p">]</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">prompt_strings</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">stop</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="n">callbacks</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseLLM.agenerate_prompt"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.agenerate_prompt">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">agenerate_prompt</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.agenerate_prompt"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.agenerate_prompt">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">agenerate_prompt</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">prompts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">PromptValue</span><span class="p">],</span>
         <span class="n">stop</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -760,7 +759,7 @@
             <span class="p">]</span>
         <span class="k">return</span> <span class="n">output</span>
 
-<div class="viewcode-block" id="BaseLLM.generate"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.generate">[docs]</a>    <span class="k">def</span> <span class="nf">generate</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.generate"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.generate">[docs]</a>    <span class="k">def</span> <span class="nf">generate</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">prompts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
         <span class="n">stop</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -961,7 +960,7 @@
             <span class="p">]</span>
         <span class="k">return</span> <span class="n">output</span>
 
-<div class="viewcode-block" id="BaseLLM.agenerate"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.agenerate">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">agenerate</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseLLM.agenerate"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.agenerate">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">agenerate</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">prompts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span>
         <span class="n">stop</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -1117,7 +1116,7 @@
         <span class="n">generations</span> <span class="o">=</span> <span class="p">[</span><span class="n">existing_prompts</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">prompts</span><span class="p">))]</span>
         <span class="k">return</span> <span class="n">LLMResult</span><span class="p">(</span><span class="n">generations</span><span class="o">=</span><span class="n">generations</span><span class="p">,</span> <span class="n">llm_output</span><span class="o">=</span><span class="n">llm_output</span><span class="p">,</span> <span class="n">run</span><span class="o">=</span><span class="n">run_info</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseLLM.__call__"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.__call__">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;invoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
+<div class="viewcode-block" id="BaseLLM.__call__"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.__call__">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;invoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
     <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">prompt</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -1169,7 +1168,7 @@
         <span class="p">)</span>
         <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">generations</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
 
-<div class="viewcode-block" id="BaseLLM.predict"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.predict">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;invoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
+<div class="viewcode-block" id="BaseLLM.predict"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.predict">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;invoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">stop</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
@@ -1179,7 +1178,7 @@
             <span class="n">_stop</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">stop</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">_stop</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseLLM.predict_messages"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.predict_messages">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;invoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
+<div class="viewcode-block" id="BaseLLM.predict_messages"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.predict_messages">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;invoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">predict_messages</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">messages</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">],</span>
@@ -1195,7 +1194,7 @@
         <span class="n">content</span> <span class="o">=</span> <span class="bp">self</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">_stop</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">AIMessage</span><span class="p">(</span><span class="n">content</span><span class="o">=</span><span class="n">content</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseLLM.apredict"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.apredict">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;ainvoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
+<div class="viewcode-block" id="BaseLLM.apredict"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.apredict">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;ainvoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
     <span class="k">async</span> <span class="k">def</span> <span class="nf">apredict</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">stop</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
@@ -1205,7 +1204,7 @@
             <span class="n">_stop</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">stop</span><span class="p">)</span>
         <span class="k">return</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_async</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">_stop</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseLLM.apredict_messages"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.apredict_messages">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;ainvoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
+<div class="viewcode-block" id="BaseLLM.apredict_messages"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.apredict_messages">[docs]</a>    <span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;0.1.7&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;ainvoke&quot;</span><span class="p">,</span> <span class="n">removal</span><span class="o">=</span><span class="s2">&quot;0.2.0&quot;</span><span class="p">)</span>
     <span class="k">async</span> <span class="k">def</span> <span class="nf">apredict_messages</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">messages</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">],</span>
@@ -1236,13 +1235,13 @@
     <span class="k">def</span> <span class="nf">_llm_type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return type of llm.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="BaseLLM.dict"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.dict">[docs]</a>    <span class="k">def</span> <span class="nf">dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseLLM.dict"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.dict">[docs]</a>    <span class="k">def</span> <span class="nf">dict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return a dictionary of the LLM.&quot;&quot;&quot;</span>
         <span class="n">starter_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_identifying_params</span><span class="p">)</span>
         <span class="n">starter_dict</span><span class="p">[</span><span class="s2">&quot;_type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_llm_type</span>
         <span class="k">return</span> <span class="n">starter_dict</span></div>
 
-<div class="viewcode-block" id="BaseLLM.save"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_core.language_models.llms.BaseLLM.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Path</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseLLM.save"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.BaseLLM.html#langchain_community.llms.textgen.BaseLLM.save">[docs]</a>    <span class="k">def</span> <span class="nf">save</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Path</span><span class="p">,</span> <span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Save the LLM.</span>
 
 <span class="sd">        Args:</span>
@@ -1275,7 +1274,7 @@
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">save_path</span><span class="si">}</span><span class="s2"> must be json or yaml&quot;</span><span class="p">)</span></div></div>
 
 
-<div class="viewcode-block" id="LLM"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.LLM.html#langchain_core.language_models.llms.LLM">[docs]</a><span class="k">class</span> <span class="nc">LLM</span><span class="p">(</span><span class="n">BaseLLM</span><span class="p">):</span>
+<div class="viewcode-block" id="LLM"><a class="viewcode-back" href="../../../language_models/langchain_core.language_models.llms.LLM.html#langchain_community.llms.textgen.LLM">[docs]</a><span class="k">class</span> <span class="nc">LLM</span><span class="p">(</span><span class="n">BaseLLM</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Base LLM abstract class.</span>
 
 <span class="sd">    The purpose of this class is to expose a simpler interface for working</span>
@@ -1353,7 +1352,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
       </footer>
     </div>
   </div>

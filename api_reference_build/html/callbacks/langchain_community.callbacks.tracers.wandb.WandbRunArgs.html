@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,36 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.tracers.wandb</span></code>.WandbRunArgs</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.tracers.wandb</span></code>.WandbRunArgs</a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.job_type"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.job_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.dir"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.dir</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.config"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.config</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.project"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.project</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.entity"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.entity</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.reinit"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.reinit</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.tags"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.tags</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.group"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.group</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.name"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.notes"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.notes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.magic"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.magic</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.config_exclude_keys"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.config_exclude_keys</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.config_include_keys"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.config_include_keys</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.anonymous"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.anonymous</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.mode"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.mode</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.allow_val_change"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.allow_val_change</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.resume"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.resume</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.force"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.force</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.tensorboard"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.tensorboard</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.sync_tensorboard"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.sync_tensorboard</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.monitor_gym"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.monitor_gym</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.save_code"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.save_code</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.id"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs.settings"><code class="docutils literal notranslate"><span class="pre">WandbRunArgs.settings</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +179,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-callbacks-tracers-wandb-wandbrunargs">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.tracers.wandb</span></code>.WandbRunArgs<a class="headerlink" href="#langchain-community-callbacks-tracers-wandb-wandbrunargs" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.tracers.wandb</span></code>.WandbRunArgs<a class="headerlink" href="#langchain-community-callbacks-tracers-wandb-wandbrunargs" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.callbacks.tracers.wandb.WandbRunArgs">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.callbacks.tracers.wandb.</span></span><span class="sig-name descname"><span class="pre">WandbRunArgs</span></span><a class="reference internal" href="../_modules/langchain_community/callbacks/tracers/wandb.html#WandbRunArgs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.callbacks.tracers.wandb.WandbRunArgs" title="Permalink to this definition">¶</a></dt>
@@ -287,7 +315,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/callbacks/langchain_community.callbacks.tracers.wandb.WandbRunArgs.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

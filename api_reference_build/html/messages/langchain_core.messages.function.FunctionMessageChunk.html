@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,37 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.messages.function</span></code>.FunctionMessageChunk</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.messages.function</span></code>.FunctionMessageChunk</a><ul>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.additional_kwargs"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.additional_kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.content"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.content</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.name"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.type"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.construct"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.copy"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.dict"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.from_orm"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.json"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.lc_id"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.parse_file"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.parse_obj"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.parse_raw"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.pretty_print"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.pretty_print()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.pretty_repr"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.pretty_repr()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.schema"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.schema_json"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.to_json"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.validate"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.lc_attributes"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.function.FunctionMessageChunk.lc_secrets"><code class="docutils literal notranslate"><span class="pre">FunctionMessageChunk.lc_secrets</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +180,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-messages-function-functionmessagechunk">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.messages.function</span></code>.FunctionMessageChunk<a class="headerlink" href="#langchain-core-messages-function-functionmessagechunk" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.messages.function</span></code>.FunctionMessageChunk<a class="headerlink" href="#langchain-core-messages-function-functionmessagechunk" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_core.messages.function.FunctionMessageChunk">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.messages.function.</span></span><span class="sig-name descname"><span class="pre">FunctionMessageChunk</span></span><a class="reference internal" href="../_modules/langchain_core/messages/function.html#FunctionMessageChunk"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.messages.function.FunctionMessageChunk" title="Permalink to this definition">¶</a></dt>
@@ -331,7 +360,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/messages/langchain_core.messages.function.FunctionMessageChunk.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,29 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.example_selectors.ngram_overlap</span></code>.NGramOverlapExampleSelector</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.example_selectors.ngram_overlap</span></code>.NGramOverlapExampleSelector</a><ul>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.example_prompt"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.example_prompt</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.examples"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.examples</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.threshold"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.threshold</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.add_example"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.add_example()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.construct"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.copy"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.dict"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.from_orm"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.json"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.parse_file"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.parse_obj"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.parse_raw"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.schema"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.schema_json"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.select_examples"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.select_examples()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.validate"><code class="docutils literal notranslate"><span class="pre">NGramOverlapExampleSelector.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +172,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-example-selectors-ngram-overlap-ngramoverlapexampleselector">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.example_selectors.ngram_overlap</span></code>.NGramOverlapExampleSelector<a class="headerlink" href="#langchain-community-example-selectors-ngram-overlap-ngramoverlapexampleselector" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.example_selectors.ngram_overlap</span></code>.NGramOverlapExampleSelector<a class="headerlink" href="#langchain-community-example-selectors-ngram-overlap-ngramoverlapexampleselector" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.example_selectors.ngram_overlap.</span></span><span class="sig-name descname"><span class="pre">NGramOverlapExampleSelector</span></span><a class="reference internal" href="../_modules/langchain_community/example_selectors/ngram_overlap.html#NGramOverlapExampleSelector"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector" title="Permalink to this definition">¶</a></dt>
@@ -164,7 +185,7 @@ from NLTK package).</p>
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.example_prompt">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">example_prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../prompts/langchain_core.prompts.prompt.PromptTemplate.html#langchain_core.prompts.prompt.PromptTemplate" title="langchain_core.prompts.prompt.PromptTemplate"><span class="pre">langchain_core.prompts.prompt.PromptTemplate</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.example_prompt" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">example_prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../prompts/langchain_core.prompts.prompt.PromptTemplate.html#langchain_core.prompts.prompt.PromptTemplate" title="langchain_core.prompts.prompt.PromptTemplate"><span class="pre">PromptTemplate</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.example_prompt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prompt template used to format the examples.</p>
 </dd></dl>
 
@@ -285,7 +306,7 @@ Excludes any examples with ngram_overlap_score less than or equal to threshold.<
 
 </dd></dl>
 
-<h1>Examples using NGramOverlapExampleSelector<a class="headerlink" href="#langchain-community-example-selectors-ngram-overlap-ngramoverlapexampleselector" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using NGramOverlapExampleSelector<a class="headerlink" href="#langchain-community-example-selectors-ngram-overlap-ngramoverlapexampleselector" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/model_io/prompts/example_selectors/ngram_overlap">Select by n-gram overlap</a></p></li>
 </ul>
@@ -296,7 +317,7 @@ Excludes any examples with ngram_overlap_score less than or equal to threshold.<
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/example_selectors/langchain_community.example_selectors.ngram_overlap.NGramOverlapExampleSelector.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

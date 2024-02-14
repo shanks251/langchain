@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,30 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.google_search</span></code>.GoogleSearchAPIWrapper</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.google_search</span></code>.GoogleSearchAPIWrapper</a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.google_api_key"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.google_api_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.google_cse_id"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.google_cse_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.k"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.k</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.siterestrict"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.siterestrict</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.construct"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.copy"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.dict"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.from_orm"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.json"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.parse_file"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.parse_obj"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.parse_raw"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.results"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.results()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.run"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.run()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.schema"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.schema_json"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper.validate"><code class="docutils literal notranslate"><span class="pre">GoogleSearchAPIWrapper.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +173,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-utilities-google-search-googlesearchapiwrapper">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.google_search</span></code>.GoogleSearchAPIWrapper<a class="headerlink" href="#langchain-community-utilities-google-search-googlesearchapiwrapper" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.google_search</span></code>.GoogleSearchAPIWrapper<a class="headerlink" href="#langchain-community-utilities-google-search-googlesearchapiwrapper" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.utilities.google_search.GoogleSearchAPIWrapper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.utilities.google_search.</span></span><span class="sig-name descname"><span class="pre">GoogleSearchAPIWrapper</span></span><a class="reference internal" href="../_modules/langchain_community/utilities/google_search.html#GoogleSearchAPIWrapper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.utilities.google_search.GoogleSearchAPIWrapper" title="Permalink to this definition">¶</a></dt>
@@ -322,7 +344,7 @@ link - The link to the result.</p>
 
 </dd></dl>
 
-<h1>Examples using GoogleSearchAPIWrapper<a class="headerlink" href="#langchain-community-utilities-google-search-googlesearchapiwrapper" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using GoogleSearchAPIWrapper<a class="headerlink" href="#langchain-community-utilities-google-search-googlesearchapiwrapper" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/providers/google_search">Google Search</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/llms/bittensor">Bittensor</a></p></li>
@@ -340,7 +362,7 @@ link - The link to the result.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/utilities/langchain_community.utilities.google_search.GoogleSearchAPIWrapper.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,29 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.connery.models</span></code>.Parameter</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.connery.models</span></code>.Parameter</a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter"><code class="docutils literal notranslate"><span class="pre">Parameter</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.description"><code class="docutils literal notranslate"><span class="pre">Parameter.description</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.key"><code class="docutils literal notranslate"><span class="pre">Parameter.key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.title"><code class="docutils literal notranslate"><span class="pre">Parameter.title</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.type"><code class="docutils literal notranslate"><span class="pre">Parameter.type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.validation"><code class="docutils literal notranslate"><span class="pre">Parameter.validation</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.construct"><code class="docutils literal notranslate"><span class="pre">Parameter.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.copy"><code class="docutils literal notranslate"><span class="pre">Parameter.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.dict"><code class="docutils literal notranslate"><span class="pre">Parameter.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.from_orm"><code class="docutils literal notranslate"><span class="pre">Parameter.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.json"><code class="docutils literal notranslate"><span class="pre">Parameter.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.parse_file"><code class="docutils literal notranslate"><span class="pre">Parameter.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.parse_obj"><code class="docutils literal notranslate"><span class="pre">Parameter.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.parse_raw"><code class="docutils literal notranslate"><span class="pre">Parameter.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.schema"><code class="docutils literal notranslate"><span class="pre">Parameter.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.schema_json"><code class="docutils literal notranslate"><span class="pre">Parameter.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">Parameter.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.connery.models.Parameter.validate"><code class="docutils literal notranslate"><span class="pre">Parameter.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +172,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-tools-connery-models-parameter">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.connery.models</span></code>.Parameter<a class="headerlink" href="#langchain-community-tools-connery-models-parameter" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.connery.models</span></code>.Parameter<a class="headerlink" href="#langchain-community-tools-connery-models-parameter" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.tools.connery.models.Parameter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.tools.connery.models.</span></span><span class="sig-name descname"><span class="pre">Parameter</span></span><a class="reference internal" href="../_modules/langchain_community/tools/connery/models.html#Parameter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.tools.connery.models.Parameter" title="Permalink to this definition">¶</a></dt>
@@ -181,7 +202,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.tools.connery.models.Parameter.validation">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">validation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_community.tools.connery.models.Validation.html#langchain_community.tools.connery.models.Validation" title="langchain_community.tools.connery.models.Validation"><span class="pre">langchain_community.tools.connery.models.Validation</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.tools.connery.models.Parameter.validation" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">validation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_community.tools.connery.models.Validation.html#langchain_community.tools.connery.models.Validation" title="langchain_community.tools.connery.models.Validation"><span class="pre">Validation</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.tools.connery.models.Parameter.validation" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -277,7 +298,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/tools/langchain_community.tools.connery.models.Parameter.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

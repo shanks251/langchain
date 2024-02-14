@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,37 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.messages.tool</span></code>.ToolMessage</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.messages.tool</span></code>.ToolMessage</a><ul>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage"><code class="docutils literal notranslate"><span class="pre">ToolMessage</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.additional_kwargs"><code class="docutils literal notranslate"><span class="pre">ToolMessage.additional_kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.content"><code class="docutils literal notranslate"><span class="pre">ToolMessage.content</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.tool_call_id"><code class="docutils literal notranslate"><span class="pre">ToolMessage.tool_call_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.type"><code class="docutils literal notranslate"><span class="pre">ToolMessage.type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.construct"><code class="docutils literal notranslate"><span class="pre">ToolMessage.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.copy"><code class="docutils literal notranslate"><span class="pre">ToolMessage.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.dict"><code class="docutils literal notranslate"><span class="pre">ToolMessage.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.from_orm"><code class="docutils literal notranslate"><span class="pre">ToolMessage.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">ToolMessage.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">ToolMessage.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.json"><code class="docutils literal notranslate"><span class="pre">ToolMessage.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.lc_id"><code class="docutils literal notranslate"><span class="pre">ToolMessage.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.parse_file"><code class="docutils literal notranslate"><span class="pre">ToolMessage.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.parse_obj"><code class="docutils literal notranslate"><span class="pre">ToolMessage.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.parse_raw"><code class="docutils literal notranslate"><span class="pre">ToolMessage.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.pretty_print"><code class="docutils literal notranslate"><span class="pre">ToolMessage.pretty_print()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.pretty_repr"><code class="docutils literal notranslate"><span class="pre">ToolMessage.pretty_repr()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.schema"><code class="docutils literal notranslate"><span class="pre">ToolMessage.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.schema_json"><code class="docutils literal notranslate"><span class="pre">ToolMessage.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.to_json"><code class="docutils literal notranslate"><span class="pre">ToolMessage.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">ToolMessage.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ToolMessage.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.validate"><code class="docutils literal notranslate"><span class="pre">ToolMessage.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.lc_attributes"><code class="docutils literal notranslate"><span class="pre">ToolMessage.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.messages.tool.ToolMessage.lc_secrets"><code class="docutils literal notranslate"><span class="pre">ToolMessage.lc_secrets</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +180,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-messages-tool-toolmessage">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.messages.tool</span></code>.ToolMessage<a class="headerlink" href="#langchain-core-messages-tool-toolmessage" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.messages.tool</span></code>.ToolMessage<a class="headerlink" href="#langchain-core-messages-tool-toolmessage" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_core.messages.tool.ToolMessage">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.messages.tool.</span></span><span class="sig-name descname"><span class="pre">ToolMessage</span></span><a class="reference internal" href="../_modules/langchain_core/messages/tool.html#ToolMessage"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.messages.tool.ToolMessage" title="Permalink to this definition">¶</a></dt>
@@ -331,7 +360,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/messages/langchain_core.messages.tool.ToolMessage.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

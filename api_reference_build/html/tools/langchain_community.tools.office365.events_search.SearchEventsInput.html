@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,28 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.office365.events_search</span></code>.SearchEventsInput</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.office365.events_search</span></code>.SearchEventsInput</a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.end_datetime"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.end_datetime</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.max_results"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.max_results</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.start_datetime"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.start_datetime</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.truncate"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.truncate</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.construct"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.copy"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.dict"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.from_orm"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.json"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.parse_file"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.parse_obj"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.parse_raw"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.schema"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.schema_json"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.tools.office365.events_search.SearchEventsInput.validate"><code class="docutils literal notranslate"><span class="pre">SearchEventsInput.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +171,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-tools-office365-events-search-searcheventsinput">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.office365.events_search</span></code>.SearchEventsInput<a class="headerlink" href="#langchain-community-tools-office365-events-search-searcheventsinput" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.tools.office365.events_search</span></code>.SearchEventsInput<a class="headerlink" href="#langchain-community-tools-office365-events-search-searcheventsinput" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.tools.office365.events_search.SearchEventsInput">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.tools.office365.events_search.</span></span><span class="sig-name descname"><span class="pre">SearchEventsInput</span></span><a class="reference internal" href="../_modules/langchain_community/tools/office365/events_search.html#SearchEventsInput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.tools.office365.events_search.SearchEventsInput" title="Permalink to this definition">¶</a></dt>
@@ -277,7 +297,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/tools/langchain_community.tools.office365.events_search.SearchEventsInput.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

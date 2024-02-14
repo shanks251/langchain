@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,46 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.chroma</span></code>.Chroma</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.chroma</span></code>.Chroma</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma"><code class="docutils literal notranslate"><span class="pre">Chroma</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.__init__"><code class="docutils literal notranslate"><span class="pre">Chroma.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.aadd_documents"><code class="docutils literal notranslate"><span class="pre">Chroma.aadd_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.aadd_texts"><code class="docutils literal notranslate"><span class="pre">Chroma.aadd_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.add_documents"><code class="docutils literal notranslate"><span class="pre">Chroma.add_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.add_images"><code class="docutils literal notranslate"><span class="pre">Chroma.add_images()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.add_texts"><code class="docutils literal notranslate"><span class="pre">Chroma.add_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.adelete"><code class="docutils literal notranslate"><span class="pre">Chroma.adelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.afrom_documents"><code class="docutils literal notranslate"><span class="pre">Chroma.afrom_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.afrom_texts"><code class="docutils literal notranslate"><span class="pre">Chroma.afrom_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.amax_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">Chroma.amax_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.amax_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">Chroma.amax_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.as_retriever"><code class="docutils literal notranslate"><span class="pre">Chroma.as_retriever()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.asearch"><code class="docutils literal notranslate"><span class="pre">Chroma.asearch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.asimilarity_search"><code class="docutils literal notranslate"><span class="pre">Chroma.asimilarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.asimilarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">Chroma.asimilarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.asimilarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">Chroma.asimilarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.asimilarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">Chroma.asimilarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.delete"><code class="docutils literal notranslate"><span class="pre">Chroma.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.delete_collection"><code class="docutils literal notranslate"><span class="pre">Chroma.delete_collection()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.encode_image"><code class="docutils literal notranslate"><span class="pre">Chroma.encode_image()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.from_documents"><code class="docutils literal notranslate"><span class="pre">Chroma.from_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.from_texts"><code class="docutils literal notranslate"><span class="pre">Chroma.from_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.get"><code class="docutils literal notranslate"><span class="pre">Chroma.get()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.max_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">Chroma.max_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.max_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">Chroma.max_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.persist"><code class="docutils literal notranslate"><span class="pre">Chroma.persist()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.search"><code class="docutils literal notranslate"><span class="pre">Chroma.search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.similarity_search"><code class="docutils literal notranslate"><span class="pre">Chroma.similarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.similarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">Chroma.similarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.similarity_search_by_vector_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">Chroma.similarity_search_by_vector_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.similarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">Chroma.similarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.similarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">Chroma.similarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.update_document"><code class="docutils literal notranslate"><span class="pre">Chroma.update_document()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.chroma.Chroma.update_documents"><code class="docutils literal notranslate"><span class="pre">Chroma.update_documents()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +189,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-chroma-chroma">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.chroma</span></code>.Chroma<a class="headerlink" href="#langchain-community-vectorstores-chroma-chroma" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.chroma</span></code>.Chroma<a class="headerlink" href="#langchain-community-vectorstores-chroma-chroma" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.chroma.Chroma">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.chroma.</span></span><span class="sig-name descname"><span class="pre">Chroma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">collection_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'langchain'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_function</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">persist_directory</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_settings</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">chromadb.config.Settings</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">collection_metadata</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">chromadb.Client</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">relevance_score_fn</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/vectorstores/chroma.html#Chroma"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.chroma.Chroma" title="Permalink to this definition">¶</a></dt>
@@ -845,7 +883,7 @@ Lower score represents more similarity.</p>
 
 </dd></dl>
 
-<h1>Examples using Chroma<a class="headerlink" href="#langchain-community-vectorstores-chroma-chroma" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using Chroma<a class="headerlink" href="#langchain-community-vectorstores-chroma-chroma" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/retrievers/re_phrase">RePhraseQueryRetriever</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/retrievers/merger_retriever">LOTR (Merger Retriever)</a></p></li>
@@ -883,7 +921,7 @@ Lower score represents more similarity.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.chroma.Chroma.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

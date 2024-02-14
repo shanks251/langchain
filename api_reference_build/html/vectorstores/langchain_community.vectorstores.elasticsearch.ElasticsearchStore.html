@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,45 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.elasticsearch</span></code>.ElasticsearchStore</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.elasticsearch</span></code>.ElasticsearchStore</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.ApproxRetrievalStrategy"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.ApproxRetrievalStrategy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.ExactRetrievalStrategy"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.ExactRetrievalStrategy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.SparseVectorRetrievalStrategy"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.SparseVectorRetrievalStrategy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.__init__"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.aadd_documents"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.aadd_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.aadd_texts"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.aadd_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.add_documents"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.add_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.add_embeddings"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.add_embeddings()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.add_texts"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.add_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.adelete"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.adelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.afrom_documents"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.afrom_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.afrom_texts"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.afrom_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.amax_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.amax_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.amax_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.amax_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.as_retriever"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.as_retriever()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.asearch"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.asearch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.asimilarity_search"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.asimilarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.asimilarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.asimilarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.asimilarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.asimilarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.asimilarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.asimilarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.connect_to_elasticsearch"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.connect_to_elasticsearch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.delete"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.from_documents"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.from_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.from_texts"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.from_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.get_user_agent"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.get_user_agent()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.max_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.max_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.max_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.max_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.search"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.similarity_search"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.similarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.similarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.similarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.similarity_search_by_vector_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.similarity_search_by_vector_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.similarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.similarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore.similarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">ElasticsearchStore.similarity_search_with_score()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +188,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-elasticsearch-elasticsearchstore">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.elasticsearch</span></code>.ElasticsearchStore<a class="headerlink" href="#langchain-community-vectorstores-elasticsearch-elasticsearchstore" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.elasticsearch</span></code>.ElasticsearchStore<a class="headerlink" href="#langchain-community-vectorstores-elasticsearch-elasticsearchstore" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.elasticsearch.ElasticsearchStore">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.elasticsearch.</span></span><span class="sig-name descname"><span class="pre">ElasticsearchStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index_name:</span> <span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding:</span> <span class="pre">~typing.Optional[~langchain_core.embeddings.Embeddings]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es_connection:</span> <span class="pre">~typing.Optional[Elasticsearch]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es_url:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es_cloud_id:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es_user:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es_api_key:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es_password:</span> <span class="pre">~typing.Optional[str]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector_query_field:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'vector'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_field:</span> <span class="pre">str</span> <span class="pre">=</span> <span class="pre">'text'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_strategy:</span> <span class="pre">~typing.Optional[~typing.Literal[&lt;DistanceStrategy.COSINE:</span> <span class="pre">'COSINE'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;DistanceStrategy.DOT_PRODUCT:</span> <span class="pre">'DOT_PRODUCT'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;DistanceStrategy.EUCLIDEAN_DISTANCE:</span> <span class="pre">'EUCLIDEAN_DISTANCE'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">&lt;DistanceStrategy.MAX_INNER_PRODUCT:</span> <span class="pre">'MAX_INNER_PRODUCT'&gt;]]</span> <span class="pre">=</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strategy:</span> <span class="pre">~langchain_community.vectorstores.elasticsearch.BaseRetrievalStrategy</span> <span class="pre">=</span> <span class="pre">&lt;langchain_community.vectorstores.elasticsearch.ApproxRetrievalStrategy</span> <span class="pre">object&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">es_params:</span> <span class="pre">~typing.Optional[~typing.Dict[str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">~typing.Any]]</span> <span class="pre">=</span> <span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/vectorstores/elasticsearch.html#ElasticsearchStore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.elasticsearch.ElasticsearchStore" title="Permalink to this definition">¶</a></dt>
@@ -976,7 +1013,7 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
 
 </dd></dl>
 
-<h1>Examples using ElasticsearchStore<a class="headerlink" href="#langchain-community-vectorstores-elasticsearch-elasticsearchstore" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using ElasticsearchStore<a class="headerlink" href="#langchain-community-vectorstores-elasticsearch-elasticsearchstore" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/data_connection/retrievers/self_query/elasticsearch_self_query">Elasticsearch</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/data_connection/indexing">Indexing</a></p></li>
@@ -988,7 +1025,7 @@ score_threshold: Optional, a floating point value between 0 to 1 to</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.elasticsearch.ElasticsearchStore.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

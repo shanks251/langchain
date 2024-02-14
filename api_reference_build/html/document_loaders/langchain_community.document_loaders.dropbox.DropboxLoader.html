@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,32 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.dropbox</span></code>.DropboxLoader</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.dropbox</span></code>.DropboxLoader</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader"><code class="docutils literal notranslate"><span class="pre">DropboxLoader</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.dropbox_access_token"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.dropbox_access_token</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.dropbox_file_paths"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.dropbox_file_paths</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.dropbox_folder_path"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.dropbox_folder_path</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.recursive"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.recursive</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.alazy_load"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.alazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.construct"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.copy"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.dict"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.from_orm"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.json"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.lazy_load"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.lazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.load"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.load_and_split"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.load_and_split()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.parse_file"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.parse_obj"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.parse_raw"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.schema"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.schema_json"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.dropbox.DropboxLoader.validate"><code class="docutils literal notranslate"><span class="pre">DropboxLoader.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +175,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-dropbox-dropboxloader">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.dropbox</span></code>.DropboxLoader<a class="headerlink" href="#langchain-community-document-loaders-dropbox-dropboxloader" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.dropbox</span></code>.DropboxLoader<a class="headerlink" href="#langchain-community-document-loaders-dropbox-dropboxloader" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.dropbox.DropboxLoader">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.dropbox.</span></span><span class="sig-name descname"><span class="pre">DropboxLoader</span></span><a class="reference internal" href="../_modules/langchain_community/document_loaders/dropbox.html#DropboxLoader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.dropbox.DropboxLoader" title="Permalink to this definition">¶</a></dt>
@@ -302,7 +326,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
 
 </dd></dl>
 
-<h1>Examples using DropboxLoader<a class="headerlink" href="#langchain-community-document-loaders-dropbox-dropboxloader" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using DropboxLoader<a class="headerlink" href="#langchain-community-document-loaders-dropbox-dropboxloader" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_loaders/dropbox">Dropbox</a></p></li>
 </ul>
@@ -313,7 +337,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.dropbox.DropboxLoader.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -346,9 +345,11 @@
         <span class="p">)</span>
 
         <span class="n">client_params</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s2">&quot;api_key&quot;</span><span class="p">:</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;openai_api_key&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_secret_value</span><span class="p">()</span>
-            <span class="k">if</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;openai_api_key&quot;</span><span class="p">]</span>
-            <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="s2">&quot;api_key&quot;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="n">values</span><span class="p">[</span><span class="s2">&quot;openai_api_key&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">get_secret_value</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;openai_api_key&quot;</span><span class="p">]</span>
+                <span class="k">else</span> <span class="kc">None</span>
+            <span class="p">),</span>
             <span class="s2">&quot;organization&quot;</span><span class="p">:</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;openai_organization&quot;</span><span class="p">],</span>
             <span class="s2">&quot;base_url&quot;</span><span class="p">:</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;openai_api_base&quot;</span><span class="p">],</span>
             <span class="s2">&quot;timeout&quot;</span><span class="p">:</span> <span class="n">values</span><span class="p">[</span><span class="s2">&quot;request_timeout&quot;</span><span class="p">],</span>
@@ -405,9 +406,11 @@
                     <span class="n">chunk</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
                     <span class="n">chunk</span><span class="o">=</span><span class="n">chunk</span><span class="p">,</span>
                     <span class="n">verbose</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">,</span>
-                    <span class="n">logprobs</span><span class="o">=</span><span class="n">chunk</span><span class="o">.</span><span class="n">generation_info</span><span class="p">[</span><span class="s2">&quot;logprobs&quot;</span><span class="p">]</span>
-                    <span class="k">if</span> <span class="n">chunk</span><span class="o">.</span><span class="n">generation_info</span>
-                    <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">logprobs</span><span class="o">=</span><span class="p">(</span>
+                        <span class="n">chunk</span><span class="o">.</span><span class="n">generation_info</span><span class="p">[</span><span class="s2">&quot;logprobs&quot;</span><span class="p">]</span>
+                        <span class="k">if</span> <span class="n">chunk</span><span class="o">.</span><span class="n">generation_info</span>
+                        <span class="k">else</span> <span class="kc">None</span>
+                    <span class="p">),</span>
                 <span class="p">)</span>
 
     <span class="k">async</span> <span class="k">def</span> <span class="nf">_astream</span><span class="p">(</span>
@@ -431,9 +434,11 @@
                     <span class="n">chunk</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
                     <span class="n">chunk</span><span class="o">=</span><span class="n">chunk</span><span class="p">,</span>
                     <span class="n">verbose</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">verbose</span><span class="p">,</span>
-                    <span class="n">logprobs</span><span class="o">=</span><span class="n">chunk</span><span class="o">.</span><span class="n">generation_info</span><span class="p">[</span><span class="s2">&quot;logprobs&quot;</span><span class="p">]</span>
-                    <span class="k">if</span> <span class="n">chunk</span><span class="o">.</span><span class="n">generation_info</span>
-                    <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+                    <span class="n">logprobs</span><span class="o">=</span><span class="p">(</span>
+                        <span class="n">chunk</span><span class="o">.</span><span class="n">generation_info</span><span class="p">[</span><span class="s2">&quot;logprobs&quot;</span><span class="p">]</span>
+                        <span class="k">if</span> <span class="n">chunk</span><span class="o">.</span><span class="n">generation_info</span>
+                        <span class="k">else</span> <span class="kc">None</span>
+                    <span class="p">),</span>
                 <span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">_generate</span><span class="p">(</span>
@@ -482,12 +487,16 @@
                 <span class="n">choices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
                     <span class="p">{</span>
                         <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="n">generation</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
-                        <span class="s2">&quot;finish_reason&quot;</span><span class="p">:</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;finish_reason&quot;</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span>
-                        <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
-                        <span class="s2">&quot;logprobs&quot;</span><span class="p">:</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;logprobs&quot;</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span>
-                        <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+                        <span class="s2">&quot;finish_reason&quot;</span><span class="p">:</span> <span class="p">(</span>
+                            <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;finish_reason&quot;</span><span class="p">)</span>
+                            <span class="k">if</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span>
+                            <span class="k">else</span> <span class="kc">None</span>
+                        <span class="p">),</span>
+                        <span class="s2">&quot;logprobs&quot;</span><span class="p">:</span> <span class="p">(</span>
+                            <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;logprobs&quot;</span><span class="p">)</span>
+                            <span class="k">if</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span>
+                            <span class="k">else</span> <span class="kc">None</span>
+                        <span class="p">),</span>
                     <span class="p">}</span>
                 <span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
@@ -543,12 +552,16 @@
                 <span class="n">choices</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
                     <span class="p">{</span>
                         <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="n">generation</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
-                        <span class="s2">&quot;finish_reason&quot;</span><span class="p">:</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;finish_reason&quot;</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span>
-                        <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
-                        <span class="s2">&quot;logprobs&quot;</span><span class="p">:</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;logprobs&quot;</span><span class="p">)</span>
-                        <span class="k">if</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span>
-                        <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+                        <span class="s2">&quot;finish_reason&quot;</span><span class="p">:</span> <span class="p">(</span>
+                            <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;finish_reason&quot;</span><span class="p">)</span>
+                            <span class="k">if</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span>
+                            <span class="k">else</span> <span class="kc">None</span>
+                        <span class="p">),</span>
+                        <span class="s2">&quot;logprobs&quot;</span><span class="p">:</span> <span class="p">(</span>
+                            <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;logprobs&quot;</span><span class="p">)</span>
+                            <span class="k">if</span> <span class="n">generation</span><span class="o">.</span><span class="n">generation_info</span>
+                            <span class="k">else</span> <span class="kc">None</span>
+                        <span class="p">),</span>
                     <span class="p">}</span>
                 <span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
@@ -767,7 +780,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
       </footer>
     </div>
   </div>

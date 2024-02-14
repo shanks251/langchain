@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,15 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.parsers.audio</span></code>.OpenAIWhisperParserLocal</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.parsers.audio</span></code>.OpenAIWhisperParserLocal</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.parsers.audio.OpenAIWhisperParserLocal"><code class="docutils literal notranslate"><span class="pre">OpenAIWhisperParserLocal</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.parsers.audio.OpenAIWhisperParserLocal.__init__"><code class="docutils literal notranslate"><span class="pre">OpenAIWhisperParserLocal.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.parsers.audio.OpenAIWhisperParserLocal.lazy_parse"><code class="docutils literal notranslate"><span class="pre">OpenAIWhisperParserLocal.lazy_parse()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.parsers.audio.OpenAIWhisperParserLocal.parse"><code class="docutils literal notranslate"><span class="pre">OpenAIWhisperParserLocal.parse()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +158,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-parsers-audio-openaiwhisperparserlocal">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.parsers.audio</span></code>.OpenAIWhisperParserLocal<a class="headerlink" href="#langchain-community-document-loaders-parsers-audio-openaiwhisperparserlocal" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.parsers.audio</span></code>.OpenAIWhisperParserLocal<a class="headerlink" href="#langchain-community-document-loaders-parsers-audio-openaiwhisperparserlocal" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.parsers.audio.OpenAIWhisperParserLocal">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.parsers.audio.</span></span><span class="sig-name descname"><span class="pre">OpenAIWhisperParserLocal</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang_model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunk_length</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forced_decoder_ids</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/document_loaders/parsers/audio.html#OpenAIWhisperParserLocal"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.parsers.audio.OpenAIWhisperParserLocal" title="Permalink to this definition">¶</a></dt>
@@ -265,7 +272,7 @@ Defaults to 30s.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.parsers.audio.OpenAIWhisperParserLocal.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

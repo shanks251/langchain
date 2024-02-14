@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,36 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.schemas</span></code>.LLMRun</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.schemas</span></code>.LLMRun</a><ul>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun"><code class="docutils literal notranslate"><span class="pre">LLMRun</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.child_execution_order"><code class="docutils literal notranslate"><span class="pre">LLMRun.child_execution_order</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.end_time"><code class="docutils literal notranslate"><span class="pre">LLMRun.end_time</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.error"><code class="docutils literal notranslate"><span class="pre">LLMRun.error</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.execution_order"><code class="docutils literal notranslate"><span class="pre">LLMRun.execution_order</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.extra"><code class="docutils literal notranslate"><span class="pre">LLMRun.extra</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.parent_uuid"><code class="docutils literal notranslate"><span class="pre">LLMRun.parent_uuid</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.prompts"><code class="docutils literal notranslate"><span class="pre">LLMRun.prompts</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.response"><code class="docutils literal notranslate"><span class="pre">LLMRun.response</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.serialized"><code class="docutils literal notranslate"><span class="pre">LLMRun.serialized</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.session_id"><code class="docutils literal notranslate"><span class="pre">LLMRun.session_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.start_time"><code class="docutils literal notranslate"><span class="pre">LLMRun.start_time</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.uuid"><code class="docutils literal notranslate"><span class="pre">LLMRun.uuid</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.construct"><code class="docutils literal notranslate"><span class="pre">LLMRun.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.copy"><code class="docutils literal notranslate"><span class="pre">LLMRun.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.dict"><code class="docutils literal notranslate"><span class="pre">LLMRun.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.from_orm"><code class="docutils literal notranslate"><span class="pre">LLMRun.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.json"><code class="docutils literal notranslate"><span class="pre">LLMRun.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.parse_file"><code class="docutils literal notranslate"><span class="pre">LLMRun.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.parse_obj"><code class="docutils literal notranslate"><span class="pre">LLMRun.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.parse_raw"><code class="docutils literal notranslate"><span class="pre">LLMRun.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.schema"><code class="docutils literal notranslate"><span class="pre">LLMRun.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.schema_json"><code class="docutils literal notranslate"><span class="pre">LLMRun.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">LLMRun.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.schemas.LLMRun.validate"><code class="docutils literal notranslate"><span class="pre">LLMRun.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +179,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-tracers-schemas-llmrun">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.schemas</span></code>.LLMRun<a class="headerlink" href="#langchain-core-tracers-schemas-llmrun" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.schemas</span></code>.LLMRun<a class="headerlink" href="#langchain-core-tracers-schemas-llmrun" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_core.tracers.schemas.LLMRun">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.tracers.schemas.</span></span><span class="sig-name descname"><span class="pre">LLMRun</span></span><a class="reference internal" href="../_modules/langchain_core/tracers/schemas.html#LLMRun"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.tracers.schemas.LLMRun" title="Permalink to this definition">¶</a></dt>
@@ -170,7 +198,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_core.tracers.schemas.LLMRun.end_time">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">end_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime.datetime</span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain_core.tracers.schemas.LLMRun.end_time" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">end_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime</span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain_core.tracers.schemas.LLMRun.end_time" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -200,7 +228,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_core.tracers.schemas.LLMRun.response">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../outputs/langchain_core.outputs.llm_result.LLMResult.html#langchain_core.outputs.llm_result.LLMResult" title="langchain_core.outputs.llm_result.LLMResult"><span class="pre">langchain_core.outputs.llm_result.LLMResult</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_core.tracers.schemas.LLMRun.response" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">response</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../outputs/langchain_core.outputs.llm_result.LLMResult.html#langchain_core.outputs.llm_result.LLMResult" title="langchain_core.outputs.llm_result.LLMResult"><span class="pre">LLMResult</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_core.tracers.schemas.LLMRun.response" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -215,7 +243,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_core.tracers.schemas.LLMRun.start_time">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime.datetime</span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain_core.tracers.schemas.LLMRun.start_time" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">datetime</span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain_core.tracers.schemas.LLMRun.start_time" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -316,7 +344,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/tracers/langchain_core.tracers.schemas.LLMRun.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

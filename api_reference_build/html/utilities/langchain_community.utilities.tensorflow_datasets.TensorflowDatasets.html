@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,34 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.tensorflow_datasets</span></code>.TensorflowDatasets</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.tensorflow_datasets</span></code>.TensorflowDatasets</a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.dataset_name"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.dataset_name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.split_name"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.split_name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.load_max_docs"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.load_max_docs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.sample_to_document_function"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.sample_to_document_function</span></code></a></li>
+<li><a class="reference internal" href="#id0"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.dataset_name</span></code></a></li>
+<li><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.load_max_docs</span></code></a></li>
+<li><a class="reference internal" href="#id2"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.sample_to_document_function</span></code></a></li>
+<li><a class="reference internal" href="#id3"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.split_name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.construct"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.copy"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.dict"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.from_orm"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.json"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.lazy_load"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.lazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.load"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.parse_file"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.parse_obj"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.parse_raw"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.schema"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.schema_json"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.validate"><code class="docutils literal notranslate"><span class="pre">TensorflowDatasets.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +177,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-utilities-tensorflow-datasets-tensorflowdatasets">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.tensorflow_datasets</span></code>.TensorflowDatasets<a class="headerlink" href="#langchain-community-utilities-tensorflow-datasets-tensorflowdatasets" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.tensorflow_datasets</span></code>.TensorflowDatasets<a class="headerlink" href="#langchain-community-utilities-tensorflow-datasets-tensorflowdatasets" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.utilities.tensorflow_datasets.TensorflowDatasets">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.utilities.tensorflow_datasets.</span></span><span class="sig-name descname"><span class="pre">TensorflowDatasets</span></span><a class="reference internal" href="../_modules/langchain_community/utilities/tensorflow_datasets.html#TensorflowDatasets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.utilities.tensorflow_datasets.TensorflowDatasets" title="Permalink to this definition">¶</a></dt>
@@ -231,7 +257,7 @@ to a Document</p>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="id2">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sample_to_document_function</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><span class="pre">langchain_core.documents.base.Document</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sample_to_document_function</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="../documents/langchain_core.documents.base.Document.html#langchain_core.documents.base.Document" title="langchain_core.documents.base.Document"><span class="pre">Document</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -346,7 +372,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/utilities/langchain_community.utilities.tensorflow_datasets.TensorflowDatasets.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

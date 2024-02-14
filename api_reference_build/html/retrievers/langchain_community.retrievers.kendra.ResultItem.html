@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,33 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.retrievers.kendra</span></code>.ResultItem</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.retrievers.kendra</span></code>.ResultItem</a><ul>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem"><code class="docutils literal notranslate"><span class="pre">ResultItem</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.DocumentAttributes"><code class="docutils literal notranslate"><span class="pre">ResultItem.DocumentAttributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.DocumentId"><code class="docutils literal notranslate"><span class="pre">ResultItem.DocumentId</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.DocumentURI"><code class="docutils literal notranslate"><span class="pre">ResultItem.DocumentURI</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.Id"><code class="docutils literal notranslate"><span class="pre">ResultItem.Id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.construct"><code class="docutils literal notranslate"><span class="pre">ResultItem.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.copy"><code class="docutils literal notranslate"><span class="pre">ResultItem.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.dict"><code class="docutils literal notranslate"><span class="pre">ResultItem.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.from_orm"><code class="docutils literal notranslate"><span class="pre">ResultItem.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.get_additional_metadata"><code class="docutils literal notranslate"><span class="pre">ResultItem.get_additional_metadata()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.get_document_attributes_dict"><code class="docutils literal notranslate"><span class="pre">ResultItem.get_document_attributes_dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.get_excerpt"><code class="docutils literal notranslate"><span class="pre">ResultItem.get_excerpt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.get_title"><code class="docutils literal notranslate"><span class="pre">ResultItem.get_title()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.json"><code class="docutils literal notranslate"><span class="pre">ResultItem.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.parse_file"><code class="docutils literal notranslate"><span class="pre">ResultItem.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.parse_obj"><code class="docutils literal notranslate"><span class="pre">ResultItem.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.parse_raw"><code class="docutils literal notranslate"><span class="pre">ResultItem.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.schema"><code class="docutils literal notranslate"><span class="pre">ResultItem.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.schema_json"><code class="docutils literal notranslate"><span class="pre">ResultItem.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.to_doc"><code class="docutils literal notranslate"><span class="pre">ResultItem.to_doc()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ResultItem.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.retrievers.kendra.ResultItem.validate"><code class="docutils literal notranslate"><span class="pre">ResultItem.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +176,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-retrievers-kendra-resultitem">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.retrievers.kendra</span></code>.ResultItem<a class="headerlink" href="#langchain-community-retrievers-kendra-resultitem" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.retrievers.kendra</span></code>.ResultItem<a class="headerlink" href="#langchain-community-retrievers-kendra-resultitem" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.retrievers.kendra.ResultItem">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.retrievers.kendra.</span></span><span class="sig-name descname"><span class="pre">ResultItem</span></span><a class="reference internal" href="../_modules/langchain_community/retrievers/kendra.html#ResultItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.retrievers.kendra.ResultItem" title="Permalink to this definition">¶</a></dt>
@@ -161,7 +186,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.retrievers.kendra.ResultItem.DocumentAttributes">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentAttributes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_community.retrievers.kendra.DocumentAttribute.html#langchain_community.retrievers.kendra.DocumentAttribute" title="langchain_community.retrievers.kendra.DocumentAttribute"><span class="pre">langchain_community.retrievers.kendra.DocumentAttribute</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#langchain_community.retrievers.kendra.ResultItem.DocumentAttributes" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DocumentAttributes</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_community.retrievers.kendra.DocumentAttribute.html#langchain_community.retrievers.kendra.DocumentAttribute" title="langchain_community.retrievers.kendra.DocumentAttribute"><span class="pre">DocumentAttribute</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#langchain_community.retrievers.kendra.ResultItem.DocumentAttributes" title="Permalink to this definition">¶</a></dt>
 <dd><p>The document attributes.</p>
 </dd></dl>
 
@@ -317,7 +342,7 @@ This returns any extra metadata except these:</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/retrievers/langchain_community.retrievers.kendra.ResultItem.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
@@ -146,8 +145,8 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <h1>Source code for sqlalchemy.orm.decl_base</h1><div class="highlight"><pre>
-<span></span><span class="c1"># ext/declarative/base.py</span>
-<span class="c1"># Copyright (C) 2005-2023 the SQLAlchemy authors and contributors</span>
+<span></span><span class="c1"># orm/decl_base.py</span>
+<span class="c1"># Copyright (C) 2005-2024 the SQLAlchemy authors and contributors</span>
 <span class="c1"># &lt;see AUTHORS file&gt;</span>
 <span class="c1">#</span>
 <span class="c1"># This module is part of SQLAlchemy and is released under</span>
@@ -246,8 +245,7 @@
     <span class="n">__mapper__</span><span class="p">:</span> <span class="n">Mapper</span><span class="p">[</span><span class="n">_O</span><span class="p">]</span>
     <span class="n">__table__</span><span class="p">:</span> <span class="n">FromClause</span>
 
-    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">_O</span><span class="p">:</span>
-        <span class="o">...</span>
+    <span class="k">def</span> <span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kw</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">_O</span><span class="p">:</span> <span class="o">...</span>
 
 
 <span class="k">class</span> <span class="nc">_DeclMappedClassProtocol</span><span class="p">(</span><span class="n">MappedClassProtocol</span><span class="p">[</span><span class="n">_O</span><span class="p">],</span> <span class="n">Protocol</span><span class="p">):</span>
@@ -259,11 +257,9 @@
 
     <span class="n">_sa_apply_dc_transforms</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">_DataclassArguments</span><span class="p">]</span>
 
-    <span class="k">def</span> <span class="nf">__declare_first__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="o">...</span>
+    <span class="k">def</span> <span class="nf">__declare_first__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
 
-    <span class="k">def</span> <span class="nf">__declare_last__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="o">...</span>
+    <span class="k">def</span> <span class="nf">__declare_last__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span> <span class="o">...</span>
 
 
 <span class="k">class</span> <span class="nc">_DataclassArguments</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
@@ -1056,9 +1052,9 @@
                                     <span class="s2">&quot;@declared_attr.cascading; &quot;</span>
                                     <span class="s2">&quot;skipping&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span>
                                 <span class="p">)</span>
-                            <span class="n">collected_attributes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">column_copies</span><span class="p">[</span>
-                                <span class="n">obj</span>
-                            <span class="p">]</span> <span class="o">=</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span>
+                            <span class="n">collected_attributes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">column_copies</span><span class="p">[</span><span class="n">obj</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                                <span class="n">ret</span>
+                            <span class="p">)</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="fm">__get__</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">cls</span><span class="p">)</span>
                             <span class="nb">setattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">ret</span><span class="p">)</span>
                         <span class="k">else</span><span class="p">:</span>
                             <span class="k">if</span> <span class="n">is_dataclass_field</span><span class="p">:</span>
@@ -1095,9 +1091,9 @@
                             <span class="p">):</span>
                                 <span class="n">ret</span> <span class="o">=</span> <span class="n">ret</span><span class="o">.</span><span class="n">descriptor</span>
 
-                            <span class="n">collected_attributes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">column_copies</span><span class="p">[</span>
-                                <span class="n">obj</span>
-                            <span class="p">]</span> <span class="o">=</span> <span class="n">ret</span>
+                            <span class="n">collected_attributes</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">column_copies</span><span class="p">[</span><span class="n">obj</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                                <span class="n">ret</span>
+                            <span class="p">)</span>
 
                         <span class="k">if</span> <span class="p">(</span>
                             <span class="nb">isinstance</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="p">(</span><span class="n">Column</span><span class="p">,</span> <span class="n">MapperProperty</span><span class="p">))</span>
@@ -1278,9 +1274,9 @@
         <span class="n">defaults</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">field_list</span><span class="p">:</span>
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-                <span class="n">name</span><span class="p">,</span> <span class="n">tp</span> <span class="o">=</span> <span class="n">item</span>  <span class="c1"># type: ignore</span>
+                <span class="n">name</span><span class="p">,</span> <span class="n">tp</span> <span class="o">=</span> <span class="n">item</span>
             <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
-                <span class="n">name</span><span class="p">,</span> <span class="n">tp</span><span class="p">,</span> <span class="n">spec</span> <span class="o">=</span> <span class="n">item</span>  <span class="c1"># type: ignore</span>
+                <span class="n">name</span><span class="p">,</span> <span class="n">tp</span><span class="p">,</span> <span class="n">spec</span> <span class="o">=</span> <span class="n">item</span>
                 <span class="n">defaults</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">spec</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">assert</span> <span class="kc">False</span>
@@ -1582,9 +1578,9 @@
             <span class="bp">cls</span><span class="p">,</span> <span class="s2">&quot;_sa_decl_prepare_nocascade&quot;</span><span class="p">,</span> <span class="n">strict</span><span class="o">=</span><span class="kc">True</span>
         <span class="p">)</span>
 
+        <span class="n">allow_unmapped_annotations</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">allow_unmapped_annotations</span>
         <span class="n">expect_annotations_wo_mapped</span> <span class="o">=</span> <span class="p">(</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">allow_unmapped_annotations</span>
-            <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_dataclass_prior_to_mapping</span>
+            <span class="n">allow_unmapped_annotations</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_dataclass_prior_to_mapping</span>
         <span class="p">)</span>
 
         <span class="n">look_for_dataclass_things</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dataclass_setup_arguments</span><span class="p">)</span>
@@ -1679,7 +1675,15 @@
                     <span class="c1"># Mapped[] etc. were not used.  If annotation is None,</span>
                     <span class="c1"># do declarative_scan so that the property can raise</span>
                     <span class="c1"># for required</span>
-                    <span class="k">if</span> <span class="n">mapped_container</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">annotation</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="p">(</span>
+                        <span class="n">mapped_container</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                        <span class="ow">or</span> <span class="n">annotation</span> <span class="ow">is</span> <span class="kc">None</span>
+                        <span class="c1"># issue #10516: need to do declarative_scan even with</span>
+                        <span class="c1"># a non-Mapped annotation if we are doing</span>
+                        <span class="c1"># __allow_unmapped__, for things like col.name</span>
+                        <span class="c1"># assignment</span>
+                        <span class="ow">or</span> <span class="n">allow_unmapped_annotations</span>
+                    <span class="p">):</span>
                         <span class="k">try</span><span class="p">:</span>
                             <span class="n">value</span><span class="o">.</span><span class="n">declarative_scan</span><span class="p">(</span>
                                 <span class="bp">self</span><span class="p">,</span>
@@ -2299,7 +2303,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
       </footer>
     </div>
   </div>

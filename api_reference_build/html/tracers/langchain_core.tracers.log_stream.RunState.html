@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,24 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.log_stream</span></code>.RunState</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.log_stream</span></code>.RunState</a><ul>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState"><code class="docutils literal notranslate"><span class="pre">RunState</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.__init__"><code class="docutils literal notranslate"><span class="pre">RunState.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.clear"><code class="docutils literal notranslate"><span class="pre">RunState.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.copy"><code class="docutils literal notranslate"><span class="pre">RunState.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.fromkeys"><code class="docutils literal notranslate"><span class="pre">RunState.fromkeys()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.get"><code class="docutils literal notranslate"><span class="pre">RunState.get()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.items"><code class="docutils literal notranslate"><span class="pre">RunState.items()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.keys"><code class="docutils literal notranslate"><span class="pre">RunState.keys()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.pop"><code class="docutils literal notranslate"><span class="pre">RunState.pop()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.popitem"><code class="docutils literal notranslate"><span class="pre">RunState.popitem()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.setdefault"><code class="docutils literal notranslate"><span class="pre">RunState.setdefault()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.update"><code class="docutils literal notranslate"><span class="pre">RunState.update()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.values"><code class="docutils literal notranslate"><span class="pre">RunState.values()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +167,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-tracers-log-stream-runstate">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.log_stream</span></code>.RunState<a class="headerlink" href="#langchain-core-tracers-log-stream-runstate" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.tracers.log_stream</span></code>.RunState<a class="headerlink" href="#langchain-core-tracers-log-stream-runstate" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_core.tracers.log_stream.RunState">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.tracers.log_stream.</span></span><span class="sig-name descname"><span class="pre">RunState</span></span><a class="reference internal" href="../_modules/langchain_core/tracers/log_stream.html#RunState"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.tracers.log_stream.RunState" title="Permalink to this definition">¶</a></dt>
@@ -212,7 +228,7 @@
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.pop" title="langchain_core.tracers.log_stream.RunState.pop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code></a>(k[,d])</p></td>
-<td><p>If key is not found, default is returned if given, otherwise KeyError is raised</p></td>
+<td><p>If the key is not found, return the default if given; otherwise, raise a KeyError.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#langchain_core.tracers.log_stream.RunState.popitem" title="langchain_core.tracers.log_stream.RunState.popitem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">popitem</span></code></a>()</p></td>
 <td><p>Remove and return a (key, value) pair as a 2-tuple.</p></td>
@@ -268,7 +284,8 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_core.tracers.log_stream.RunState.pop">
 <span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="optional">]</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">v,</span> <span class="pre">remove</span> <span class="pre">specified</span> <span class="pre">key</span> <span class="pre">and</span> <span class="pre">return</span> <span class="pre">the</span> <span class="pre">corresponding</span> <span class="pre">value.</span></span></span><a class="headerlink" href="#langchain_core.tracers.log_stream.RunState.pop" title="Permalink to this definition">¶</a></dt>
-<dd><p>If key is not found, default is returned if given, otherwise KeyError is raised</p>
+<dd><p>If the key is not found, return the default if given; otherwise,
+raise a KeyError.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -310,7 +327,7 @@ In either case, this is followed by: for k in F:  D[k] = F[k]</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/tracers/langchain_core.tracers.log_stream.RunState.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

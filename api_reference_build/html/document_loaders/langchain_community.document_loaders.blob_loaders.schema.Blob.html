@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,35 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.blob_loaders.schema</span></code>.Blob</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.blob_loaders.schema</span></code>.Blob</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob"><code class="docutils literal notranslate"><span class="pre">Blob</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.data"><code class="docutils literal notranslate"><span class="pre">Blob.data</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.encoding"><code class="docutils literal notranslate"><span class="pre">Blob.encoding</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.metadata"><code class="docutils literal notranslate"><span class="pre">Blob.metadata</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.mimetype"><code class="docutils literal notranslate"><span class="pre">Blob.mimetype</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.path"><code class="docutils literal notranslate"><span class="pre">Blob.path</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.as_bytes"><code class="docutils literal notranslate"><span class="pre">Blob.as_bytes()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.as_bytes_io"><code class="docutils literal notranslate"><span class="pre">Blob.as_bytes_io()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.as_string"><code class="docutils literal notranslate"><span class="pre">Blob.as_string()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.construct"><code class="docutils literal notranslate"><span class="pre">Blob.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.copy"><code class="docutils literal notranslate"><span class="pre">Blob.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.dict"><code class="docutils literal notranslate"><span class="pre">Blob.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.from_data"><code class="docutils literal notranslate"><span class="pre">Blob.from_data()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.from_orm"><code class="docutils literal notranslate"><span class="pre">Blob.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.from_path"><code class="docutils literal notranslate"><span class="pre">Blob.from_path()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.json"><code class="docutils literal notranslate"><span class="pre">Blob.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.parse_file"><code class="docutils literal notranslate"><span class="pre">Blob.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.parse_obj"><code class="docutils literal notranslate"><span class="pre">Blob.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.parse_raw"><code class="docutils literal notranslate"><span class="pre">Blob.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.schema"><code class="docutils literal notranslate"><span class="pre">Blob.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.schema_json"><code class="docutils literal notranslate"><span class="pre">Blob.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">Blob.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.validate"><code class="docutils literal notranslate"><span class="pre">Blob.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.source"><code class="docutils literal notranslate"><span class="pre">Blob.source</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +178,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-blob-loaders-schema-blob">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.blob_loaders.schema</span></code>.Blob<a class="headerlink" href="#langchain-community-document-loaders-blob-loaders-schema-blob" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.blob_loaders.schema</span></code>.Blob<a class="headerlink" href="#langchain-community-document-loaders-blob-loaders-schema-blob" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.blob_loaders.schema.Blob">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.blob_loaders.schema.</span></span><span class="sig-name descname"><span class="pre">Blob</span></span><a class="reference internal" href="../_modules/langchain_community/document_loaders/blob_loaders/schema.html#Blob"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.blob_loaders.schema.Blob" title="Permalink to this definition">¶</a></dt>
@@ -190,7 +217,7 @@ the raw data.</p>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.blob_loaders.schema.Blob.path">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">pathlib.PurePath</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.path" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">PurePath</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.document_loaders.blob_loaders.schema.Blob.path" title="Permalink to this definition">¶</a></dt>
 <dd><p>Location where the original content was found.</p>
 </dd></dl>
 
@@ -346,7 +373,7 @@ case that value will be used instead.</p>
 
 </dd></dl>
 
-<h1>Examples using Blob<a class="headerlink" href="#langchain-community-document-loaders-blob-loaders-schema-blob" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using Blob<a class="headerlink" href="#langchain-community-document-loaders-blob-loaders-schema-blob" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_transformers/docai">docai.md</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_loaders/embaas">Embaas</a></p></li>
@@ -358,7 +385,7 @@ case that value will be used instead.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.blob_loaders.schema.Blob.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

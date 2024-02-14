@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,17 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.duckdb_loader</span></code>.DuckDBLoader</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.duckdb_loader</span></code>.DuckDBLoader</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.duckdb_loader.DuckDBLoader"><code class="docutils literal notranslate"><span class="pre">DuckDBLoader</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.duckdb_loader.DuckDBLoader.__init__"><code class="docutils literal notranslate"><span class="pre">DuckDBLoader.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.duckdb_loader.DuckDBLoader.alazy_load"><code class="docutils literal notranslate"><span class="pre">DuckDBLoader.alazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.duckdb_loader.DuckDBLoader.lazy_load"><code class="docutils literal notranslate"><span class="pre">DuckDBLoader.lazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.duckdb_loader.DuckDBLoader.load"><code class="docutils literal notranslate"><span class="pre">DuckDBLoader.load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.duckdb_loader.DuckDBLoader.load_and_split"><code class="docutils literal notranslate"><span class="pre">DuckDBLoader.load_and_split()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +160,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-duckdb-loader-duckdbloader">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.duckdb_loader</span></code>.DuckDBLoader<a class="headerlink" href="#langchain-community-document-loaders-duckdb-loader-duckdbloader" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.duckdb_loader</span></code>.DuckDBLoader<a class="headerlink" href="#langchain-community-document-loaders-duckdb-loader-duckdbloader" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.duckdb_loader.DuckDBLoader">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.duckdb_loader.</span></span><span class="sig-name descname"><span class="pre">DuckDBLoader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">':memory:'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">read_only</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">page_content_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metadata_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/document_loaders/duckdb_loader.html#DuckDBLoader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.duckdb_loader.DuckDBLoader" title="Permalink to this definition">¶</a></dt>
@@ -261,7 +270,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
 
 </dd></dl>
 
-<h1>Examples using DuckDBLoader<a class="headerlink" href="#langchain-community-document-loaders-duckdb-loader-duckdbloader" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using DuckDBLoader<a class="headerlink" href="#langchain-community-document-loaders-duckdb-loader-duckdbloader" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_loaders/duckdb">DuckDB</a></p></li>
 </ul>
@@ -272,7 +281,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.duckdb_loader.DuckDBLoader.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

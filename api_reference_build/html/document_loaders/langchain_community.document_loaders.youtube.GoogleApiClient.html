@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,14 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.youtube</span></code>.GoogleApiClient</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.youtube</span></code>.GoogleApiClient</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.youtube.GoogleApiClient"><code class="docutils literal notranslate"><span class="pre">GoogleApiClient</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.youtube.GoogleApiClient.__init__"><code class="docutils literal notranslate"><span class="pre">GoogleApiClient.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.youtube.GoogleApiClient.validate_channel_or_videoIds_is_set"><code class="docutils literal notranslate"><span class="pre">GoogleApiClient.validate_channel_or_videoIds_is_set()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,10 +157,10 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-youtube-googleapiclient">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.youtube</span></code>.GoogleApiClient<a class="headerlink" href="#langchain-community-document-loaders-youtube-googleapiclient" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.youtube</span></code>.GoogleApiClient<a class="headerlink" href="#langchain-community-document-loaders-youtube-googleapiclient" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.youtube.GoogleApiClient">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.youtube.</span></span><span class="sig-name descname"><span class="pre">GoogleApiClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/Users/bagatur/.credentials/credentials.json')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_account_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/Users/bagatur/.credentials/credentials.json')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/Users/bagatur/.credentials/token.json')</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/document_loaders/youtube.html#GoogleApiClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.youtube.GoogleApiClient" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.youtube.</span></span><span class="sig-name descname"><span class="pre">GoogleApiClient</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/home/runner/.credentials/credentials.json')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_account_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/home/runner/.credentials/credentials.json')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/home/runner/.credentials/token.json')</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/document_loaders/youtube.html#GoogleApiClient"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.youtube.GoogleApiClient" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generic Google API Client.</p>
 <p>To use, you should have the <code class="docutils literal notranslate"><span class="pre">google_auth_oauthlib,youtube_transcript_api,google</span></code>
 python package installed.
@@ -202,7 +208,7 @@ register your Service. “<a class="reference external" href="https://developers
 </table>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.youtube.GoogleApiClient.__init__">
-<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/Users/bagatur/.credentials/credentials.json')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_account_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/Users/bagatur/.credentials/credentials.json')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/Users/bagatur/.credentials/token.json')</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#langchain_community.document_loaders.youtube.GoogleApiClient.__init__" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credentials_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/home/runner/.credentials/credentials.json')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">service_account_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/home/runner/.credentials/credentials.json')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Path</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">PosixPath('/home/runner/.credentials/token.json')</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#langchain_community.document_loaders.youtube.GoogleApiClient.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -213,7 +219,7 @@ register your Service. “<a class="reference external" href="https://developers
 
 </dd></dl>
 
-<h1>Examples using GoogleApiClient<a class="headerlink" href="#langchain-community-document-loaders-youtube-googleapiclient" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using GoogleApiClient<a class="headerlink" href="#langchain-community-document-loaders-youtube-googleapiclient" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_loaders/youtube_transcript">YouTube transcripts</a></p></li>
 </ul>
@@ -224,7 +230,7 @@ register your Service. “<a class="reference external" href="https://developers
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.youtube.GoogleApiClient.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

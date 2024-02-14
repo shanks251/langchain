@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,28 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.openapi.toolkit</span></code>.OpenAPIToolkit</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.openapi.toolkit</span></code>.OpenAPIToolkit</a><ul>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.json_agent"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.json_agent</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.requests_wrapper"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.requests_wrapper</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.construct"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.copy"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.dict"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.from_llm"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.from_llm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.from_orm"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.get_tools"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.get_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.json"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.parse_file"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.parse_obj"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.parse_raw"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.schema"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.schema_json"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.validate"><code class="docutils literal notranslate"><span class="pre">OpenAPIToolkit.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +171,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-agent-toolkits-openapi-toolkit-openapitoolkit">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.openapi.toolkit</span></code>.OpenAPIToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-openapi-toolkit-openapitoolkit" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.openapi.toolkit</span></code>.OpenAPIToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-openapi-toolkit-openapitoolkit" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.agent_toolkits.openapi.toolkit.</span></span><span class="sig-name descname"><span class="pre">OpenAPIToolkit</span></span><a class="reference internal" href="../_modules/langchain_community/agent_toolkits/openapi/toolkit.html#OpenAPIToolkit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit" title="Permalink to this definition">¶</a></dt>
@@ -173,7 +193,7 @@ an OpenAPI compliant API.</p>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.requests_wrapper">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">requests_wrapper</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../utilities/langchain_community.utilities.requests.TextRequestsWrapper.html#langchain_community.utilities.requests.TextRequestsWrapper" title="langchain_community.utilities.requests.TextRequestsWrapper"><span class="pre">langchain_community.utilities.requests.TextRequestsWrapper</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.requests_wrapper" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">requests_wrapper</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../utilities/langchain_community.utilities.requests.TextRequestsWrapper.html#langchain_community.utilities.requests.TextRequestsWrapper" title="langchain_community.utilities.requests.TextRequestsWrapper"><span class="pre">TextRequestsWrapper</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.requests_wrapper" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -272,7 +292,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using OpenAPIToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-openapi-toolkit-openapitoolkit" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using OpenAPIToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-openapi-toolkit-openapitoolkit" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/toolkits/openapi">OpenAPI</a></p></li>
 </ul>
@@ -283,7 +303,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agent_toolkits/langchain_community.agent_toolkits.openapi.toolkit.OpenAPIToolkit.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

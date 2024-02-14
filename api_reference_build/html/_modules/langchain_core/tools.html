@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -649,7 +648,7 @@
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">tool_input</span><span class="p">,</span> <span class="n">callbacks</span><span class="o">=</span><span class="n">callbacks</span><span class="p">)</span></div></div>
 
 
-<span class="k">class</span> <span class="nc">Tool</span><span class="p">(</span><span class="n">BaseTool</span><span class="p">):</span>
+<div class="viewcode-block" id="Tool"><a class="viewcode-back" href="../../tools/langchain_core.tools.Tool.html#langchain_community.agent_toolkits.nla.tool.Tool">[docs]</a><span class="k">class</span> <span class="nc">Tool</span><span class="p">(</span><span class="n">BaseTool</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Tool that takes in function or coroutine directly.&quot;&quot;&quot;</span>
 
     <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
@@ -660,7 +659,7 @@
 
     <span class="c1"># --- Runnable ---</span>
 
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">ainvoke</span><span class="p">(</span>
+<div class="viewcode-block" id="Tool.ainvoke"><a class="viewcode-back" href="../../tools/langchain_core.tools.Tool.html#langchain_community.agent_toolkits.nla.tool.Tool.ainvoke">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">ainvoke</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="nb">input</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">],</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">RunnableConfig</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -670,7 +669,7 @@
             <span class="c1"># If the tool does not implement async, fall back to default implementation</span>
             <span class="k">return</span> <span class="k">await</span> <span class="n">run_in_executor</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">invoke</span><span class="p">,</span> <span class="nb">input</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
-        <span class="k">return</span> <span class="k">await</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">ainvoke</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="k">await</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">ainvoke</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
     <span class="c1"># --- Tool ---</span>
 
@@ -753,7 +752,7 @@
             <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">func</span><span class="o">=</span><span class="n">func</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span>
         <span class="p">)</span>
 
-    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="Tool.from_function"><a class="viewcode-back" href="../../tools/langchain_core.tools.Tool.html#langchain_community.agent_toolkits.nla.tool.Tool.from_function">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">from_function</span><span class="p">(</span>
         <span class="bp">cls</span><span class="p">,</span>
         <span class="n">func</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Callable</span><span class="p">],</span>
@@ -777,7 +776,7 @@
             <span class="n">return_direct</span><span class="o">=</span><span class="n">return_direct</span><span class="p">,</span>
             <span class="n">args_schema</span><span class="o">=</span><span class="n">args_schema</span><span class="p">,</span>
             <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
-        <span class="p">)</span>
+        <span class="p">)</span></div></div>
 
 
 <div class="viewcode-block" id="StructuredTool"><a class="viewcode-back" href="../../tools/langchain_core.tools.StructuredTool.html#langchain_community.agent_toolkits.nla.tool.StructuredTool">[docs]</a><span class="k">class</span> <span class="nc">StructuredTool</span><span class="p">(</span><span class="n">BaseTool</span><span class="p">):</span>
@@ -932,7 +931,7 @@
         <span class="p">)</span></div></div>
 
 
-<div class="viewcode-block" id="tool"><a class="viewcode-back" href="../../tools/langchain_core.tools.Tool.html#langchain_community.agent_toolkits.nla.tool.tool">[docs]</a><span class="k">def</span> <span class="nf">tool</span><span class="p">(</span>
+<div class="viewcode-block" id="tool"><a class="viewcode-back" href="../../tools/langchain_core.tools.tool.html#langchain_community.agent_toolkits.nla.tool.tool">[docs]</a><span class="k">def</span> <span class="nf">tool</span><span class="p">(</span>
     <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Runnable</span><span class="p">],</span>
     <span class="n">return_direct</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
     <span class="n">args_schema</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -1052,7 +1051,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
       </footer>
     </div>
   </div>

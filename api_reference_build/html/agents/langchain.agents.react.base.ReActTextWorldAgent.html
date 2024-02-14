@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.react.base</span></code>.ReActTextWorldAgent</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.react.base</span></code>.ReActTextWorldAgent</a><ul>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.allowed_tools"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.allowed_tools</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.llm_chain"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.llm_chain</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.output_parser"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.output_parser</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.aplan"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.aplan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.construct"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.copy"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.create_prompt"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.create_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.dict"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.from_llm_and_tools"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.from_llm_and_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.from_orm"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.get_allowed_tools"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.get_allowed_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.get_full_inputs"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.get_full_inputs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.json"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.parse_file"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.parse_obj"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.parse_raw"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.plan"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.plan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.return_stopped_response"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.return_stopped_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.save"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.save()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.schema"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.schema_json"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.tool_run_logging_kwargs"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.tool_run_logging_kwargs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.validate"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.llm_prefix"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.llm_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.observation_prefix"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.observation_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.react.base.ReActTextWorldAgent.return_values"><code class="docutils literal notranslate"><span class="pre">ReActTextWorldAgent.return_values</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-react-base-reacttextworldagent">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.react.base</span></code>.ReActTextWorldAgent<a class="headerlink" href="#langchain-agents-react-base-reacttextworldagent" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.react.base</span></code>.ReActTextWorldAgent<a class="headerlink" href="#langchain-agents-react-base-reacttextworldagent" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.react.base.ReActTextWorldAgent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.react.base.</span></span><span class="sig-name descname"><span class="pre">ReActTextWorldAgent</span></span><a class="reference internal" href="../_modules/langchain/agents/react/base.html#ReActTextWorldAgent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.react.base.ReActTextWorldAgent" title="Permalink to this definition">¶</a></dt>
@@ -175,7 +206,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.react.base.ReActTextWorldAgent.output_parser">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_parser</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain.agents.agent.AgentOutputParser.html#langchain.agents.agent.AgentOutputParser" title="langchain.agents.agent.AgentOutputParser"><span class="pre">langchain.agents.agent.AgentOutputParser</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.agents.react.base.ReActTextWorldAgent.output_parser" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_parser</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain.agents.agent.AgentOutputParser.html#langchain.agents.agent.AgentOutputParser" title="langchain.agents.agent.AgentOutputParser"><span class="pre">AgentOutputParser</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.agents.react.base.ReActTextWorldAgent.output_parser" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -378,7 +409,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.react.base.ReActTextWorldAgent.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

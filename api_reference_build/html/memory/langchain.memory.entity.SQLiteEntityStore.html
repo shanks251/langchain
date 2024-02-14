@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,33 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.entity</span></code>.SQLiteEntityStore</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.entity</span></code>.SQLiteEntityStore</a><ul>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.conn"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.conn</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.session_id"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.session_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.table_name"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.table_name</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.clear"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.construct"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.copy"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.delete"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.dict"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.exists"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.exists()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.from_orm"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.get"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.get()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.json"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.parse_file"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.parse_obj"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.parse_raw"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.schema"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.schema_json"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.set"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.set()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.validate"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.entity.SQLiteEntityStore.full_table_name"><code class="docutils literal notranslate"><span class="pre">SQLiteEntityStore.full_table_name</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +176,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-memory-entity-sqliteentitystore">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.entity</span></code>.SQLiteEntityStore<a class="headerlink" href="#langchain-memory-entity-sqliteentitystore" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.entity</span></code>.SQLiteEntityStore<a class="headerlink" href="#langchain-memory-entity-sqliteentitystore" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.memory.entity.SQLiteEntityStore">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.memory.entity.</span></span><span class="sig-name descname"><span class="pre">SQLiteEntityStore</span></span><a class="reference internal" href="../_modules/langchain/memory/entity.html#SQLiteEntityStore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.memory.entity.SQLiteEntityStore" title="Permalink to this definition">¶</a></dt>
@@ -293,7 +318,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using SQLiteEntityStore<a class="headerlink" href="#langchain-memory-entity-sqliteentitystore" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using SQLiteEntityStore<a class="headerlink" href="#langchain-memory-entity-sqliteentitystore" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/memory/entity_memory_with_sqlite">Entity Memory with SQLite storage</a></p></li>
 </ul>
@@ -304,7 +329,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/memory/langchain.memory.entity.SQLiteEntityStore.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

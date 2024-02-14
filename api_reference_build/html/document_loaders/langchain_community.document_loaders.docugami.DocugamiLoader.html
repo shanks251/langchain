@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,42 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.docugami</span></code>.DocugamiLoader</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.docugami</span></code>.DocugamiLoader</a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.access_token"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.access_token</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.api"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.api</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.docset_id"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.docset_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.document_ids"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.document_ids</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.file_paths"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.file_paths</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.include_project_metadata_in_doc_metadata"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.include_project_metadata_in_doc_metadata</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.include_xml_tags"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.include_xml_tags</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.max_metadata_length"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.max_metadata_length</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.max_text_length"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.max_text_length</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.min_text_length"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.min_text_length</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.parent_hierarchy_levels"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.parent_hierarchy_levels</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.parent_id_key"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.parent_id_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.sub_chunk_tables"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.sub_chunk_tables</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.whitespace_normalize_text"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.whitespace_normalize_text</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.alazy_load"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.alazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.construct"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.copy"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.dict"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.from_orm"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.json"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.lazy_load"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.lazy_load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.load"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.load()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.load_and_split"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.load_and_split()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.parse_file"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.parse_obj"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.parse_raw"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.schema"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.schema_json"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.document_loaders.docugami.DocugamiLoader.validate"><code class="docutils literal notranslate"><span class="pre">DocugamiLoader.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +185,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-document-loaders-docugami-docugamiloader">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.docugami</span></code>.DocugamiLoader<a class="headerlink" href="#langchain-community-document-loaders-docugami-docugamiloader" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.document_loaders.docugami</span></code>.DocugamiLoader<a class="headerlink" href="#langchain-community-document-loaders-docugami-docugamiloader" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.docugami.DocugamiLoader">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.document_loaders.docugami.</span></span><span class="sig-name descname"><span class="pre">DocugamiLoader</span></span><a class="reference internal" href="../_modules/langchain_community/document_loaders/docugami.html#DocugamiLoader"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.document_loaders.docugami.DocugamiLoader" title="Permalink to this definition">¶</a></dt>
@@ -186,7 +220,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.document_loaders.docugami.DocugamiLoader.file_paths">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">file_paths</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">pathlib.Path</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.document_loaders.docugami.DocugamiLoader.file_paths" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">file_paths</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Path</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.document_loaders.docugami.DocugamiLoader.file_paths" title="Permalink to this definition">¶</a></dt>
 <dd><p>The local file paths to use.</p>
 </dd></dl>
 
@@ -362,7 +396,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
 
 </dd></dl>
 
-<h1>Examples using DocugamiLoader<a class="headerlink" href="#langchain-community-document-loaders-docugami-docugamiloader" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using DocugamiLoader<a class="headerlink" href="#langchain-community-document-loaders-docugami-docugamiloader" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/document_loaders/docugami">Docugami</a></p></li>
 </ul>
@@ -373,7 +407,7 @@ Defaults to RecursiveCharacterTextSplitter.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/document_loaders/langchain_community.document_loaders.docugami.DocugamiLoader.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

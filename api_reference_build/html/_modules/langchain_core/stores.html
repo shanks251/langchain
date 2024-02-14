@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -165,10 +164,10 @@
 <span class="n">V</span> <span class="o">=</span> <span class="n">TypeVar</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="BaseStore"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore">[docs]</a><span class="k">class</span> <span class="nc">BaseStore</span><span class="p">(</span><span class="n">Generic</span><span class="p">[</span><span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">],</span> <span class="n">ABC</span><span class="p">):</span>
+<div class="viewcode-block" id="BaseStore"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore">[docs]</a><span class="k">class</span> <span class="nc">BaseStore</span><span class="p">(</span><span class="n">Generic</span><span class="p">[</span><span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">],</span> <span class="n">ABC</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Abstract interface for a key-value store.&quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="BaseStore.mget"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore.mget">[docs]</a>    <span class="nd">@abstractmethod</span>
+<div class="viewcode-block" id="BaseStore.mget"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore.mget">[docs]</a>    <span class="nd">@abstractmethod</span>
     <span class="k">def</span> <span class="nf">mget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">K</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="n">V</span><span class="p">]]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the values associated with the given keys.</span>
 
@@ -180,7 +179,7 @@
 <span class="sd">            If a key is not found, the corresponding value will be None.</span>
 <span class="sd">        &quot;&quot;&quot;</span></div>
 
-<div class="viewcode-block" id="BaseStore.amget"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore.amget">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">amget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">K</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="n">V</span><span class="p">]]:</span>
+<div class="viewcode-block" id="BaseStore.amget"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore.amget">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">amget</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">K</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">Optional</span><span class="p">[</span><span class="n">V</span><span class="p">]]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the values associated with the given keys.</span>
 
 <span class="sd">        Args:</span>
@@ -192,7 +191,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="k">await</span> <span class="n">run_in_executor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mget</span><span class="p">,</span> <span class="n">keys</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseStore.mset"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore.mset">[docs]</a>    <span class="nd">@abstractmethod</span>
+<div class="viewcode-block" id="BaseStore.mset"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore.mset">[docs]</a>    <span class="nd">@abstractmethod</span>
     <span class="k">def</span> <span class="nf">mset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key_value_pairs</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the values for the given keys.</span>
 
@@ -200,7 +199,7 @@
 <span class="sd">            key_value_pairs (Sequence[Tuple[K, V]]): A sequence of key-value pairs.</span>
 <span class="sd">        &quot;&quot;&quot;</span></div>
 
-<div class="viewcode-block" id="BaseStore.amset"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore.amset">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">amset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key_value_pairs</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseStore.amset"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore.amset">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">amset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key_value_pairs</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">K</span><span class="p">,</span> <span class="n">V</span><span class="p">]])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the values for the given keys.</span>
 
 <span class="sd">        Args:</span>
@@ -208,7 +207,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="k">await</span> <span class="n">run_in_executor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mset</span><span class="p">,</span> <span class="n">key_value_pairs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseStore.mdelete"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore.mdelete">[docs]</a>    <span class="nd">@abstractmethod</span>
+<div class="viewcode-block" id="BaseStore.mdelete"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore.mdelete">[docs]</a>    <span class="nd">@abstractmethod</span>
     <span class="k">def</span> <span class="nf">mdelete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">K</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Delete the given keys and their associated values.</span>
 
@@ -216,7 +215,7 @@
 <span class="sd">            keys (Sequence[K]): A sequence of keys to delete.</span>
 <span class="sd">        &quot;&quot;&quot;</span></div>
 
-<div class="viewcode-block" id="BaseStore.amdelete"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore.amdelete">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">amdelete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">K</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<div class="viewcode-block" id="BaseStore.amdelete"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore.amdelete">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">amdelete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keys</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">K</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Delete the given keys and their associated values.</span>
 
 <span class="sd">        Args:</span>
@@ -224,7 +223,7 @@
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="k">await</span> <span class="n">run_in_executor</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">mdelete</span><span class="p">,</span> <span class="n">keys</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="BaseStore.yield_keys"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore.yield_keys">[docs]</a>    <span class="nd">@abstractmethod</span>
+<div class="viewcode-block" id="BaseStore.yield_keys"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore.yield_keys">[docs]</a>    <span class="nd">@abstractmethod</span>
     <span class="k">def</span> <span class="nf">yield_keys</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">Iterator</span><span class="p">[</span><span class="n">K</span><span class="p">],</span> <span class="n">Iterator</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
@@ -240,7 +239,7 @@
 <span class="sd">            depending on what makes more sense for the given store.</span>
 <span class="sd">        &quot;&quot;&quot;</span></div>
 
-<div class="viewcode-block" id="BaseStore.ayield_keys"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain.storage.encoder_backed.BaseStore.ayield_keys">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">ayield_keys</span><span class="p">(</span>
+<div class="viewcode-block" id="BaseStore.ayield_keys"><a class="viewcode-back" href="../../stores/langchain_core.stores.BaseStore.html#langchain_community.storage.redis.BaseStore.ayield_keys">[docs]</a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">ayield_keys</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">prefix</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Union</span><span class="p">[</span><span class="n">AsyncIterator</span><span class="p">[</span><span class="n">K</span><span class="p">],</span> <span class="n">AsyncIterator</span><span class="p">[</span><span class="nb">str</span><span class="p">]]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get an iterator over keys that match the given prefix.</span>
@@ -270,7 +269,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
       </footer>
     </div>
   </div>

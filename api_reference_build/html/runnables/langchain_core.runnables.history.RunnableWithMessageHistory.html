@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,76 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.runnables.history</span></code>.RunnableWithMessageHistory</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.runnables.history</span></code>.RunnableWithMessageHistory</a><ul>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.bound"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.bound</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.config"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.config</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.config_factories"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.config_factories</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.custom_input_type"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.custom_input_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.custom_output_type"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.custom_output_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.get_session_history"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.get_session_history</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.history_factory_config"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.history_factory_config</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.history_messages_key"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.history_messages_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.input_messages_key"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.input_messages_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.kwargs"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.output_messages_key"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.output_messages_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.abatch"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.abatch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.ainvoke"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.ainvoke()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.assign"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.assign()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.astream"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.astream()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.astream_events"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.astream_events()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.astream_log"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.astream_log()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.atransform"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.atransform()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.batch"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.batch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.bind"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.bind()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.config_schema"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.config_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.configurable_alternatives"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.configurable_alternatives()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.configurable_fields"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.configurable_fields()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.construct"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.copy"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.dict"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.from_orm"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.get_graph"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.get_graph()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.get_input_schema"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.get_input_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.get_name"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.get_name()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.get_output_schema"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.get_output_schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.get_prompts"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.get_prompts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.invoke"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.invoke()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.json"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.lc_id"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.map"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.map()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.parse_file"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.parse_obj"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.parse_raw"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.pick"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.pick()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.pipe"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.pipe()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.schema"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.schema_json"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.stream"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.stream()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.to_json"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.transform"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.transform()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.validate"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.with_config"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.with_config()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.with_fallbacks"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.with_fallbacks()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.with_listeners"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.with_listeners()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.with_retry"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.with_retry()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.with_types"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.with_types()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.InputType"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.InputType</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.OutputType"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.OutputType</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.config_specs"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.config_specs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.input_schema"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.input_schema</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.lc_attributes"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.lc_secrets"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.lc_secrets</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.name"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_core.runnables.history.RunnableWithMessageHistory.output_schema"><code class="docutils literal notranslate"><span class="pre">RunnableWithMessageHistory.output_schema</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +219,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-core-runnables-history-runnablewithmessagehistory">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.runnables.history</span></code>.RunnableWithMessageHistory<a class="headerlink" href="#langchain-core-runnables-history-runnablewithmessagehistory" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_core.runnables.history</span></code>.RunnableWithMessageHistory<a class="headerlink" href="#langchain-core-runnables-history-runnablewithmessagehistory" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_core.runnables.history.RunnableWithMessageHistory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_core.runnables.history.</span></span><span class="sig-name descname"><span class="pre">RunnableWithMessageHistory</span></span><a class="reference internal" href="../_modules/langchain_core/runnables/history.html#RunnableWithMessageHistory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory" title="Permalink to this definition">¶</a></dt>
@@ -1130,25 +1198,25 @@ between retries</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.history.RunnableWithMessageHistory.InputType">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">langchain_core.runnables.utils.Input</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.InputType" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">Input</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.InputType" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of input this runnable accepts specified as a type annotation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.history.RunnableWithMessageHistory.OutputType">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">langchain_core.runnables.utils.Output</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.OutputType" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">OutputType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">Output</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.OutputType" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of output this runnable produces specified as a type annotation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.history.RunnableWithMessageHistory.config_specs">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_specs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.runnables.utils.ConfigurableFieldSpec.html#langchain_core.runnables.utils.ConfigurableFieldSpec" title="langchain_core.runnables.utils.ConfigurableFieldSpec"><span class="pre">langchain_core.runnables.utils.ConfigurableFieldSpec</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.config_specs" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_specs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_core.runnables.utils.ConfigurableFieldSpec.html#langchain_core.runnables.utils.ConfigurableFieldSpec" title="langchain_core.runnables.utils.ConfigurableFieldSpec"><span class="pre">ConfigurableFieldSpec</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.config_specs" title="Permalink to this definition">¶</a></dt>
 <dd><p>List configurable fields for this runnable.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.history.RunnableWithMessageHistory.input_schema">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.main.BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.input_schema" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">input_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.input_schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of input this runnable accepts specified as a pydantic model.</p>
 </dd></dl>
 
@@ -1177,7 +1245,7 @@ between retries</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_core.runnables.history.RunnableWithMessageHistory.output_schema">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.main.BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.output_schema" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseModel</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain_core.runnables.history.RunnableWithMessageHistory.output_schema" title="Permalink to this definition">¶</a></dt>
 <dd><p>The type of output this runnable produces specified as a pydantic model.</p>
 </dd></dl>
 
@@ -1192,7 +1260,7 @@ between retries</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/runnables/langchain_core.runnables.history.RunnableWithMessageHistory.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,48 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_agent.agent_token_buffer_memory</span></code>.AgentTokenBufferMemory</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_agent.agent_token_buffer_memory</span></code>.AgentTokenBufferMemory</a><ul>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.ai_prefix"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.ai_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.chat_memory"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.chat_memory</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.human_prefix"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.human_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.input_key"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.input_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.intermediate_steps_key"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.intermediate_steps_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.llm"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.llm</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.max_token_limit"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.max_token_limit</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.memory_key"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.memory_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.output_key"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.output_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.return_messages"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.return_messages</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.aclear"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.aclear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.aload_memory_variables"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.aload_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.asave_context"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.asave_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.clear"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.construct"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.copy"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.dict"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.from_orm"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.json"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.lc_id"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.load_memory_variables"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.load_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.parse_file"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.parse_obj"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.parse_raw"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.save_context"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.save_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.schema"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.schema_json"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.to_json"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.validate"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.buffer"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.buffer</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.lc_attributes"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.lc_secrets"><code class="docutils literal notranslate"><span class="pre">AgentTokenBufferMemory.lc_secrets</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +191,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-openai-functions-agent-agent-token-buffer-memory-agenttokenbuffermemory">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_agent.agent_token_buffer_memory</span></code>.AgentTokenBufferMemory<a class="headerlink" href="#langchain-agents-openai-functions-agent-agent-token-buffer-memory-agenttokenbuffermemory" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_agent.agent_token_buffer_memory</span></code>.AgentTokenBufferMemory<a class="headerlink" href="#langchain-agents-openai-functions-agent-agent-token-buffer-memory-agenttokenbuffermemory" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.openai_functions_agent.agent_token_buffer_memory.</span></span><span class="sig-name descname"><span class="pre">AgentTokenBufferMemory</span></span><a class="reference internal" href="../_modules/langchain/agents/openai_functions_agent/agent_token_buffer_memory.html#AgentTokenBufferMemory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory" title="Permalink to this definition">¶</a></dt>
@@ -186,7 +226,7 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.llm">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">langchain_core.language_models.base.BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.llm" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.llm" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -363,7 +403,7 @@ to the object.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.buffer">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">buffer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../messages/langchain_core.messages.base.BaseMessage.html#langchain_core.messages.base.BaseMessage" title="langchain_core.messages.base.BaseMessage"><span class="pre">langchain_core.messages.base.BaseMessage</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.buffer" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">buffer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../messages/langchain_core.messages.base.BaseMessage.html#langchain_core.messages.base.BaseMessage" title="langchain_core.messages.base.BaseMessage"><span class="pre">BaseMessage</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.buffer" title="Permalink to this definition">¶</a></dt>
 <dd><p>String buffer of memory.</p>
 </dd></dl>
 
@@ -386,7 +426,7 @@ to the object.</p>
 
 </dd></dl>
 
-<h1>Examples using AgentTokenBufferMemory<a class="headerlink" href="#langchain-agents-openai-functions-agent-agent-token-buffer-memory-agenttokenbuffermemory" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using AgentTokenBufferMemory<a class="headerlink" href="#langchain-agents-openai-functions-agent-agent-token-buffer-memory-agenttokenbuffermemory" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/use_cases/question_answering/how_to/conversational_retrieval_agents">Conversational Retrieval Agent</a></p></li>
 </ul>
@@ -397,7 +437,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.openai_functions_agent.agent_token_buffer_memory.AgentTokenBufferMemory.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

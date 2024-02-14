@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,33 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.aim_callback</span></code>.BaseMetadataCallbackHandler</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.aim_callback</span></code>.BaseMetadataCallbackHandler</a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.step"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.step</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.starts"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.starts</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.ends"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.ends</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.errors"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.errors</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.text_ctr"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.text_ctr</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.ignore_llm_"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.ignore_llm_</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.ignore_chain_"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.ignore_chain_</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.ignore_agent_"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.ignore_agent_</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.ignore_retriever_"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.ignore_retriever_</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.always_verbose_"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.always_verbose_</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.chain_starts"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.chain_starts</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.chain_ends"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.chain_ends</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.llm_starts"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.llm_starts</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.llm_ends"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.llm_ends</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.llm_streams"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.llm_streams</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.tool_starts"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.tool_starts</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.tool_ends"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.tool_ends</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.agent_ends"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.agent_ends</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.__init__"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.get_custom_callback_meta"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.get_custom_callback_meta()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.reset_callback_meta"><code class="docutils literal notranslate"><span class="pre">BaseMetadataCallbackHandler.reset_callback_meta()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +176,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-callbacks-aim-callback-basemetadatacallbackhandler">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.aim_callback</span></code>.BaseMetadataCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-aim-callback-basemetadatacallbackhandler" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.aim_callback</span></code>.BaseMetadataCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-aim-callback-basemetadatacallbackhandler" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.callbacks.aim_callback.</span></span><span class="sig-name descname"><span class="pre">BaseMetadataCallbackHandler</span></span><a class="reference internal" href="../_modules/langchain_community/callbacks/aim_callback.html#BaseMetadataCallbackHandler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler" title="Permalink to this definition">¶</a></dt>
@@ -423,7 +448,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/callbacks/langchain_community.callbacks.aim_callback.BaseMetadataCallbackHandler.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

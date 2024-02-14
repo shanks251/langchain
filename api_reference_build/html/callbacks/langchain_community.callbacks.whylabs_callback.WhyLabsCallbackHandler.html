@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,34 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.whylabs_callback</span></code>.WhyLabsCallbackHandler</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.whylabs_callback</span></code>.WhyLabsCallbackHandler</a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.__init__"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.close"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.close()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.flush"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.flush()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.from_params"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.from_params()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_agent_action"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_agent_action()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_agent_finish"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_agent_finish()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_chain_end"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_chain_end()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_chain_error"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_chain_error()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_chain_start"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_chain_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_chat_model_start"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_chat_model_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_llm_end"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_llm_end()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_llm_error"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_llm_error()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_llm_new_token"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_llm_new_token()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_llm_start"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_llm_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_retriever_end"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_retriever_end()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_retriever_error"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_retriever_error()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_retriever_start"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_retriever_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_retry"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_retry()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_text"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_text()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_tool_end"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_tool_end()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_tool_error"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_tool_error()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.on_tool_start"><code class="docutils literal notranslate"><span class="pre">WhyLabsCallbackHandler.on_tool_start()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +177,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-callbacks-whylabs-callback-whylabscallbackhandler">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.whylabs_callback</span></code>.WhyLabsCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-whylabs-callback-whylabscallbackhandler" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.whylabs_callback</span></code>.WhyLabsCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-whylabs-callback-whylabscallbackhandler" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.callbacks.whylabs_callback.</span></span><span class="sig-name descname"><span class="pre">WhyLabsCallbackHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">handler</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/callbacks/whylabs_callback.html#WhyLabsCallbackHandler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler" title="Permalink to this definition">¶</a></dt>
@@ -506,7 +532,7 @@ you should use on_chat_model_start instead.</p>
 
 </dd></dl>
 
-<h1>Examples using WhyLabsCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-whylabs-callback-whylabscallbackhandler" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using WhyLabsCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-whylabs-callback-whylabscallbackhandler" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/providers/whylabs_profiling">WhyLabs</a></p></li>
 </ul>
@@ -517,7 +543,7 @@ you should use on_chat_model_start instead.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/callbacks/langchain_community.callbacks.whylabs_callback.WhyLabsCallbackHandler.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

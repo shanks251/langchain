@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,31 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.BaseMultiActionAgent</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.BaseMultiActionAgent</a><ul>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.aplan"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.aplan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.construct"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.copy"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.dict"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.from_orm"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.get_allowed_tools"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.get_allowed_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.json"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.parse_file"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.parse_obj"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.parse_raw"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.plan"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.plan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.return_stopped_response"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.return_stopped_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.save"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.save()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.schema"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.schema_json"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.tool_run_logging_kwargs"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.tool_run_logging_kwargs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.validate"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.agent.BaseMultiActionAgent.return_values"><code class="docutils literal notranslate"><span class="pre">BaseMultiActionAgent.return_values</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +174,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-agent-basemultiactionagent">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.BaseMultiActionAgent<a class="headerlink" href="#langchain-agents-agent-basemultiactionagent" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.agent</span></code>.BaseMultiActionAgent<a class="headerlink" href="#langchain-agents-agent-basemultiactionagent" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.agent.BaseMultiActionAgent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.agent.</span></span><span class="sig-name descname"><span class="pre">BaseMultiActionAgent</span></span><a class="reference internal" href="../_modules/langchain/agents/agent.html#BaseMultiActionAgent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.agent.BaseMultiActionAgent" title="Permalink to this definition">¶</a></dt>
@@ -320,7 +343,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
 
 </dd></dl>
 
-<h1>Examples using BaseMultiActionAgent<a class="headerlink" href="#langchain-agents-agent-basemultiactionagent" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using BaseMultiActionAgent<a class="headerlink" href="#langchain-agents-agent-basemultiactionagent" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/modules/agents/how_to/custom_multi_action_agent">Custom multi-action agent</a></p></li>
 </ul>
@@ -331,7 +354,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.agent.BaseMultiActionAgent.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

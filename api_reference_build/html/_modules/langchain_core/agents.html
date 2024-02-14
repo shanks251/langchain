@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
@@ -160,7 +159,7 @@
 <span class="p">)</span>
 
 
-<div class="viewcode-block" id="AgentAction"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentAction.html#langchain_core.agents.AgentAction">[docs]</a><span class="k">class</span> <span class="nc">AgentAction</span><span class="p">(</span><span class="n">Serializable</span><span class="p">):</span>
+<div class="viewcode-block" id="AgentAction"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentAction.html#langchain.agents.openai_assistant.base.AgentAction">[docs]</a><span class="k">class</span> <span class="nc">AgentAction</span><span class="p">(</span><span class="n">Serializable</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;A full description of an action for an ActionAgent to execute.&quot;&quot;&quot;</span>
 
     <span class="n">tool</span><span class="p">:</span> <span class="nb">str</span>
@@ -183,12 +182,12 @@
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Override init to support instantiation by position for backward compat.&quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">,</span> <span class="n">tool_input</span><span class="o">=</span><span class="n">tool_input</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="n">log</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
-<div class="viewcode-block" id="AgentAction.is_lc_serializable"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentAction.html#langchain_core.agents.AgentAction.is_lc_serializable">[docs]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="AgentAction.is_lc_serializable"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentAction.html#langchain.agents.openai_assistant.base.AgentAction.is_lc_serializable">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">is_lc_serializable</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return whether or not the class is serializable.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="kc">True</span></div>
 
-<div class="viewcode-block" id="AgentAction.get_lc_namespace"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentAction.html#langchain_core.agents.AgentAction.get_lc_namespace">[docs]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="AgentAction.get_lc_namespace"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentAction.html#langchain.agents.openai_assistant.base.AgentAction.get_lc_namespace">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">get_lc_namespace</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the namespace of the langchain object.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;langchain&quot;</span><span class="p">,</span> <span class="s2">&quot;schema&quot;</span><span class="p">,</span> <span class="s2">&quot;agent&quot;</span><span class="p">]</span></div>
@@ -199,7 +198,7 @@
         <span class="k">return</span> <span class="n">_convert_agent_action_to_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="AgentActionMessageLog"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentActionMessageLog.html#langchain_core.agents.AgentActionMessageLog">[docs]</a><span class="k">class</span> <span class="nc">AgentActionMessageLog</span><span class="p">(</span><span class="n">AgentAction</span><span class="p">):</span>
+<div class="viewcode-block" id="AgentActionMessageLog"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentActionMessageLog.html#langchain.agents.openai_assistant.base.AgentActionMessageLog">[docs]</a><span class="k">class</span> <span class="nc">AgentActionMessageLog</span><span class="p">(</span><span class="n">AgentAction</span><span class="p">):</span>
     <span class="n">message_log</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">]</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Similar to log, this can be used to pass along extra</span>
 <span class="sd">    information about what exact messages were predicted by the LLM</span>
@@ -214,7 +213,7 @@
     <span class="nb">type</span><span class="p">:</span> <span class="n">Literal</span><span class="p">[</span><span class="s2">&quot;AgentActionMessageLog&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;AgentActionMessageLog&quot;</span>  <span class="c1"># type: ignore</span></div>
 
 
-<div class="viewcode-block" id="AgentStep"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentStep.html#langchain_core.agents.AgentStep">[docs]</a><span class="k">class</span> <span class="nc">AgentStep</span><span class="p">(</span><span class="n">Serializable</span><span class="p">):</span>
+<div class="viewcode-block" id="AgentStep"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentStep.html#langchain.agents.openai_assistant.base.AgentStep">[docs]</a><span class="k">class</span> <span class="nc">AgentStep</span><span class="p">(</span><span class="n">Serializable</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;The result of running an AgentAction.&quot;&quot;&quot;</span>
 
     <span class="n">action</span><span class="p">:</span> <span class="n">AgentAction</span>
@@ -228,7 +227,7 @@
         <span class="k">return</span> <span class="n">_convert_agent_observation_to_messages</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">action</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">observation</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="AgentFinish"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentFinish.html#langchain_core.agents.AgentFinish">[docs]</a><span class="k">class</span> <span class="nc">AgentFinish</span><span class="p">(</span><span class="n">Serializable</span><span class="p">):</span>
+<div class="viewcode-block" id="AgentFinish"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentFinish.html#langchain.agents.openai_assistant.base.AgentFinish">[docs]</a><span class="k">class</span> <span class="nc">AgentFinish</span><span class="p">(</span><span class="n">Serializable</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;The final return value of an ActionAgent.&quot;&quot;&quot;</span>
 
     <span class="n">return_values</span><span class="p">:</span> <span class="nb">dict</span>
@@ -246,12 +245,12 @@
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Override init to support instantiation by position for backward compat.&quot;&quot;&quot;</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">return_values</span><span class="o">=</span><span class="n">return_values</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="n">log</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
-<div class="viewcode-block" id="AgentFinish.is_lc_serializable"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentFinish.html#langchain_core.agents.AgentFinish.is_lc_serializable">[docs]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="AgentFinish.is_lc_serializable"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentFinish.html#langchain.agents.openai_assistant.base.AgentFinish.is_lc_serializable">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">is_lc_serializable</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return whether or not the class is serializable.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="kc">True</span></div>
 
-<div class="viewcode-block" id="AgentFinish.get_lc_namespace"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentFinish.html#langchain_core.agents.AgentFinish.get_lc_namespace">[docs]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="AgentFinish.get_lc_namespace"><a class="viewcode-back" href="../../agents/langchain_core.agents.AgentFinish.html#langchain.agents.openai_assistant.base.AgentFinish.get_lc_namespace">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">get_lc_namespace</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the namespace of the langchain object.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;langchain&quot;</span><span class="p">,</span> <span class="s2">&quot;schema&quot;</span><span class="p">,</span> <span class="s2">&quot;agent&quot;</span><span class="p">]</span></div>
@@ -327,7 +326,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
       </footer>
     </div>
   </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_agent.base</span></code>.OpenAIFunctionsAgent</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_agent.base</span></code>.OpenAIFunctionsAgent</a><ul>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.llm"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.llm</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.output_parser"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.output_parser</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.prompt"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.prompt</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.tools"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.tools</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.aplan"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.aplan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.construct"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.copy"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.create_prompt"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.create_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.dict"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.from_llm_and_tools"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.from_llm_and_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.from_orm"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.get_allowed_tools"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.get_allowed_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.json"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.parse_file"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.parse_obj"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.parse_raw"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.plan"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.plan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.return_stopped_response"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.return_stopped_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.save"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.save()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.schema"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.schema_json"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.tool_run_logging_kwargs"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.tool_run_logging_kwargs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.validate"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.functions"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.functions</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.input_keys"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.input_keys</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.return_values"><code class="docutils literal notranslate"><span class="pre">OpenAIFunctionsAgent.return_values</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-openai-functions-agent-base-openaifunctionsagent">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_agent.base</span></code>.OpenAIFunctionsAgent<a class="headerlink" href="#langchain-agents-openai-functions-agent-base-openaifunctionsagent" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.openai_functions_agent.base</span></code>.OpenAIFunctionsAgent<a class="headerlink" href="#langchain-agents-openai-functions-agent-base-openaifunctionsagent" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.openai_functions_agent.base.</span></span><span class="sig-name descname"><span class="pre">OpenAIFunctionsAgent</span></span><a class="reference internal" href="../_modules/langchain/agents/openai_functions_agent/base.html#OpenAIFunctionsAgent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent" title="Permalink to this definition">¶</a></dt>
@@ -183,22 +214,22 @@ of the variables. For an easy way to construct this prompt, use
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.llm">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">langchain_core.language_models.base.BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.llm" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.llm" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.output_parser">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_parser</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser.html#langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser" title="langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser"><span class="pre">langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;class</span> <span class="pre">'langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser'&gt;</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.output_parser" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_parser</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser.html#langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser" title="langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser"><span class="pre">OpenAIFunctionsAgentOutputParser</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;class</span> <span class="pre">'langchain.agents.output_parsers.openai_functions.OpenAIFunctionsAgentOutputParser'&gt;</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.output_parser" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.prompt">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../prompts/langchain_core.prompts.base.BasePromptTemplate.html#langchain_core.prompts.base.BasePromptTemplate" title="langchain_core.prompts.base.BasePromptTemplate"><span class="pre">langchain_core.prompts.base.BasePromptTemplate</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.prompt" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../prompts/langchain_core.prompts.base.BasePromptTemplate.html#langchain_core.prompts.base.BasePromptTemplate" title="langchain_core.prompts.base.BasePromptTemplate"><span class="pre">BasePromptTemplate</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.prompt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.tools">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../tools/langchain_core.tools.BaseTool.html#langchain_core.tools.BaseTool" title="langchain_core.tools.BaseTool"><span class="pre">langchain_core.tools.BaseTool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.tools" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../tools/langchain_core.tools.BaseTool.html#langchain_core.tools.BaseTool" title="langchain_core.tools.BaseTool"><span class="pre">BaseTool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.tools" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -396,7 +427,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
 
 </dd></dl>
 
-<h1>Examples using OpenAIFunctionsAgent<a class="headerlink" href="#langchain-agents-openai-functions-agent-base-openaifunctionsagent" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using OpenAIFunctionsAgent<a class="headerlink" href="#langchain-agents-openai-functions-agent-base-openaifunctionsagent" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/tools/metaphor_search">Metaphor Search</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/callbacks/llmonitor">LLMonitor</a></p></li>
@@ -410,7 +441,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.openai_functions_agent.base.OpenAIFunctionsAgent.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

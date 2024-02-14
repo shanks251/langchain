@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,37 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.llms.cohere</span></code>.BaseCohere</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.llms.cohere</span></code>.BaseCohere</a><ul>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere"><code class="docutils literal notranslate"><span class="pre">BaseCohere</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.cohere_api_key"><code class="docutils literal notranslate"><span class="pre">BaseCohere.cohere_api_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.model"><code class="docutils literal notranslate"><span class="pre">BaseCohere.model</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.stop"><code class="docutils literal notranslate"><span class="pre">BaseCohere.stop</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.streaming"><code class="docutils literal notranslate"><span class="pre">BaseCohere.streaming</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.temperature"><code class="docutils literal notranslate"><span class="pre">BaseCohere.temperature</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.user_agent"><code class="docutils literal notranslate"><span class="pre">BaseCohere.user_agent</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.construct"><code class="docutils literal notranslate"><span class="pre">BaseCohere.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.copy"><code class="docutils literal notranslate"><span class="pre">BaseCohere.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.dict"><code class="docutils literal notranslate"><span class="pre">BaseCohere.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.from_orm"><code class="docutils literal notranslate"><span class="pre">BaseCohere.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">BaseCohere.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">BaseCohere.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.json"><code class="docutils literal notranslate"><span class="pre">BaseCohere.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.lc_id"><code class="docutils literal notranslate"><span class="pre">BaseCohere.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.parse_file"><code class="docutils literal notranslate"><span class="pre">BaseCohere.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.parse_obj"><code class="docutils literal notranslate"><span class="pre">BaseCohere.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.parse_raw"><code class="docutils literal notranslate"><span class="pre">BaseCohere.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.schema"><code class="docutils literal notranslate"><span class="pre">BaseCohere.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.schema_json"><code class="docutils literal notranslate"><span class="pre">BaseCohere.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.to_json"><code class="docutils literal notranslate"><span class="pre">BaseCohere.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">BaseCohere.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">BaseCohere.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.validate"><code class="docutils literal notranslate"><span class="pre">BaseCohere.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.lc_attributes"><code class="docutils literal notranslate"><span class="pre">BaseCohere.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.llms.cohere.BaseCohere.lc_secrets"><code class="docutils literal notranslate"><span class="pre">BaseCohere.lc_secrets</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +180,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-llms-cohere-basecohere">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.llms.cohere</span></code>.BaseCohere<a class="headerlink" href="#langchain-community-llms-cohere-basecohere" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.llms.cohere</span></code>.BaseCohere<a class="headerlink" href="#langchain-community-llms-cohere-basecohere" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.llms.cohere.BaseCohere">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.llms.cohere.</span></span><span class="sig-name descname"><span class="pre">BaseCohere</span></span><a class="reference internal" href="../_modules/langchain_community/llms/cohere.html#BaseCohere"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.llms.cohere.BaseCohere" title="Permalink to this definition">¶</a></dt>
@@ -335,7 +364,7 @@ to the object.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/llms/langchain_community.llms.cohere.BaseCohere.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

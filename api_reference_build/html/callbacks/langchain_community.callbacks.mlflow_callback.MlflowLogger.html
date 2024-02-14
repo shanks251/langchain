@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,23 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.mlflow_callback</span></code>.MlflowLogger</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.mlflow_callback</span></code>.MlflowLogger</a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger"><code class="docutils literal notranslate"><span class="pre">MlflowLogger</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.__init__"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.artifact"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.artifact()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.finish_run"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.finish_run()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.html"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.html()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.jsonf"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.jsonf()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.langchain_artifact"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.langchain_artifact()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.metric"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.metric()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.metrics"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.metrics()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.start_run"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.start_run()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.table"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.table()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger.text"><code class="docutils literal notranslate"><span class="pre">MlflowLogger.text()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +166,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-callbacks-mlflow-callback-mlflowlogger">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.mlflow_callback</span></code>.MlflowLogger<a class="headerlink" href="#langchain-community-callbacks-mlflow-callback-mlflowlogger" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.mlflow_callback</span></code>.MlflowLogger<a class="headerlink" href="#langchain-community-callbacks-mlflow-callback-mlflowlogger" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.callbacks.mlflow_callback.MlflowLogger">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.callbacks.mlflow_callback.</span></span><span class="sig-name descname"><span class="pre">MlflowLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/callbacks/mlflow_callback.html#MlflowLogger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.callbacks.mlflow_callback.MlflowLogger" title="Permalink to this definition">¶</a></dt>
@@ -286,7 +301,7 @@ Otherwise, it starts a new run, auto generates the random suffix for name.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/callbacks/langchain_community.callbacks.mlflow_callback.MlflowLogger.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

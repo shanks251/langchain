@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,30 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_experimental.rl_chain.base</span></code>.AutoSelectionScorer</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_experimental.rl_chain.base</span></code>.AutoSelectionScorer</a><ul>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.llm_chain"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.llm_chain</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.prompt"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.prompt</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.scoring_criteria_template_str"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.scoring_criteria_template_str</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.construct"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.copy"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.dict"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.from_orm"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.get_default_prompt"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.get_default_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.get_default_system_prompt"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.get_default_system_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.json"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.parse_file"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.parse_obj"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.parse_raw"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.schema"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.schema_json"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.score_response"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.score_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.validate"><code class="docutils literal notranslate"><span class="pre">AutoSelectionScorer.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +173,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-experimental-rl-chain-base-autoselectionscorer">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_experimental.rl_chain.base</span></code>.AutoSelectionScorer<a class="headerlink" href="#langchain-experimental-rl-chain-base-autoselectionscorer" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_experimental.rl_chain.base</span></code>.AutoSelectionScorer<a class="headerlink" href="#langchain-experimental-rl-chain-base-autoselectionscorer" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_experimental.rl_chain.base.AutoSelectionScorer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_experimental.rl_chain.base.</span></span><span class="sig-name descname"><span class="pre">AutoSelectionScorer</span></span><a class="reference internal" href="../_modules/langchain_experimental/rl_chain/base.html#AutoSelectionScorer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer" title="Permalink to this definition">¶</a></dt>
@@ -160,12 +182,12 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_experimental.rl_chain.base.AutoSelectionScorer.llm_chain">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm_chain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chains/langchain.chains.llm.LLMChain.html#langchain.chains.llm.LLMChain" title="langchain.chains.llm.LLMChain"><span class="pre">langchain.chains.llm.LLMChain</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.llm_chain" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm_chain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chains/langchain.chains.llm.LLMChain.html#langchain.chains.llm.LLMChain" title="langchain.chains.llm.LLMChain"><span class="pre">LLMChain</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.llm_chain" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_experimental.rl_chain.base.AutoSelectionScorer.prompt">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../prompts/langchain_core.prompts.base.BasePromptTemplate.html#langchain_core.prompts.base.BasePromptTemplate" title="langchain_core.prompts.base.BasePromptTemplate"><span class="pre">langchain_core.prompts.base.BasePromptTemplate</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.prompt" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">prompt</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../prompts/langchain_core.prompts.base.BasePromptTemplate.html#langchain_core.prompts.base.BasePromptTemplate" title="langchain_core.prompts.base.BasePromptTemplate"><span class="pre">BasePromptTemplate</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_experimental.rl_chain.base.AutoSelectionScorer.prompt" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -281,7 +303,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/rl_chain/langchain_experimental.rl_chain.base.AutoSelectionScorer.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

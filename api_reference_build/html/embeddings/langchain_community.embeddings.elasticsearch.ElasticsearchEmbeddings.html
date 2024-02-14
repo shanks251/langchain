@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,19 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.elasticsearch</span></code>.ElasticsearchEmbeddings</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.elasticsearch</span></code>.ElasticsearchEmbeddings</a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings"><code class="docutils literal notranslate"><span class="pre">ElasticsearchEmbeddings</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings.__init__"><code class="docutils literal notranslate"><span class="pre">ElasticsearchEmbeddings.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings.aembed_documents"><code class="docutils literal notranslate"><span class="pre">ElasticsearchEmbeddings.aembed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings.aembed_query"><code class="docutils literal notranslate"><span class="pre">ElasticsearchEmbeddings.aembed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings.embed_documents"><code class="docutils literal notranslate"><span class="pre">ElasticsearchEmbeddings.embed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings.embed_query"><code class="docutils literal notranslate"><span class="pre">ElasticsearchEmbeddings.embed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings.from_credentials"><code class="docutils literal notranslate"><span class="pre">ElasticsearchEmbeddings.from_credentials()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings.from_es_connection"><code class="docutils literal notranslate"><span class="pre">ElasticsearchEmbeddings.from_es_connection()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +162,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-embeddings-elasticsearch-elasticsearchembeddings">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.elasticsearch</span></code>.ElasticsearchEmbeddings<a class="headerlink" href="#langchain-community-embeddings-elasticsearch-elasticsearchembeddings" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.elasticsearch</span></code>.ElasticsearchEmbeddings<a class="headerlink" href="#langchain-community-embeddings-elasticsearch-elasticsearchembeddings" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.embeddings.elasticsearch.</span></span><span class="sig-name descname"><span class="pre">ElasticsearchEmbeddings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MlClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_field</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'text_field'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/embeddings/elasticsearch.html#ElasticsearchEmbeddings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings" title="Permalink to this definition">¶</a></dt>
@@ -365,7 +376,7 @@ ElasticsearchEmbeddings: An instance of the ElasticsearchEmbeddings class.</p>
 
 </dd></dl>
 
-<h1>Examples using ElasticsearchEmbeddings<a class="headerlink" href="#langchain-community-embeddings-elasticsearch-elasticsearchembeddings" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using ElasticsearchEmbeddings<a class="headerlink" href="#langchain-community-embeddings-elasticsearch-elasticsearchembeddings" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/text_embedding/elasticsearch">Elasticsearch</a></p></li>
 </ul>
@@ -376,7 +387,7 @@ ElasticsearchEmbeddings: An instance of the ElasticsearchEmbeddings class.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/embeddings/langchain_community.embeddings.elasticsearch.ElasticsearchEmbeddings.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

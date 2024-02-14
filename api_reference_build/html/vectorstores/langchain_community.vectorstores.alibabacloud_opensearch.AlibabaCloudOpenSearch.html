@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,44 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.alibabacloud_opensearch</span></code>.AlibabaCloudOpenSearch</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.alibabacloud_opensearch</span></code>.AlibabaCloudOpenSearch</a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.__init__"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.aadd_documents"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.aadd_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.aadd_texts"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.aadd_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.add_documents"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.add_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.add_texts"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.add_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.adelete"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.adelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.afrom_documents"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.afrom_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.afrom_texts"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.afrom_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.amax_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.amax_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.amax_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.amax_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.as_retriever"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.as_retriever()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.asearch"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.asearch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.asimilarity_search"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.asimilarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.asimilarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.asimilarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.asimilarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.asimilarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.asimilarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.asimilarity_search_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.create_inverse_metadata"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.create_inverse_metadata()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.create_results"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.create_results()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.create_results_with_score"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.create_results_with_score()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.delete"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.delete_documents_with_document_id"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.delete_documents_with_document_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.delete_documents_with_texts"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.delete_documents_with_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.from_documents"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.from_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.from_texts"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.from_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.inner_embedding_query"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.inner_embedding_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.max_marginal_relevance_search"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.max_marginal_relevance_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.max_marginal_relevance_search_by_vector"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.max_marginal_relevance_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.search"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.similarity_search"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.similarity_search()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.similarity_search_by_vector"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.similarity_search_by_vector()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.similarity_search_with_relevance_scores"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.similarity_search_with_relevance_scores()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.similarity_search_with_score"><code class="docutils literal notranslate"><span class="pre">AlibabaCloudOpenSearch.similarity_search_with_score()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +187,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-vectorstores-alibabacloud-opensearch-alibabacloudopensearch">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.alibabacloud_opensearch</span></code>.AlibabaCloudOpenSearch<a class="headerlink" href="#langchain-community-vectorstores-alibabacloud-opensearch-alibabacloudopensearch" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.vectorstores.alibabacloud_opensearch</span></code>.AlibabaCloudOpenSearch<a class="headerlink" href="#langchain-community-vectorstores-alibabacloud-opensearch-alibabacloudopensearch" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.vectorstores.alibabacloud_opensearch.</span></span><span class="sig-name descname"><span class="pre">AlibabaCloudOpenSearch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">embedding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../embeddings/langchain_core.embeddings.Embeddings.html#langchain_core.embeddings.Embeddings" title="langchain_core.embeddings.Embeddings"><span class="pre">Embeddings</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearchSettings.html#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearchSettings" title="langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearchSettings"><span class="pre">AlibabaCloudOpenSearchSettings</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/vectorstores/alibabacloud_opensearch.html#AlibabaCloudOpenSearch"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch" title="Permalink to this definition">¶</a></dt>
@@ -753,7 +789,7 @@ Defaults to 0.5.</p></li>
 
 </dd></dl>
 
-<h1>Examples using AlibabaCloudOpenSearch<a class="headerlink" href="#langchain-community-vectorstores-alibabacloud-opensearch-alibabacloudopensearch" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using AlibabaCloudOpenSearch<a class="headerlink" href="#langchain-community-vectorstores-alibabacloud-opensearch-alibabacloudopensearch" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/vectorstores/alibabacloud_opensearch">Alibaba Cloud OpenSearch</a></p></li>
 </ul>
@@ -764,7 +800,7 @@ Defaults to 0.5.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/vectorstores/langchain_community.vectorstores.alibabacloud_opensearch.AlibabaCloudOpenSearch.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

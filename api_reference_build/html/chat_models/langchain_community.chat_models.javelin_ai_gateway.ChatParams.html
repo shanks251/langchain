@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,27 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.chat_models.javelin_ai_gateway</span></code>.ChatParams</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.chat_models.javelin_ai_gateway</span></code>.ChatParams</a><ul>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams"><code class="docutils literal notranslate"><span class="pre">ChatParams</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.max_tokens"><code class="docutils literal notranslate"><span class="pre">ChatParams.max_tokens</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.stop"><code class="docutils literal notranslate"><span class="pre">ChatParams.stop</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.temperature"><code class="docutils literal notranslate"><span class="pre">ChatParams.temperature</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.construct"><code class="docutils literal notranslate"><span class="pre">ChatParams.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.copy"><code class="docutils literal notranslate"><span class="pre">ChatParams.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.dict"><code class="docutils literal notranslate"><span class="pre">ChatParams.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.from_orm"><code class="docutils literal notranslate"><span class="pre">ChatParams.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.json"><code class="docutils literal notranslate"><span class="pre">ChatParams.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.parse_file"><code class="docutils literal notranslate"><span class="pre">ChatParams.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.parse_obj"><code class="docutils literal notranslate"><span class="pre">ChatParams.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.parse_raw"><code class="docutils literal notranslate"><span class="pre">ChatParams.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.schema"><code class="docutils literal notranslate"><span class="pre">ChatParams.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.schema_json"><code class="docutils literal notranslate"><span class="pre">ChatParams.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ChatParams.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams.validate"><code class="docutils literal notranslate"><span class="pre">ChatParams.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +170,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-chat-models-javelin-ai-gateway-chatparams">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.chat_models.javelin_ai_gateway</span></code>.ChatParams<a class="headerlink" href="#langchain-community-chat-models-javelin-ai-gateway-chatparams" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.chat_models.javelin_ai_gateway</span></code>.ChatParams<a class="headerlink" href="#langchain-community-chat-models-javelin-ai-gateway-chatparams" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.chat_models.javelin_ai_gateway.ChatParams">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.chat_models.javelin_ai_gateway.</span></span><span class="sig-name descname"><span class="pre">ChatParams</span></span><a class="reference internal" href="../_modules/langchain_community/chat_models/javelin_ai_gateway.html#ChatParams"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.chat_models.javelin_ai_gateway.ChatParams" title="Permalink to this definition">¶</a></dt>
@@ -267,7 +286,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/chat_models/langchain_community.chat_models.javelin_ai_gateway.ChatParams.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,27 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.spark_sql.toolkit</span></code>.SparkSQLToolkit</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.spark_sql.toolkit</span></code>.SparkSQLToolkit</a><ul>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.db"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.db</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.llm"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.llm</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.construct"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.copy"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.dict"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.from_orm"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.get_tools"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.get_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.json"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.parse_file"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.parse_obj"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.parse_raw"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.schema"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.schema_json"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.validate"><code class="docutils literal notranslate"><span class="pre">SparkSQLToolkit.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +170,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-agent-toolkits-spark-sql-toolkit-sparksqltoolkit">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.spark_sql.toolkit</span></code>.SparkSQLToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-spark-sql-toolkit-sparksqltoolkit" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.spark_sql.toolkit</span></code>.SparkSQLToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-spark-sql-toolkit-sparksqltoolkit" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.agent_toolkits.spark_sql.toolkit.</span></span><span class="sig-name descname"><span class="pre">SparkSQLToolkit</span></span><a class="reference internal" href="../_modules/langchain_community/agent_toolkits/spark_sql/toolkit.html#SparkSQLToolkit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit" title="Permalink to this definition">¶</a></dt>
@@ -161,12 +180,12 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.db">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">db</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../utilities/langchain_community.utilities.spark_sql.SparkSQL.html#langchain_community.utilities.spark_sql.SparkSQL" title="langchain_community.utilities.spark_sql.SparkSQL"><span class="pre">langchain_community.utilities.spark_sql.SparkSQL</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.db" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">db</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../utilities/langchain_community.utilities.spark_sql.SparkSQL.html#langchain_community.utilities.spark_sql.SparkSQL" title="langchain_community.utilities.spark_sql.SparkSQL"><span class="pre">SparkSQL</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.db" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.llm">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">langchain_core.language_models.base.BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.llm" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../language_models/langchain_core.language_models.base.BaseLanguageModel.html#langchain_core.language_models.base.BaseLanguageModel" title="langchain_core.language_models.base.BaseLanguageModel"><span class="pre">BaseLanguageModel</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.llm" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -259,7 +278,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using SparkSQLToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-spark-sql-toolkit-sparksqltoolkit" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using SparkSQLToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-spark-sql-toolkit-sparksqltoolkit" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/toolkits/spark_sql">Spark SQL</a></p></li>
 </ul>
@@ -270,7 +289,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agent_toolkits/langchain_community.agent_toolkits.spark_sql.toolkit.SparkSQLToolkit.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

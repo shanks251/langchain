@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,49 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.zep_memory</span></code>.ZepMemory</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.zep_memory</span></code>.ZepMemory</a><ul>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory"><code class="docutils literal notranslate"><span class="pre">ZepMemory</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.ai_prefix"><code class="docutils literal notranslate"><span class="pre">ZepMemory.ai_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.chat_memory"><code class="docutils literal notranslate"><span class="pre">ZepMemory.chat_memory</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.human_prefix"><code class="docutils literal notranslate"><span class="pre">ZepMemory.human_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.input_key"><code class="docutils literal notranslate"><span class="pre">ZepMemory.input_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.output_key"><code class="docutils literal notranslate"><span class="pre">ZepMemory.output_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.return_messages"><code class="docutils literal notranslate"><span class="pre">ZepMemory.return_messages</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.abuffer"><code class="docutils literal notranslate"><span class="pre">ZepMemory.abuffer()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.abuffer_as_messages"><code class="docutils literal notranslate"><span class="pre">ZepMemory.abuffer_as_messages()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.abuffer_as_str"><code class="docutils literal notranslate"><span class="pre">ZepMemory.abuffer_as_str()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.aclear"><code class="docutils literal notranslate"><span class="pre">ZepMemory.aclear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.aload_memory_variables"><code class="docutils literal notranslate"><span class="pre">ZepMemory.aload_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.asave_context"><code class="docutils literal notranslate"><span class="pre">ZepMemory.asave_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.clear"><code class="docutils literal notranslate"><span class="pre">ZepMemory.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.construct"><code class="docutils literal notranslate"><span class="pre">ZepMemory.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.copy"><code class="docutils literal notranslate"><span class="pre">ZepMemory.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.dict"><code class="docutils literal notranslate"><span class="pre">ZepMemory.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.from_orm"><code class="docutils literal notranslate"><span class="pre">ZepMemory.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.get_lc_namespace"><code class="docutils literal notranslate"><span class="pre">ZepMemory.get_lc_namespace()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.is_lc_serializable"><code class="docutils literal notranslate"><span class="pre">ZepMemory.is_lc_serializable()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.json"><code class="docutils literal notranslate"><span class="pre">ZepMemory.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.lc_id"><code class="docutils literal notranslate"><span class="pre">ZepMemory.lc_id()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.load_memory_variables"><code class="docutils literal notranslate"><span class="pre">ZepMemory.load_memory_variables()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.parse_file"><code class="docutils literal notranslate"><span class="pre">ZepMemory.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.parse_obj"><code class="docutils literal notranslate"><span class="pre">ZepMemory.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.parse_raw"><code class="docutils literal notranslate"><span class="pre">ZepMemory.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.save_context"><code class="docutils literal notranslate"><span class="pre">ZepMemory.save_context()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.schema"><code class="docutils literal notranslate"><span class="pre">ZepMemory.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.schema_json"><code class="docutils literal notranslate"><span class="pre">ZepMemory.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.to_json"><code class="docutils literal notranslate"><span class="pre">ZepMemory.to_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.to_json_not_implemented"><code class="docutils literal notranslate"><span class="pre">ZepMemory.to_json_not_implemented()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ZepMemory.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.validate"><code class="docutils literal notranslate"><span class="pre">ZepMemory.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.buffer"><code class="docutils literal notranslate"><span class="pre">ZepMemory.buffer</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.buffer_as_messages"><code class="docutils literal notranslate"><span class="pre">ZepMemory.buffer_as_messages</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.buffer_as_str"><code class="docutils literal notranslate"><span class="pre">ZepMemory.buffer_as_str</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.lc_attributes"><code class="docutils literal notranslate"><span class="pre">ZepMemory.lc_attributes</span></code></a></li>
+<li><a class="reference internal" href="#langchain.memory.zep_memory.ZepMemory.lc_secrets"><code class="docutils literal notranslate"><span class="pre">ZepMemory.lc_secrets</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +192,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-memory-zep-memory-zepmemory">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.zep_memory</span></code>.ZepMemory<a class="headerlink" href="#langchain-memory-zep-memory-zepmemory" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.memory.zep_memory</span></code>.ZepMemory<a class="headerlink" href="#langchain-memory-zep-memory-zepmemory" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.memory.zep_memory.ZepMemory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.memory.zep_memory.</span></span><span class="sig-name descname"><span class="pre">ZepMemory</span></span><a class="reference internal" href="../_modules/langchain/memory/zep_memory.html#ZepMemory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.memory.zep_memory.ZepMemory" title="Permalink to this definition">¶</a></dt>
@@ -189,6 +230,8 @@ memory_key=”history”,   # Ensure this matches the key used in</p>
 </div>
 <p>custom Chain class that overrides the <cite>prep_outputs</cite> method to include the metadata
 in the call to <cite>self.memory.save_context</cite>.</p>
+<section id="zep-fast-scalable-building-blocks-for-llm-apps">
+<h2>Zep - Fast, scalable building blocks for LLM Apps<a class="headerlink" href="#zep-fast-scalable-building-blocks-for-llm-apps" title="Permalink to this heading">¶</a></h2>
 <p>Zep is an open source platform for productionizing LLM apps. Go from a prototype
 built in LangChain or LlamaIndex, or a custom app, to production in minutes without
 rewriting code.</p>
@@ -198,28 +241,69 @@ rewriting code.</p>
 <a class="reference external" href="https://github.com/getzep/zep-python">https://github.com/getzep/zep-python</a></p>
 <p>Initialize ZepMemory.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>session_id</strong> (<em>str</em>) – Identifies your user or a user’s session</p></li>
-<li><p><strong>url</strong> (<em>str</em><em>, </em><em>optional</em>) – Your Zep server’s URL. Defaults to
-“<a class="reference external" href="http://localhost:8000">http://localhost:8000</a>”.</p></li>
-<li><p><strong>api_key</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Your Zep API key. Defaults to None.</p></li>
-<li><p><strong>output_key</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – The key to use for the output message.
-Defaults to None.</p></li>
-<li><p><strong>input_key</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – The key to use for the input message.
-Defaults to None.</p></li>
-<li><p><strong>return_messages</strong> (<em>bool</em><em>, </em><em>optional</em>) – Does your prompt template expect a string
+<dt class="field-odd">param session_id</dt>
+<dd class="field-odd"><p>Identifies your user or a user’s session</p>
+</dd>
+<dt class="field-even">type session_id</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">param url</dt>
+<dd class="field-odd"><p>Your Zep server’s URL. Defaults to
+“<a class="reference external" href="http://localhost:8000">http://localhost:8000</a>”.</p>
+</dd>
+<dt class="field-even">type url</dt>
+<dd class="field-even"><p>str, optional</p>
+</dd>
+<dt class="field-odd">param api_key</dt>
+<dd class="field-odd"><p>Your Zep API key. Defaults to None.</p>
+</dd>
+<dt class="field-even">type api_key</dt>
+<dd class="field-even"><p>Optional[str], optional</p>
+</dd>
+<dt class="field-odd">param output_key</dt>
+<dd class="field-odd"><p>The key to use for the output message.
+Defaults to None.</p>
+</dd>
+<dt class="field-even">type output_key</dt>
+<dd class="field-even"><p>Optional[str], optional</p>
+</dd>
+<dt class="field-odd">param input_key</dt>
+<dd class="field-odd"><p>The key to use for the input message.
+Defaults to None.</p>
+</dd>
+<dt class="field-even">type input_key</dt>
+<dd class="field-even"><p>Optional[str], optional</p>
+</dd>
+<dt class="field-odd">param return_messages</dt>
+<dd class="field-odd"><p>Does your prompt template expect a string
 or a list of Messages? Defaults to False
-i.e. return a string.</p></li>
-<li><p><strong>human_prefix</strong> (<em>str</em><em>, </em><em>optional</em>) – The prefix to use for human messages.
-Defaults to “Human”.</p></li>
-<li><p><strong>ai_prefix</strong> (<em>str</em><em>, </em><em>optional</em>) – The prefix to use for AI messages.
-Defaults to “AI”.</p></li>
-<li><p><strong>memory_key</strong> (<em>str</em><em>, </em><em>optional</em>) – The key to use for the memory.
+i.e. return a string.</p>
+</dd>
+<dt class="field-even">type return_messages</dt>
+<dd class="field-even"><p>bool, optional</p>
+</dd>
+<dt class="field-odd">param human_prefix</dt>
+<dd class="field-odd"><p>The prefix to use for human messages.
+Defaults to “Human”.</p>
+</dd>
+<dt class="field-even">type human_prefix</dt>
+<dd class="field-even"><p>str, optional</p>
+</dd>
+<dt class="field-odd">param ai_prefix</dt>
+<dd class="field-odd"><p>The prefix to use for AI messages.
+Defaults to “AI”.</p>
+</dd>
+<dt class="field-even">type ai_prefix</dt>
+<dd class="field-even"><p>str, optional</p>
+</dd>
+<dt class="field-odd">param memory_key</dt>
+<dd class="field-odd"><p>The key to use for the memory.
 Defaults to “history”.
 Ensure that this matches the key used in
-chain’s prompt template.</p></li>
-</ul>
+chain’s prompt template.</p>
+</dd>
+<dt class="field-even">type memory_key</dt>
+<dd class="field-even"><p>str, optional</p>
 </dd>
 </dl>
 <dl class="py attribute pydantic_field">
@@ -229,7 +313,7 @@ chain’s prompt template.</p></li>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.memory.zep_memory.ZepMemory.chat_memory">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chat_memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chat_message_histories/langchain_community.chat_message_histories.zep.ZepChatMessageHistory.html#langchain_community.chat_message_histories.zep.ZepChatMessageHistory" title="langchain_community.chat_message_histories.zep.ZepChatMessageHistory"><span class="pre">langchain_community.chat_message_histories.zep.ZepChatMessageHistory</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.memory.zep_memory.ZepMemory.chat_memory" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">chat_memory</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chat_message_histories/langchain_community.chat_message_histories.zep.ZepChatMessageHistory.html#langchain_community.chat_message_histories.zep.ZepChatMessageHistory" title="langchain_community.chat_message_histories.zep.ZepChatMessageHistory"><span class="pre">ZepChatMessageHistory</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.memory.zep_memory.ZepMemory.chat_memory" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -441,7 +525,7 @@ the context. Defaults to None</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain.memory.zep_memory.ZepMemory.buffer_as_messages">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">buffer_as_messages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../messages/langchain_core.messages.base.BaseMessage.html#langchain_core.messages.base.BaseMessage" title="langchain_core.messages.base.BaseMessage"><span class="pre">langchain_core.messages.base.BaseMessage</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.memory.zep_memory.ZepMemory.buffer_as_messages" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">buffer_as_messages</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../messages/langchain_core.messages.base.BaseMessage.html#langchain_core.messages.base.BaseMessage" title="langchain_core.messages.base.BaseMessage"><span class="pre">BaseMessage</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#langchain.memory.zep_memory.ZepMemory.buffer_as_messages" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exposes the buffer as a list of messages in case return_messages is False.</p>
 </dd></dl>
 
@@ -468,9 +552,10 @@ the context. Defaults to None</p></li>
 </dl>
 </dd></dl>
 
+</section>
 </dd></dl>
 
-<h1>Examples using ZepMemory<a class="headerlink" href="#langchain-memory-zep-memory-zepmemory" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using ZepMemory<a class="headerlink" href="#langchain-memory-zep-memory-zepmemory" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/retrievers/zep_memorystore">Zep</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/memory/zep_memory">Zep Memory</a></p></li>
@@ -482,7 +567,7 @@ the context. Defaults to None</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/memory/langchain.memory.zep_memory.ZepMemory.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

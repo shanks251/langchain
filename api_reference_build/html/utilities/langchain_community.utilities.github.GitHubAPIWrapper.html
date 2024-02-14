@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,52 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.github</span></code>.GitHubAPIWrapper</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.github</span></code>.GitHubAPIWrapper</a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.active_branch"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.active_branch</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.github_app_id"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.github_app_id</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.github_app_private_key"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.github_app_private_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.github_base_branch"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.github_base_branch</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.github_repository"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.github_repository</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.comment_on_issue"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.comment_on_issue()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.construct"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.copy"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.create_branch"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.create_branch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.create_file"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.create_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.create_pull_request"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.create_pull_request()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.create_review_request"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.create_review_request()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.delete_file"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.delete_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.dict"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.from_orm"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.get_files_from_directory"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.get_files_from_directory()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.get_issue"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.get_issue()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.get_issues"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.get_issues()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.get_pull_request"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.get_pull_request()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.json"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.list_branches_in_repo"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.list_branches_in_repo()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.list_files_in_bot_branch"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.list_files_in_bot_branch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.list_files_in_main_branch"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.list_files_in_main_branch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.list_open_pull_requests"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.list_open_pull_requests()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.list_pull_request_files"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.list_pull_request_files()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.parse_file"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.parse_issues"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.parse_issues()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.parse_obj"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.parse_pull_requests"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.parse_pull_requests()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.parse_raw"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.read_file"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.read_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.run"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.run()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.schema"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.schema_json"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.search_code"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.search_code()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.search_issues_and_prs"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.search_issues_and_prs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.set_active_branch"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.set_active_branch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.update_file"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.update_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.github.GitHubAPIWrapper.validate"><code class="docutils literal notranslate"><span class="pre">GitHubAPIWrapper.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +195,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-utilities-github-githubapiwrapper">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.github</span></code>.GitHubAPIWrapper<a class="headerlink" href="#langchain-community-utilities-github-githubapiwrapper" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.github</span></code>.GitHubAPIWrapper<a class="headerlink" href="#langchain-community-utilities-github-githubapiwrapper" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.utilities.github.GitHubAPIWrapper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.utilities.github.</span></span><span class="sig-name descname"><span class="pre">GitHubAPIWrapper</span></span><a class="reference internal" href="../_modules/langchain_community/utilities/github.html#GitHubAPIWrapper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.utilities.github.GitHubAPIWrapper" title="Permalink to this definition">¶</a></dt>
@@ -657,7 +701,7 @@ Hello Mars!
 
 </dd></dl>
 
-<h1>Examples using GitHubAPIWrapper<a class="headerlink" href="#langchain-community-utilities-github-githubapiwrapper" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using GitHubAPIWrapper<a class="headerlink" href="#langchain-community-utilities-github-githubapiwrapper" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/toolkits/github">Github</a></p></li>
 </ul>
@@ -668,7 +712,7 @@ Hello Mars!
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/utilities/langchain_community.utilities.github.GitHubAPIWrapper.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,30 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.nla.toolkit</span></code>.NLAToolkit</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.nla.toolkit</span></code>.NLAToolkit</a><ul>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit"><code class="docutils literal notranslate"><span class="pre">NLAToolkit</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.nla_tools"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.nla_tools</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.construct"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.copy"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.dict"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.from_llm_and_ai_plugin"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.from_llm_and_ai_plugin()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.from_llm_and_ai_plugin_url"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.from_llm_and_ai_plugin_url()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.from_llm_and_spec"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.from_llm_and_spec()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.from_llm_and_url"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.from_llm_and_url()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.from_orm"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.get_tools"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.get_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.json"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.parse_file"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.parse_obj"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.parse_raw"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.schema"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.schema_json"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.validate"><code class="docutils literal notranslate"><span class="pre">NLAToolkit.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +173,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-agent-toolkits-nla-toolkit-nlatoolkit">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.nla.toolkit</span></code>.NLAToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-nla-toolkit-nlatoolkit" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.agent_toolkits.nla.toolkit</span></code>.NLAToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-nla-toolkit-nlatoolkit" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.agent_toolkits.nla.toolkit.NLAToolkit">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.agent_toolkits.nla.toolkit.</span></span><span class="sig-name descname"><span class="pre">NLAToolkit</span></span><a class="reference internal" href="../_modules/langchain_community/agent_toolkits/nla/toolkit.html#NLAToolkit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit" title="Permalink to this definition">¶</a></dt>
@@ -170,7 +192,7 @@ the API.</p>
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.nla_tools">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nla_tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_community.agent_toolkits.nla.tool.NLATool.html#langchain_community.agent_toolkits.nla.tool.NLATool" title="langchain_community.agent_toolkits.nla.tool.NLATool"><span class="pre">langchain_community.agent_toolkits.nla.tool.NLATool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.nla_tools" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">nla_tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="langchain_community.agent_toolkits.nla.tool.NLATool.html#langchain_community.agent_toolkits.nla.tool.NLATool" title="langchain_community.agent_toolkits.nla.tool.NLATool"><span class="pre">NLATool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.nla_tools" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of API Endpoint Tools.</p>
 </dd></dl>
 
@@ -288,7 +310,7 @@ the new model: you should trust this data</p></li>
 
 </dd></dl>
 
-<h1>Examples using NLAToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-nla-toolkit-nlatoolkit" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using NLAToolkit<a class="headerlink" href="#langchain-community-agent-toolkits-nla-toolkit-nlatoolkit" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/toolkits/openapi_nla">Natural Language APIs</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/use_cases/more/agents/agents/custom_agent_with_plugin_retrieval_using_plugnplai">Plug-and-Plai</a></p></li>
@@ -301,7 +323,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agent_toolkits/langchain_community.agent_toolkits.nla.toolkit.NLAToolkit.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

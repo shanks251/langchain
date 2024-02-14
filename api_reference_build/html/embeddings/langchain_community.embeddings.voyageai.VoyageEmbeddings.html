@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,36 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.voyageai</span></code>.VoyageEmbeddings</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.voyageai</span></code>.VoyageEmbeddings</a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.batch_size"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.batch_size</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.max_retries"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.max_retries</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.model"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.model</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.request_timeout"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.request_timeout</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.show_progress_bar"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.show_progress_bar</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.voyage_api_base"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.voyage_api_base</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.voyage_api_key"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.voyage_api_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.aembed_documents"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.aembed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.aembed_query"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.aembed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.construct"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.copy"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.dict"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.embed_documents"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.embed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.embed_general_texts"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.embed_general_texts()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.embed_query"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.embed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.from_orm"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.json"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.parse_file"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.parse_obj"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.parse_raw"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.schema"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.schema_json"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.validate"><code class="docutils literal notranslate"><span class="pre">VoyageEmbeddings.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +179,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-embeddings-voyageai-voyageembeddings">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.voyageai</span></code>.VoyageEmbeddings<a class="headerlink" href="#langchain-community-embeddings-voyageai-voyageembeddings" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.embeddings.voyageai</span></code>.VoyageEmbeddings<a class="headerlink" href="#langchain-community-embeddings-voyageai-voyageembeddings" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.embeddings.voyageai.VoyageEmbeddings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.embeddings.voyageai.</span></span><span class="sig-name descname"><span class="pre">VoyageEmbeddings</span></span><a class="reference internal" href="../_modules/langchain_community/embeddings/voyageai.html#VoyageEmbeddings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings" title="Permalink to this definition">¶</a></dt>
@@ -206,7 +234,7 @@ to True.</p>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.embeddings.voyageai.VoyageEmbeddings.voyage_api_key">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">voyage_api_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pydantic.types.SecretStr</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.voyage_api_key" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">voyage_api_key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">SecretStr</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.embeddings.voyageai.VoyageEmbeddings.voyage_api_key" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Constraints</dt>
 <dd class="field-odd"><ul class="simple">
@@ -369,7 +397,7 @@ unspecified. Other options: query, document.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/embeddings/langchain_community.embeddings.voyageai.VoyageEmbeddings.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

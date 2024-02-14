@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,39 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.requests</span></code>.TextRequestsWrapper</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.requests</span></code>.TextRequestsWrapper</a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.aiosession"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.aiosession</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.auth"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.auth</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.headers"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.headers</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.response_content_type"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.response_content_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.adelete"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.adelete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.aget"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.aget()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.apatch"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.apatch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.apost"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.apost()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.aput"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.aput()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.construct"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.copy"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.delete"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.delete()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.dict"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.from_orm"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.get"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.get()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.json"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.parse_file"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.parse_obj"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.parse_raw"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.patch"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.patch()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.post"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.post()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.put"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.put()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.schema"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.schema_json"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.validate"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.utilities.requests.TextRequestsWrapper.requests"><code class="docutils literal notranslate"><span class="pre">TextRequestsWrapper.requests</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +182,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-utilities-requests-textrequestswrapper">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.requests</span></code>.TextRequestsWrapper<a class="headerlink" href="#langchain-community-utilities-requests-textrequestswrapper" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.utilities.requests</span></code>.TextRequestsWrapper<a class="headerlink" href="#langchain-community-utilities-requests-textrequestswrapper" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_community.utilities.requests.TextRequestsWrapper">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.utilities.requests.</span></span><span class="sig-name descname"><span class="pre">TextRequestsWrapper</span></span><a class="reference internal" href="../_modules/langchain_community/utilities/requests.html#TextRequestsWrapper"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.utilities.requests.TextRequestsWrapper" title="Permalink to this definition">¶</a></dt>
@@ -162,7 +193,7 @@
 <p>Raises ValidationError if the input data cannot be parsed to form a valid model.</p>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain_community.utilities.requests.TextRequestsWrapper.aiosession">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aiosession</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">aiohttp.client.ClientSession</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.utilities.requests.TextRequestsWrapper.aiosession" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">aiosession</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">ClientSession</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#langchain_community.utilities.requests.TextRequestsWrapper.aiosession" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -324,12 +355,12 @@ the new model: you should trust this data</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="langchain_community.utilities.requests.TextRequestsWrapper.requests">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">requests</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.utilities.requests.Requests.html#langchain_community.utilities.requests.Requests" title="langchain_community.utilities.requests.Requests"><span class="pre">langchain_community.utilities.requests.Requests</span></a></em><a class="headerlink" href="#langchain_community.utilities.requests.TextRequestsWrapper.requests" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">requests</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain_community.utilities.requests.Requests.html#langchain_community.utilities.requests.Requests" title="langchain_community.utilities.requests.Requests"><span class="pre">Requests</span></a></em><a class="headerlink" href="#langchain_community.utilities.requests.TextRequestsWrapper.requests" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-<h1>Examples using TextRequestsWrapper<a class="headerlink" href="#langchain-community-utilities-requests-textrequestswrapper" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using TextRequestsWrapper<a class="headerlink" href="#langchain-community-utilities-requests-textrequestswrapper" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/tools/requests">Requests</a></p></li>
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/toolkits/json">JSON</a></p></li>
@@ -343,7 +374,7 @@ the new model: you should trust this data</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/utilities/langchain_community.utilities.requests.TextRequestsWrapper.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,58 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_openai.embeddings.azure</span></code>.AzureOpenAIEmbeddings</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_openai.embeddings.azure</span></code>.AzureOpenAIEmbeddings</a><ul>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.allowed_special"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.allowed_special</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.azure_ad_token"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.azure_ad_token</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.azure_ad_token_provider"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.azure_ad_token_provider</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.azure_endpoint"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.azure_endpoint</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.chunk_size"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.chunk_size</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.default_headers"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.default_headers</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.default_query"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.default_query</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.deployment"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.deployment</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.dimensions"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.dimensions</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.disallowed_special"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.disallowed_special</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.embedding_ctx_length"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.embedding_ctx_length</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.headers"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.headers</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.http_client"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.http_client</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.max_retries"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.max_retries</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.model"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.model</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.model_kwargs"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.model_kwargs</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.openai_api_base"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.openai_api_base</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.openai_api_key"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.openai_api_key</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.openai_api_type"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.openai_api_type</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.openai_api_version"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.openai_api_version</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.openai_organization"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.openai_organization</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.openai_proxy"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.openai_proxy</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.request_timeout"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.request_timeout</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.retry_max_seconds"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.retry_max_seconds</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.retry_min_seconds"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.retry_min_seconds</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.show_progress_bar"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.show_progress_bar</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.skip_empty"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.skip_empty</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.tiktoken_enabled"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.tiktoken_enabled</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.tiktoken_model_name"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.tiktoken_model_name</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.validate_base_url"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.validate_base_url</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.aembed_documents"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.aembed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.aembed_query"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.aembed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.construct"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.copy"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.dict"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.embed_documents"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.embed_documents()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.embed_query"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.embed_query()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.from_orm"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.json"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.parse_file"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.parse_obj"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.parse_raw"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.schema"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.schema_json"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.validate"><code class="docutils literal notranslate"><span class="pre">AzureOpenAIEmbeddings.validate()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +201,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-openai-embeddings-azure-azureopenaiembeddings">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_openai.embeddings.azure</span></code>.AzureOpenAIEmbeddings<a class="headerlink" href="#langchain-openai-embeddings-azure-azureopenaiembeddings" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_openai.embeddings.azure</span></code>.AzureOpenAIEmbeddings<a class="headerlink" href="#langchain-openai-embeddings-azure-azureopenaiembeddings" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain_openai.embeddings.azure.AzureOpenAIEmbeddings">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_openai.embeddings.azure.</span></span><span class="sig-name descname"><span class="pre">AzureOpenAIEmbeddings</span></span><a class="reference internal" href="../_modules/langchain_openai/embeddings/azure.html#AzureOpenAIEmbeddings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_openai.embeddings.azure.AzureOpenAIEmbeddings" title="Permalink to this definition">¶</a></dt>
@@ -535,7 +585,7 @@ specified by the class.</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/embeddings/langchain_openai.embeddings.azure.AzureOpenAIEmbeddings.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

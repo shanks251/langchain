@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,34 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.comet_ml_callback</span></code>.CometCallbackHandler</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.comet_ml_callback</span></code>.CometCallbackHandler</a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.__init__"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.flush_tracker"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.flush_tracker()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.get_custom_callback_meta"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.get_custom_callback_meta()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_agent_action"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_agent_action()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_agent_finish"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_agent_finish()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_chain_end"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_chain_end()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_chain_error"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_chain_error()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_chain_start"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_chain_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_chat_model_start"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_chat_model_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_llm_end"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_llm_end()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_llm_error"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_llm_error()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_llm_new_token"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_llm_new_token()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_llm_start"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_llm_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_retriever_end"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_retriever_end()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_retriever_error"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_retriever_error()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_retriever_start"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_retriever_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_retry"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_retry()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_text"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_text()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_tool_end"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_tool_end()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_tool_error"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_tool_error()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.on_tool_start"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.on_tool_start()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.reset_callback_meta"><code class="docutils literal notranslate"><span class="pre">CometCallbackHandler.reset_callback_meta()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +177,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-callbacks-comet-ml-callback-cometcallbackhandler">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.comet_ml_callback</span></code>.CometCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-comet-ml-callback-cometcallbackhandler" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.callbacks.comet_ml_callback</span></code>.CometCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-comet-ml-callback-cometcallbackhandler" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.callbacks.comet_ml_callback.CometCallbackHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.callbacks.comet_ml_callback.</span></span><span class="sig-name descname"><span class="pre">CometCallbackHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'inference'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">workspace</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">visualizations</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">complexity_metrics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_metrics</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stream_logs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/callbacks/comet_ml_callback.html#CometCallbackHandler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.callbacks.comet_ml_callback.CometCallbackHandler" title="Permalink to this definition">¶</a></dt>
@@ -434,7 +460,7 @@ action. It then logs the response to Comet.</p>
 
 </dd></dl>
 
-<h1>Examples using CometCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-comet-ml-callback-cometcallbackhandler" title="Permalink to this headline">¶</a></h1>
+<h1>Examples using CometCallbackHandler<a class="headerlink" href="#langchain-community-callbacks-comet-ml-callback-cometcallbackhandler" title="Permalink to this heading">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference external" href="https://python.langchain.com/docs/integrations/providers/comet_tracking">Comet</a></p></li>
 </ul>
@@ -445,7 +471,7 @@ action. It then logs the response to Comet.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/callbacks/langchain_community.callbacks.comet_ml_callback.CometCallbackHandler.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,40 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.conversational_chat.base</span></code>.ConversationalChatAgent</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.conversational_chat.base</span></code>.ConversationalChatAgent</a><ul>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent</span></code></a><ul>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.allowed_tools"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.allowed_tools</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.llm_chain"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.llm_chain</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.output_parser"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.output_parser</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.template_tool_response"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.template_tool_response</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.aplan"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.aplan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.construct"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.construct()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.copy"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.copy()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.create_prompt"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.create_prompt()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.dict"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.dict()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.from_llm_and_tools"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.from_llm_and_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.from_orm"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.from_orm()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.get_allowed_tools"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.get_allowed_tools()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.get_full_inputs"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.get_full_inputs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.json"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.parse_file"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.parse_file()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.parse_obj"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.parse_obj()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.parse_raw"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.parse_raw()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.plan"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.plan()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.return_stopped_response"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.return_stopped_response()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.save"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.save()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.schema"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.schema()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.schema_json"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.schema_json()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.tool_run_logging_kwargs"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.tool_run_logging_kwargs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.update_forward_refs"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.update_forward_refs()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.validate"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.validate()</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.llm_prefix"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.llm_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.observation_prefix"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.observation_prefix</span></code></a></li>
+<li><a class="reference internal" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.return_values"><code class="docutils literal notranslate"><span class="pre">ConversationalChatAgent.return_values</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +183,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-agents-conversational-chat-base-conversationalchatagent">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.conversational_chat.base</span></code>.ConversationalChatAgent<a class="headerlink" href="#langchain-agents-conversational-chat-base-conversationalchatagent" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain.agents.conversational_chat.base</span></code>.ConversationalChatAgent<a class="headerlink" href="#langchain-agents-conversational-chat-base-conversationalchatagent" title="Permalink to this heading">¶</a></h1>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="langchain.agents.conversational_chat.base.ConversationalChatAgent">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain.agents.conversational_chat.base.</span></span><span class="sig-name descname"><span class="pre">ConversationalChatAgent</span></span><a class="reference internal" href="../_modules/langchain/agents/conversational_chat/base.html#ConversationalChatAgent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent" title="Permalink to this definition">¶</a></dt>
@@ -170,12 +202,12 @@
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.conversational_chat.base.ConversationalChatAgent.llm_chain">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm_chain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chains/langchain.chains.llm.LLMChain.html#langchain.chains.llm.LLMChain" title="langchain.chains.llm.LLMChain"><span class="pre">langchain.chains.llm.LLMChain</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.llm_chain" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">llm_chain</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../chains/langchain.chains.llm.LLMChain.html#langchain.chains.llm.LLMChain" title="langchain.chains.llm.LLMChain"><span class="pre">LLMChain</span></a></em><em class="property"> <span class="pre">[Required]</span></em><a class="headerlink" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.llm_chain" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="langchain.agents.conversational_chat.base.ConversationalChatAgent.output_parser">
-<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_parser</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain.agents.agent.AgentOutputParser.html#langchain.agents.agent.AgentOutputParser" title="langchain.agents.agent.AgentOutputParser"><span class="pre">langchain.agents.agent.AgentOutputParser</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.output_parser" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">param</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">output_parser</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="langchain.agents.agent.AgentOutputParser.html#langchain.agents.agent.AgentOutputParser" title="langchain.agents.agent.AgentOutputParser"><span class="pre">AgentOutputParser</span></a></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#langchain.agents.conversational_chat.base.ConversationalChatAgent.output_parser" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute pydantic_field">
@@ -383,7 +415,7 @@ agent.agent.save(file_path=”path/agent.yaml”)</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/agents/langchain.agents.conversational_chat.base.ConversationalChatAgent.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -21,9 +21,8 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/autodoc_pydantic.css" type="text/css" />
   <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sphinx-dropdown.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/panels-bootstrap.min.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
 <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -141,7 +140,24 @@
         </div>
             <div class="sk-sidebar-toc">
               <ul>
-<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.chat_message_histories.cosmos_db</span></code>.CosmosDBChatMessageHistory</a></li>
+<li><a class="reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.chat_message_histories.cosmos_db</span></code>.CosmosDBChatMessageHistory</a><ul>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory</span></code></a><ul>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.__init__"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.__init__()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.aadd_messages"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.aadd_messages()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.aclear"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.aclear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.add_ai_message"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.add_ai_message()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.add_message"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.add_message()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.add_messages"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.add_messages()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.add_user_message"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.add_user_message()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.aget_messages"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.aget_messages()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.clear"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.clear()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.load_messages"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.load_messages()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.prepare_cosmos"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.prepare_cosmos()</span></code></a></li>
+<li><a class="reference internal" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.upsert_messages"><code class="docutils literal notranslate"><span class="pre">CosmosDBChatMessageHistory.upsert_messages()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
             </div>
@@ -151,7 +167,7 @@
       <div class="sk-page-content container-fluid body px-md-3" role="main">
         
   <section id="langchain-community-chat-message-histories-cosmos-db-cosmosdbchatmessagehistory">
-<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.chat_message_histories.cosmos_db</span></code>.CosmosDBChatMessageHistory<a class="headerlink" href="#langchain-community-chat-message-histories-cosmos-db-cosmosdbchatmessagehistory" title="Permalink to this headline">¶</a></h1>
+<h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">langchain_community.chat_message_histories.cosmos_db</span></code>.CosmosDBChatMessageHistory<a class="headerlink" href="#langchain-community-chat-message-histories-cosmos-db-cosmosdbchatmessagehistory" title="Permalink to this heading">¶</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">langchain_community.chat_message_histories.cosmos_db.</span></span><span class="sig-name descname"><span class="pre">CosmosDBChatMessageHistory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cosmos_endpoint</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cosmos_database</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cosmos_container</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credential</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ttl</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cosmos_client_kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/langchain_community/chat_message_histories/cosmos_db.html#CosmosDBChatMessageHistory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory" title="Permalink to this definition">¶</a></dt>
@@ -367,7 +383,7 @@ persistence layer.</p>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 13, 2024.
+          Last updated on Feb 14, 2024.
           <a href="../_sources/chat_message_histories/langchain_community.chat_message_histories.cosmos_db.CosmosDBChatMessageHistory.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>
