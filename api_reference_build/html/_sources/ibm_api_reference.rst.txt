@@ -1,0 +1,23 @@
+.. ibm_api_reference:
+
+=======================
+``langchain_ibm`` 0.0.1
+=======================
+
+:mod:`langchain_ibm.llms`
+==========================
+
+.. automodule:: langchain_ibm.llms
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_ibm
+
+.. autosummary::
+    :toctree: llms
+    :template: pydantic.rst
+    
+    llms.WatsonxLLM
+    

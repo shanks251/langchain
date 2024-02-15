@@ -72,6 +72,9 @@
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../google_vertexai_api_reference.html">google-vertexai</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../ibm_api_reference.html">ibm</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../mistralai_api_reference.html">mistralai</a>
         </li>
         <li class="nav-item">
@@ -102,6 +105,7 @@
               <a class="sk-nav-dropdown-item dropdown-item" href="../../exa_api_reference.html">exa</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../google_vertexai_api_reference.html">google-vertexai</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../ibm_api_reference.html">ibm</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../mistralai_api_reference.html">mistralai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../nomic_api_reference.html">nomic</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../nvidia_ai_endpoints_api_reference.html">nvidia-ai-endpoints</a>
@@ -150,6 +154,7 @@
 
 <span class="kn">import</span> <span class="nn">nomic</span>  <span class="c1"># type: ignore</span>
 <span class="kn">from</span> <span class="nn">langchain_core.embeddings</span> <span class="kn">import</span> <span class="n">Embeddings</span>
+<span class="kn">from</span> <span class="nn">nomic</span> <span class="kn">import</span> <span class="n">embed</span>  <span class="c1"># type: ignore</span>
 
 
 <div class="viewcode-block" id="NomicEmbeddings"><a class="viewcode-back" href="../../embeddings/langchain_nomic.embeddings.NomicEmbeddings.html#langchain_nomic.embeddings.NomicEmbeddings">[docs]</a><span class="k">class</span> <span class="nc">NomicEmbeddings</span><span class="p">(</span><span class="n">Embeddings</span><span class="p">):</span>
@@ -168,6 +173,7 @@
         <span class="o">*</span><span class="p">,</span>
         <span class="n">model</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
         <span class="n">nomic_api_key</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">dimensionality</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
     <span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Initialize NomicEmbeddings model.</span>
 
@@ -179,7 +185,8 @@
         <span class="n">_api_key</span> <span class="o">=</span> <span class="n">nomic_api_key</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;NOMIC_API_KEY&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">_api_key</span><span class="p">:</span>
             <span class="n">nomic</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">_api_key</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span></div>
+        <span class="bp">self</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">model</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">dimensionality</span> <span class="o">=</span> <span class="n">dimensionality</span></div>
 
 <div class="viewcode-block" id="NomicEmbeddings.embed"><a class="viewcode-back" href="../../embeddings/langchain_nomic.embeddings.NomicEmbeddings.html#langchain_nomic.embeddings.NomicEmbeddings.embed">[docs]</a>    <span class="k">def</span> <span class="nf">embed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">texts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="o">*</span><span class="p">,</span> <span class="n">task_type</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Embed texts.</span>
@@ -189,10 +196,13 @@
 <span class="sd">            task_type: the task type to use when embedding. One of `search_query`,</span>
 <span class="sd">                `search_document`, `classification`, `clustering`</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="c1"># TODO: do this via nomic.embed when fixed in nomic sdk</span>
-        <span class="kn">from</span> <span class="nn">nomic</span> <span class="kn">import</span> <span class="n">embed</span>
 
-        <span class="n">output</span> <span class="o">=</span> <span class="n">embed</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">texts</span><span class="o">=</span><span class="n">texts</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">,</span> <span class="n">task_type</span><span class="o">=</span><span class="n">task_type</span><span class="p">)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">embed</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+            <span class="n">texts</span><span class="o">=</span><span class="n">texts</span><span class="p">,</span>
+            <span class="n">model</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="p">,</span>
+            <span class="n">task_type</span><span class="o">=</span><span class="n">task_type</span><span class="p">,</span>
+            <span class="n">dimensionality</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dimensionality</span><span class="p">,</span>
+        <span class="p">)</span>
         <span class="k">return</span> <span class="n">output</span><span class="p">[</span><span class="s2">&quot;embeddings&quot;</span><span class="p">]</span></div>
 
 <div class="viewcode-block" id="NomicEmbeddings.embed_documents"><a class="viewcode-back" href="../../embeddings/langchain_nomic.embeddings.NomicEmbeddings.html#langchain_nomic.embeddings.NomicEmbeddings.embed_documents">[docs]</a>    <span class="k">def</span> <span class="nf">embed_documents</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">texts</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">float</span><span class="p">]]:</span>
@@ -222,7 +232,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 14, 2024.
+          Last updated on Feb 15, 2024.
       </footer>
     </div>
   </div>

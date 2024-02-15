@@ -1,7 +1,7 @@
 .. nomic_api_reference:
 
 =======================
-``langchain_nomic`` 0.0.1
+``langchain_nomic`` 0.0.2
 =======================
 
 :mod:`langchain_nomic.embeddings`
