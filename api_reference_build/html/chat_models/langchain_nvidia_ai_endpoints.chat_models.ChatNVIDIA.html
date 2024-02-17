@@ -61,7 +61,13 @@
           <a class="sk-nav-link nav-link" href="../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../anthropic_api_reference.html">anthropic</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../astradb_api_reference.html">astradb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../exa_api_reference.html">exa</a>
@@ -102,7 +108,9 @@
         <li class="nav-item dropdown nav-more-item-dropdown">
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="../ai21_api_reference.html">ai21</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../astradb_api_reference.html">astradb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../exa_api_reference.html">exa</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../google_vertexai_api_reference.html">google-vertexai</a>
@@ -362,7 +370,7 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.__call__">
 <span class="sig-name descname"><span class="pre">__call__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callbacks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseCallbackHandler</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">BaseCallbackManager</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BaseMessage</span></span></span><a class="headerlink" href="#langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.__call__" title="Permalink to this definition">¶</a></dt>
-<dd><p>[<em>Deprecated</em>][<em>Deprecated</em>]</p>
+<dd><p>[<em>Deprecated</em>]</p>
 <p class="rubric">Notes</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 0.1.7: </span>Use invoke instead.</p>
@@ -472,7 +480,7 @@ the runnable did not implement a native async version of invoke.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.apredict">
 <em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">apredict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.apredict" title="Permalink to this definition">¶</a></dt>
-<dd><p>[<em>Deprecated</em>][<em>Deprecated</em>]</p>
+<dd><p>[<em>Deprecated</em>]</p>
 <p class="rubric">Notes</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 0.1.7: </span>Use ainvoke instead.</p>
@@ -482,7 +490,7 @@ the runnable did not implement a native async version of invoke.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.apredict_messages">
 <em class="property"><span class="pre">async</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">apredict_messages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BaseMessage</span></span></span><a class="headerlink" href="#langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.apredict_messages" title="Permalink to this definition">¶</a></dt>
-<dd><p>[<em>Deprecated</em>][<em>Deprecated</em>]</p>
+<dd><p>[<em>Deprecated</em>]</p>
 <p class="rubric">Notes</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 0.1.7: </span>Use ainvoke instead.</p>
@@ -847,7 +855,7 @@ e.g., if the underlying runnable uses an API which supports a batch mode.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.call_as_llm">
 <span class="sig-name descname"><span class="pre">call_as_llm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.call_as_llm" title="Permalink to this definition">¶</a></dt>
-<dd><p>[<em>Deprecated</em>][<em>Deprecated</em>]</p>
+<dd><p>[<em>Deprecated</em>]</p>
 <p class="rubric">Notes</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 0.1.7: </span>Use invoke instead.</p>
@@ -1242,7 +1250,7 @@ Returns a new runnable.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.predict">
 <span class="sig-name descname"><span class="pre">predict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.predict" title="Permalink to this definition">¶</a></dt>
-<dd><p>[<em>Deprecated</em>][<em>Deprecated</em>]</p>
+<dd><p>[<em>Deprecated</em>]</p>
 <p class="rubric">Notes</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 0.1.7: </span>Use invoke instead.</p>
@@ -1252,7 +1260,7 @@ Returns a new runnable.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.predict_messages">
 <span class="sig-name descname"><span class="pre">predict_messages</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">BaseMessage</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">BaseMessage</span></span></span><a class="headerlink" href="#langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.predict_messages" title="Permalink to this definition">¶</a></dt>
-<dd><p>[<em>Deprecated</em>][<em>Deprecated</em>]</p>
+<dd><p>[<em>Deprecated</em>]</p>
 <p class="rubric">Notes</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 0.1.7: </span>Use invoke instead.</p>
@@ -1463,7 +1471,7 @@ between retries</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 15, 2024.
+          Last updated on Feb 17, 2024.
           <a href="../_sources/chat_models/langchain_nvidia_ai_endpoints.chat_models.ChatNVIDIA.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>

@@ -1,0 +1,107 @@
+﻿:mod:`langchain_astradb.vectorstores.astradb`.AstraDBVectorStore
+=======================================================================
+
+.. currentmodule:: langchain_astradb.vectorstores.astradb
+
+.. autoclass:: AstraDBVectorStore
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AstraDBVectorStore.embeddings
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AstraDBVectorStore.__init__
+      ~AstraDBVectorStore.aadd_documents
+      ~AstraDBVectorStore.aadd_texts
+      ~AstraDBVectorStore.aclear
+      ~AstraDBVectorStore.add_documents
+      ~AstraDBVectorStore.add_texts
+      ~AstraDBVectorStore.adelete
+      ~AstraDBVectorStore.adelete_by_document_id
+      ~AstraDBVectorStore.adelete_collection
+      ~AstraDBVectorStore.afrom_documents
+      ~AstraDBVectorStore.afrom_texts
+      ~AstraDBVectorStore.amax_marginal_relevance_search
+      ~AstraDBVectorStore.amax_marginal_relevance_search_by_vector
+      ~AstraDBVectorStore.as_retriever
+      ~AstraDBVectorStore.asearch
+      ~AstraDBVectorStore.asimilarity_search
+      ~AstraDBVectorStore.asimilarity_search_by_vector
+      ~AstraDBVectorStore.asimilarity_search_with_relevance_scores
+      ~AstraDBVectorStore.asimilarity_search_with_score
+      ~AstraDBVectorStore.asimilarity_search_with_score_by_vector
+      ~AstraDBVectorStore.asimilarity_search_with_score_id
+      ~AstraDBVectorStore.asimilarity_search_with_score_id_by_vector
+      ~AstraDBVectorStore.clear
+      ~AstraDBVectorStore.delete
+      ~AstraDBVectorStore.delete_by_document_id
+      ~AstraDBVectorStore.delete_collection
+      ~AstraDBVectorStore.from_documents
+      ~AstraDBVectorStore.from_texts
+      ~AstraDBVectorStore.max_marginal_relevance_search
+      ~AstraDBVectorStore.max_marginal_relevance_search_by_vector
+      ~AstraDBVectorStore.search
+      ~AstraDBVectorStore.similarity_search
+      ~AstraDBVectorStore.similarity_search_by_vector
+      ~AstraDBVectorStore.similarity_search_with_relevance_scores
+      ~AstraDBVectorStore.similarity_search_with_score
+      ~AstraDBVectorStore.similarity_search_with_score_by_vector
+      ~AstraDBVectorStore.similarity_search_with_score_id
+      ~AstraDBVectorStore.similarity_search_with_score_id_by_vector
+
+   
+   .. automethod:: AstraDBVectorStore.__init__
+   .. automethod:: AstraDBVectorStore.aadd_documents
+   .. automethod:: AstraDBVectorStore.aadd_texts
+   .. automethod:: AstraDBVectorStore.aclear
+   .. automethod:: AstraDBVectorStore.add_documents
+   .. automethod:: AstraDBVectorStore.add_texts
+   .. automethod:: AstraDBVectorStore.adelete
+   .. automethod:: AstraDBVectorStore.adelete_by_document_id
+   .. automethod:: AstraDBVectorStore.adelete_collection
+   .. automethod:: AstraDBVectorStore.afrom_documents
+   .. automethod:: AstraDBVectorStore.afrom_texts
+   .. automethod:: AstraDBVectorStore.amax_marginal_relevance_search
+   .. automethod:: AstraDBVectorStore.amax_marginal_relevance_search_by_vector
+   .. automethod:: AstraDBVectorStore.as_retriever
+   .. automethod:: AstraDBVectorStore.asearch
+   .. automethod:: AstraDBVectorStore.asimilarity_search
+   .. automethod:: AstraDBVectorStore.asimilarity_search_by_vector
+   .. automethod:: AstraDBVectorStore.asimilarity_search_with_relevance_scores
+   .. automethod:: AstraDBVectorStore.asimilarity_search_with_score
+   .. automethod:: AstraDBVectorStore.asimilarity_search_with_score_by_vector
+   .. automethod:: AstraDBVectorStore.asimilarity_search_with_score_id
+   .. automethod:: AstraDBVectorStore.asimilarity_search_with_score_id_by_vector
+   .. automethod:: AstraDBVectorStore.clear
+   .. automethod:: AstraDBVectorStore.delete
+   .. automethod:: AstraDBVectorStore.delete_by_document_id
+   .. automethod:: AstraDBVectorStore.delete_collection
+   .. automethod:: AstraDBVectorStore.from_documents
+   .. automethod:: AstraDBVectorStore.from_texts
+   .. automethod:: AstraDBVectorStore.max_marginal_relevance_search
+   .. automethod:: AstraDBVectorStore.max_marginal_relevance_search_by_vector
+   .. automethod:: AstraDBVectorStore.search
+   .. automethod:: AstraDBVectorStore.similarity_search
+   .. automethod:: AstraDBVectorStore.similarity_search_by_vector
+   .. automethod:: AstraDBVectorStore.similarity_search_with_relevance_scores
+   .. automethod:: AstraDBVectorStore.similarity_search_with_score
+   .. automethod:: AstraDBVectorStore.similarity_search_with_score_by_vector
+   .. automethod:: AstraDBVectorStore.similarity_search_with_score_id
+   .. automethod:: AstraDBVectorStore.similarity_search_with_score_id_by_vector
+
+   
+   
+
+
+.. example_links:: AstraDBVectorStore

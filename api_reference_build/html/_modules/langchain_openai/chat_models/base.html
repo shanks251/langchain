@@ -60,7 +60,13 @@
           <a class="sk-nav-link nav-link" href="../../../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../anthropic_api_reference.html">anthropic</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../astradb_api_reference.html">astradb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../../exa_api_reference.html">exa</a>
@@ -101,7 +107,9 @@
         <li class="nav-item dropdown nav-more-item-dropdown">
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../ai21_api_reference.html">ai21</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../../astradb_api_reference.html">astradb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../exa_api_reference.html">exa</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../../google_vertexai_api_reference.html">google-vertexai</a>
@@ -340,7 +348,7 @@
     <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
 
 
-<div class="viewcode-block" id="ChatOpenAI"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.base.ChatOpenAI">[docs]</a><span class="k">class</span> <span class="nc">ChatOpenAI</span><span class="p">(</span><span class="n">BaseChatModel</span><span class="p">):</span>
+<div class="viewcode-block" id="ChatOpenAI"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.azure.ChatOpenAI">[docs]</a><span class="k">class</span> <span class="nc">ChatOpenAI</span><span class="p">(</span><span class="n">BaseChatModel</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;`OpenAI` Chat large language models API.</span>
 
 <span class="sd">    To use, you should have the</span>
@@ -360,7 +368,7 @@
     <span class="k">def</span> <span class="nf">lc_secrets</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
         <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;openai_api_key&quot;</span><span class="p">:</span> <span class="s2">&quot;OPENAI_API_KEY&quot;</span><span class="p">}</span>
 
-<div class="viewcode-block" id="ChatOpenAI.get_lc_namespace"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.base.ChatOpenAI.get_lc_namespace">[docs]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="ChatOpenAI.get_lc_namespace"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.azure.ChatOpenAI.get_lc_namespace">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">get_lc_namespace</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the namespace of the langchain object.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="p">[</span><span class="s2">&quot;langchain&quot;</span><span class="p">,</span> <span class="s2">&quot;chat_models&quot;</span><span class="p">,</span> <span class="s2">&quot;openai&quot;</span><span class="p">]</span></div>
@@ -380,7 +388,7 @@
 
         <span class="k">return</span> <span class="n">attributes</span>
 
-<div class="viewcode-block" id="ChatOpenAI.is_lc_serializable"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.base.ChatOpenAI.is_lc_serializable">[docs]</a>    <span class="nd">@classmethod</span>
+<div class="viewcode-block" id="ChatOpenAI.is_lc_serializable"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.azure.ChatOpenAI.is_lc_serializable">[docs]</a>    <span class="nd">@classmethod</span>
     <span class="k">def</span> <span class="nf">is_lc_serializable</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Return whether this model can be serialized by Langchain.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="kc">True</span></div>
@@ -717,7 +725,7 @@
             <span class="n">encoding</span> <span class="o">=</span> <span class="n">tiktoken</span><span class="o">.</span><span class="n">get_encoding</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">model</span><span class="p">,</span> <span class="n">encoding</span>
 
-<div class="viewcode-block" id="ChatOpenAI.get_token_ids"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.base.ChatOpenAI.get_token_ids">[docs]</a>    <span class="k">def</span> <span class="nf">get_token_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+<div class="viewcode-block" id="ChatOpenAI.get_token_ids"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.azure.ChatOpenAI.get_token_ids">[docs]</a>    <span class="k">def</span> <span class="nf">get_token_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the tokens present in the text with tiktoken package.&quot;&quot;&quot;</span>
         <span class="c1"># tiktoken NOT supported for Python 3.7 or below</span>
         <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="p">:</span>
@@ -725,7 +733,7 @@
         <span class="n">_</span><span class="p">,</span> <span class="n">encoding_model</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_encoding_model</span><span class="p">()</span>
         <span class="k">return</span> <span class="n">encoding_model</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="ChatOpenAI.get_num_tokens_from_messages"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.base.ChatOpenAI.get_num_tokens_from_messages">[docs]</a>    <span class="k">def</span> <span class="nf">get_num_tokens_from_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+<div class="viewcode-block" id="ChatOpenAI.get_num_tokens_from_messages"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.azure.ChatOpenAI.get_num_tokens_from_messages">[docs]</a>    <span class="k">def</span> <span class="nf">get_num_tokens_from_messages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">messages</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">BaseMessage</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Calculate num tokens for gpt-3.5-turbo and gpt-4 with tiktoken package.</span>
 
 <span class="sd">        Official documentation: https://github.com/openai/openai-cookbook/blob/</span>
@@ -762,7 +770,7 @@
         <span class="n">num_tokens</span> <span class="o">+=</span> <span class="mi">3</span>
         <span class="k">return</span> <span class="n">num_tokens</span></div>
 
-<div class="viewcode-block" id="ChatOpenAI.bind_functions"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.base.ChatOpenAI.bind_functions">[docs]</a>    <span class="k">def</span> <span class="nf">bind_functions</span><span class="p">(</span>
+<div class="viewcode-block" id="ChatOpenAI.bind_functions"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.azure.ChatOpenAI.bind_functions">[docs]</a>    <span class="k">def</span> <span class="nf">bind_functions</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">functions</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">],</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">BaseTool</span><span class="p">]],</span>
         <span class="n">function_call</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span>
@@ -818,7 +826,7 @@
             <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
         <span class="p">)</span></div>
 
-<div class="viewcode-block" id="ChatOpenAI.bind_tools"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.base.ChatOpenAI.bind_tools">[docs]</a>    <span class="k">def</span> <span class="nf">bind_tools</span><span class="p">(</span>
+<div class="viewcode-block" id="ChatOpenAI.bind_tools"><a class="viewcode-back" href="../../../chat_models/langchain_openai.chat_models.base.ChatOpenAI.html#langchain_openai.chat_models.azure.ChatOpenAI.bind_tools">[docs]</a>    <span class="k">def</span> <span class="nf">bind_tools</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
         <span class="n">tools</span><span class="p">:</span> <span class="n">Sequence</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">Type</span><span class="p">[</span><span class="n">BaseModel</span><span class="p">],</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">BaseTool</span><span class="p">]],</span>
         <span class="o">*</span><span class="p">,</span>
@@ -868,7 +876,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 15, 2024.
+          Last updated on Feb 17, 2024.
       </footer>
     </div>
   </div>

@@ -1,0 +1,8 @@
+﻿:mod:`langchain_astradb.utils.mmr`.maximal_marginal_relevance
+====================================================================
+
+.. currentmodule:: langchain_astradb.utils.mmr
+
+.. autofunction:: maximal_marginal_relevance
+
+.. example_links:: maximal_marginal_relevance

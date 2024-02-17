@@ -60,7 +60,13 @@
           <a class="sk-nav-link nav-link" href="../../experimental_api_reference.html">Experimental</a>
         </li>
         <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../ai21_api_reference.html">ai21</a>
+        </li>
+        <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../anthropic_api_reference.html">anthropic</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../astradb_api_reference.html">astradb</a>
         </li>
         <li class="nav-item">
           <a class="sk-nav-link nav-link nav-more-item-mobile-items" href="../../exa_api_reference.html">exa</a>
@@ -101,7 +107,9 @@
         <li class="nav-item dropdown nav-more-item-dropdown">
           <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partner libs</a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../ai21_api_reference.html">ai21</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../anthropic_api_reference.html">anthropic</a>
+              <a class="sk-nav-dropdown-item dropdown-item" href="../../astradb_api_reference.html">astradb</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../exa_api_reference.html">exa</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../google_genai_api_reference.html">google-genai</a>
               <a class="sk-nav-dropdown-item dropdown-item" href="../../google_vertexai_api_reference.html">google-vertexai</a>
@@ -158,7 +166,7 @@
 <span class="kn">from</span> <span class="nn">langchain_core.callbacks</span> <span class="kn">import</span> <span class="p">(</span>
     <span class="n">CallbackManagerForToolRun</span><span class="p">,</span>
 <span class="p">)</span>
-<span class="kn">from</span> <span class="nn">langchain_core.pydantic_v1</span> <span class="kn">import</span> <span class="n">SecretStr</span><span class="p">,</span> <span class="n">root_validator</span>
+<span class="kn">from</span> <span class="nn">langchain_core.pydantic_v1</span> <span class="kn">import</span> <span class="n">Field</span><span class="p">,</span> <span class="n">SecretStr</span><span class="p">,</span> <span class="n">root_validator</span>
 <span class="kn">from</span> <span class="nn">langchain_core.tools</span> <span class="kn">import</span> <span class="n">BaseTool</span>
 
 <span class="kn">from</span> <span class="nn">langchain_exa._utilities</span> <span class="kn">import</span> <span class="n">initialize_client</span>
@@ -173,8 +181,8 @@
         <span class="s2">&quot;Input should be an Exa-optimized query. &quot;</span>
         <span class="s2">&quot;Output is a JSON array of the query results&quot;</span>
     <span class="p">)</span>
-    <span class="n">client</span><span class="p">:</span> <span class="n">Exa</span>
-    <span class="n">exa_api_key</span><span class="p">:</span> <span class="n">SecretStr</span>
+    <span class="n">client</span><span class="p">:</span> <span class="n">Exa</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">exa_api_key</span><span class="p">:</span> <span class="n">SecretStr</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">validate_environment</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">values</span><span class="p">:</span> <span class="n">Dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">:</span>
@@ -202,8 +210,8 @@
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">search_and_contents</span><span class="p">(</span>
                 <span class="n">query</span><span class="p">,</span>
                 <span class="n">num_results</span><span class="o">=</span><span class="n">num_results</span><span class="p">,</span>
-                <span class="n">text</span><span class="o">=</span><span class="n">text_contents_options</span><span class="p">,</span>
-                <span class="n">highlights</span><span class="o">=</span><span class="n">highlights</span><span class="p">,</span>
+                <span class="n">text</span><span class="o">=</span><span class="n">text_contents_options</span><span class="p">,</span>  <span class="c1"># type: ignore</span>
+                <span class="n">highlights</span><span class="o">=</span><span class="n">highlights</span><span class="p">,</span>  <span class="c1"># type: ignore</span>
                 <span class="n">include_domains</span><span class="o">=</span><span class="n">include_domains</span><span class="p">,</span>
                 <span class="n">exclude_domains</span><span class="o">=</span><span class="n">exclude_domains</span><span class="p">,</span>
                 <span class="n">start_crawl_date</span><span class="o">=</span><span class="n">start_crawl_date</span><span class="p">,</span>
@@ -211,7 +219,7 @@
                 <span class="n">start_published_date</span><span class="o">=</span><span class="n">start_published_date</span><span class="p">,</span>
                 <span class="n">end_published_date</span><span class="o">=</span><span class="n">end_published_date</span><span class="p">,</span>
                 <span class="n">use_autoprompt</span><span class="o">=</span><span class="n">use_autoprompt</span><span class="p">,</span>
-            <span class="p">)</span>
+            <span class="p">)</span>  <span class="c1"># type: ignore</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">repr</span><span class="p">(</span><span class="n">e</span><span class="p">)</span></div>
 
@@ -225,8 +233,8 @@
         <span class="s2">&quot;Input should be an Exa-optimized query. &quot;</span>
         <span class="s2">&quot;Output is a JSON array of the query results&quot;</span>
     <span class="p">)</span>
-    <span class="n">client</span><span class="p">:</span> <span class="n">Exa</span>
-    <span class="n">exa_api_key</span><span class="p">:</span> <span class="n">SecretStr</span>
+    <span class="n">client</span><span class="p">:</span> <span class="n">Exa</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">exa_api_key</span><span class="p">:</span> <span class="n">SecretStr</span> <span class="o">=</span> <span class="n">Field</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
     <span class="n">exa_base_url</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 
     <span class="nd">@root_validator</span><span class="p">(</span><span class="n">pre</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -256,8 +264,8 @@
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">find_similar_and_contents</span><span class="p">(</span>
                 <span class="n">url</span><span class="p">,</span>
                 <span class="n">num_results</span><span class="o">=</span><span class="n">num_results</span><span class="p">,</span>
-                <span class="n">text</span><span class="o">=</span><span class="n">text_contents_options</span><span class="p">,</span>
-                <span class="n">highlights</span><span class="o">=</span><span class="n">highlights</span><span class="p">,</span>
+                <span class="n">text</span><span class="o">=</span><span class="n">text_contents_options</span><span class="p">,</span>  <span class="c1"># type: ignore</span>
+                <span class="n">highlights</span><span class="o">=</span><span class="n">highlights</span><span class="p">,</span>  <span class="c1"># type: ignore</span>
                 <span class="n">include_domains</span><span class="o">=</span><span class="n">include_domains</span><span class="p">,</span>
                 <span class="n">exclude_domains</span><span class="o">=</span><span class="n">exclude_domains</span><span class="p">,</span>
                 <span class="n">start_crawl_date</span><span class="o">=</span><span class="n">start_crawl_date</span><span class="p">,</span>
@@ -266,7 +274,7 @@
                 <span class="n">end_published_date</span><span class="o">=</span><span class="n">end_published_date</span><span class="p">,</span>
                 <span class="n">exclude_source_domain</span><span class="o">=</span><span class="n">exclude_source_domain</span><span class="p">,</span>
                 <span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">,</span>
-            <span class="p">)</span>
+            <span class="p">)</span>  <span class="c1"># type: ignore</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="k">return</span> <span class="nb">repr</span><span class="p">(</span><span class="n">e</span><span class="p">)</span></div>
 </pre></div>
@@ -275,7 +283,7 @@
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 15, 2024.
+          Last updated on Feb 17, 2024.
       </footer>
     </div>
   </div>

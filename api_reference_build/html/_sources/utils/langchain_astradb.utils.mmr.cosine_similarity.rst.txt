@@ -1,0 +1,8 @@
+﻿:mod:`langchain_astradb.utils.mmr`.cosine_similarity
+===========================================================
+
+.. currentmodule:: langchain_astradb.utils.mmr
+
+.. autofunction:: cosine_similarity
+
+.. example_links:: cosine_similarity

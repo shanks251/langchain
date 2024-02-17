@@ -1,0 +1,84 @@
+.. ai21_api_reference:
+
+=======================
+``langchain_ai21`` 0.0.1
+=======================
+
+:mod:`langchain_ai21.ai21_base`
+================================
+
+.. automodule:: langchain_ai21.ai21_base
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_ai21
+
+.. autosummary::
+    :toctree: ai21_base
+    :template: pydantic.rst
+    
+    ai21_base.AI21Base
+    
+:mod:`langchain_ai21.chat_models`
+==================================
+
+.. automodule:: langchain_ai21.chat_models
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_ai21
+
+.. autosummary::
+    :toctree: chat_models
+    :template: pydantic.rst
+    
+    chat_models.ChatAI21
+    
+Functions
+--------------
+.. currentmodule:: langchain_ai21
+
+.. autosummary::
+    :toctree: chat_models
+    :template: function.rst
+
+    
+
+:mod:`langchain_ai21.embeddings`
+=================================
+
+.. automodule:: langchain_ai21.embeddings
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_ai21
+
+.. autosummary::
+    :toctree: embeddings
+    :template: pydantic.rst
+    
+    embeddings.AI21Embeddings
+    
+:mod:`langchain_ai21.llms`
+===========================
+
+.. automodule:: langchain_ai21.llms
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_ai21
+
+.. autosummary::
+    :toctree: llms
+    :template: pydantic.rst
+    
+    llms.AI21LLM
+    

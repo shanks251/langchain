@@ -1,0 +1,51 @@
+.. astradb_api_reference:
+
+=======================
+``langchain_astradb`` 0.0.1
+=======================
+
+:mod:`langchain_astradb.utils`
+===============================
+
+.. automodule:: langchain_astradb.utils
+    :no-members:
+    :no-inherited-members:
+
+Functions
+--------------
+.. currentmodule:: langchain_astradb
+
+.. autosummary::
+    :toctree: utils
+    :template: function.rst
+
+    utils.mmr.cosine_similarity
+    utils.mmr.maximal_marginal_relevance
+
+:mod:`langchain_astradb.vectorstores`
+======================================
+
+.. automodule:: langchain_astradb.vectorstores
+    :no-members:
+    :no-inherited-members:
+
+Classes
+--------------
+.. currentmodule:: langchain_astradb
+
+.. autosummary::
+    :toctree: vectorstores
+    :template: class.rst
+    
+    vectorstores.astradb.AstraDBVectorStore
+    
+Functions
+--------------
+.. currentmodule:: langchain_astradb
+
+.. autosummary::
+    :toctree: vectorstores
+    :template: function.rst
+
+    
+
