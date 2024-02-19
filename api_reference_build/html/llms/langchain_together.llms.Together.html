@@ -519,7 +519,7 @@ Subclasses should override this method if they support streaming output.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="langchain_together.llms.Together.astream_events">
 <span class="sig-name descname"><span class="pre">astream_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">RunnableConfig</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Literal</span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'v1'</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_names</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_types</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclude_tags</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">AsyncIterator</span><span class="p"><span class="pre">[</span></span><span class="pre">StreamEvent</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#langchain_together.llms.Together.astream_events" title="Permalink to this definition">¶</a></dt>
-<dd><p>[<em>Beta</em>]  Generate a stream of events.</p>
+<dd><p>[<em>Beta</em>] Generate a stream of events.</p>
 <p>Use to create an iterator ove StreamEvents that provide real-time information
 about the progress of the runnable, including StreamEvents from intermediate
 results.</p>
@@ -556,7 +556,7 @@ Chain definitions have been included after the table.</p>
 <div class="line-block">
 <div class="line">event                | name             | chunk                           | input                                         | output                                          |</div>
 </div>
-<p><a href="#id49"><span class="problematic" id="id50">|----------------------|</span></a>——————<a href="#id51"><span class="problematic" id="id52">|---------------------------------|</span></a>———————————————–<a href="#id53"><span class="problematic" id="id54">|-------------------------------------------------|</span></a>
+<p><a href="#id25"><span class="problematic" id="id26">|----------------------|</span></a>——————<a href="#id27"><span class="problematic" id="id28">|---------------------------------|</span></a>———————————————–<a href="#id29"><span class="problematic" id="id30">|-------------------------------------------------|</span></a>
 | on_chat_model_start  | [model name]     |                                 | {“messages”: [[SystemMessage, HumanMessage]]} |                                                 |
 | on_chat_model_stream | [model name]     | AIMessageChunk(content=”hello”) |                                               |                                                 |
 | on_chat_model_end    | [model name]     |                                 | {“messages”: [[SystemMessage, HumanMessage]]} | {“generations”: […], “llm_output”: None, …} |
@@ -601,148 +601,6 @@ template = ChatPromptTemplate.from_messages(</p>
 </div></blockquote>
 <p>).with_config({“run_name”: “my_template”, “tags”: [“my_template”]})
 <a href="#id21"><span class="problematic" id="id22">``</span></a><a href="#id23"><span class="problematic" id="id24">`</span></a></p>
-<p>Example:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">langchain_core.runnables</span> <span class="kn">import</span> <span class="n">RunnableLambda</span>
-
-<span class="k">async</span> <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">s</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="k">return</span> <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-
-<span class="n">chain</span> <span class="o">=</span> <span class="n">RunnableLambda</span><span class="p">(</span><span class="n">func</span><span class="o">=</span><span class="n">reverse</span><span class="p">)</span>
-
-<span class="n">events</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">event</span> <span class="k">async</span> <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">astream_events</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="n">version</span><span class="o">=</span><span class="s2">&quot;v1&quot;</span><span class="p">)</span>
-<span class="p">]</span>
-
-<span class="c1"># will produce the following events (run_id has been omitted for brevity):</span>
-<span class="p">[</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;hello&quot;</span><span class="p">},</span>
-        <span class="s2">&quot;event&quot;</span><span class="p">:</span> <span class="s2">&quot;on_chain_start&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;reverse&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;chunk&quot;</span><span class="p">:</span> <span class="s2">&quot;olleh&quot;</span><span class="p">},</span>
-        <span class="s2">&quot;event&quot;</span><span class="p">:</span> <span class="s2">&quot;on_chain_stream&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;reverse&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
-    <span class="p">},</span>
-    <span class="p">{</span>
-        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;output&quot;</span><span class="p">:</span> <span class="s2">&quot;olleh&quot;</span><span class="p">},</span>
-        <span class="s2">&quot;event&quot;</span><span class="p">:</span> <span class="s2">&quot;on_chain_end&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{},</span>
-        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;reverse&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;tags&quot;</span><span class="p">:</span> <span class="p">[],</span>
-    <span class="p">},</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>input</strong> – The input to the runnable.</p></li>
-<li><p><strong>config</strong> – The config to use for the runnable.</p></li>
-<li><p><strong>version</strong> – The version of the schema to use.
-Currently only version 1 is available.
-No default will be assigned until the API is stabilized.</p></li>
-<li><p><strong>include_names</strong> – Only include events from runnables with matching names.</p></li>
-<li><p><strong>include_types</strong> – Only include events from runnables with matching types.</p></li>
-<li><p><strong>include_tags</strong> – Only include events from runnables with matching tags.</p></li>
-<li><p><strong>exclude_names</strong> – Exclude events from runnables with matching names.</p></li>
-<li><p><strong>exclude_types</strong> – Exclude events from runnables with matching types.</p></li>
-<li><p><strong>exclude_tags</strong> – Exclude events from runnables with matching tags.</p></li>
-<li><p><strong>kwargs</strong> – Additional keyword arguments to pass to the runnable.
-These will be passed to astream_log as this implementation
-of astream_events is built on top of astream_log.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>An async stream of StreamEvents.[<em>Beta</em>] Generate a stream of events.</p>
-</dd>
-</dl>
-<p>Use to create an iterator ove StreamEvents that provide real-time information
-about the progress of the runnable, including StreamEvents from intermediate
-results.</p>
-<p>A StreamEvent is a dictionary with the following schema:</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">event</span></code>: str - Event names are of the</dt><dd><p>format: on_[runnable_type]_(start|stream|end).</p>
-</dd>
-</dl>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>: str - The name of the runnable that generated the event.</p></li>
-<li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">run_id</span></code>: str - randomly generated ID associated with the given execution of</dt><dd><p>the runnable that emitted the event.
-A child runnable that gets invoked as part of the execution of a
-parent runnable is assigned its own unique ID.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">tags</span></code>: Optional[List[str]] - The tags of the runnable that generated</dt><dd><p>the event.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">metadata</span></code>: Optional[Dict[str, Any]] - The metadata of the runnable</dt><dd><p>that generated the event.</p>
-</dd>
-</dl>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: Dict[str, Any]</p></li>
-</ul>
-<p>Below is a table that illustrates some evens that might be emitted by various
-chains. Metadata fields have been omitted from the table for brevity.
-Chain definitions have been included after the table.</p>
-<div class="line-block">
-<div class="line">event                | name             | chunk                           | input                                         | output                                          |</div>
-</div>
-<p><a href="#id55"><span class="problematic" id="id56">|----------------------|</span></a>——————<a href="#id57"><span class="problematic" id="id58">|---------------------------------|</span></a>———————————————–<a href="#id59"><span class="problematic" id="id60">|-------------------------------------------------|</span></a>
-| on_chat_model_start  | [model name]     |                                 | {“messages”: [[SystemMessage, HumanMessage]]} |                                                 |
-| on_chat_model_stream | [model name]     | AIMessageChunk(content=”hello”) |                                               |                                                 |
-| on_chat_model_end    | [model name]     |                                 | {“messages”: [[SystemMessage, HumanMessage]]} | {“generations”: […], “llm_output”: None, …} |
-| on_llm_start         | [model name]     |                                 | {‘input’: ‘hello’}                            |                                                 |
-| on_llm_stream        | [model name]     | ‘Hello’                         |                                               |                                                 |
-| on_llm_end           | [model name]     |                                 | ‘Hello human!’                                |
-| on_chain_start       | format_docs      |                                 |                                               |                                                 |
-| on_chain_stream      | format_docs      | “hello world!, goodbye world!”  |                                               |                                                 |
-| on_chain_end         | format_docs      |                                 | [Document(…)]                               | “hello world!, goodbye world!”                  |
-| on_tool_start        | some_tool        |                                 | {“x”: 1, “y”: “2”}                            |                                                 |
-| on_tool_stream       | some_tool        | {“x”: 1, “y”: “2”}              |                                               |                                                 |
-| on_tool_end          | some_tool        |                                 |                                               | {“x”: 1, “y”: “2”}                              |
-| on_retriever_start   | [retriever name] |                                 | {“query”: “hello”}                            |                                                 |
-| on_retriever_chunk   | [retriever name] | {documents: […]}              |                                               |                                                 |
-| on_retriever_end     | [retriever name] |                                 | {“query”: “hello”}                            | {documents: […]}                              |
-| on_prompt_start      | [template_name]  |                                 | {“question”: “hello”}                         |                                                 |
-| on_prompt_end        | [template_name]  |                                 | {“question”: “hello”}                         | ChatPromptValue(messages: [SystemMessage, …]) |</p>
-<p>Here are declarations associated with the events shown above:</p>
-<p><cite>format_docs</cite>:</p>
-<p><a href="#id25"><span class="problematic" id="id26">``</span></a><a href="#id27"><span class="problematic" id="id28">`</span></a>python
-def format_docs(docs: List[Document]) -&gt; str:</p>
-<blockquote>
-<div><p>‘’’Format the docs.’’’
-return “, “.join([doc.page_content for doc in docs])</p>
-</div></blockquote>
-<p>format_docs = RunnableLambda(format_docs)
-<a href="#id29"><span class="problematic" id="id30">``</span></a><a href="#id31"><span class="problematic" id="id32">`</span></a></p>
-<p><cite>some_tool</cite>:</p>
-<p><a href="#id33"><span class="problematic" id="id34">``</span></a><a href="#id35"><span class="problematic" id="id36">`</span></a>python
-&#64;tool
-def some_tool(x: int, y: str) -&gt; dict:</p>
-<blockquote>
-<div><p>‘’’Some_tool.’’’
-return {“x”: x, “y”: y}</p>
-</div></blockquote>
-<p><a href="#id37"><span class="problematic" id="id38">``</span></a><a href="#id39"><span class="problematic" id="id40">`</span></a></p>
-<p><cite>prompt</cite>:</p>
-<p><a href="#id41"><span class="problematic" id="id42">``</span></a><a href="#id43"><span class="problematic" id="id44">`</span></a>python
-template = ChatPromptTemplate.from_messages(</p>
-<blockquote>
-<div><p>[(“system”, “You are Cat Agent 007”), (“human”, “{question}”)]</p>
-</div></blockquote>
-<p>).with_config({“run_name”: “my_template”, “tags”: [“my_template”]})
-<a href="#id45"><span class="problematic" id="id46">``</span></a><a href="#id47"><span class="problematic" id="id48">`</span></a></p>
 <p>Example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">langchain_core.runnables</span> <span class="kn">import</span> <span class="n">RunnableLambda</span>
 
@@ -1411,7 +1269,7 @@ between retries</p></li>
     <div class="container">
       <footer class="sk-content-footer">
             &copy; 2023, LangChain, Inc..
-          Last updated on Feb 18, 2024.
+          Last updated on Feb 19, 2024.
           <a href="../_sources/llms/langchain_together.llms.Together.rst.txt" rel="nofollow">Show this page source</a>
       </footer>
     </div>
